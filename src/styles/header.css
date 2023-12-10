@@ -1,0 +1,60 @@
+@font-face {
+  font-family: "Helvetica";
+  src: url("../fonts/helvetica_regular.otf") format("opentype");
+}
+header {
+  padding: 16px;
+  justify-content: space-between;
+  display: flex;
+  align-items: center;
+  background: #191C38;
+}
+header .additional {
+  display: flex;
+  gap: 20px;
+}
+header .additional .phone {
+  display: flex;
+  align-items: center;
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+  gap: 10px;
+}
+header .additional .language select {
+  padding: 8px 8px 8px 12px;
+  color: #000;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+header .additional .language select:focus {
+  outline: none;
+}
+header .menu {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 64px;
+}
+header .menu .menu-option {
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  text-transform: capitalize;
+}
+
+/*# sourceMappingURL=header.css.map */
