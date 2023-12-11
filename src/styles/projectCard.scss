@@ -37,24 +37,22 @@
     }
 
     .images-container {
-      max-height: 40vh;
-      height: 40vh;
-      width: 100%;
+      height: 70vh;
+      max-height: 80vh;
       display: grid;
-      grid-template-columns: 50% repeat(2, 1fr);
-      grid-template-rows: repeat(2, 1fr) 15%;
+      grid-template-columns: 50% repeat(2, auto);
+      grid-template-rows: repeat(2, 40%) 10%;
       grid-column-gap: 24px;
       grid-row-gap: 24px;
 
       .main-image {
         grid-area: 1 / 1 / 4 / 2;
-        width: 100%;
-        height: 100%;
-        img {
+        img{
           width: 100%;
           height: 100%;
           object-fit: cover;
         }
+
       }
 
       .more {
@@ -63,7 +61,7 @@
         .button {
           flex: 1;
           height: 100%;
-          width: 100%;
+
           padding: 0 16px;
           display: flex;
           justify-content: space-between;
@@ -83,11 +81,11 @@
             letter-spacing: 0.64px;
           }
 
-          div:last-child {
+          .show-more-text{
             color: #8F8F8F;
             leading-trim: both;
             text-edge: cap;
-            font-family: Helvetica, sans-serif;
+            font-family: Helvetica,sans-serif;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -97,12 +95,11 @@
       }
 
       .images {
-        max-height: 25%;
-        width: 100%;
-        img {
+        flex: 1;
+        img{
           width: 100%;
           height: 100%;
-          object-fit: cover; /* Change to "contain" */
+          object-fit: cover;
         }
       }
     }

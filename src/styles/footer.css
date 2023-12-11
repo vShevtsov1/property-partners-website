@@ -67,6 +67,7 @@ footer .information {
   gap: 36px;
 }
 footer .information .location {
+  cursor: pointer;
   display: flex;
   flex-direction: column;
   gap: 10px;

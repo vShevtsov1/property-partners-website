@@ -26,19 +26,22 @@ const ProjectCard = () => {
                 </div>
             </div>
             <div className="images-container">
+
                 <div className="main-image"><img src={card1}/></div>
                 <div className="more">
                     <div className="button">
                         <div>Show More</div>
-                        <div>+6 photos</div>
+                        <div className={"show-more-text"}>+6 photos</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M13.1722 11.9997L8.22217 7.04974L9.63617 5.63574L16.0002 11.9997L9.63617 18.3637L8.22217 16.9497L13.1722 11.9997Z" fill="black"/>
                         </svg>
 
                     </div>
                 </div>
-                <div className={"images"}> <img src={card2}/></div>
+                <div className={"images"}><img src={card2}/> </div>
                 <div className={"images"}> <img src={card3}/></div>
+                <div className={"images"}><img src={card2}/> </div>
+                <div className={"images"}> <img src={card2}/></div>
 
             </div>
         </div>

@@ -39,6 +39,7 @@ const Header = () => {
             </div>
         </div>
         <div className="menu">
+            <Link to={"/"}><div className="menu-option">Home</div></Link>
            <Link to={"/real-estate"}><div className="menu-option">Buy</div></Link>
             <div className="menu-option">Consulting</div>
             <Link to={"/concierge"}> <div className="menu-option">Concierge Service</div></Link>

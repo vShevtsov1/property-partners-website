@@ -31,19 +31,16 @@
   background: #191C38;
 }
 .project-card .content .images-container {
-  max-height: 40vh;
-  height: 40vh;
-  width: 100%;
+  height: 70vh;
+  max-height: 80vh;
   display: grid;
-  grid-template-columns: 50% repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr) 15%;
+  grid-template-columns: 50% repeat(2, auto);
+  grid-template-rows: repeat(2, 40%) 10%;
   grid-column-gap: 24px;
   grid-row-gap: 24px;
 }
 .project-card .content .images-container .main-image {
   grid-area: 1/1/4/2;
-  width: 100%;
-  height: 100%;
 }
 .project-card .content .images-container .main-image img {
   width: 100%;
@@ -56,7 +53,6 @@
 .project-card .content .images-container .more .button {
   flex: 1;
   height: 100%;
-  width: 100%;
   padding: 0 16px;
   display: flex;
   justify-content: space-between;
@@ -75,7 +71,7 @@
   line-height: normal;
   letter-spacing: 0.64px;
 }
-.project-card .content .images-container .more .button div:last-child {
+.project-card .content .images-container .more .button .show-more-text {
   color: #8F8F8F;
   leading-trim: both;
   text-edge: cap;
@@ -86,13 +82,12 @@
   line-height: normal;
 }
 .project-card .content .images-container .images {
-  max-height: 25%;
-  width: 100%;
+  flex: 1;
 }
 .project-card .content .images-container .images img {
   width: 100%;
   height: 100%;
-  object-fit: cover; /* Change to "contain" */
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=projectCard.css.map */
