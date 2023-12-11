@@ -1,0 +1,111 @@
+.project-card {
+  .feedback {
+    padding: 16px !important;
+
+  }
+
+  .content {
+    padding: 64px;
+
+    .navigation {
+      display: flex;
+      justify-content: space-between;
+
+      .button {
+        display: flex;
+        padding: 12px 24px 12px 12px;
+        align-items: center;
+        gap: 24px;
+        background: #191C38;
+        color: #FFF;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: HelveticaBold, sans-serif;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+      }
+
+      .link {
+        display: flex;
+        padding: 12px;
+        align-items: center;
+        gap: 16px;
+        background: #191C38;
+      }
+    }
+
+    .images-container {
+      max-height: 40vh;
+      height: 40vh;
+      width: 100%;
+      display: grid;
+      grid-template-columns: 50% repeat(2, 1fr);
+      grid-template-rows: repeat(2, 1fr) 15%;
+      grid-column-gap: 24px;
+      grid-row-gap: 24px;
+
+      .main-image {
+        grid-area: 1 / 1 / 4 / 2;
+        width: 100%;
+        height: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+        }
+      }
+
+      .more {
+        grid-area: 3 / 2 / 4 / 4;
+
+        .button {
+          flex: 1;
+          height: 100%;
+          width: 100%;
+          padding: 0 16px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border: 1px solid #CACACA;
+
+          div:first-child {
+            width: 80%;
+            color: #000;
+            leading-trim: both;
+            text-edge: cap;
+            font-family: HelveticaBold, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: 0.64px;
+          }
+
+          div:last-child {
+            color: #8F8F8F;
+            leading-trim: both;
+            text-edge: cap;
+            font-family: Helvetica, sans-serif;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+          }
+        }
+      }
+
+      .images {
+        max-height: 25%;
+        width: 100%;
+        img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover; /* Change to "contain" */
+        }
+      }
+    }
+
+  }
+}

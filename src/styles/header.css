@@ -1,6 +1,10 @@
 @font-face {
   font-family: "Helvetica";
-  src: url("../fonts/helvetica_regular.otf") format("opentype");
+  src: url("../fonts/HELVETICA_REGULAR.OTF") format("opentype");
+}
+@font-face {
+  font-family: "HelveticaBold";
+  src: url("../fonts/HELVETICA_BOLD.OTF") format("opentype");
 }
 header {
   padding: 16px;
@@ -49,7 +53,7 @@ header .menu .menu-option {
   color: #FFF;
   leading-trim: both;
   text-edge: cap;
-  font-family: Helvetica, sans-serif;
+  font-family: HelveticaBold, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;

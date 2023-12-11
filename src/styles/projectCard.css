@@ -1,0 +1,98 @@
+.project-card .feedback {
+  padding: 16px !important;
+}
+.project-card .content {
+  padding: 64px;
+}
+.project-card .content .navigation {
+  display: flex;
+  justify-content: space-between;
+}
+.project-card .content .navigation .button {
+  display: flex;
+  padding: 12px 24px 12px 12px;
+  align-items: center;
+  gap: 24px;
+  background: #191C38;
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.project-card .content .navigation .link {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  gap: 16px;
+  background: #191C38;
+}
+.project-card .content .images-container {
+  max-height: 40vh;
+  height: 40vh;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr) 15%;
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+}
+.project-card .content .images-container .main-image {
+  grid-area: 1/1/4/2;
+  width: 100%;
+  height: 100%;
+}
+.project-card .content .images-container .main-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.project-card .content .images-container .more {
+  grid-area: 3/2/4/4;
+}
+.project-card .content .images-container .more .button {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  padding: 0 16px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #CACACA;
+}
+.project-card .content .images-container .more .button div:first-child {
+  width: 80%;
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+}
+.project-card .content .images-container .more .button div:last-child {
+  color: #8F8F8F;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project-card .content .images-container .images {
+  max-height: 25%;
+  width: 100%;
+}
+.project-card .content .images-container .images img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Change to "contain" */
+}
+
+/*# sourceMappingURL=projectCard.css.map */

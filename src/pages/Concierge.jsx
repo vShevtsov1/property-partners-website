@@ -6,6 +6,7 @@ import aboutUs from "../assets/aboutUs.jpg";
 import servicesPerson from "../assets/servicesPerson.jpg";
 import servicesLife from "../assets/servicesLif.jpg"
 import vipService from "../assets/vipServices.jpg"
+import Footer from "../components/Footer.jsx";
 const Concierge = () => {
 
     return(<div className={"concierge-wrapper"}>
@@ -112,7 +113,7 @@ const Concierge = () => {
                     </div>
                 </div>
         </div>
-
+            <Footer/>
     </div>)
 }
 export default Concierge
