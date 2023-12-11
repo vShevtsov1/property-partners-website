@@ -70,7 +70,9 @@
 }
 .concierge-wrapper .about-us .content3 {
   grid-area: 1/3/3/4;
-  background: yellow;
+  background-image: url("../assets/memberBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 .concierge-wrapper .about-us .content3 img {
   width: 100%;

@@ -14,6 +14,7 @@ import damac from "../assets/damac.png";
 import sobha from "../assets/sobha.png";
 import conciergeMain from "../assets/conciergeMain.jpg";
 import whyDubai from "../assets/whyDubai.jpg";
+import whyDubaiMain from "../assets/whyDubaiMain.png";
 import kindOfProjects from "../assets/kindOfProjects.jpg"
 import visa from "../assets/visa.jpg"
 import contactHome from "../assets/contactHome.png"
@@ -368,7 +369,7 @@ const Home = () => {
 
         </div>
         <div className="why-dubai">
-            <div className={"div1"}><img src={conciergeMain}/></div>
+            <div className={"div1"}><img src={whyDubaiMain}/></div>
             <div className={"dark"}>Why Dubai?</div>
             <div className={"light"}>
                 <div className="tittle">Profitable real estate</div>

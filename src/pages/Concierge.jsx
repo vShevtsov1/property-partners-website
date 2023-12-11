@@ -1,12 +1,13 @@
 import Header from "../components/Header.jsx";
 import "../styles/concierge.css"
 import conciergeMain from "../assets/conciergeMain.jpg";
-import imagePerson from "../assets/aboutUsPerson.png";
+import imagePerson from "../assets/teams/anna-horshunova-min.jpg";
 import aboutUs from "../assets/aboutUs.jpg";
 import servicesPerson from "../assets/servicesPerson.jpg";
 import servicesLife from "../assets/servicesLif.jpg"
 import vipService from "../assets/vipServices.jpg"
 import Footer from "../components/Footer.jsx";
+
 const Concierge = () => {
 
     return(<div className={"concierge-wrapper"}>
