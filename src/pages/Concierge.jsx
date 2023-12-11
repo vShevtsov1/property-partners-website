@@ -34,6 +34,7 @@ const Concierge = () => {
             <div className={"content3"}><img src={imagePerson}/></div>
             <div className={"content4"}><img src={aboutUs}/></div>
         </div>
+
         <div className="our-services">
             <div className="tittle">What services do we provide?</div>
             <div className="content">
