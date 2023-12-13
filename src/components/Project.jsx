@@ -1,11 +1,15 @@
 import "../styles/project.css"
-const Project = () => {
-
-    return(<div className={"project"}>
-        <div className="image-container">
+const Project = ({project}) => {
+    function formatNumberWithCommas(value) {
+        return value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+    return(<div onClick={() => window.location.href = `/project/${project._id}`} className={"project"}>
+        <div className="image-container" style={{
+            background: `linear-gradient(0deg, #000 -58.46%, rgba(0, 0, 0, 0.00) 96.51%), url(${project.imageSrcMain}) lightgray 50% / cover no-repeat`,
+        }}>
             <div className="information">
-                <div className="name">Binghatti Creek | Apartments </div>
-                <div className="bedrooms">3 bedrooms</div>
+                <div className="name">{project.projectName} | {project.selectedProperty} </div>
+                <div className="bedrooms">{project.selectedBedrooms} bedrooms</div>
             </div>
         </div>
         <div className="project-info">
@@ -21,9 +25,9 @@ const Project = () => {
                                 <rect width="24" height="24" fill="white"/>
                             </clipPath>
                         </defs>
-                    </svg>Al Jaddaf
+                    </svg>{project.selectedLocation||project.ownLocation}
                 </div>
-                <div className="price">$ 397 800</div>
+                <div className="price">$ {formatNumberWithCommas(project.priceFrom)}</div>
             </div>
         </div>
     </div>)

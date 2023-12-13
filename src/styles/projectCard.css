@@ -2,7 +2,10 @@
   padding: 16px !important;
 }
 .project-card .content {
-  padding: 64px;
+  padding: 40px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
 }
 .project-card .content .navigation {
   display: flex;
@@ -27,6 +30,7 @@
   display: flex;
   padding: 12px;
   align-items: center;
+  cursor: pointer;
   gap: 16px;
   background: #191C38;
 }
@@ -34,7 +38,7 @@
   height: 70vh;
   max-height: 80vh;
   display: grid;
-  grid-template-columns: 50% repeat(2, auto);
+  grid-template-columns: 50% repeat(2, 23.8%);
   grid-template-rows: repeat(2, 40%) 10%;
   grid-column-gap: 24px;
   grid-row-gap: 24px;
@@ -53,6 +57,7 @@
 .project-card .content .images-container .more .button {
   flex: 1;
   height: 100%;
+  cursor: pointer;
   padding: 0 16px;
   display: flex;
   justify-content: space-between;
@@ -88,6 +93,446 @@
   width: 100%;
   height: 100%;
   object-fit: cover;
+}
+.project-card .content .project-information {
+  margin-top: -30px;
+  height: 200px;
+  padding: 24px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.project-card .content .project-information .general-information {
+  height: 50%;
+  width: 100%;
+  display: flex;
+}
+.project-card .content .project-information .general-information .name-block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 80%;
+  background: white;
+}
+.project-card .content .project-information .general-information .name-block div:first-child {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 40px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 43px; /* 107.5% */
+}
+.project-card .content .project-information .general-information .name-block div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 120% */
+}
+.project-card .content .project-information .general-information .price-block {
+  flex: 1;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  align-items: flex-end;
+}
+.project-card .content .project-information .general-information .price-block div:first-child {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 50% */
+}
+.project-card .content .project-information .general-information .price-block div:last-child {
+  color: #8F8F8F;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.project-card .content .project-information .additional-information {
+  flex: 1;
+  display: flex;
+}
+.project-card .content .project-information .additional-information .additional-block {
+  display: flex;
+  flex: 1;
+  padding: 16px 24px 16px 16px;
+  align-items: center;
+  gap: 24px;
+  border: 1px solid #CACACA;
+  align-self: stretch;
+}
+.project-card .content .project-information .additional-information .additional-block .info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.project-card .content .project-information .additional-information .additional-block .info div:first-child {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.56px;
+}
+.project-card .content .project-information .additional-information .additional-block .info div:last-child {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+}
+.project-card .content .manager-plan-wrapper {
+  height: 44vh;
+  display: flex;
+}
+.project-card .content .manager-plan-wrapper .manager-view {
+  width: 50%;
+  background: white;
+  display: flex;
+  height: 100%;
+}
+.project-card .content .manager-plan-wrapper .manager-view .image-container {
+  width: 50%;
+  height: 100%;
+  background-image: url("../assets/memberBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.project-card .content .manager-plan-wrapper .manager-view .image-container img {
+  object-fit: cover;
+  object-position: top;
+  width: 100%;
+  height: 100%;
+  transform: scale(-1, 1);
+}
+.project-card .content .manager-plan-wrapper .manager-view .broker-info {
+  display: flex;
+  padding: 24px 24px;
+  justify-content: flex-end;
+  flex-direction: column;
+  align-items: flex-start;
+  flex: 1 0 0;
+}
+.project-card .content .manager-plan-wrapper .manager-view .broker-info .general-info {
+  display: flex;
+  margin-bottom: 24px;
+  flex-direction: column;
+  gap: 16px;
+}
+.project-card .content .manager-plan-wrapper .manager-view .broker-info .general-info div:first-child {
+  color: #939393;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project-card .content .manager-plan-wrapper .manager-view .broker-info .general-info div:last-child {
+  color: #191C38;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project-card .content .manager-plan-wrapper .manager-view .broker-info .additional-info {
+  margin-bottom: 32px;
+  color: #191C38;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project-card .content .manager-plan-wrapper .manager-view .broker-info .buttons-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.project-card .content .manager-plan-wrapper .manager-view .broker-info .buttons-container .button:first-child {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  border: 1px solid #CACACA;
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+}
+.project-card .content .manager-plan-wrapper .manager-view .broker-info .buttons-container .button:last-child {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  background: #C29773;
+  color: #FFF;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+}
+.project-card .content .manager-plan-wrapper .payment-plan {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: #191C38;
+  padding: 24px;
+  gap: 24px;
+}
+.project-card .content .manager-plan-wrapper .payment-plan .plan-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  align-self: stretch;
+}
+.project-card .content .manager-plan-wrapper .payment-plan .plan-header div:first-child {
+  color: #FFF;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 35px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project-card .content .manager-plan-wrapper .payment-plan .plan-header div:last-child {
+  color: #FFF;
+  text-align: right;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project-card .content .manager-plan-wrapper .payment-plan .plan-type {
+  display: flex;
+  gap: 16px;
+}
+.project-card .content .manager-plan-wrapper .payment-plan .plan-type div {
+  cursor: pointer;
+  color: #8F8F8F;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project-card .content .manager-plan-wrapper .payment-plan .plan-type div.active {
+  color: #FFF;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  text-decoration-line: underline;
+}
+.project-card .content .manager-plan-wrapper .payment-plan .plan-content {
+  display: flex;
+  justify-content: space-between;
+}
+.project-card .content .manager-plan-wrapper .payment-plan .plan-content .column {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.project-card .content .manager-plan-wrapper .payment-plan .plan-content .column .header {
+  color: #939393;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.project-card .content .manager-plan-wrapper .payment-plan .plan-content .column .values {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.project-card .content .manager-plan-wrapper .payment-plan .plan-content .column .values .value {
+  color: #FFF;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project-card .content .floor-plans {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 24px;
+}
+.project-card .content .floor-plans .header {
+  color: #191C38;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+}
+.project-card .content .floor-plans .navigations {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.project-card .content .floor-plans .navigations .floor-types {
+  display: flex;
+  width: 40%;
+  justify-content: center;
+  align-items: center;
+}
+.project-card .content .floor-plans .navigations .floor-types .floor-type {
+  cursor: pointer;
+  display: flex;
+  padding: 16px 24px 16px 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  flex: 1 0 0;
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.8px;
+  border-bottom: 2px solid transparent;
+}
+.project-card .content .floor-plans .navigations .floor-types .floor-type.active {
+  border-bottom: 2px solid #191C38;
+}
+.project-card .content .floor-plans .navigations .arrows {
+  display: flex;
+  gap: 16px;
+}
+.project-card .content .floor-plans .navigations .arrows .left-arrow, .project-card .content .floor-plans .navigations .arrows .right-arrow {
+  cursor: pointer;
+  border-radius: 134px;
+  background: #191C38;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.project-card .content .floor-plans .floor-content {
+  width: 100%;
+}
+.project-card .content .location {
+  height: 40vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 16px;
+}
+.project-card .content .location .header {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 38.4px */
+}
+.project-card .content .location .map-container {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+}
+.project-card .content .location .map-container .map {
+  width: 100%;
+  height: 100%;
+}
+.project-card .content .simillar {
+  display: flex;
+  gap: 20px;
+  height: 40vh;
+  width: 100%;
+  margin-bottom: 100px;
+  flex-direction: column;
+}
+.project-card .content .simillar .header {
+  display: flex;
+  justify-content: space-between;
+}
+.project-card .content .simillar .header .tittle {
+  color: #191C38;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 38.4px */
+}
+.project-card .content .simillar .header .arrows {
+  display: flex;
+  gap: 16px;
+}
+.project-card .content .simillar .header .arrows .left-arrow, .project-card .content .simillar .header .arrows .right-arrow {
+  cursor: pointer;
+  border-radius: 134px;
+  background: #191C38;
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+.project-card .content .simillar .content {
+  flex: 1;
+  height: 100%;
+  width: 100%;
+  padding: 0;
 }
 
 /*# sourceMappingURL=projectCard.css.map */
