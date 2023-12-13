@@ -3,7 +3,7 @@ const Project = ({project}) => {
     function formatNumberWithCommas(value) {
         return value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
-    return(<div onClick={() => window.location.href = `/project/${project._id}`} className={"project"}>
+    return(<div onClick={() => window.open(`/project/${project._id}`)} className={"project"}>
         <div className="image-container" style={{
             background: `linear-gradient(0deg, #000 -58.46%, rgba(0, 0, 0, 0.00) 96.51%), url(${project.imageSrcMain}) lightgray 50% / cover no-repeat`,
         }}>

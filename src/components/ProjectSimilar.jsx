@@ -2,7 +2,7 @@
 import "../styles/projectSimilar.css"
 const ProjectSimilar = ({project}) => {
 
-    return(<div style={{cursor:"pointer"}} onClick={() => window.location.href = `/project/${project._id}`}
+    return(<div style={{cursor:"pointer"}} onClick={() => window.open(`/project/${project._id}`)}
 
                 className={"project-similar"}>
             <div className="image-container">

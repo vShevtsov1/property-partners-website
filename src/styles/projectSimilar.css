@@ -29,7 +29,7 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
+  line-height: 24px;
 }
 .project-similar .image-container .project-info div:last-child {
   color: #FFF;
@@ -37,7 +37,7 @@
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 133.333% */
+  line-height: 24px;
 }
 .project-similar .image-container::before {
   content: "";
