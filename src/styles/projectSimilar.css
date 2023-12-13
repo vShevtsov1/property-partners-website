@@ -1,0 +1,84 @@
+.project-similar {
+  flex: 1;
+  background: white;
+  height: 100%;
+  z-index: -9999;
+}
+.project-similar .image-container {
+  height: 80%;
+  position: relative;
+}
+.project-similar .image-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 2;
+}
+.project-similar .image-container .project-info {
+  z-index: 10;
+  position: absolute;
+  bottom: 10px;
+  left: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.project-similar .image-container .project-info div:first-child {
+  color: #FFF;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+.project-similar .image-container .project-info div:last-child {
+  color: #FFF;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+.project-similar .image-container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(0deg, #000 -58.46%, rgba(0, 0, 0, 0) 96.51%);
+  z-index: 1; /* Adjust the z-index as needed */
+}
+.project-similar .description {
+  flex: 1;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+}
+.project-similar .description .location {
+  height: 100%;
+  align-items: center;
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
+  color: #000;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.project-similar .description .price {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+/*# sourceMappingURL=projectSimilar.css.map */
