@@ -72,6 +72,7 @@ const RealEstate = () => {
                                 {projects.map((marker, index) => (
                                     <AdvancedMarker
                                         key={index}
+                                        onClick={()=>window.open(`/project/${marker._id}`)}
                                         className={"marker"}
                                         position={{ lat: Number(marker.lat), lng: Number(marker.lng) }}>
                                         <div style={{ borderRadius: mapZoom < 13 ? 20 : 5, padding: mapZoom < 13 ? 7 : 0 }}>

@@ -1,15 +1,16 @@
 import "../styles/project.css"
+import MaxLengthText from "./MaxLengthText.jsx";
 const Project = ({project}) => {
     function formatNumberWithCommas(value) {
         return value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
-    return(<div onClick={() => window.open(`/project/${project._id}`)} className={"project"}>
+    return(<div onClick={() => window.location.href = `/project/${project._id}`} className={"project"}>
         <div className="image-container" style={{
             background: `linear-gradient(0deg, #000 -58.46%, rgba(0, 0, 0, 0.00) 96.51%), url(${project.imageSrcMain}) lightgray 50% / cover no-repeat`,
         }}>
             <div className="information">
-                <div className="name">{project.projectName} | {project.selectedProperty} </div>
-                <div className="bedrooms">{project.selectedBedrooms} bedrooms</div>
+                <div className="name">{project.projectName}</div>
+                <div className="bedrooms">{project.developer}</div>
             </div>
         </div>
         <div className="project-info">
@@ -25,7 +26,7 @@ const Project = ({project}) => {
                                 <rect width="24" height="24" fill="white"/>
                             </clipPath>
                         </defs>
-                    </svg>{project.selectedLocation||project.ownLocation}
+                    </svg><MaxLengthText text={project.selectedLocation||project.ownLocation} maxLength={15}/>
                 </div>
                 <div className="price">$ {formatNumberWithCommas(project.priceFrom)}</div>
             </div>

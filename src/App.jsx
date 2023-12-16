@@ -4,6 +4,8 @@ import RealEstate from "./pages/RealEstate.jsx";
 import ProjectCard from "./pages/ProjectCard.jsx";
 import {BrowserRouter, Route, Routes} from "react-router-dom";
 import ScrollToTop from "./components/ScrollToTop.jsx";
+import Modal from "react-modal";
+import ContactUsModal from "./components/ContactUsModal.jsx";
 
 
 function App() {
@@ -12,6 +14,7 @@ function App() {
 
       <BrowserRouter>
           <ScrollToTop />
+          <ContactUsModal/>
         <Routes>
 
 

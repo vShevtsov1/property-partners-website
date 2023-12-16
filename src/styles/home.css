@@ -3,6 +3,9 @@
   height: 80vh;
   width: 100%;
 }
+.home-page .home-banner.phone {
+  display: none;
+}
 .home-page .home-banner .content {
   padding-left: 64px;
   width: 50%;
@@ -104,7 +107,7 @@
 }
 .home-page .collections .tittle div:last-child {
   color: #575757;
-  max-width: 62%;
+  max-width: 98%;
   font-family: Helvetica, sans-serif;
   font-size: 24px;
   font-style: normal;
@@ -115,17 +118,21 @@
   width: 100%;
   height: 100%;
   display: flex;
-  flex-direction: column;
-  gap: 64px;
+  flex-wrap: wrap;
+  gap: 33px;
 }
 .home-page .collections .content .collection {
-  height: 400px;
+  height: 500px;
   display: flex;
-  gap: 24px;
+  flex-direction: column;
+  gap: 12px;
+  width: 48%;
 }
 .home-page .collections .content .collection .image {
-  width: 45%;
-  height: 100%;
+  width: 100%;
+  min-height: 70%;
+  max-height: 70%;
+  height: 70%;
 }
 .home-page .collections .content .collection .image img {
   width: 100%;
@@ -136,19 +143,19 @@
   flex: 1;
   gap: 0;
   display: flex;
-  flex-direction: row !important;
+  flex-direction: row;
   justify-content: flex-start;
-  align-items: flex-end;
   width: 100%;
   height: 100%;
 }
 .home-page .collections .content .collection .content .collection-info {
   display: flex;
-  flex-direction: column;
   gap: 24px;
-  max-width: 40%;
+  width: 100%;
+  justify-content: space-between;
 }
 .home-page .collections .content .collection .content .collection-info .tittle {
+  width: 30%;
   color: #191C38;
   font-family: HelveticaBold, sans-serif;
   font-size: 48px;
@@ -178,7 +185,7 @@
 }
 .home-page .collections .content .collection .content .collection-info .button {
   display: flex;
-  padding: 16px;
+  padding: 10px;
   align-items: center;
   gap: 24px;
   justify-content: space-between;
@@ -186,7 +193,7 @@
   border: 1px solid #CACACA;
   color: #000;
   font-family: Helvetica, sans-serif;
-  font-size: 24px;
+  font-size: 19px;
   font-style: normal;
   font-weight: 700;
   line-height: normal;
@@ -633,6 +640,238 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media (max-width: 600px) {
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+  }
+  .home-page .home-banner {
+    display: none;
+  }
+  .home-page .home-banner.phone {
+    display: flex;
+    height: auto;
+  }
+  .home-page .home-banner.phone .content {
+    padding: 16px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .home-page .home-banner.phone .content .tittle {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    max-width: 100%;
+  }
+  .home-page .home-banner.phone .content .tittle div:first-child {
+    color: #191C38;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%; /* 38.4px */
+  }
+  .home-page .home-banner.phone .content .tittle div:last-child {
+    color: #616161;
+    font-family: Helvetica, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    padding: 0;
+    line-height: normal;
+  }
+  .home-page .home-banner.phone .content .advantages .advantages-wrapper {
+    display: flex;
+    padding: 0;
+    max-width: 100%;
+    gap: 8px;
+  }
+  .home-page .home-banner.phone .content .advantages .advantages-wrapper .advantage {
+    padding: 8px 12px 8px 8px;
+    color: #FFF;
+    font-family: HelveticaBold, sans-serif, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.2px; /* 137.143% */
+  }
+  .home-page .home-banner.phone .content .advantages .advantages-wrapper .learn-more {
+    display: flex;
+    min-width: 65%;
+    padding: 8px;
+    justify-content: space-between;
+    align-items: center;
+    flex-shrink: 0;
+  }
+  .home-page .collections {
+    padding: 16px;
+  }
+  .home-page .collections .tittle div:first-child {
+    font-size: 18px !important;
+  }
+  .home-page .collections .tittle div:last-child {
+    max-width: 100% !important;
+    font-size: 14px !important;
+  }
+  .home-page .collections .content .collection {
+    gap: 8px;
+    flex-direction: column;
+    height: auto;
+  }
+  .home-page .collections .content .collection .image {
+    width: 100% !important;
+  }
+  .home-page .collections .content .collection .content {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .home-page .collections .content .collection .content .collection-info {
+    width: 100%;
+    gap: 16px;
+    max-width: 100%;
+  }
+  .home-page .collections .content .collection .content .collection-info .tittle {
+    font-size: 24px;
+    line-height: 25px;
+  }
+  .home-page .collections .content .collection .content .collection-info .properties {
+    gap: 16px;
+  }
+  .home-page .collections .content .collection .content .collection-info .button {
+    font-size: 14px;
+  }
+  .home-page .partners {
+    flex-wrap: wrap;
+    padding: 16px;
+    gap: 20px;
+    justify-content: flex-start;
+  }
+  .home-page .why-dubai {
+    padding: 16px;
+    height: auto;
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+    grid-template-rows: repeat(4, 1fr);
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+  .home-page .why-dubai .div1 {
+    grid-area: 3/2/5/3;
+  }
+  .home-page .why-dubai .light .tittle {
+    font-size: 16px;
+  }
+  .home-page .why-dubai .light .description {
+    font-size: 16px;
+  }
+  .home-page .why-dubai .dark {
+    font-size: 24px;
+  }
+  .home-page .why-dubai .orange .tittle {
+    font-size: 16px;
+  }
+  .home-page .why-dubai .orange .description {
+    font-size: 16px;
+  }
+  .home-page .kind-of-projects {
+    flex-direction: column;
+    padding: 16px;
+    height: auto;
+  }
+  .home-page .kind-of-projects .image {
+    width: 100%;
+  }
+  .home-page .kind-of-projects .content {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .home-page .kind-of-projects .content .tittle {
+    font-size: 24px;
+  }
+  .home-page .kind-of-projects .content .types .type.active .visible-element .tittle {
+    font-size: 16px;
+  }
+  .home-page .kind-of-projects .content .types .type .visible-element .tittle {
+    font-size: 14px;
+  }
+  .home-page .kind-of-projects .content .types .type .hiden-text {
+    font-size: 14px;
+  }
+  .home-page .consulting {
+    padding: 16px;
+    gap: 24px;
+  }
+  .home-page .consulting .tittle {
+    padding: 16px;
+  }
+  .home-page .consulting .tittle div:first-child {
+    font-size: 24px;
+  }
+  .home-page .consulting .tittle div:last-child {
+    font-size: 14px;
+  }
+  .home-page .consulting .content {
+    gap: 8px;
+    flex-direction: column;
+  }
+  .home-page .consulting .content .image {
+    padding: 16px;
+    width: 100%;
+  }
+  .home-page .consulting .content .image img {
+    width: 100%;
+  }
+  .home-page .consulting .content .consulting-content .consult {
+    gap: 24px;
+    font-size: 16px;
+  }
+  .home-page .our-team {
+    padding: 16px;
+  }
+  .home-page .our-team .tittle {
+    font-size: 24px;
+  }
+  .home-page .our-team .team {
+    gap: 8px;
+  }
+  .home-page .our-team .team .member {
+    width: 48%;
+  }
+  .home-page .our-team .team .member .image {
+    height: 200px;
+  }
+  .home-page .our-team .team .member .information {
+    gap: 16px;
+    padding: 16px;
+  }
+  .home-page .our-team .team .member .information .general-info .name {
+    font-size: 16px;
+  }
+  .home-page .our-team .team .member .information .general-info .position {
+    font-size: 14px;
+  }
+  .home-page .our-team .show-more .button {
+    width: 100%;
+    font-size: 14px;
+  }
+  .home-page .contact-form {
+    padding: 16px;
+    width: 100%;
+  }
+  .home-page .contact-form .image {
+    display: none;
+  }
+  .home-page .contact-form .contact-form-form {
+    width: 100%;
+    padding: 0;
+  }
 }
 
 /*# sourceMappingURL=home.css.map */

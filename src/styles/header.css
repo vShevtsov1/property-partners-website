@@ -7,6 +7,8 @@
   src: url("../fonts/HELVETICA_BOLD.OTF") format("opentype");
 }
 header {
+  position: sticky;
+  top: 0;
   padding: 16px;
   justify-content: space-between;
   display: flex;

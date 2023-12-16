@@ -2,10 +2,10 @@
   padding: 16px !important;
 }
 .project-card .content {
-  padding: 40px 64px;
+  padding: 30px 64px;
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 60px;
 }
 .project-card .content .navigation {
   display: flex;
@@ -36,10 +36,11 @@
 }
 .project-card .content .images-container {
   height: 70vh;
+  width: 100%;
   max-height: 80vh;
   display: grid;
-  grid-template-columns: 50% repeat(2, 23.8%);
-  grid-template-rows: repeat(2, 40%) 10%;
+  grid-template-columns: 50% repeat(2, auto);
+  grid-template-rows: repeat(2, 40%) auto;
   grid-column-gap: 24px;
   grid-row-gap: 24px;
 }
@@ -52,7 +53,9 @@
   object-fit: cover;
 }
 .project-card .content .images-container .more {
+  flex: 1;
   grid-area: 3/2/4/4;
+  width: 100%;
 }
 .project-card .content .images-container .more .button {
   flex: 1;
@@ -88,6 +91,8 @@
 }
 .project-card .content .images-container .images {
   flex: 1;
+  width: 100%;
+  height: 100%;
 }
 .project-card .content .images-container .images img {
   width: 100%;
@@ -140,6 +145,7 @@
 }
 .project-card .content .project-information .general-information .price-block {
   flex: 1;
+  white-space: nowrap;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -207,14 +213,13 @@
   letter-spacing: 0.64px;
 }
 .project-card .content .manager-plan-wrapper {
-  height: 44vh;
   display: flex;
+  height: 380px;
 }
 .project-card .content .manager-plan-wrapper .manager-view {
   width: 50%;
   background: white;
   display: flex;
-  height: 100%;
 }
 .project-card .content .manager-plan-wrapper .manager-view .image-container {
   width: 50%;
@@ -494,9 +499,9 @@
 .project-card .content .simillar {
   display: flex;
   gap: 20px;
-  height: 40vh;
+  height: 45vh;
   width: 100%;
-  margin-bottom: 100px;
+  margin-bottom: 50px;
   flex-direction: column;
 }
 .project-card .content .simillar .header {

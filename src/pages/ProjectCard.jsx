@@ -93,24 +93,7 @@ const ProjectCard = () => {
 
         formattedTotalSum = formatNumberWithCommas(totalSum.toString());
     }
-    const customStyles = {
-        content: {
-            top: '50%',
-            left: '50%',
-            right: 'auto',
-            bottom: 'auto',
-            marginRight: '-50%',
-            transform: 'translate(-50%, -50%)',
-            zIndex: 1000,
-            width: "70vw",
-            height: "80vh",
-        },
-        overlay: {
-            backgroundColor: 'rgba(0, 0, 0, 0.5)' ,// Adjust the opacity as needed
-            zIndex: 999
-        }
 
-    };
     if (project === null || randomProjects === null) {
         return null;
     }
@@ -141,7 +124,6 @@ const ProjectCard = () => {
                 <div className="more">
                     <div className="button" onClick={() => setShowImages(true)}>
                         <div>Show More</div>
-                        <div className={"show-more-text"}>+6 photos</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M13.1722 11.9997L8.22217 7.04974L9.63617 5.63574L16.0002 11.9997L9.63617 18.3637L8.22217 16.9497L13.1722 11.9997Z"
@@ -150,10 +132,10 @@ const ProjectCard = () => {
 
                     </div>
                 </div>
-                <div className={"images"}><img src={project.interiorGallery[0]}/></div>
                 <div className={"images"}><img src={project.interiorGallery[1]}/></div>
-                <div className={"images"}><img src={project.architectureGallery[0]}/></div>
+                <div className={"images"}><img src={project.interiorGallery[2]}/></div>
                 <div className={"images"}><img src={project.architectureGallery[1]}/></div>
+                <div className={"images"}><img src={project.architectureGallery[2]}/></div>
 
 
             </div>
@@ -509,50 +491,6 @@ const ProjectCard = () => {
                     </Swiper>
                 </div>
             </div>
-            <Modal isOpen={showImages} style={customStyles}>
-                <div style={{display: "flex", flexDirection: "column", gap: 20}}>
-                    <div style={{
-                        display: "flex", alignItems: "center", justifyContent: "space-between",
-                        fontFamily: "HelveticaBold,sans", fontSize: 36,
-                    }}>Gallery
-                        <div onClick={() => setShowImages(false)} style={{
-                            display: "flex",
-                            justifyContent: "center",
-                            alignItems: "center",
-                            padding: 5,
-                            border: "1px solid #CACACA",
-                            cursor:"pointer"
-                        }}>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none">
-                                <path
-                                    d="M12.0002 10.586L16.9502 5.63599L18.3642 7.04999L13.4142 12L18.3642 16.95L16.9502 18.364L12.0002 13.414L7.05023 18.364L5.63623 16.95L10.5862 12L5.63623 7.04999L7.05023 5.63599L12.0002 10.586Z"
-                                    fill="#09121F"/>
-                            </svg>
-                        </div>
-                    </div>
-
-                    <div className="gallery-container" style={{
-                        display: 'grid',
-                        gridTemplateColumns: 'repeat(3, 1fr)',
-                        gridTemplateRows: 'repeat(3, 300px)',
-                        gridColumnGap: '20px',
-                        gridRowGap: '20px',
-                    }}>
-
-                        <img style={{width: '100%', height: '100%',objectFit:"cover"}} src={project.interiorGallery[0]}/>
-                        <img style={{width: '100%', height: '100%',objectFit:"cover"}} src={project.interiorGallery[1]}/>
-                        <img style={{width: '100%', height: '100%',objectFit:"cover"}} src={project.interiorGallery[2]}/>
-                        <img style={{width: '100%', height: '100%',objectFit:"cover"}} src={project.interiorGallery[3]}/>
-                        <img style={{width: '100%', height: '100%',objectFit:"cover"}} src={project.architectureGallery[0]}/>
-                        <img style={{width: '100%', height: '100%',objectFit:"cover"}} src={project.architectureGallery[1]}/>
-                        <img style={{width: '100%', height: '100%',objectFit:"cover"}} src={project.architectureGallery[2]}/>
-                        <img style={{width: '100%', height: '100%',objectFit:"cover"}} src={project.architectureGallery[3]}/>
-                        <img style={{width: '100%', height: '100%',objectFit:"cover"}} src={project.architectureGallery[4]}/>
-
-                    </div>
-                </div>
-            </Modal>
         </div>
 
         <Footer/>

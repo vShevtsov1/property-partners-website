@@ -1,35 +1,41 @@
-.home-page{
-  .home-banner{
+.home-page {
+  .home-banner {
     display: flex;
     height: 80vh;
     width: 100%;
 
-    .content{
+    &.phone {
+      display: none;
+    }
+
+    .content {
       padding-left: 64px;
-      width:  50%;
+      width: 50%;
       display: flex;
 
       flex-direction: column;
       justify-content: space-between;
       height: 100%;
 
-      .tittle{
+      .tittle {
         margin-top: 10%;
         display: flex;
         flex-direction: column;
         gap: 16px;
         max-width: 65%;
-        div:first-child{
+
+        div:first-child {
           color: #191C38;
-          font-family: HelveticaBold,sans-serif;
+          font-family: HelveticaBold, sans-serif;
           font-size: 60px;
           font-style: normal;
           font-weight: 400;
           line-height: 120%; /* 72px */
         }
-        div:last-child{
+
+        div:last-child {
           color: #616161;
-          font-family: Helvetica,sans-serif;
+          font-family: Helvetica, sans-serif;
           font-size: 25px;
           font-style: normal;
           padding-left: 10px;
@@ -37,14 +43,16 @@
           line-height: normal;
         }
       }
-      .advantages{
 
-        .advantages-wrapper{
+      .advantages {
+
+        .advantages-wrapper {
           display: flex;
           flex-wrap: wrap;
           gap: 5px;
           max-width: 65%;
-          .advantage{
+
+          .advantage {
             display: flex;
             padding: 12px 16px 12px 12px;
             justify-content: center;
@@ -55,13 +63,14 @@
             color: #FFF;
             leading-trim: both;
             text-edge: cap;
-            font-family: HelveticaBold,sans-serif;
+            font-family: HelveticaBold, sans-serif;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: 19.2px; /* 120% */
           }
-          .learn-more{
+
+          .learn-more {
             min-width: 50%;
             display: flex;
             padding: 16px;
@@ -70,7 +79,7 @@
             flex-shrink: 0;
             border: 1px solid #CACACA;
             color: #191C38;
-            font-family: HelveticaBold,sans-serif;
+            font-family: HelveticaBold, sans-serif;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
@@ -81,91 +90,110 @@
       }
     }
 
-    .image{
+    .image {
       flex: 1;
       height: 100%;
       width: 100%;
-      img{
+
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
     }
   }
-  .collections{
+
+  .collections {
 
     padding: 64px;
     display: flex;
     flex-direction: column;
     gap: 64px;
-    .tittle{
+
+    .tittle {
       display: flex;
       flex-direction: column;
       gap: 10px;
-      div:first-child{
+
+      div:first-child {
         color: #191C38;
-        font-family: HelveticaBold,sans-serif;
+        font-family: HelveticaBold, sans-serif;
         font-size: 48px;
         font-style: normal;
         font-weight: 400;
         line-height: 120%; /* 57.6px */
       }
-      div:last-child{
+
+      div:last-child {
         color: #575757;
-        max-width: 62%;
-        font-family: Helvetica,sans-serif;
+        max-width: 98%;
+        font-family: Helvetica, sans-serif;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
       }
     }
-    .content{
+
+    .content {
       width: 100%;
       height: 100%;
       display: flex;
-      flex-direction: column;
-      gap: 64px;
-      .collection{
-        height: 400px;
+      flex-wrap: wrap;
+      gap:33px;
+
+      .collection {
+        height: 500px;
         display: flex;
-        gap: 24px;
-        .image{
-          width: 45% ;
-          height: 100%;
-          img{
+        flex-direction: column;
+        gap: 12px;
+        width: 48%;
+        .image {
+          width: 100%;
+          min-height: 70%;
+          max-height: 70%;
+          height: 70%;
+
+          img {
             width: 100%;
             height: 100%;
             object-fit: cover;
           }
         }
-        .content{
+
+        .content {
           flex: 1;
           gap: 0;
           display: flex;
-          flex-direction: row !important;
+          flex-direction: row;
 
           justify-content: flex-start;
-          align-items: flex-end;
+
           width: 100%;
           height: 100%;
-          .collection-info{
+
+          .collection-info {
             display: flex;
-            flex-direction: column;
             gap: 24px;
-            max-width: 40%;
-            .tittle{
+            width: 100%;
+
+              justify-content: space-between;
+            .tittle {
+              width: 30%;
               color: #191C38;
-              font-family: HelveticaBold,sans-serif;
+              font-family: HelveticaBold, sans-serif;
               font-size: 48px;
               font-style: normal;
               font-weight: 400;
               line-height: 57.6px; /* 120% */
             }
-            .properties{
+
+
+            .properties {
 
               display: flex;
-              .property{
+
+              .property {
                 flex: 1;
                 display: flex;
                 padding: 12px 16px 12px 12px;
@@ -176,24 +204,25 @@
                 color: #191C38;
                 leading-trim: both;
                 text-edge: cap;
-                font-family: Helvetica,sans-serif;
+                font-family: Helvetica, sans-serif;
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: 19.2px; /* 120% */
               }
             }
-            .button{
+
+            .button {
               display: flex;
-              padding: 16px;
+              padding: 10px;
               align-items: center;
               gap: 24px;
               justify-content: space-between;
               align-self: stretch;
               border: 1px solid #CACACA;
               color: #000;
-              font-family: Helvetica,sans-serif;
-              font-size: 24px;
+              font-family: Helvetica, sans-serif;
+              font-size: 19px;
               font-style: normal;
               font-weight: 700;
               line-height: normal;
@@ -203,13 +232,15 @@
       }
     }
   }
-  .partners{
+
+  .partners {
     padding: 64px;
     display: flex;
 
     justify-content: space-between;
   }
-  .why-dubai{
+
+  .why-dubai {
     padding: 64px;
     height: 60vh;
     display: grid;
@@ -217,21 +248,26 @@
     grid-template-rows: repeat(2, 50%);
     grid-column-gap: 0px;
     grid-row-gap: 0px;
-    .div1 { grid-area: 1 / 4 / 3 / 5;
-    img{
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
-    }
-    .image-grid{
-      img{
+
+    .div1 {
+      grid-area: 1 / 4 / 3 / 5;
+
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
     }
-    .dark{
+
+    .image-grid {
+      img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+    }
+
+    .dark {
       display: flex;
       padding: 24px;
       flex-direction: column;
@@ -240,14 +276,15 @@
       gap: 10px;
       flex-shrink: 0;
       color: #FFF;
-      font-family: HelveticaBold,sans-serif;
+      font-family: HelveticaBold, sans-serif;
       font-size: 48px;
       font-style: normal;
       font-weight: 400;
       line-height: normal;
       background: #191C38;
     }
-    .light{
+
+    .light {
       display: flex;
       background: #FFF;
       padding: 24px;
@@ -255,24 +292,27 @@
       justify-content: space-between;
       align-items: flex-start;
       flex-shrink: 0;
-      .tittle{
+
+      .tittle {
         color: #000;
-        font-family: HelveticaBold,sans-serif;
+        font-family: HelveticaBold, sans-serif;
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
       }
-      .description{
+
+      .description {
         color: #575757;
-        font-family: Helvetica,sans-serif;
+        font-family: Helvetica, sans-serif;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
       }
     }
-    .orange{
+
+    .orange {
       display: flex;
       background: #C29773;
       padding: 24px;
@@ -280,21 +320,23 @@
       justify-content: space-between;
       align-items: flex-start;
       flex-shrink: 0;
-      .tittle{
+
+      .tittle {
         color: #FFF;
 
 
-        font-family: HelveticaBold,sans-serif;
+        font-family: HelveticaBold, sans-serif;
         font-size: 24px;
         font-style: normal;
         font-weight: 700;
         line-height: normal;
       }
-      .description{
+
+      .description {
         color: #FFF;
 
 
-        font-family: Helvetica,sans-serif;
+        font-family: Helvetica, sans-serif;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
@@ -302,63 +344,72 @@
       }
     }
   }
-  .kind-of-projects{
+
+  .kind-of-projects {
     height: 50vh;
     padding: 64px;
     display: flex;
     gap: 20px;
-    .image{
+
+    .image {
       width: 40%;
       height: 100%;
-      img{
+
+      img {
         width: 100%;
         height: 100%;
         object-fit: cover;
       }
     }
-    .content{
+
+    .content {
       flex: 1;
       display: flex;
       flex-direction: column;
       justify-content: space-between;
-      .tittle{
+
+      .tittle {
         color: #191C38;
-        font-family: HelveticaBold,sans-serif;
+        font-family: HelveticaBold, sans-serif;
         font-size: 48px;
         font-style: normal;
         font-weight: 400;
         line-height: 120%; /* 57.6px */
       }
-      .types{
+
+      .types {
         display: flex;
         flex-direction: column;
         gap: 5px;
-        .type{
+
+        .type {
           background: #FFF;
           display: flex;
           flex-direction: column;
           gap: 12px;
           padding: 12px 0 15px;
-          font-family: Helvetica,sans-serif;
+          font-family: Helvetica, sans-serif;
 
-          .visible-element{
+          .visible-element {
             display: flex;
             cursor: pointer;
             padding: 0 16px;
             align-items: center;
             justify-content: space-between;
-            .tittle{
+
+            .tittle {
               color: #575757;
               leading-trim: both;
               text-edge: cap;
-              font-family: Helvetica,sans-serif;
+              font-family: Helvetica, sans-serif;
               font-size: 24px;
               font-style: normal;
               font-weight: 400;
               line-height: normal;
             }
           }
-          .hiden-text{
+
+          .hiden-text {
             opacity: 0;
             transition: opacity 5.3s ease-in-out;
             display: none;
@@ -371,22 +422,26 @@
             line-height: normal;
           }
         }
-        .type.active{
+
+        .type.active {
           border-bottom: 2px solid #191C38;
-          .visible-element{
-            svg{
+
+          .visible-element {
+            svg {
               rotate: 180deg;
             }
-            .tittle{
+
+            .tittle {
               color: #191C38;
-              font-family: HelveticaBold,sans-serif;
+              font-family: HelveticaBold, sans-serif;
               font-size: 24px;
               font-style: normal;
               font-weight: 400;
               line-height: normal;
             }
           }
-          .hiden-text{
+
+          .hiden-text {
             opacity: 1;
             display: flex;
           }
@@ -394,38 +449,44 @@
       }
     }
   }
-  .consulting{
-   padding: 64px;
+
+  .consulting {
+    padding: 64px;
     display: flex;
     flex-direction: column;
     gap: 30px;
-    .tittle{
+
+    .tittle {
       display: flex;
       flex-direction: column;
       gap: 16px;
-     div:first-child{
-       color: #191C38;
-       font-family: HelveticaBold,sans-serif;
-       font-size: 48px;
-       font-style: normal;
-       font-weight: 400;
-       line-height: normal;
-     }
-      div:last-child{
+
+      div:first-child {
+        color: #191C38;
+        font-family: HelveticaBold, sans-serif;
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      div:last-child {
         color: #575757;
-        font-family: Helvetica,sans-serif;
+        font-family: Helvetica, sans-serif;
         font-size: 24px;
         font-style: normal;
         font-weight: 400;
         line-height: normal;
       }
     }
-    .content{
+
+    .content {
       flex: 1;
       display: flex;
       gap: 40px;
       width: 100%;
-      .image{
+
+      .image {
         width: 40%;
         display: flex;
         padding: 36px;
@@ -433,12 +494,14 @@
         align-items: flex-start;
         gap: 10px;
         background: #FFF;
-        img{
+
+        img {
           width: 100%;
           height: 100%;
         }
       }
-      .consulting-content{
+
+      .consulting-content {
         flex: 1;
         display: flex;
 
@@ -448,7 +511,8 @@
         gap: 8px;
         width: 100%;
         flex-shrink: 0;
-        .consult{
+
+        .consult {
           padding: 16px;
 
           width: 100%;
@@ -459,7 +523,7 @@
           justify-content: space-between;
           color: #575757;
 
-          font-family: Helvetica,sans-serif;
+          font-family: Helvetica, sans-serif;
           font-size: 24px;
           font-style: normal;
           font-weight: 400;
@@ -468,42 +532,48 @@
       }
     }
   }
-  .our-team{
+
+  .our-team {
     display: flex;
     gap: 32px;
     flex-direction: column;
     padding: 64px;
-    .tittle{
+
+    .tittle {
       color: #191C38;
-      font-family: HelveticaBold,sans-serif;
+      font-family: HelveticaBold, sans-serif;
       font-size: 48px;
       font-style: normal;
       font-weight: 400;
       line-height: 120%; /* 57.6px */
     }
-    .team{
+
+    .team {
       width: 100%;
       flex-wrap: wrap;
       gap: 20px;
       display: flex;
       justify-content: space-between;
-      .member{
+
+      .member {
         background: #FFF;
         width: 23%;
 
-        .image{
+        .image {
           height: 400px;
           background-image: url("../assets/memberBackground.png");
           background-repeat: no-repeat;
           background-size: cover;
-          img{
+
+          img {
             width: 100%;
             height: 100%;
             object-fit: cover;
             object-position: top;
           }
         }
-        .information{
+
+        .information {
           background: #FFF;
           display: flex;
           padding: 24px;
@@ -511,38 +581,43 @@
           justify-content: center;
           align-items: flex-start;
           gap: 36px;
-          .general-info{
-            .name{
+
+          .general-info {
+            .name {
               color: #191C38;
               leading-trim: both;
               text-edge: cap;
-              font-family: HelveticaBold,sans-serif;
+              font-family: HelveticaBold, sans-serif;
               font-size: 24px;
               font-style: normal;
               font-weight: 400;
               line-height: normal;
             }
-            .position{
+
+            .position {
               color: #939393;
-              font-family: Helvetica,sans-serif;
+              font-family: Helvetica, sans-serif;
               font-size: 16px;
               font-style: normal;
               font-weight: 400;
               line-height: normal;
             }
           }
-          .social{
+
+          .social {
             display: flex;
             gap: 16px;
           }
         }
       }
     }
-    .show-more{
+
+    .show-more {
       width: 100%;
       display: flex;
       justify-content: center;
-      .button{
+
+      .button {
         cursor: pointer;
         display: flex;
         width: 311px;
@@ -554,7 +629,7 @@
         color: #FFF;
         leading-trim: both;
         text-edge: cap;
-        font-family: Helvetica,sans-serif;
+        font-family: Helvetica, sans-serif;
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
@@ -563,83 +638,95 @@
 
     }
   }
-  .contact-form{
+
+  .contact-form {
     display: flex;
     padding: 0px 125px 0px 125px;
     justify-content: space-between;
     gap: 142px;
     align-items: flex-end;
-    .image{
+
+    .image {
 
       width: 665px;
       height: 100%;
       display: flex;
       align-items: flex-end;
       padding-top: 64px;
-      img{
+
+      img {
         width: 100%;
         object-fit: fill;
         height: 100%;
 
       }
     }
-    .contact-form-form{
+
+    .contact-form-form {
       display: flex;
       width: 50%;
       padding: 64px;
       gap: 48px;
       flex-direction: column;
-      .tittle{
+
+      .tittle {
         display: flex;
         flex-direction: column;
         gap: 32px;
-        div:first-child{
+
+        div:first-child {
           color: #191C38;
 
-          font-family: HelveticaBold,sans-serif;
+          font-family: HelveticaBold, sans-serif;
           font-size: 24px;
           font-style: normal;
           font-weight: 400;
           line-height: 120%; /* 28.8px */
         }
-        div:last-child{
+
+        div:last-child {
           color: #575757;
-          font-family: Helvetica,sans-serif;
+          font-family: Helvetica, sans-serif;
           font-size: 16px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
         }
       }
-      .form{
+
+      .form {
         width: 100%;
         display: flex;
         flex-direction: column;
         gap: 16px;
-        .form-input{
+
+        .form-input {
           border: 1px solid #CACACA;
           display: flex;
           padding: 16px;
           justify-content: space-between;
-          input{
+
+          input {
             background: #F1F1F1;
             border: none;
             width: 95%;
             color: #8F8F8F;
             leading-trim: both;
             text-edge: cap;
-            font-family: Helvetica,sans-serif;
+            font-family: Helvetica, sans-serif;
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
             line-height: normal;
             letter-spacing: 0.64px;
-            &:focus{
+
+            &:focus {
               outline: none;
             }
           }
         }
-        .form-button{
+
+        .form-button {
 
           display: flex;
           padding: 16px;
@@ -649,16 +736,17 @@
           background: #191C38;
           border: 1px solid #191C38;
           color: #FFF;
-          font-family: Helvetica,sans-serif;
+          font-family: Helvetica, sans-serif;
           font-size: 16px;
           font-style: normal;
           font-weight: 400;
           line-height: normal;
         }
-        .form-text{
+
+        .form-text {
           width: 100%;
           color: #9E9E9E;
-          font-family: Helvetica,sans-serif;
+          font-family: Helvetica, sans-serif;
           font-size: 16px;
           font-style: normal;
           font-weight: 400;
@@ -668,3 +756,318 @@
     }
   }
 }
+
+@media (max-width: 600px) {
+  .home-page {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+
+    .home-banner {
+      display: none;
+
+      &.phone {
+        display: flex;
+        height: auto;
+
+        .content {
+          padding: 16px;
+          width: 100%;
+          display: flex;
+          flex-direction: column;
+          gap: 16px;
+
+          .tittle {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            max-width: 100%;
+
+            div:first-child {
+              color: #191C38;
+              font-family: HelveticaBold, sans-serif;
+              font-size: 32px;
+              font-style: normal;
+              font-weight: 400;
+              line-height: 120%; /* 38.4px */
+            }
+
+            div:last-child {
+              color: #616161;
+              font-family: Helvetica, sans-serif;
+              font-size: 18px;
+              font-style: normal;
+              font-weight: 400;
+              padding: 0;
+              line-height: normal;
+            }
+          }
+
+          .advantages {
+            .advantages-wrapper {
+              display: flex;
+              padding: 0;
+              max-width: 100%;
+              gap: 8px;
+
+              .advantage {
+                padding: 8px 12px 8px 8px;
+                color: #FFF;
+                font-family: HelveticaBold, sans-serif, sans-serif;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 19.2px; /* 137.143% */
+              }
+
+              .learn-more {
+                display: flex;
+                min-width: 65%;
+                padding: 8px;
+                justify-content: space-between;
+                align-items: center;
+                flex-shrink: 0;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .collections {
+      padding: 16px;
+
+      .tittle {
+        div:first-child {
+          font-size: 18px !important;
+        }
+
+        div:last-child {
+          max-width: 100% !important;
+          font-size: 14px !important;
+        }
+      }
+
+      .content {
+        .collection {
+          gap: 8px;
+          flex-direction: column;
+          height: auto;
+
+          .image {
+            width: 100% !important;
+          }
+
+          .content {
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+
+            .collection-info {
+              width: 100%;
+              gap: 16px;
+              max-width: 100%;
+
+              .tittle {
+                font-size: 24px;
+                line-height: 25px;
+              }
+
+              .properties {
+                gap: 16px;
+              }
+
+              .button {
+                font-size: 14px;
+
+              }
+            }
+          }
+        }
+
+      }
+    }
+
+    .partners {
+      flex-wrap: wrap;
+      padding: 16px;
+      gap: 20px;
+      justify-content: flex-start;
+    }
+
+    .why-dubai {
+      padding: 16px;
+
+      height: auto;
+      display: grid;
+      grid-template-columns: repeat(2, 50%);
+      grid-template-rows: repeat(4, 1fr);
+      grid-column-gap: 8px;
+      grid-row-gap: 8px;
+
+      .div1 {
+        grid-area: 3 / 2 / 5 / 3;
+      }
+
+      .light {
+        .tittle {
+          font-size: 16px;
+        }
+
+        .description {
+          font-size: 16px;
+        }
+      }
+
+      .dark {
+        font-size: 24px;
+      }
+
+      .orange {
+        .tittle {
+          font-size: 16px;
+        }
+
+        .description {
+          font-size: 16px;
+        }
+      }
+    }
+
+    .kind-of-projects {
+      flex-direction: column;
+      padding: 16px;
+      height: auto;
+
+      .image {
+        width: 100%;
+      }
+
+      .content {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        .tittle {
+          font-size: 24px;
+        }
+
+        .types {
+          .type {
+            &.active {
+              .visible-element {
+                .tittle {
+                  font-size: 16px;
+                }
+              }
+            }
+
+            .visible-element {
+              .tittle {
+                font-size: 14px;
+              }
+            }
+
+            .hiden-text {
+              font-size: 14px;
+            }
+          }
+        }
+      }
+    }
+
+    .consulting {
+      padding: 16px;
+      gap: 24px;
+
+      .tittle {
+        padding: 16px;
+
+        div:first-child {
+          font-size: 24px;
+        }
+
+        div:last-child {
+          font-size: 14px;
+        }
+      }
+
+      .content {
+        gap: 8px;
+
+        .image {
+          padding: 16px;
+          width: 100%;
+
+          img {
+            width: 100%;
+          }
+        }
+
+        .consulting-content {
+          .consult {
+            gap: 24px;
+            font-size: 16px;
+          }
+        }
+
+        flex-direction: column;
+      }
+    }
+
+    .our-team {
+      padding: 16px;
+
+      .tittle {
+        font-size: 24px;
+      }
+
+      .team {
+        gap: 8px;
+
+        .member {
+          width: 48%;
+
+          .image {
+            height: 200px;
+          }
+
+          .information {
+            gap: 16px;
+            padding: 16px;
+
+            .general-info {
+              .name {
+                font-size: 16px;
+              }
+
+              .position {
+                font-size: 14px;
+              }
+            ;
+            }
+          }
+        }
+      }
+
+      .show-more {
+        .button {
+          width: 100%;
+          font-size: 14px;
+        }
+      }
+    }
+    .contact-form{
+      padding: 16px;
+      width: 100%;
+      .image{
+        display: none;
+      }
+      .contact-form-form{
+        width: 100%;
+        padding: 0;
+      }
+    }
+  }
+}
+

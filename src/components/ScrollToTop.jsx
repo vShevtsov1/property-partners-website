@@ -11,6 +11,5 @@ export default function ScrollToTop() {
             smooth: "easeInOutQuint",
         });
     }, [pathname]);
-
     return null;
 }

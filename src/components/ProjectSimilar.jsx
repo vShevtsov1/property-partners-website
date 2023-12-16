@@ -1,8 +1,9 @@
 
 import "../styles/projectSimilar.css"
+import MaxLengthText from "./MaxLengthText.jsx";
 const ProjectSimilar = ({project}) => {
 
-    return(<div style={{cursor:"pointer"}} onClick={() => window.open(`/project/${project._id}`)}
+    return(<div style={{cursor:"pointer"}} onClick={() => window.location.href = `/project/${project._id}`}
 
                 className={"project-similar"}>
             <div className="image-container">
@@ -25,7 +26,7 @@ const ProjectSimilar = ({project}) => {
                         </clipPath>
                     </defs>
                 </svg>
-                    Al Jaddaf
+                    <MaxLengthText text={project.selectedLocation||project.ownLocation} maxLength={15}/>
                 </div>
             <div className="price">$ 397 800</div>
         </div>
