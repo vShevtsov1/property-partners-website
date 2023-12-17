@@ -29,6 +29,9 @@ import kristinaSokolovskayaName from "../assets/teams/kristina-sokolovskaya-min.
 import pavelDyninName from "../assets/teams/pavel-dynin-min.jpg";
 import tkachenkoNataliiaName from "../assets/teams/tkachenko-nataliia-min.jpg";
 import tykhovaTatianaName from "../assets/teams/tykhova-tatiana-min.jpg";
+import {Link as ScrollLink} from 'react-scroll';
+import {Link} from "react-router-dom";
+
 
 const Home = () => {
     const [activeKind, setActiveKind] = useState(0);
@@ -165,7 +168,15 @@ const Home = () => {
                             </svg>
                             Assistance in processing transactions
                         </div>
+                        <ScrollLink
+                            to="collections"
+                            spy={true}
+                            smooth={true}
+                            offset={-20}
+                            duration={1000}
+                        >
                         <div className="learn-more">
+
                             Learn more
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none">
@@ -174,6 +185,7 @@ const Home = () => {
                                     fill="#191C38"/>
                             </svg>
                         </div>
+                        </ScrollLink>
                     </div>
 
                 </div>
@@ -293,6 +305,7 @@ const Home = () => {
                                     from $190,000
                                 </div>
                             </div>
+                                <Link to={"real-estate"}>
                             <div className="button">
                                 Get the selection
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -302,6 +315,7 @@ const Home = () => {
                                         fill="black"/>
                                 </svg>
                             </div>
+                                </Link>
                             </div>
                         </div>
                     </div>
@@ -339,15 +353,17 @@ const Home = () => {
                                         from $170,000
                                     </div>
                                 </div>
-                                <div className="button">
-                                    Get the selection
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                         fill="none">
-                                        <path
-                                            d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
-                                            fill="black"/>
-                                    </svg>
-                                </div>
+                                <Link to={"real-estate"}>
+                                    <div className="button">
+                                        Get the selection
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                             fill="none">
+                                            <path
+                                                d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
+                                                fill="black"/>
+                                        </svg>
+                                    </div>
+                                </Link>
                             </div>
 
                         </div>
@@ -387,15 +403,17 @@ const Home = () => {
                                         from $2,100,000
                                     </div>
                                 </div>
-                                <div className="button">
-                                    Get the selection
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                         fill="none">
-                                        <path
-                                            d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
-                                            fill="black"/>
-                                    </svg>
-                                </div>
+                                <Link to={"real-estate"}>
+                                    <div className="button">
+                                        Get the selection
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                             fill="none">
+                                            <path
+                                                d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
+                                                fill="black"/>
+                                        </svg>
+                                    </div>
+                                </Link>
                             </div>
 
                         </div>
@@ -435,15 +453,17 @@ const Home = () => {
                                     from $150,000
                                 </div>
                             </div>
-                            <div className="button">
-                                Get the selection
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                     fill="none">
-                                    <path
-                                        d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
-                                        fill="black"/>
-                                </svg>
-                            </div>
+                                <Link to={"real-estate"}>
+                                    <div className="button">
+                                        Get the selection
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                             fill="none">
+                                            <path
+                                                d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
+                                                fill="black"/>
+                                        </svg>
+                                    </div>
+                                </Link>
                             </div>
                         </div>
                     </div>

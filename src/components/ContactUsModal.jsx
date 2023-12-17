@@ -22,7 +22,7 @@ const ContactUsModal = () => {
     };
     const modalStyles = {
         content: {
-            width:isMobile()?"95vw":"40vw",
+            width:isMobile()?"95vw":"50vw",
             height: '65vh',
             margin: 'auto',
             overflow:"hidden",
