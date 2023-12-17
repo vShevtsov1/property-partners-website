@@ -646,7 +646,7 @@
   .home-page {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 24px;
   }
   .home-page .home-banner {
     display: none;
@@ -654,6 +654,7 @@
   .home-page .home-banner.phone {
     display: flex;
     height: auto;
+    margin-top: -60px;
   }
   .home-page .home-banner.phone .content {
     padding: 16px;
@@ -722,9 +723,13 @@
     gap: 8px;
     flex-direction: column;
     height: auto;
+    width: 100%;
   }
   .home-page .collections .content .collection .image {
     width: 100% !important;
+    height: auto;
+    min-height: 0;
+    max-height: none;
   }
   .home-page .collections .content .collection .content {
     flex-direction: column;
@@ -733,12 +738,14 @@
   }
   .home-page .collections .content .collection .content .collection-info {
     width: 100%;
+    flex-direction: column;
     gap: 16px;
     max-width: 100%;
   }
   .home-page .collections .content .collection .content .collection-info .tittle {
-    font-size: 24px;
+    font-size: 24px !important;
     line-height: 25px;
+    width: 100%;
   }
   .home-page .collections .content .collection .content .collection-info .properties {
     gap: 16px;
@@ -747,10 +754,7 @@
     font-size: 14px;
   }
   .home-page .partners {
-    flex-wrap: wrap;
-    padding: 16px;
-    gap: 20px;
-    justify-content: flex-start;
+    display: none;
   }
   .home-page .why-dubai {
     padding: 16px;
@@ -806,10 +810,12 @@
   }
   .home-page .consulting {
     padding: 16px;
-    gap: 24px;
+    gap: 10px;
+    margin-top: -20px;
   }
   .home-page .consulting .tittle {
     padding: 16px;
+    gap: 5px;
   }
   .home-page .consulting .tittle div:first-child {
     font-size: 24px;

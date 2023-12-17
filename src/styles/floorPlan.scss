@@ -55,3 +55,24 @@
     }
   }
 }
+@media (max-width: 600px) {
+  .floor-plan{
+    .plan-info{
+      padding: 5px;
+      .price-info{
+        div:first-child{
+          font-size: 16px;
+
+        }
+        div:last-child{
+          font-size: 14px;
+
+        }
+      }
+      .type-info{
+        font-size: 14px;
+
+      }
+    }
+  }
+}

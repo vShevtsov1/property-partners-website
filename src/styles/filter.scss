@@ -51,3 +51,19 @@
     line-height: 22px; /* 137.5% */
   }
 }
+@media (max-width: 600px) {
+  .filter{
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+
+    padding: 8px 16px;
+
+    .search{
+      flex: 50%;
+    }
+    .dropdown{
+      flex: 1;
+    }
+  }
+}

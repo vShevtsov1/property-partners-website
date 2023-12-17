@@ -761,7 +761,7 @@
   .home-page {
     display: flex;
     flex-direction: column;
-    gap: 64px;
+    gap: 24px;
 
     .home-banner {
       display: none;
@@ -769,7 +769,7 @@
       &.phone {
         display: flex;
         height: auto;
-
+        margin-top: -60px;
         .content {
           padding: 16px;
           width: 100%;
@@ -853,9 +853,13 @@
           gap: 8px;
           flex-direction: column;
           height: auto;
+          width: 100%;
 
           .image {
             width: 100% !important;
+            height: auto;
+            min-height: 0;
+            max-height: none;
           }
 
           .content {
@@ -865,12 +869,14 @@
 
             .collection-info {
               width: 100%;
+              flex-direction: column;
               gap: 16px;
               max-width: 100%;
 
               .tittle {
-                font-size: 24px;
+                font-size: 24px!important;
                 line-height: 25px;
+                width: 100%;
               }
 
               .properties {
@@ -889,10 +895,8 @@
     }
 
     .partners {
-      flex-wrap: wrap;
-      padding: 16px;
-      gap: 20px;
-      justify-content: flex-start;
+      display: none;
+
     }
 
     .why-dubai {
@@ -978,10 +982,11 @@
 
     .consulting {
       padding: 16px;
-      gap: 24px;
-
+      gap: 10px;
+      margin-top: -20px;
       .tittle {
         padding: 16px;
+        gap: 5px;
 
         div:first-child {
           font-size: 24px;

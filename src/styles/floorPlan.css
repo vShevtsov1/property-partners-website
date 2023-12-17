@@ -51,4 +51,19 @@
   line-height: 24px; /* 150% */
 }
 
+@media (max-width: 600px) {
+  .floor-plan .plan-info {
+    padding: 5px;
+  }
+  .floor-plan .plan-info .price-info div:first-child {
+    font-size: 16px;
+  }
+  .floor-plan .plan-info .price-info div:last-child {
+    font-size: 14px;
+  }
+  .floor-plan .plan-info .type-info {
+    font-size: 14px;
+  }
+}
+
 /*# sourceMappingURL=floorPlan.css.map */

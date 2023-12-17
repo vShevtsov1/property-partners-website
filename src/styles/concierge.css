@@ -6,6 +6,9 @@
   padding: 64px;
   display: flex;
 }
+.concierge-wrapper .concierge-banner.phone {
+  display: none;
+}
 .concierge-wrapper .concierge-banner .concierge-text {
   width: 60%;
   display: flex;
@@ -313,6 +316,7 @@
 .concierge-wrapper .contact-us .contact-us-form .form .form-input input {
   width: 95%;
   height: 100%;
+  background: none;
   border: none;
   color: #8F8F8F;
   leading-trim: both;
@@ -368,6 +372,144 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+@media (max-width: 600px) {
+  .concierge-wrapper .concierge-banner {
+    display: none;
+  }
+  .concierge-wrapper .concierge-banner.phone {
+    display: flex;
+    padding: 16px;
+    height: auto;
+  }
+  .concierge-wrapper .concierge-banner.phone .concierge-text {
+    width: 100%;
+    gap: 36px;
+  }
+  .concierge-wrapper .concierge-banner.phone .concierge-text div:first-child {
+    font-size: 32px;
+    width: 100%;
+  }
+  .concierge-wrapper .concierge-banner.phone .concierge-text div:last-child {
+    width: 100%;
+    font-size: 14px;
+  }
+  .concierge-wrapper .about-us {
+    padding: 16px;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 60% auto;
+    grid-template-rows: 10% auto;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .concierge-wrapper .about-us .content1 {
+    grid-area: 1/1/2/3;
+    font-size: 16px;
+    justify-content: center;
+    padding: 16px;
+  }
+  .concierge-wrapper .about-us .content3, .concierge-wrapper .about-us .content4 {
+    grid-area: unset;
+  }
+  .concierge-wrapper .about-us .content2 {
+    grid-area: 3/1/4/3;
+    padding: 16px;
+    font-size: 16px;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+  .concierge-wrapper .about-us .content3 {
+    order: 2;
+  }
+  .concierge-wrapper .about-us .content4 {
+    order: 1;
+  }
+  .concierge-wrapper .our-services {
+    padding: 16px;
+  }
+  .concierge-wrapper .our-services .tittle {
+    font-size: 26px;
+  }
+  .concierge-wrapper .our-services .content {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .concierge-wrapper .our-services .content .div1 {
+    grid-area: 1/1/4/2;
+    margin: 0;
+  }
+  .concierge-wrapper .our-services .content .div1 img {
+    object-fit: cover;
+  }
+  .concierge-wrapper .our-services .content .div2 {
+    grid-area: unset;
+    padding: 16px;
+    font-size: 16px;
+  }
+  .concierge-wrapper .our-services .content .div3 {
+    font-size: 14px;
+  }
+  .concierge-wrapper .our-services .services-life {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(6, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .concierge-wrapper .our-services .services-life .div1 {
+    padding: 16px;
+    font-size: 16px;
+  }
+  .concierge-wrapper .our-services .services-life .div2 {
+    margin: 0;
+    grid-area: 1/1/5/2;
+  }
+  .concierge-wrapper .our-services .services-life .life-text.last {
+    grid-area: 7/1/7/3;
+  }
+  .concierge-wrapper .our-services .services-life .life-text {
+    padding: 16px;
+    font-size: 14px;
+  }
+  .concierge-wrapper .our-services .vip-services {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: repeat(4, auto);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+  }
+  .concierge-wrapper .our-services .vip-services .div1 {
+    margin: 0;
+    grid-area: 1/1/5/2;
+  }
+  .concierge-wrapper .our-services .vip-services .div2 {
+    padding: 16px;
+    font-size: 16px;
+  }
+  .concierge-wrapper .our-services .vip-services .vip-text {
+    padding: 16px;
+    font-size: 14px;
+  }
+  .concierge-wrapper .contact-us {
+    display: unset;
+  }
+  .concierge-wrapper .contact-us .contact-us-form {
+    padding: 24px 16px;
+  }
+  .concierge-wrapper .contact-us .contact-us-form .texts div:first-child {
+    font-size: 24px;
+  }
+  .concierge-wrapper .contact-us .contact-us-form .texts div:last-child {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    font-size: 14px;
+  }
 }
 
 /*# sourceMappingURL=concierge.css.map */

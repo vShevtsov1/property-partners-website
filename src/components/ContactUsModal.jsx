@@ -13,28 +13,31 @@ const ContactUsModal = () => {
         }
 
     }, []);
-
+    function isMobile() {
+        return window.innerWidth <= 768;
+    }
     const closeModal = () => {
         setShowModal(false);
         localStorage.setItem("startModalVisible","true")
     };
     const modalStyles = {
         content: {
-            width: '100vh',
+            width:isMobile()?"95vw":"40vw",
             height: '65vh',
             margin: 'auto',
             overflow:"hidden",
             display: 'flex',
             padding:0,
             border:"none",
-            zIndex: 1000
+            zIndex: 1000,
+            inset:isMobile()?"10px":"40px"
         },
         overlay: {
             backgroundColor: 'rgba(0, 0, 0, 0.5)' ,
             zIndex: 999
         }
     };
-    return(<Modal isOpen={showModal} style={modalStyles} onRequestClose={closeModal}>
+    return(<Modal  isOpen={showModal} style={modalStyles} onRequestClose={closeModal}>
         <div className="modal-content">
             <div className="image-container">
                 <img src={ceo}/>

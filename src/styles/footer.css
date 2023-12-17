@@ -112,4 +112,32 @@ footer .information .call-us {
   line-height: 19.2px; /* 120% */
 }
 
+@media (max-width: 600px) {
+  footer {
+    padding: 16px;
+    gap: 24px;
+    flex-direction: column;
+  }
+  footer .logo-container {
+    max-width: none;
+  }
+  footer .menu-wrapper {
+    position: unset;
+    flex-wrap: wrap;
+    transform: unset;
+    justify-content: space-between;
+    gap: 30px;
+  }
+  footer .information {
+    width: 100%;
+    max-width: none;
+  }
+  footer .information .location div:first-child, footer .information .location div:last-child {
+    text-align: center;
+  }
+  footer .information .social {
+    justify-content: center;
+  }
+}
+
 /*# sourceMappingURL=footer.css.map */

@@ -14,6 +14,10 @@ header {
   display: flex;
   align-items: center;
   background: #191C38;
+  z-index: 9999999;
+}
+header .phone-view {
+  display: none;
 }
 header .additional {
   display: flex;
@@ -61,6 +65,116 @@ header .menu .menu-option {
   font-weight: 400;
   line-height: normal;
   text-transform: capitalize;
+}
+
+@media (max-width: 600px) {
+  header {
+    position: unset;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  header .logo-container {
+    display: none;
+  }
+  header .additional {
+    display: none;
+  }
+  header .menu {
+    display: none;
+  }
+  header .phone-view {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  header .phone-view .visible-items {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+  }
+  header .phone-view .visible-items .logo-container {
+    display: flex;
+  }
+  header .phone-view .phone-menu {
+    width: 100vw;
+    z-index: 10000;
+    height: 100vh;
+    background: #FFF;
+    position: absolute;
+    top: 0;
+    padding: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    animation: slide-in-top 0.8s linear 0s 1 normal none;
+  }
+  @keyframes slide-in-top {
+    0% {
+      transform: translateX(1000px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }
+  header .phone-view .phone-menu .header {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 40px;
+  }
+  header .phone-view .phone-menu .menu-options {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    gap: 60px;
+    padding: 5px 10px;
+  }
+  header .phone-view .phone-menu .menu-options .menu-option {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #191C38;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Helvetica, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  header .phone-view .phone-menu .language {
+    display: flex;
+    gap: 40px;
+  }
+  header .phone-view .phone-menu .language .lang {
+    color: #5E5E5E;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: Helvetica, serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  header .phone-view .phone-menu .language .lang.active {
+    order: 3;
+    color: #C29773;
+    text-align: center;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+  }
 }
 
 /*# sourceMappingURL=header.css.map */

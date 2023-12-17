@@ -47,4 +47,16 @@
   overflow-x: hidden;
 }
 
+@media (max-width: 600px) {
+  .real-estate .content {
+    padding: 36px 16px;
+  }
+  .real-estate .content .map {
+    display: none;
+  }
+  .real-estate .content .projects {
+    gap: 10px;
+  }
+}
+
 /*# sourceMappingURL=realEstate.css.map */

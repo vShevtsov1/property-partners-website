@@ -104,4 +104,14 @@
   line-height: normal;
 }
 
+@media (max-width: 600px) {
+  .modal-content .image-container {
+    display: none;
+  }
+  .ReactModal__Content .ReactModal__Content--after-open {
+    width: auto;
+    background: red;
+  }
+}
+
 /*# sourceMappingURL=contactUsModal.css.map */

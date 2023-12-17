@@ -80,4 +80,32 @@
   white-space: nowrap;
 }
 
+@media (max-width: 600px) {
+  .project {
+    width: 48%;
+  }
+  .project .image-container .information .name {
+    font-size: 14px;
+  }
+  .project .image-container .information .bedrooms {
+    font-size: 14px;
+  }
+  .project .project-info .project-information {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .project .project-info .project-information .price {
+    order: 1;
+    font-size: 16px;
+  }
+  .project .project-info .project-information .location {
+    order: 2;
+    font-size: 14px;
+  }
+  .project .project-info .project-information .location svg {
+    width: 16px;
+    height: 16px;
+  }
+}
+
 /*# sourceMappingURL=project.css.map */

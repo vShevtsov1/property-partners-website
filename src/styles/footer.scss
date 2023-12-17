@@ -115,3 +115,33 @@ footer{
   }
 
 }
+@media (max-width: 600px) {
+  footer{
+    padding: 16px;
+    gap: 24px;
+    flex-direction: column;
+    .logo-container{
+      max-width: none;
+    }
+    .menu-wrapper{
+      position: unset;
+      flex-wrap: wrap;
+      transform: unset;
+      justify-content: space-between;
+      gap: 30px;
+    }
+    .information{
+      width: 100%;
+      max-width: none;
+      .location{
+        div:first-child,div:last-child{
+          text-align: center;
+        }
+
+      }
+      .social{
+        justify-content: center;
+      }
+    }
+  }
+}

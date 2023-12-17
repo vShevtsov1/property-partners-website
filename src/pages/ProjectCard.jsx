@@ -7,13 +7,14 @@ import {Swiper, SwiperSlide} from 'swiper/react';
 import 'swiper/css';
 import FloorPlan from "../components/FloorPlan.jsx";
 import {AdvancedMarker, APIProvider, Map} from "@vis.gl/react-google-maps";
-import {Navigation, Pagination} from "swiper/modules";
 import ProjectSimilar from "../components/ProjectSimilar.jsx";
 import Footer from "../components/Footer.jsx";
 import {Link, useParams} from "react-router-dom";
 import axios from "axios";
 import Modal from 'react-modal';
-
+import 'swiper/css';
+import 'swiper/css/pagination';
+import {Autoplay, Navigation, Pagination} from 'swiper/modules';
 
 const ProjectCard = () => {
     const {id} = useParams();
@@ -93,7 +94,9 @@ const ProjectCard = () => {
 
         formattedTotalSum = formatNumberWithCommas(totalSum.toString());
     }
-
+    function isMobile() {
+        return window.innerWidth <= 768;
+    }
     if (project === null || randomProjects === null) {
         return null;
     }
@@ -138,6 +141,23 @@ const ProjectCard = () => {
                 <div className={"images"}><img src={project.architectureGallery[2]}/></div>
 
 
+            </div>
+            <div className="images-container-phone">
+                <Swiper
+                    slidesPerView={1} style={{zIndex: -999}}
+                    autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                    }}
+                    loop
+                    modules={[Autoplay, Pagination, Navigation]}
+                    >
+                    <SwiperSlide><img src={project.imageSrcMain}/></SwiperSlide>
+                    <SwiperSlide><img src={project.interiorGallery[1]}/></SwiperSlide>
+                    <SwiperSlide><img src={project.interiorGallery[2]}/></SwiperSlide>
+                    <SwiperSlide><img src={project.architectureGallery[1]}/></SwiperSlide>
+                    <SwiperSlide><img src={project.architectureGallery[2]}/></SwiperSlide>
+                </Swiper>
             </div>
             <div className="project-information">
                 <div className="general-information">
@@ -400,9 +420,8 @@ const ProjectCard = () => {
                 </div>
                 <div className="floor-content">
                     <Swiper
-                        spaceBetween={50}
-                        slidesPerView={4} style={{zIndex: -999}}
-
+                        spaceBetween={10}
+                        slidesPerView={isMobile()?2:4} style={{zIndex: -999}}
                         modules={[Pagination, Navigation]}
                         onInit={(swiper) => {
                             swiper.params.navigation.prevEl = navigationPrevRef.current;
@@ -470,8 +489,8 @@ const ProjectCard = () => {
                 </div>
                 <div className="floor-content">
                     <Swiper
-                        spaceBetween={50}
-                        slidesPerView={4}
+                        spaceBetween={10}
+                        slidesPerView={isMobile()?2:4}
                         style={{height: "100%", zIndex: -999}}
                         modules={[Pagination, Navigation]}
                         onInit={(swiper) => {

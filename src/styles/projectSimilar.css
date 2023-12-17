@@ -81,4 +81,35 @@
   line-height: 24px; /* 150% */
 }
 
+@media (max-width: 600px) {
+  .project-similar .image-container {
+    height: 150px;
+  }
+  .project-similar .image-container .project-info {
+    gap: 2px;
+  }
+  .project-similar .image-container .project-info div:first-child,
+  .project-similar .image-container .project-info div:last-child {
+    font-size: 14px;
+    line-height: unset;
+  }
+  .project-similar .image-container::before {
+    height: 150px;
+  }
+  .project-similar .description {
+    padding: 5px;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .project-similar .description .location {
+    font-size: 14px;
+  }
+  .project-similar .description .location svg {
+    width: 16px;
+  }
+  .project-similar .description .price {
+    font-size: 16px;
+  }
+}
+
 /*# sourceMappingURL=projectSimilar.css.map */

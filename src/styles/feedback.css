@@ -49,4 +49,17 @@
   letter-spacing: 0.64px;
 }
 
+@media (max-width: 600px) {
+  .feedback {
+    padding: 16px;
+  }
+  .feedback .feedback-form {
+    flex-wrap: wrap;
+    gap: 1px;
+  }
+  .feedback .feedback-form .form-input {
+    flex: 50%;
+  }
+}
+
 /*# sourceMappingURL=feedback.css.map */

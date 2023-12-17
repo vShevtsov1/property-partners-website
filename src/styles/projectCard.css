@@ -34,6 +34,9 @@
   gap: 16px;
   background: #191C38;
 }
+.project-card .content .images-container-phone {
+  display: none;
+}
 .project-card .content .images-container {
   height: 70vh;
   width: 100%;
@@ -538,6 +541,141 @@
   height: 100%;
   width: 100%;
   padding: 0;
+}
+
+@media (max-width: 600px) {
+  .project-card .content {
+    padding: 16px;
+    gap: 15px;
+  }
+  .project-card .content .images-container {
+    display: none;
+  }
+  .project-card .content .images-container-phone {
+    display: unset;
+  }
+  .project-card .content .images-container-phone img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  .project-card .content .project-information {
+    padding: 0;
+    height: unset;
+    margin: unset;
+  }
+  .project-card .content .project-information .general-information {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .project-card .content .project-information .general-information .name-block {
+    width: 100%;
+  }
+  .project-card .content .project-information .general-information .name-block div:first-child {
+    font-size: 22px;
+  }
+  .project-card .content .project-information .general-information .name-block div:last-child {
+    font-size: 16px;
+  }
+  .project-card .content .project-information .general-information .price-block {
+    align-items: unset;
+    gap: 5px;
+  }
+  .project-card .content .project-information .general-information .price-block div:first-child {
+    font-size: 24px;
+  }
+  .project-card .content .project-information .general-information .price-block div:last-child {
+    font-size: 14px;
+  }
+  .project-card .content .project-information .additional-information {
+    flex-wrap: wrap;
+  }
+  .project-card .content .manager-plan-wrapper {
+    flex-direction: column;
+    height: unset;
+    gap: 15px;
+  }
+  .project-card .content .manager-plan-wrapper .manager-view {
+    width: 100%;
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+  }
+  .project-card .content .manager-plan-wrapper .manager-view .image-container {
+    width: 100%;
+    max-height: 300px;
+    height: 300px;
+  }
+  .project-card .content .manager-plan-wrapper .manager-view .broker-info {
+    padding: unset;
+  }
+  .project-card .content .manager-plan-wrapper .manager-view .broker-info .general-info {
+    gap: 4px;
+    margin-bottom: 5px;
+  }
+  .project-card .content .manager-plan-wrapper .manager-view .broker-info .additional-info {
+    margin-bottom: 5px;
+  }
+  .project-card .content .manager-plan-wrapper .manager-view .broker-info .buttons-container {
+    flex-direction: row;
+  }
+  .project-card .content .manager-plan-wrapper .manager-view .broker-info .buttons-container .button {
+    flex: 1;
+    flex-wrap: nowrap;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-header {
+    align-items: center;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-header div:first-child {
+    font-size: 22px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-header div:last-child {
+    font-size: 14px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-type > div {
+    font-size: 16px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-type > div.active {
+    font-size: 16px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-content .column .header {
+    font-size: 14px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-content .column .values .value {
+    font-size: 16px;
+  }
+  .project-card .content .floor-plans .header {
+    font-size: 22px;
+  }
+  .project-card .content .floor-plans .navigations {
+    align-items: center;
+  }
+  .project-card .content .floor-plans .navigations .floor-types > .floor-type {
+    font-size: 16px;
+    padding: 16px;
+  }
+  .project-card .content .floor-plans .navigations .arrows > .left-arrow,
+  .project-card .content .floor-plans .navigations .arrows > .right-arrow {
+    width: 36px;
+    height: 36px;
+  }
+  .project-card .content .location .header {
+    font-size: 22px;
+  }
+  .project-card .content .simillar {
+    height: unset;
+  }
+  .project-card .content .simillar .header {
+    align-items: center;
+  }
+  .project-card .content .simillar .header .tittle {
+    font-size: 22px;
+  }
+  .project-card .content .simillar .header .arrows > .left-arrow,
+  .project-card .content .simillar .header .arrows > .right-arrow {
+    width: 36px;
+    height: 36px;
+  }
 }
 
 /*# sourceMappingURL=projectCard.css.map */

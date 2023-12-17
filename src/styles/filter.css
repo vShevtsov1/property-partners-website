@@ -51,4 +51,19 @@
   line-height: 22px; /* 137.5% */
 }
 
+@media (max-width: 600px) {
+  .filter {
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 5px;
+    padding: 8px 16px;
+  }
+  .filter .search {
+    flex: 50%;
+  }
+  .filter .dropdown {
+    flex: 1;
+  }
+}
+
 /*# sourceMappingURL=filter.css.map */

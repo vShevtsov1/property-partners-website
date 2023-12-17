@@ -5,6 +5,9 @@
     height: 70vh;
     padding: 64px;
     display: flex;
+    &.phone{
+      display: none;
+    }
 
     .concierge-text {
       width: 60%;
@@ -344,6 +347,7 @@
           input{
             width: 95%;
             height: 100%;
+            background: none;
             border: none;
             color: #8F8F8F;
             leading-trim: both;
@@ -400,6 +404,152 @@
           font-style: normal;
           font-weight: 400;
           line-height: normal;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .concierge-wrapper{
+    .concierge-banner{
+      display: none;
+      &.phone{
+        display: flex;
+        padding: 16px;
+        height: auto;
+        .concierge-text{
+          width: 100%;
+          gap: 36px;
+          div:first-child{
+            font-size: 32px;
+            width: 100%;
+          }
+          div:last-child{
+            width: 100%;
+            font-size: 14px;
+
+          }
+        }
+      }
+    }
+    .about-us{
+      padding: 16px;
+      height: 100%;
+      display: grid;
+      grid-template-columns: 60% auto;
+      grid-template-rows: 10%  auto;
+      grid-column-gap: 0px;
+      grid-row-gap: 0px;
+      .content1{
+        grid-area: 1 / 1 / 2 / 3;
+        font-size: 16px;
+        justify-content: center;
+        padding: 16px;
+      }
+      .content3,.content4{
+        grid-area: unset;
+      }
+      .content2{
+        grid-area: 3 / 1 / 4 / 3;
+        padding: 16px;
+        font-size: 16px;
+        justify-content: flex-start;
+        align-items: flex-start;
+      }
+      .content3{
+        order: 2;
+      }
+      .content4{
+        order: 1;
+      }
+    }
+    .our-services{
+      padding: 16px;
+
+      .tittle{
+        font-size: 26px;
+      }
+      .content{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(6, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        .div1 { grid-area: 1 / 1 / 4 / 2;
+        margin: 0;
+          img{
+            object-fit: cover;
+          }
+        }
+        .div2{
+          grid-area: unset;
+          padding: 16px;
+          font-size: 16px;
+
+        }
+        .div3{
+          font-size: 14px;
+
+        }
+      }
+      .services-life{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(6, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        .div1{
+          padding: 16px;
+          font-size: 16px;
+
+        }
+        .div2{
+          margin: 0;
+          grid-area: 1 / 1 / 5 / 2;
+        }
+        .life-text.last{
+          grid-area: 7 / 1 / 7 / 3;
+        }
+        .life-text{
+          padding: 16px;
+          font-size: 14px;
+        }
+      }
+      .vip-services{
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+        grid-template-rows: repeat(4, auto);
+        grid-column-gap: 0px;
+        grid-row-gap: 0px;
+        .div1{
+          margin: 0;
+          grid-area: 1 / 1 / 5 / 2;
+        }
+        .div2{
+          padding: 16px;
+          font-size: 16px;
+        }
+        .vip-text{
+          padding: 16px;
+          font-size: 14px;
+        }
+      }
+    }
+    .contact-us{
+      display: unset;
+      .contact-us-form{
+        padding: 24px 16px;
+        .texts{
+          div:first-child{
+            font-size: 24px;
+          }
+          div:last-child{
+            display: flex;
+            flex-wrap: wrap;
+            text-align: center;
+            font-size: 14px;
+
+          }
         }
       }
     }

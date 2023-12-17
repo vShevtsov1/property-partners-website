@@ -49,3 +49,16 @@
     }
   }
 }
+@media (max-width: 600px) {
+  .real-estate{
+    .content{
+      padding: 36px 16px;
+      .map{
+        display: none;
+      }
+      .projects{
+        gap: 10px;
+      }
+    }
+  }
+}

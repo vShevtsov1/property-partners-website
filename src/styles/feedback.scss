@@ -49,3 +49,16 @@
     }
   }
 }
+@media (max-width: 600px) {
+
+  .feedback{
+    padding: 16px;
+    .feedback-form{
+      flex-wrap: wrap;
+      gap: 1px;
+      .form-input{
+        flex: 50%;
+      }
+    }
+  }
+}
