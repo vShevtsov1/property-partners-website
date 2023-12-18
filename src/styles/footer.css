@@ -5,6 +5,9 @@ footer {
   position: relative;
   background: #191C38;
 }
+footer .phone-view {
+  display: none;
+}
 footer .logo-container {
   display: flex;
   max-width: 17%;

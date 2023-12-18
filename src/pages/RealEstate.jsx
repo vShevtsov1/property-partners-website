@@ -22,7 +22,7 @@ const RealEstate = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: 'https://propartners-6654aad70e01.herokuapp.com/api/projects/get-all',
+            url: 'http://157.175.196.127:8080/api/projects/get-all',
             headers: { }
         };
 

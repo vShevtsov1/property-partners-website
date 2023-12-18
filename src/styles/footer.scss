@@ -4,6 +4,9 @@ footer{
   justify-content: space-between;
   position: relative;
   background: #191C38;
+  .phone-view{
+    display: none;
+  }
   .logo-container{
     display: flex;
     max-width: 17%;
