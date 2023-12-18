@@ -49,7 +49,7 @@ const ProjectCard = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: 'https://propartners-6654aad70e01.herokuapp.com/api/projects/random',
+            url: '/api/projects/random',
             headers: {}
         };
 
