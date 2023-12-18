@@ -716,6 +716,7 @@
   }
   .home-page .collections {
     padding: 16px;
+    gap: 20px;
   }
   .home-page .collections .tittle div:first-child {
     font-size: 18px !important;
@@ -765,7 +766,7 @@
     padding: 16px;
     height: auto;
     display: grid;
-    grid-template-columns: repeat(2, 50%);
+    grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(4, 1fr);
     grid-column-gap: 8px;
     grid-row-gap: 8px;
@@ -792,6 +793,7 @@
     flex-direction: column;
     padding: 16px;
     height: auto;
+    margin: 0;
   }
   .home-page .kind-of-projects .image {
     width: 100%;
@@ -875,13 +877,24 @@
   .home-page .contact-form {
     padding: 16px;
     width: 100%;
+    margin-bottom: -24px;
   }
   .home-page .contact-form .image {
     display: none;
   }
   .home-page .contact-form .contact-form-form {
+    gap: 15px;
     width: 100%;
     padding: 0;
+  }
+  .home-page .contact-form .contact-form-form .tittle {
+    gap: 10px;
+  }
+  .home-page .contact-form .contact-form-form .tittle div:first-child {
+    font-size: 18px;
+  }
+  .home-page .contact-form .contact-form-form .form .form-input input {
+    background: none;
   }
 }
 

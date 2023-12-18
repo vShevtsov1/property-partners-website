@@ -423,13 +423,18 @@
         height: auto;
         .concierge-text{
           width: 100%;
-          gap: 36px;
+          gap: 15px;
           div:first-child{
             font-size: 32px;
             width: 100%;
           }
+          .concierge-image{
+            order: 3;
+          }
           div:last-child{
             width: 100%;
+            padding: 16px;
+            order: 2;
             font-size: 14px;
 
           }
@@ -442,8 +447,8 @@
       display: grid;
       grid-template-columns: 60% auto;
       grid-template-rows: 10%  auto;
-      grid-column-gap: 0px;
-      grid-row-gap: 0px;
+      grid-column-gap: 2px;
+      grid-row-gap: 2px;
       .content1{
         grid-area: 1 / 1 / 2 / 3;
         font-size: 16px;
@@ -469,7 +474,7 @@
     }
     .our-services{
       padding: 16px;
-
+      gap: 30px;
       .tittle{
         font-size: 26px;
       }
@@ -477,8 +482,8 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(6, auto);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
         .div1 { grid-area: 1 / 1 / 4 / 2;
         margin: 0;
           img{
@@ -500,16 +505,16 @@
         display: grid;
         grid-template-columns: repeat(2, auto);
         grid-template-rows: repeat(6, auto);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
         .div1{
           padding: 16px;
           font-size: 16px;
+          grid-area: unset;
 
         }
         .div2{
           margin: 0;
-          grid-area: 1 / 1 / 5 / 2;
         }
         .life-text.last{
           grid-area: 7 / 1 / 7 / 3;
@@ -521,10 +526,10 @@
       }
       .vip-services{
         display: grid;
-        grid-template-columns: repeat(2, auto);
+        grid-template-columns: repeat(2, 50%);
         grid-template-rows: repeat(4, auto);
-        grid-column-gap: 0px;
-        grid-row-gap: 0px;
+        grid-column-gap: 2px;
+        grid-row-gap: 2px;
         .div1{
           margin: 0;
           grid-area: 1 / 1 / 5 / 2;
@@ -532,10 +537,15 @@
         .div2{
           padding: 16px;
           font-size: 16px;
+          grid-area: unset;
         }
         .vip-text{
           padding: 16px;
           font-size: 14px;
+
+          &:last-child{
+            grid-area: 5 / 1 / 6 / 3;
+          }
         }
       }
     }

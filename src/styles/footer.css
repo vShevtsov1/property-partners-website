@@ -119,24 +119,79 @@ footer .information .call-us {
     flex-direction: column;
   }
   footer .logo-container {
-    max-width: none;
+    display: none;
   }
   footer .menu-wrapper {
+    display: none;
+  }
+  footer .information {
+    display: none;
+  }
+  footer .phone-view {
+    display: flex;
+    gap: 24px;
+    flex-direction: column;
+  }
+  footer .phone-view .logo-container {
+    max-width: none;
+    display: flex;
+  }
+  footer .phone-view .logo-container .description {
+    color: #B9BCD8;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  footer .phone-view .menu-wrapper {
     position: unset;
     flex-wrap: wrap;
+    display: flex;
     transform: unset;
     justify-content: space-between;
     gap: 30px;
   }
-  footer .information {
+  footer .phone-view .information {
+    display: flex;
     width: 100%;
     max-width: none;
   }
-  footer .information .location div:first-child, footer .information .location div:last-child {
+  footer .phone-view .information .location div:first-child, footer .phone-view .information .location div:last-child {
     text-align: center;
   }
-  footer .information .social {
+  footer .phone-view .information .social {
     justify-content: center;
+  }
+  footer .phone-view div:last-child {
+    color: #FFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  footer .phone-view .menu-wrapper {
+    justify-content: space-between;
+  }
+  footer .phone-view .menu-wrapper .menu {
+    flex: 1;
+    max-width: max-content;
+    width: auto;
+  }
+  footer .phone-view .menu-wrapper .menu .location div:first-child, footer .phone-view .menu-wrapper .menu .location div:last-child {
+    text-align: right;
+    color: #FFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+  }
+  footer .phone-view .menu-wrapper .menu .social {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
   }
 }
 

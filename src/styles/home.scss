@@ -843,6 +843,7 @@
 
     .collections {
       padding: 16px;
+      gap: 20px;
 
       .tittle {
         div:first-child {
@@ -911,7 +912,7 @@
 
       height: auto;
       display: grid;
-      grid-template-columns: repeat(2, 50%);
+      grid-template-columns: repeat(2, auto);
       grid-template-rows: repeat(4, 1fr);
       grid-column-gap: 8px;
       grid-row-gap: 8px;
@@ -949,6 +950,7 @@
       flex-direction: column;
       padding: 16px;
       height: auto;
+      margin: 0;
 
       .image {
         width: 100%;
@@ -1072,10 +1074,26 @@
     .contact-form{
       padding: 16px;
       width: 100%;
+      margin-bottom: -24px;
+
       .image{
         display: none;
       }
       .contact-form-form{
+        gap: 15px;
+        .tittle{
+          gap: 10px;
+          div:first-child{
+            font-size: 18px;
+          }
+        }
+        .form{
+          .form-input{
+            input{
+              background: none;
+            }
+          }
+        }
         width: 100%;
         padding: 0;
       }
