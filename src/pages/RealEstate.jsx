@@ -22,7 +22,7 @@ const RealEstate = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: 'http://localhost:8080/api/projects/get-all',
+            url: 'http://157.175.196.127:8080/api/projects/get-all',
             headers: { }
         };
 
