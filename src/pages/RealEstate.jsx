@@ -22,7 +22,7 @@ const RealEstate = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: '/api/projects/get-all',
+            url: '/projects/get-all',
             headers: { }
         };
 
