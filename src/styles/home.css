@@ -10,6 +10,7 @@
   padding-left: 64px;
   width: 50%;
   display: flex;
+  justify-content: space-between;
   flex-direction: column;
   gap: 50px;
   height: 100%;
@@ -187,6 +188,7 @@
   line-height: 19.2px; /* 120% */
 }
 .home-page .collections .content .collection .content .collection-info .button {
+  cursor: pointer;
   display: flex;
   padding: 10px;
   align-items: center;

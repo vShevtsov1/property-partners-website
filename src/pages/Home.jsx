@@ -33,7 +33,7 @@ import {Link as ScrollLink} from 'react-scroll';
 import {Link} from "react-router-dom";
 
 
-const Home = () => {
+const Home = ({openModal}) => {
     const [activeKind, setActiveKind] = useState(0);
     const [visibleMembers, setVisibleMembers] = useState(4);
     const team = [
@@ -314,8 +314,8 @@ const Home = () => {
                                     from $190,000
                                 </div>
                             </div>
-                                <Link to={"real-estate"}>
-                            <div className="button">
+
+                            <div className="button" onClick={()=>openModal()}>
                                 Get the selection
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none">
@@ -324,7 +324,7 @@ const Home = () => {
                                         fill="black"/>
                                 </svg>
                             </div>
-                                </Link>
+
                             </div>
                         </div>
                     </div>
