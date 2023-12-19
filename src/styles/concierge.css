@@ -32,12 +32,13 @@
   width: 45%;
   align-items: center;
   background: #191C38;
-  color: #FFF;
+  color: white;
+  vertical-align: middle;
+  line-height: 24px; /* Should be equal to the container height */
   font-family: Helvetica, sans-serif;
-  font-size: 24px;
-  font-style: normal;
+  font-size: 25px;
+  text-align: center;
   font-weight: 400;
-  line-height: normal;
 }
 .concierge-wrapper .concierge-banner .concierge-image {
   flex: 1;
@@ -49,11 +50,10 @@
   object-fit: cover;
 }
 .concierge-wrapper .about-us {
-  height: 70vh;
   padding: 64px;
   display: grid;
   grid-template-columns: 20% 50% 30%;
-  grid-template-rows: repeat(2, 50%);
+  grid-template-rows: repeat(2, auto);
   grid-column-gap: 0px;
   grid-row-gap: 0px;
 }

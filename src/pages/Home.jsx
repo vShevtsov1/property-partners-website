@@ -172,7 +172,7 @@ const Home = () => {
                             to="collections"
                             spy={true}
                             smooth={true}
-                            offset={-20}
+                            offset={-40}
                             duration={1000}
                         >
                         <div className="learn-more">
@@ -254,7 +254,7 @@ const Home = () => {
                             to="collections"
                             spy={true}
                             smooth={true}
-                            offset={-20}
+                            offset={-40}
                             duration={1000}
                         >
                             <div className="learn-more">

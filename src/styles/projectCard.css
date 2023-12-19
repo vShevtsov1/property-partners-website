@@ -2,10 +2,10 @@
   padding: 16px !important;
 }
 .project-card .content {
-  padding: 30px 64px;
+  padding: 10px 64px;
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 20px;
 }
 .project-card .content .navigation {
   display: flex;
@@ -38,12 +38,11 @@
   display: none;
 }
 .project-card .content .images-container {
-  height: 70vh;
   width: 100%;
-  max-height: 80vh;
+  margin-bottom: 20px;
   display: grid;
   grid-template-columns: 50% repeat(2, auto);
-  grid-template-rows: repeat(2, 40%) auto;
+  grid-template-rows: repeat(2, 40%) 10%;
   grid-column-gap: 24px;
   grid-row-gap: 24px;
 }
@@ -102,28 +101,26 @@
   height: 100%;
   object-fit: cover;
 }
-.project-card .content .project-information {
-  margin-top: -30px;
-  height: 200px;
+.project-card .content .project-information, .project-card .content .project-information-phone {
   padding: 24px;
   background: #FFF;
   display: flex;
   flex-direction: column;
   gap: 24px;
 }
-.project-card .content .project-information .general-information {
-  height: 50%;
+.project-card .content .project-information .general-information, .project-card .content .project-information-phone .general-information {
   width: 100%;
   display: flex;
 }
-.project-card .content .project-information .general-information .name-block {
+.project-card .content .project-information .general-information .name-block, .project-card .content .project-information-phone .general-information .name-block {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 80%;
   background: white;
+  gap: 15px;
 }
-.project-card .content .project-information .general-information .name-block div:first-child {
+.project-card .content .project-information .general-information .name-block div:first-child, .project-card .content .project-information-phone .general-information .name-block div:first-child {
   color: #000;
   leading-trim: both;
   text-edge: cap;
@@ -133,7 +130,7 @@
   font-weight: 700;
   line-height: 43px; /* 107.5% */
 }
-.project-card .content .project-information .general-information .name-block div:last-child {
+.project-card .content .project-information .general-information .name-block div:last-child, .project-card .content .project-information-phone .general-information .name-block div:last-child {
   display: flex;
   align-items: center;
   gap: 5px;
@@ -146,7 +143,7 @@
   font-weight: 400;
   line-height: 24px; /* 120% */
 }
-.project-card .content .project-information .general-information .price-block {
+.project-card .content .project-information .general-information .price-block, .project-card .content .project-information-phone .general-information .price-block {
   flex: 1;
   white-space: nowrap;
   width: 100%;
@@ -155,7 +152,7 @@
   gap: 20px;
   align-items: flex-end;
 }
-.project-card .content .project-information .general-information .price-block div:first-child {
+.project-card .content .project-information .general-information .price-block div:first-child, .project-card .content .project-information-phone .general-information .price-block div:first-child {
   color: #000;
   leading-trim: both;
   text-edge: cap;
@@ -165,7 +162,7 @@
   font-weight: 400;
   line-height: 24px; /* 50% */
 }
-.project-card .content .project-information .general-information .price-block div:last-child {
+.project-card .content .project-information .general-information .price-block div:last-child, .project-card .content .project-information-phone .general-information .price-block div:last-child {
   color: #8F8F8F;
   leading-trim: both;
   text-edge: cap;
@@ -175,11 +172,11 @@
   font-weight: 400;
   line-height: 24px; /* 150% */
 }
-.project-card .content .project-information .additional-information {
+.project-card .content .project-information .additional-information, .project-card .content .project-information-phone .additional-information {
   flex: 1;
   display: flex;
 }
-.project-card .content .project-information .additional-information .additional-block {
+.project-card .content .project-information .additional-information .additional-block, .project-card .content .project-information-phone .additional-information .additional-block {
   display: flex;
   flex: 1;
   padding: 16px 24px 16px 16px;
@@ -188,12 +185,12 @@
   border: 1px solid #CACACA;
   align-self: stretch;
 }
-.project-card .content .project-information .additional-information .additional-block .info {
+.project-card .content .project-information .additional-information .additional-block .info, .project-card .content .project-information-phone .additional-information .additional-block .info {
   display: flex;
   flex-direction: column;
   gap: 5px;
 }
-.project-card .content .project-information .additional-information .additional-block .info div:first-child {
+.project-card .content .project-information .additional-information .additional-block .info div:first-child, .project-card .content .project-information-phone .additional-information .additional-block .info div:first-child {
   color: #000;
   leading-trim: both;
   text-edge: cap;
@@ -204,7 +201,7 @@
   line-height: normal;
   letter-spacing: 0.56px;
 }
-.project-card .content .project-information .additional-information .additional-block .info div:last-child {
+.project-card .content .project-information .additional-information .additional-block .info div:last-child, .project-card .content .project-information-phone .additional-information .additional-block .info div:last-child {
   color: #000;
   leading-trim: both;
   text-edge: cap;
@@ -215,9 +212,13 @@
   line-height: normal;
   letter-spacing: 0.64px;
 }
+.project-card .content .project-information-phone {
+  display: none;
+}
 .project-card .content .manager-plan-wrapper {
   display: flex;
   height: 380px;
+  margin-bottom: 20px;
 }
 .project-card .content .manager-plan-wrapper .manager-view {
   width: 50%;
@@ -413,6 +414,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 24px;
+  margin-bottom: 20px;
 }
 .project-card .content .floor-plans .header {
   color: #191C38;
@@ -481,6 +483,7 @@
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
+  margin-bottom: 20px;
 }
 .project-card .content .location .header {
   color: #191C38;
@@ -504,7 +507,7 @@
   gap: 20px;
   height: 45vh;
   width: 100%;
-  margin-bottom: 50px;
+  margin-bottom: 70px;
   flex-direction: column;
 }
 .project-card .content .simillar .header {
@@ -536,7 +539,7 @@
   align-items: center;
   gap: 20px;
 }
-.project-card .content .simillar .content {
+.project-card .content .simillar .floor-content {
   flex: 1;
   height: 100%;
   width: 100%;
@@ -544,6 +547,9 @@
 }
 
 @media (max-width: 600px) {
+  .project-card .feedback {
+    display: none;
+  }
   .project-card .content {
     padding: 16px;
     gap: 15px;
@@ -560,34 +566,58 @@
     object-fit: cover;
   }
   .project-card .content .project-information {
-    padding: 0;
-    height: unset;
+    display: none;
+  }
+  .project-card .content .project-information-phone {
+    padding: 16px;
+    display: flex;
     margin: unset;
+    height: unset;
+    gap: 20px;
   }
-  .project-card .content .project-information .general-information {
+  .project-card .content .project-information-phone .general-information {
     flex-direction: column;
-    gap: 10px;
+    gap: 20px;
   }
-  .project-card .content .project-information .general-information .name-block {
+  .project-card .content .project-information-phone .general-information .name-block {
+    width: 100%;
+    display: flex;
+  }
+  .project-card .content .project-information-phone .general-information .name-block .name-block-2 {
+    justify-content: space-between;
     width: 100%;
   }
-  .project-card .content .project-information .general-information .name-block div:first-child {
-    font-size: 22px;
+  .project-card .content .project-information-phone .general-information .name-block .name-block-2 div:first-child {
+    font-size: 16px;
+    display: flex;
+    gap: 7px;
+    font-family: Helvetica, sans-serif;
+    align-items: center;
   }
-  .project-card .content .project-information .general-information .name-block div:last-child {
+  .project-card .content .project-information-phone .general-information .name-block .name-block-2 .price-block {
+    align-items: flex-end;
+  }
+  .project-card .content .project-information-phone .general-information .name-block .name-block-2 .price-block div:first-child {
+    font-family: HelveticaBold, sans-serif;
+    font-size: 24px;
+  }
+  .project-card .content .project-information-phone .general-information .name-block div:first-child {
+    font-size: 30px;
+  }
+  .project-card .content .project-information-phone .general-information .name-block div:last-child {
     font-size: 16px;
   }
-  .project-card .content .project-information .general-information .price-block {
+  .project-card .content .project-information-phone .general-information .price-block {
     align-items: unset;
     gap: 5px;
   }
-  .project-card .content .project-information .general-information .price-block div:first-child {
+  .project-card .content .project-information-phone .general-information .price-block div:first-child {
     font-size: 24px;
   }
-  .project-card .content .project-information .general-information .price-block div:last-child {
+  .project-card .content .project-information-phone .general-information .price-block div:last-child {
     font-size: 14px;
   }
-  .project-card .content .project-information .additional-information {
+  .project-card .content .project-information-phone .additional-information {
     flex-wrap: wrap;
   }
   .project-card .content .manager-plan-wrapper {
@@ -598,7 +628,6 @@
   .project-card .content .manager-plan-wrapper .manager-view {
     width: 100%;
     display: flex;
-    gap: 10px;
     flex-direction: column;
   }
   .project-card .content .manager-plan-wrapper .manager-view .image-container {
@@ -607,14 +636,14 @@
     height: 300px;
   }
   .project-card .content .manager-plan-wrapper .manager-view .broker-info {
-    padding: unset;
+    padding: 24px;
   }
   .project-card .content .manager-plan-wrapper .manager-view .broker-info .general-info {
-    gap: 4px;
-    margin-bottom: 5px;
+    gap: 15px;
+    margin-bottom: 10px;
   }
   .project-card .content .manager-plan-wrapper .manager-view .broker-info .additional-info {
-    margin-bottom: 5px;
+    margin-bottom: 30px;
   }
   .project-card .content .manager-plan-wrapper .manager-view .broker-info .buttons-container {
     flex-direction: row;
@@ -664,6 +693,7 @@
   }
   .project-card .content .simillar {
     height: unset;
+    margin-bottom: 20px;
   }
   .project-card .content .simillar .header {
     align-items: center;

@@ -5,10 +5,10 @@
   }
 
   .content {
-    padding: 30px 64px;
+    padding: 10px 64px;
     display: flex;
     flex-direction: column;
-    gap: 60px;
+    gap: 20px;
 
     .navigation {
       display: flex;
@@ -43,12 +43,13 @@
   display: none;
 }
     .images-container {
-      height: 70vh;
+
       width: 100%;
-      max-height: 80vh;
+      margin-bottom: 20px;
+
       display: grid;
       grid-template-columns: 50% repeat(2, auto);
-      grid-template-rows: repeat(2, 40%) auto;
+      grid-template-rows: repeat(2, 40%) 10%;
       grid-column-gap: 24px;
       grid-row-gap: 24px;
 
@@ -118,9 +119,9 @@
       }
     }
 
-    .project-information {
-      margin-top: -30px;
-      height: 200px;
+    .project-information,.project-information-phone {
+
+
       padding: 24px;
       background: #FFF;
       display: flex;
@@ -128,7 +129,7 @@
       gap: 24px;
 
       .general-information {
-        height: 50%;
+
         width: 100%;
 
         display: flex;
@@ -139,6 +140,7 @@
           justify-content: space-between;
           width: 80%;
           background: white;
+          gap: 15px;
 
           div:first-child {
             color: #000;
@@ -244,11 +246,14 @@
         }
       }
     }
-
+    .project-information-phone{
+      display: none;
+    }
     .manager-plan-wrapper {
 
       display: flex;
       height: 380px;
+      margin-bottom: 20px;
 
       .manager-view {
         width: 50%;
@@ -471,6 +476,7 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 24px;
+      margin-bottom: 20px;
 
       .header {
         color: #191C38;
@@ -548,6 +554,7 @@
       flex-direction: column;
       align-items: flex-start;
       gap: 16px;
+      margin-bottom: 20px;
 
       .header {
         color: #191C38;
@@ -576,7 +583,7 @@
       gap: 20px;
       height: 45vh;
       width: 100%;
-      margin-bottom: 50px;
+      margin-bottom: 70px;
       flex-direction: column;
 
       .header {
@@ -612,21 +619,22 @@
         }
       }
 
-      .content {
+      .floor-content {
         flex: 1;
         height: 100%;
         width: 100%;
         padding: 0;
       }
     }
-
-
   }
 }
 
 @media (max-width: 600px) {
 
   .project-card {
+    .feedback{
+      display: none;
+    }
     .content {
       padding: 16px;
       gap: 15px;
@@ -641,20 +649,46 @@
           object-fit: cover;
         }
       }
-      .project-information {
-        padding: 0;
-        height: unset;
+      .project-information{
+        display: none;
+      }
+      .project-information-phone {
+        padding:16px;
+        display: flex;
         margin: unset;
+        height: unset;
+        gap: 20px;
 
         .general-information {
           flex-direction: column;
-          gap: 10px;
+          gap: 20px;
 
           .name-block {
             width: 100%;
+            display: flex;
+
+            .name-block-2{
+              justify-content: space-between;
+              width: 100%;
+
+              div:first-child{
+                font-size: 16px;
+                display: flex;
+                gap: 7px;
+                font-family: Helvetica,sans-serif;
+                align-items: center;
+              }
+              .price-block{
+                align-items: flex-end;
+                div:first-child{
+                  font-family: HelveticaBold, sans-serif;
+                  font-size: 24px;
+                }
+              }
+            }
 
             div:first-child {
-              font-size: 22px;
+              font-size: 30px;
             }
 
             div:last-child {
@@ -689,7 +723,7 @@
         .manager-view {
           width: 100%;
           display: flex;
-          gap: 10px;
+
           flex-direction: column;
 
           .image-container {
@@ -699,13 +733,13 @@
           }
 
           .broker-info {
-            padding: unset;
+            padding: 24px;
             .general-info{
-              gap: 4px;
-              margin-bottom: 5px;
+              gap: 15px;
+              margin-bottom: 10px;
             }
             .additional-info{
-              margin-bottom: 5px;
+              margin-bottom: 30px;
             }
 
             .buttons-container {
@@ -782,6 +816,7 @@
       }
       .simillar{
         height: unset;
+        margin-bottom: 20px;
         .header{
           align-items: center;
           .tittle{

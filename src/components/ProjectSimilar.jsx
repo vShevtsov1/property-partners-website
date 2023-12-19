@@ -2,7 +2,9 @@
 import "../styles/projectSimilar.css"
 import MaxLengthText from "./MaxLengthText.jsx";
 const ProjectSimilar = ({project}) => {
-
+    function formatNumberWithCommas(value) {
+        return value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
     return(<div style={{cursor:"pointer"}} onClick={() => window.location.href = `/project/${project._id}`}
 
                 className={"project-similar"}>
@@ -28,7 +30,7 @@ const ProjectSimilar = ({project}) => {
                 </svg>
                     <MaxLengthText text={project.selectedLocation||project.ownLocation} maxLength={15}/>
                 </div>
-            <div className="price">$ 397 800</div>
+            <div className="price">$ {formatNumberWithCommas(project.priceFrom)}</div>
         </div>
     </div>)
 }

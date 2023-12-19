@@ -5,7 +5,7 @@
   z-index: -9999;
 }
 .project-similar .image-container {
-  height: 75%;
+  height: 85%;
   position: relative;
 }
 .project-similar .image-container img {
@@ -58,10 +58,12 @@
   align-self: stretch;
 }
 .project-similar .description .location {
+  order: 2;
   height: 100%;
   align-items: center;
   display: flex;
   gap: 5px;
+  margin: 0;
   flex-direction: row;
   color: #000;
   font-family: Helvetica, sans-serif;
@@ -71,6 +73,7 @@
   line-height: 24px; /* 150% */
 }
 .project-similar .description .price {
+  order: 1;
   color: #000;
   leading-trim: both;
   text-edge: cap;
@@ -108,7 +111,7 @@
     width: 16px;
   }
   .project-similar .description .price {
-    font-size: 16px;
+    font-size: 18px;
   }
 }
 

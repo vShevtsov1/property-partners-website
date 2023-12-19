@@ -14,7 +14,7 @@
       display: flex;
 
       flex-direction: column;
-      justify-content: space-between;
+      gap: 50px;
       height: 100%;
 
       .tittle {
@@ -22,7 +22,7 @@
         display: flex;
         flex-direction: column;
         gap: 16px;
-        max-width: 65%;
+        max-width: 85%;
 
         div:first-child {
           color: #191C38;
@@ -246,7 +246,7 @@
 
   .why-dubai {
     padding: 64px;
-    height: 60vh;
+    height: 80vh;
     display: grid;
     grid-template-columns: repeat(4, 25%);
     grid-template-rows: repeat(2, 50%);
@@ -350,7 +350,7 @@
   }
 
   .kind-of-projects {
-    height: 50vh;
+    height: 60vh;
     padding: 64px;
     display: flex;
     gap: 20px;
