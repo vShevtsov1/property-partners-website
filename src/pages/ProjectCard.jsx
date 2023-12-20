@@ -15,6 +15,23 @@ import Modal from 'react-modal';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import {Autoplay, Navigation, Pagination} from 'swiper/modules';
+import RequestModal from "../components/RequestModal.jsx";
+import alexLogachevName from "../assets/teams/alex-logachev-min.jpg";
+import qrAlex from "../assets/teams/qr/qr-alex.svg";
+import alekseiShyianName from "../assets/teams/aleksei-shyian-min.jpg";
+import alekseiShyian from "../assets/teams/qr/aleksei-shyian.png";
+import tykhovaTatianaName from "../assets/teams/tykhova-tatiana-min.jpg";
+import tykhovaTatiana from "../assets/teams/qr/tykhova-tatiana.png";
+import kristinaSokolovskayaName from "../assets/teams/kristina-sokolovskaya-min.jpg";
+import kristinaSokolovskaya from "../assets/teams/qr/kristina-sokolovskaya.png";
+import pavelDyninName from "../assets/teams/pavel-dynin-min.jpg";
+import propertyPartnersDynin from "../assets/teams/qr/property-partners-dynin.png";
+import annaHorshunovaName from "../assets/teams/anna-horshunova-min.jpg";
+import annaHorshunova from "../assets/teams/qr/anna-horshunova.png";
+import allaGerassimovaName from "../assets/teams/alla-gerassimova-min.jpg";
+import allaGerassimova from "../assets/teams/qr/alla-gerassimova.png";
+import dmitriyKoltsovName from "../assets/teams/dmitriy-koltsov-min.jpg";
+import dmitriyKoltsov from "../assets/teams/qr/dmitriy-koltsov.png";
 
 const ProjectCard = () => {
     const {id} = useParams();
@@ -23,11 +40,37 @@ const ProjectCard = () => {
     const [randomProjects, setRandomProjects] = useState(null);
     const [activePlan, setActivePlan] = useState(0)
     const [activeFloorPlan, setActiveFloorPlan] = useState(0)
+    const [mapZoom, setMapZoom] = useState(15);
+    const [showModal,setShowModal] = useState(false);
+    const [modalText,setModalText] = useState({
+        tittleText:"",
+        buttonText:""
+    });
+    const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random() * 8));
+
+    const breakpoints = {
+        320: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+        },
+        480: {
+            slidesPerView: 2,
+            spaceBetween: 30,
+        },
+        768: {
+            slidesPerView: 3,
+            spaceBetween: 40,
+        },
+        1024: {
+            slidesPerView: 4,
+            spaceBetween: 50,
+        },
+    };
     useEffect(() => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `/api/projects/${id}`,
+            url: `http://157.175.196.127:8080/api/projects/${id}`,
             headers: {}
         };
 
@@ -49,7 +92,7 @@ const ProjectCard = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: '/api/projects/random',
+            url: 'http://157.175.196.127:8080/api/projects/random',
             headers: {}
         };
 
@@ -66,7 +109,9 @@ const ProjectCard = () => {
                 console.log(error);
             });
     }, []);
-
+    const closeModal = () => {
+        setShowModal(false);
+    };
     function formatNumberWithCommas(value) {
         return value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
@@ -97,12 +142,88 @@ const ProjectCard = () => {
     function isMobile() {
         return window.innerWidth <= 768;
     }
+    function convertPriceToShortFormat(price) {
+        const suffixes = ['', 'K', 'M', 'B', 'T'];
+        let suffixIndex = 0;
+
+        while (price >= 1000 && suffixIndex < suffixes.length - 1) {
+            price /= 1000;
+            suffixIndex++;
+        }
+
+        return price.toFixed(1) + suffixes[suffixIndex];
+    }
+    const team = [
+        {
+            "image": alexLogachevName, "name": "Alex Logachev", "position": "CEO","qr":qrAlex,
+            "social": {
+                "telegram": "https://t.me/oleksandr_logachev",
+                "instagram":"https://www.instagram.com/logachev_alexsandr?igshid=MzRlODBiNWFlZA%3D%3D",
+                "whatsapp":"https://api.whatsapp.com/send/?phone=971588395135&text&type=phone_number&app_absent=0",
+                "facebook":"https://www.facebook.com/logachev.alexsandr?mibextid=LQQJ4d"
+            }
+        },
+        {
+            "image": alekseiShyianName, "name": "Aleksei Shyian", "position": "Business Developer","qr":alekseiShyian,
+            "social": {
+                "instagram": "https://www.instagram.com/dubai_oleksii_shyian",
+                "telegram": "https://t.me/brodubai"
+            }
+        },
+        {
+            "image": tykhovaTatianaName, "name": "Tykhova Tatiana", "position": "Real estate broker","qr":tykhovaTatiana,
+            "social": {
+                "instagram": "https://www.instagram.com/taffeeta",
+                "telegram": "https://t.me/+971522419898",
+                "whatsapp":"https://api.whatsapp.com/send/?phone=971522419898&text&type=phone_number&app_absent=0"
+            }
+        }
+        ,
+        {
+            "image": kristinaSokolovskayaName, "name": "Kristina Sokolovskaya", "position": "CEO Kristal Business Experts","qr":kristinaSokolovskaya,
+            "social": {
+                "telegram": "https://t.me/+971529568%20390",
+            }
+        },
+        {
+            "image": pavelDyninName, "name": "Pavel Dynin", "position": "Real estate broker","qr":propertyPartnersDynin,
+            "social": {
+                "telegram": "https://t.me/pavel_dynin",
+                "instagram":"https://www.instagram.com/pavel.dynin?igshid=OGQ5Z%20Dc2ODk2ZA%3D%3D",
+                "whatsapp":"https://api.whatsapp.com/send/?phone=971585622362&text&type=phone_number&app_absent=0",
+                "facebook":"https://www.facebook.com/csdus?mibextid=LQQJ%204d"
+            }
+        },
+        {
+            "image": annaHorshunovaName, "name": "Anna Horshunova", "position": "Real estate broker","qr":annaHorshunova,
+            "social": {
+                facebook:"https://www.facebook.com/annagorshunova?mibextid=LQQJ4d"
+            }
+        },
+        {
+            "image": allaGerassimovaName, "name": "Alla Gerassimova", "position": "Marketer, content maker","qr":allaGerassimova,
+            "social": {
+                "telegram": "https://t.me/alla_gerassimova",
+                "instagram":"https://www.instagram.com/a11gep?igshid=NTc4MTIw+NjQ2YQ%3D%3D",
+                "whatsapp":"https://api.whatsapp.com/send/?phone=971555728933&text&type=phone_number&app_absent=0",
+            }
+        },
+        {
+            "image": dmitriyKoltsovName, "name": "Dmitriy Koltsov", "position": "Real estate broker","qr":dmitriyKoltsov,
+            "social": {
+                "telegram": "https://t.me/brokervdubae",
+                "instagram":"https://www.instagram.com/brokervdubae",
+                "whatsapp":"https://api.whatsapp.com/send/?phone=971585589938&text&type=phone_number&app_absent=0",
+            }
+        },
+    ]
     if (project === null || randomProjects === null) {
         return null;
     }
     return (<div className={"project-card"}>
         <Header/>
         <Feedback/>
+        <RequestModal showModal={showModal} closeModal={closeModal} modalText={modalText} image={team[randomNumber].image}/>
         <div className="content">
             <div className="navigation">
                 <Link to={"/real-estate"}>
@@ -126,7 +247,12 @@ const ProjectCard = () => {
                 <div className="main-image"><img src={project.imageSrcMain}/></div>
                 <div className="more">
                     <div className="button" onClick={() => setShowImages(true)}>
-                        <div>Show More</div>
+                        <div onClick={()=>
+                        {
+                            setModalText({tittleText:"To see more information - request it!",buttonText:"Get instant help from expert"})
+                            setShowModal(true)
+                        }
+                        }>Show More</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M13.1722 11.9997L8.22217 7.04974L9.63617 5.63574L16.0002 11.9997L9.63617 18.3637L8.22217 16.9497L13.1722 11.9997Z"
@@ -182,8 +308,8 @@ const ProjectCard = () => {
                         </div>
                     </div>
                     <div className="price-block">
-                        <div>$ {formatNumberWithCommas(project.priceFrom)}</div>
-                        <div>$ {(Number(project.priceFrom) / Number(project.sizeFrom)).toFixed(0)} for m²</div>
+                        <div><span>from</span> ${formatNumberWithCommas(project.priceFrom)}</div>
+                        <div>from $ {(Number(project.priceFrom) / Number(project.sizeFrom)).toFixed(0)} for m²</div>
                     </div>
                 </div>
                 <div className="additional-information">
@@ -366,26 +492,31 @@ const ProjectCard = () => {
             <div className="manager-plan-wrapper">
                 <div className="manager-view">
                     <div className="image-container">
-                        <img src={anna}/>
+                        <img src={team[randomNumber].image}/>
                     </div>
                     <div className="broker-info">
                         <div className="general-info">
-                            <div>Real estate broker</div>
-                            <div>Anna Horshunova</div>
+                            <div>{team[randomNumber].position}</div>
+                            <div>{team[randomNumber].name}</div>
                         </div>
                         <div className="additional-info">
                             Off-plan properties, Investments, Commercial property, Mortgage
                         </div>
                         <div className="buttons-container">
                             <div className="button">Contact agent</div>
-                            <div className="button">Request</div>
+                            <div className="button" onClick={()=>
+                            {
+                                setModalText({tittleText:"Get advice from our expert!",buttonText:"To request a call back"})
+                                setShowModal(true)
+                            }
+                                }>Request</div>
                         </div>
                     </div>
                 </div>
                 <div className="payment-plan">
                     <div className="plan-header">
                         <div>Payment Plan</div>
-                        <div>USD {formattedTotalSum}</div>
+                        <div><span>from</span> ${formattedTotalSum}</div>
                     </div>
                     <div className="plan-type">
                         {project.paymentPlans.Studio &&
@@ -445,7 +576,7 @@ const ProjectCard = () => {
                             </div>
                         </div>
                         <div className="column">
-                            <div className="header">Price</div>
+                            <div className="header">Price from</div>
                             <div className="values">
                                 <div
                                     className="value">$ {formatNumberWithCommas(project.paymentPlans[activePlan].sum1)}</div>
@@ -549,20 +680,35 @@ const ProjectCard = () => {
                     <div className="map">
                         <APIProvider apiKey={"AIzaSyAbaX7Vb6ERFTrWR4espV48g25lFRGGjIc"}>
                             <Map
-                                zoom={14}
+                                zoom={16}
                                 center={{lat: Number(project.lat), lng: Number(project.lng)}}
                                 gestureHandling={"greedy"}
-                                disableDefaultUI={true}
+                                fullscreenControl={true}
+                                onZoomChanged={ev => {setMapZoom(ev.detail.zoom)}}
                                 mapId={"eafda8fe79279394"}
                             >
                                 <AdvancedMarker
-
                                     className={"marker"}
                                     position={{lat: Number(project.lat), lng: Number(project.lng)}}>
-                                    <div style={{borderRadius: 20, padding: 7}}>
-
+                                    <div style={{ borderRadius: mapZoom < 13 ? 20 : 5, padding: mapZoom < 13 ? 7 : 0,background:"#C29773" }}>
+                                        <div style={{ display: mapZoom < 13 ? "none" : "block",background:"#C29773" }} className="price">
+                                            {convertPriceToShortFormat(project.priceFrom)}
+                                        </div>
                                     </div>
                                 </AdvancedMarker>
+                                {randomProjects.map((marker, index) => (
+                                    <AdvancedMarker
+                                        key={index}
+                                        onClick={()=>window.open(`/project/${marker._id}`)}
+                                        className={"marker"}
+                                        position={{ lat: Number(marker.lat), lng: Number(marker.lng) }}>
+                                        <div style={{ borderRadius: mapZoom < 13 ? 20 : 5, padding: mapZoom < 13 ? 7 : 0 }}>
+                                            <div style={{ display: mapZoom < 13 ? "none" : "block" }} className="price">
+                                                {convertPriceToShortFormat(marker.priceFrom)}
+                                            </div>
+                                        </div>
+                                    </AdvancedMarker>
+                                ))}
                             </Map>
                         </APIProvider>
                     </div>
@@ -590,26 +736,53 @@ const ProjectCard = () => {
                         </div>
                     </div>
                 </div>
-                <div className="floor-content">
-                    <Swiper
-                        spaceBetween={10}
-                        slidesPerView={isMobile()?2:4}
-                        style={{height: "100%", zIndex: -999}}
-                        modules={[Pagination, Navigation]}
-                        onInit={(swiper) => {
-                            swiper.params.navigation.prevEl = navigationPrevRefSimilar.current;
-                            swiper.params.navigation.nextEl = navigationNextRefSimilar.current;
-                            swiper.navigation.init();
-                            swiper.navigation.update();
-                        }}
-                    >
+                <div className="simillar-content">
+                    <Swiper className={"swiper-simillar"}
+                            modules={[Pagination, Navigation]}
+                            onInit={(swiper) => {
+                                swiper.params.navigation.prevEl = navigationPrevRefSimilar.current;
+                                swiper.params.navigation.nextEl = navigationNextRefSimilar.current;
+                                swiper.navigation.init();
+                                swiper.navigation.update();
+                            }}
+                            spaceBetween={50}
+                            breakpoints={{
+                                // when window width is >= 320px
+                                320: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 20,
+                                },
+                                // when window width is >= 480px
+                                480: {
+                                    slidesPerView: 1,
+                                    spaceBetween: 30,
+                                },
+                                // when window width is >= 768px
+                                768: {
+                                    slidesPerView: 2,
+                                    spaceBetween: 40,
+                                },
 
+                                // when window width is >= 1024px
+                                1200: {
+                                    slidesPerView: 3,
+                                    spaceBetween: 50,
+                                },
+                                1450:{
+                                    slidesPerView: 4,
+                                    spaceBetween: 50,
+                                },
+                                1400:{
+                                    slidesPerView: 3,
+                                    spaceBetween: 50,
+                                }
+                            }}
+                    >
                         {randomProjects.map((project, index) => (
-                            <SwiperSlide key={index}>
-                                <ProjectSimilar project={project}/>
+                            <SwiperSlide key={index} style={{ height: "100%", background: "white" }}>
+                                <ProjectSimilar project={project} />
                             </SwiperSlide>
                         ))}
-
                     </Swiper>
                 </div>
             </div>

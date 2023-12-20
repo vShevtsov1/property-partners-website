@@ -162,6 +162,9 @@
   font-weight: 400;
   line-height: 24px; /* 50% */
 }
+.project-card .content .project-information .general-information .price-block div:first-child span, .project-card .content .project-information-phone .general-information .price-block div:first-child span {
+  font-size: 30px;
+}
 .project-card .content .project-information .general-information .price-block div:last-child, .project-card .content .project-information-phone .general-information .price-block div:last-child {
   color: #8F8F8F;
   leading-trim: both;
@@ -290,6 +293,7 @@
 }
 .project-card .content .manager-plan-wrapper .manager-view .broker-info .buttons-container .button:first-child {
   display: flex;
+  cursor: pointer;
   padding: 16px;
   justify-content: center;
   align-items: center;
@@ -308,6 +312,7 @@
 }
 .project-card .content .manager-plan-wrapper .manager-view .broker-info .buttons-container .button:last-child {
   display: flex;
+  cursor: pointer;
   padding: 16px;
   justify-content: center;
   align-items: center;
@@ -348,6 +353,9 @@
   line-height: normal;
 }
 .project-card .content .manager-plan-wrapper .payment-plan .plan-header div:last-child {
+  display: flex;
+  gap: 7px;
+  align-items: flex-end;
   color: #FFF;
   text-align: right;
   font-family: Helvetica, sans-serif;
@@ -355,6 +363,10 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+.project-card .content .manager-plan-wrapper .payment-plan .plan-header div:last-child span {
+  color: #939393;
+  font-size: 15px;
 }
 .project-card .content .manager-plan-wrapper .payment-plan .plan-type {
   display: flex;
@@ -478,12 +490,12 @@
   width: 100%;
 }
 .project-card .content .location {
-  height: 40vh;
+  height: 80vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   gap: 16px;
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 .project-card .content .location .header {
   color: #191C38;
@@ -539,11 +551,12 @@
   align-items: center;
   gap: 20px;
 }
-.project-card .content .simillar .floor-content {
+.project-card .content .simillar .simillar-content {
   flex: 1;
   height: 100%;
-  width: 100%;
-  padding: 0;
+}
+.project-card .content .simillar .simillar-content .swiper-simillar {
+  height: 100%;
 }
 
 @media (max-width: 600px) {
@@ -692,7 +705,6 @@
     font-size: 22px;
   }
   .project-card .content .simillar {
-    height: unset;
     margin-bottom: 20px;
   }
   .project-card .content .simillar .header {

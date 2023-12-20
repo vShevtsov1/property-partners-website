@@ -5,33 +5,48 @@ const ProjectSimilar = ({project}) => {
     function formatNumberWithCommas(value) {
         return value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
-    return(<div style={{cursor:"pointer"}} onClick={() => window.location.href = `/project/${project._id}`}
 
-                className={"project-similar"}>
-            <div className="image-container">
-                <img src={project.imageSrcMain}/>
-                <div className="project-info">
-                    <div>{project.projectName}</div>
-                    <div>{project.developer}</div>
+    return(
+        <div className="project-similar" style={{ height: '100%' }} onClick={() => window.location.href = `/project/${project._id}`}>
+            <div className="image-container"
+                 style={{
+                     background: `linear-gradient(0deg, #000 -58.46%, rgba(0, 0, 0, 0.00) 96.51%), url(${project.imageSrcMain}) lightgray 50% / cover no-repeat`,
+                 }}
+            >
+
+            </div>
+            <div className="project-details">
+                <div className="general-info">
+                    <div className="name">
+                        <MaxLengthText text={project.projectName} maxLengthBreakpoints={{
+
+                            600:20,
+                            768: 5,
+                            1024: 10,
+                            1440:10,
+                            1540: 15,
+
+                        }} />
+                    </div>
+                    <div className="developer">
+                        <MaxLengthText text={project.developer} maxLengthBreakpoints={{
+
+                            600:20,
+                            768: 5,
+                            1024: 10,
+                            1440:10,
+                            1540: 15,
+
+                        }} />
+                    </div>
+                </div>
+                <div className="price-info">
+                    <div className="price"><span>from</span> ${formatNumberWithCommas(project.priceFrom)}</div>
+                    <div className="price-m2">$ {(Number(project.priceFrom) / Number(project.sizeFrom)).toFixed(0)} for m²</div>
                 </div>
             </div>
-        <div className="description">
-                <div className="location">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                    <g clip-path="url(#clip0_317_633)">
-                        <path fill-rule="evenodd" clip-rule="evenodd" d="M8.25 9C8.25 11.0715 9.92925 12.75 12 12.75C14.0708 12.75 15.75 11.0715 15.75 9C15.75 6.9285 14.0708 5.25 12 5.25C9.92925 5.25 8.25 6.9285 8.25 9ZM3 9C3 4.02975 7.02975 0 12 0C16.9703 0 21 4.02975 21 9C21 12.7125 13.473 24.0083 12 24C10.5037 24.0083 3 12.7635 3 9Z" fill="#191C38"/>
-                        <circle cx="12" cy="9" r="2" fill="#C29773"/>
-                    </g>
-                    <defs>
-                        <clipPath id="clip0_317_633">
-                            <rect width="24" height="24" fill="white"/>
-                        </clipPath>
-                    </defs>
-                </svg>
-                    <MaxLengthText text={project.selectedLocation||project.ownLocation} maxLength={15}/>
-                </div>
-            <div className="price">$ {formatNumberWithCommas(project.priceFrom)}</div>
+
         </div>
-    </div>)
+    )
 }
 export default ProjectSimilar

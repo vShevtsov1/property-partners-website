@@ -571,3 +571,83 @@
     }
   }
 }
+@media (max-width: 1100px) {
+  .concierge-wrapper{
+    .concierge-banner{
+      padding: 20px 64px;
+      height: 70vh;
+    .concierge-text{
+      div:first-child{
+        font-size: 50px;
+      }
+      div:last-child{
+        width: 60%;
+        padding: 15px;
+        font-size: 18px;
+      }
+    }
+    }
+    .about-us{
+      .content1{
+        font-size: 18px;
+      }
+      .content2{
+        font-size: 16px;
+      }
+    }
+    .our-services{
+      padding: 20px 64px;
+      gap: 80px;
+      .tittle{
+        font-size: 36px;
+      }
+      .content{
+
+        .div1{
+          margin: 0;
+          img{
+            object-fit: cover;
+          }
+        }
+        .div2{
+          font-size: 36px;
+        }
+        .div3{
+          font-size: 16px;
+        }
+      }
+      .services-life{
+        .div1{
+
+          font-size: 36px;
+        }
+        .div2{
+          margin: 0;
+        }
+        .life-text{
+          font-size: 16px;
+        }
+      }
+      .vip-services{
+        .div1{
+          margin: 0;
+          img{
+            object-fit: cover;
+          }
+        }
+        .div2{
+          font-size: 36px;
+        }
+        .vip-text{
+          font-size: 16px;
+        }
+      }
+    }
+    .contact-us{
+      margin-top: 30px;
+      .contact-us-form{
+        padding: 40px 64px 40px
+      }
+    }
+  }
+}

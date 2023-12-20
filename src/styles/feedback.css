@@ -1,5 +1,6 @@
 .feedback {
   padding: 40px;
+  background: white;
 }
 .feedback .feedback-form {
   display: flex;

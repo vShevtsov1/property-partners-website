@@ -187,7 +187,7 @@
   font-weight: 400;
   line-height: 19.2px; /* 120% */
 }
-.home-page .collections .content .collection .content .collection-info .button {
+.home-page .collections .content .collection .content .collection-info .button a {
   cursor: pointer;
   display: flex;
   padding: 10px;
@@ -297,26 +297,25 @@
   line-height: normal;
 }
 .home-page .kind-of-projects {
-  height: 60vh;
   padding: 64px;
   display: flex;
   gap: 20px;
-  margin-bottom: 60px;
+  height: max-content;
 }
 .home-page .kind-of-projects .image {
   width: 40%;
-  height: 100%;
 }
 .home-page .kind-of-projects .image img {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: contain;
 }
 .home-page .kind-of-projects .content {
   flex: 1;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: flex-end;
+  gap: 30px;
 }
 .home-page .kind-of-projects .content .tittle {
   color: #191C38;
@@ -477,23 +476,26 @@
   display: flex;
   justify-content: space-between;
 }
-.home-page .our-team .team .member {
-  background: #FFF;
+.home-page .our-team .team a {
   width: 23%;
 }
-.home-page .our-team .team .member .image {
+.home-page .our-team .team a .member {
+  background: #FFF;
+  width: 100%;
+}
+.home-page .our-team .team a .member .image {
   height: 400px;
   background-image: url("../assets/memberBackground.png");
   background-repeat: no-repeat;
   background-size: cover;
 }
-.home-page .our-team .team .member .image img {
+.home-page .our-team .team a .member .image img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   object-position: top;
 }
-.home-page .our-team .team .member .information {
+.home-page .our-team .team a .member .information {
   background: #FFF;
   display: flex;
   padding: 24px;
@@ -502,7 +504,7 @@
   align-items: flex-start;
   gap: 36px;
 }
-.home-page .our-team .team .member .information .general-info .name {
+.home-page .our-team .team a .member .information .general-info .name {
   color: #191C38;
   leading-trim: both;
   text-edge: cap;
@@ -512,7 +514,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.home-page .our-team .team .member .information .general-info .position {
+.home-page .our-team .team a .member .information .general-info .position {
   color: #939393;
   font-family: Helvetica, sans-serif;
   font-size: 16px;
@@ -520,7 +522,7 @@
   font-weight: 400;
   line-height: normal;
 }
-.home-page .our-team .team .member .information .social {
+.home-page .our-team .team a .member .information .social {
   display: flex;
   gap: 16px;
 }
@@ -897,6 +899,152 @@
   }
   .home-page .contact-form .contact-form-form .form .form-input input {
     background: none;
+  }
+}
+@media (max-width: 1100px) {
+  .home-page .home-banner {
+    height: auto;
+  }
+  .home-page .home-banner .content .tittle div:first-child {
+    font-size: 40px;
+  }
+  .home-page .home-banner .content .tittle div:last-child {
+    font-size: 16px;
+    padding: 0;
+  }
+  .home-page .home-banner .content .advantages .advantages-wrapper {
+    max-width: 90%;
+  }
+  .home-page .home-banner .content .advantages .advantages-wrapper .advantage {
+    padding: 10px;
+    font-size: 14px;
+    font-family: Helvetica, sans-serif;
+  }
+  .home-page .home-banner .content .advantages .advantages-wrapper a .learn-more {
+    font-size: 14px;
+    padding: 10px;
+  }
+  .home-page .home-banner .image {
+    width: unset;
+    height: unset;
+  }
+  .home-page .collections {
+    gap: 30px;
+  }
+  .home-page .collections .tittle div:first-child {
+    font-size: 36px;
+  }
+  .home-page .collections .tittle div:last-child {
+    font-size: 18px;
+  }
+  .home-page .collections .content {
+    gap: 30px;
+  }
+  .home-page .collections .content .collection {
+    height: 470px;
+  }
+  .home-page .collections .content .collection .content {
+    gap: 10px;
+  }
+  .home-page .collections .content .collection .content .collection-info {
+    flex-direction: column;
+    gap: 10px !important;
+  }
+  .home-page .collections .content .collection .content .collection-info .tittle {
+    width: 100%;
+    font-size: 24px !important;
+    line-height: unset;
+  }
+  .home-page .collections .content .collection .content .collection-info .tittle:nth-child(3) {
+    font-size: 18px;
+  }
+  .home-page .collections .content .collection .content .collection-info div:last-child {
+    gap: 5px !important;
+  }
+  .home-page .collections .content .collection .content .collection-info div:last-child .properties {
+    gap: 5px;
+  }
+  .home-page .why-dubai .dark {
+    font-size: 36px;
+  }
+  .home-page .why-dubai .light .tittle, .home-page .why-dubai .light .description, .home-page .why-dubai .orange .tittle, .home-page .why-dubai .orange .description {
+    font-size: 18px;
+  }
+  .home-page .kind-of-projects {
+    padding: 20px 64px;
+  }
+  .home-page .kind-of-projects .image img {
+    object-fit: cover;
+  }
+  .home-page .kind-of-projects .content .tittle {
+    font-size: 36px;
+  }
+  .home-page .kind-of-projects .content .types .type .visible-element .tittle {
+    font-size: 18px;
+  }
+  .home-page .kind-of-projects .content .types .type .hiden-text {
+    font-size: 16px;
+  }
+  .home-page .consulting {
+    padding: 20px 64px;
+  }
+  .home-page .consulting .tittle div:first-child {
+    font-size: 36px;
+  }
+  .home-page .consulting .tittle div:last-child {
+    font-size: 18px;
+  }
+  .home-page .consulting .content {
+    gap: 20px;
+  }
+  .home-page .consulting .content .image {
+    width: 50%;
+    display: flex;
+    background: unset;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 5px;
+  }
+  .home-page .consulting .content .image img {
+    object-fit: contain;
+    object-position: top;
+  }
+  .home-page .consulting .content .consulting-content .consult {
+    font-size: 16px;
+  }
+  .home-page .our-team {
+    padding: 20px 64px;
+  }
+  .home-page .our-team .team .member .member .image {
+    height: 250px;
+  }
+  .home-page .our-team .team .member .member .information {
+    padding: 15px;
+    gap: 18px;
+  }
+  .home-page .our-team .team .member .member .information .general-info .name {
+    font-size: 18px;
+  }
+  .home-page .our-team .team .member .member .information .general-info .position {
+    text-overflow: ellipsis;
+  }
+  .home-page .contact-form {
+    gap: 65px;
+  }
+  .home-page .contact-form .contact-form-form {
+    padding: 10px;
+  }
+  .home-page .contact-form .contact-form-form .tittle {
+    gap: 5px;
+  }
+  .home-page .contact-form .contact-form-form .tittle div:first-child {
+    font-size: 18px;
+  }
+  .home-page .contact-form .contact-form-form .tittle div:last-child {
+    font-size: 16px;
+  }
+  .home-page .partners {
+    padding: 10px 64px;
   }
 }
 

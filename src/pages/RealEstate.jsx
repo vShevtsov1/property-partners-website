@@ -1,5 +1,13 @@
 import Header from "../components/Header.jsx";
-import { AdvancedMarker, APIProvider, Map } from '@vis.gl/react-google-maps';
+import {
+    AdvancedMarker,
+    APIProvider,
+    ControlPosition,
+    Map,
+    MapControl,
+    useMap,
+    useMapsLibrary
+} from '@vis.gl/react-google-maps';
 import {useEffect, useState} from "react";
 import "../styles/realEstate.css"
 import Filter from "../components/Filter.jsx";
@@ -7,22 +15,16 @@ import Project from "../components/Project.jsx";
 import Feedback from "../components/Feedback.jsx";
 import Footer from "../components/Footer.jsx";
 import axios from "axios";
+
 const RealEstate = () => {
     const [mapZoom, setMapZoom] = useState(10);
     const [projects,setProjects] = useState(null)
-    const markersData = [
-        { position: { lat: 25.186318, lng: 55.262052 }, price: "320К" },
-        { position: { lat: 25.201460, lng: 55.259368 }, price: "840K" },
-        { position: { lat: 25.196317, lng: 55.343355 }, price: "230K" },
-        { position: { lat: 25.052849, lng: 55.203715 }, price: "930K" },
-        { position: { lat: 25.067306, lng: 55.217575 }, price: "1.2M"  },
-        { position: { lat: 25.099892, lng: 55.160736 }, price: "15M" },
-    ];
+
     useEffect(() => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: '/api/projects/get-all',
+            url: 'http://157.175.196.127:8080/api/projects/get-all',
             headers: { }
         };
 
@@ -64,11 +66,14 @@ const RealEstate = () => {
                                     lng: 55.32550889425454,
                                 }}
                                 gestureHandling={"greedy"}
-                                disableDefaultUI={true}
                                 mapId={"eafda8fe79279394"}
+                                fullscreenControl={true}
                                 onZoomChanged={ev => {setMapZoom(ev.detail.zoom)}}
                             >
 
+                                <MapControl position={ControlPosition.TOP_LEFT}>
+
+                                </MapControl>
                                 {projects.map((marker, index) => (
                                     <AdvancedMarker
                                         key={index}
@@ -100,6 +105,7 @@ const RealEstate = () => {
 
         </div>
     );
+
 };
 
 export default RealEstate;

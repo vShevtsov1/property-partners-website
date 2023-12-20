@@ -26,9 +26,17 @@ const Project = ({project}) => {
                                 <rect width="24" height="24" fill="white"/>
                             </clipPath>
                         </defs>
-                    </svg><MaxLengthText text={project.selectedLocation||project.ownLocation} maxLength={15}/>
+                    </svg><MaxLengthText text={project.selectedLocation||project.ownLocation} maxLengthBreakpoints={{
+
+                    600:20,
+                    768: 5,
+                    1024: 10,
+                    1440:10,
+                    1540: 15,
+
+                }}/>
                 </div>
-                <div className="price">$ {formatNumberWithCommas(project.priceFrom)}</div>
+                <div className="price">from ${formatNumberWithCommas(project.priceFrom)}</div>
             </div>
         </div>
     </div>)

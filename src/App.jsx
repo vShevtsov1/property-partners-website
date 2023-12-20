@@ -8,6 +8,7 @@ import Modal from "react-modal";
 import ContactUsModal from "./components/ContactUsModal.jsx";
 import PDFmodal from "./components/PDFmodal.jsx";
 import {useState} from "react";
+import Agent from "./pages/Agent.jsx";
 
 
 function App() {
@@ -33,6 +34,7 @@ function App() {
           <Route path="/real-estate" element={<RealEstate/>}/>
           <Route path="/concierge" element={<Concierge/>}/>
           <Route path="/project/:id" element={<ProjectCard/>}/>
+            <Route path="/agent" element={<Agent/>}/>
 
 
         </Routes>

@@ -27,18 +27,29 @@ import annaHorshunovaName from "../assets/teams/anna-horshunova-min.jpg";
 import dmitriyKoltsovName from "../assets/teams/dmitriy-koltsov-min.jpg";
 import kristinaSokolovskayaName from "../assets/teams/kristina-sokolovskaya-min.jpg";
 import pavelDyninName from "../assets/teams/pavel-dynin-min.jpg";
-import tkachenkoNataliiaName from "../assets/teams/tkachenko-nataliia-min.jpg";
 import tykhovaTatianaName from "../assets/teams/tykhova-tatiana-min.jpg";
 import {Link as ScrollLink} from 'react-scroll';
 import {Link} from "react-router-dom";
+import alekseiShyian from '../assets/teams/qr/aleksei-shyian.png';
+import allaGerassimova from '../assets/teams/qr/alla-gerassimova.png';
+import annaHorshunova from '../assets/teams/qr/anna-horshunova.png';
+import dmitriyKoltsov from '../assets/teams/qr/dmitriy-koltsov.png';
+import kristinaSokolovskaya from '../assets/teams/qr/kristina-sokolovskaya.png';
+import propertyPartnersDynin from '../assets/teams/qr/property-partners-dynin.png';
+import qrAlex from '../assets/teams/qr/qr-alex.svg';
+import tykhovaTatiana from '../assets/teams/qr/tykhova-tatiana.png';
 
-
+import rent from "../assets/pdf/rent.pdf";
+import villa from "../assets/pdf/villa.pdf";
+import resale from "../assets/pdf/resale.pdf";
+import family from "../assets/pdf/family.pdf";
+import MaxLengthText from "../components/MaxLengthText.jsx";
 const Home = ({openModal}) => {
-    const [activeKind, setActiveKind] = useState(0);
+    const [activeKind, setActiveKind] = useState(null);
     const [visibleMembers, setVisibleMembers] = useState(4);
     const team = [
         {
-            "image": alexLogachevName, "name": "Alex Logachev", "position": "CEO",
+            "image": alexLogachevName, "name": "Alex Logachev", "position": "CEO","qr":qrAlex,
             "social": {
                 "telegram": "https://t.me/oleksandr_logachev",
                 "instagram":"https://www.instagram.com/logachev_alexsandr?igshid=MzRlODBiNWFlZA%3D%3D",
@@ -47,14 +58,14 @@ const Home = ({openModal}) => {
             }
         },
         {
-            "image": alekseiShyianName, "name": "Aleksei Shyian", "position": "Business Developer",
+            "image": alekseiShyianName, "name": "Aleksei Shyian", "position": "Business Developer","qr":alekseiShyian,
             "social": {
                 "instagram": "https://www.instagram.com/dubai_oleksii_shyian",
                 "telegram": "https://t.me/brodubai"
             }
         },
         {
-            "image": tykhovaTatianaName, "name": "Tykhova Tatiana", "position": "Real estate broker",
+            "image": tykhovaTatianaName, "name": "Tykhova Tatiana", "position": "Real estate broker","qr":tykhovaTatiana,
             "social": {
                 "instagram": "https://www.instagram.com/taffeeta",
                 "telegram": "https://t.me/+971522419898",
@@ -63,13 +74,13 @@ const Home = ({openModal}) => {
         }
         ,
         {
-            "image": kristinaSokolovskayaName, "name": "Kristina Sokolovskaya", "position": "CEO Kristal Business Experts",
+            "image": kristinaSokolovskayaName, "name": "Kristina Sokolovskaya", "position": "CEO Kristal Business Experts","qr":kristinaSokolovskaya,
             "social": {
                 "telegram": "https://t.me/+971529568%20390",
             }
         },
         {
-            "image": pavelDyninName, "name": "Pavel Dynin", "position": "Real estate broker",
+            "image": pavelDyninName, "name": "Pavel Dynin", "position": "Real estate broker","qr":propertyPartnersDynin,
             "social": {
                 "telegram": "https://t.me/pavel_dynin",
                 "instagram":"https://www.instagram.com/pavel.dynin?igshid=OGQ5Z%20Dc2ODk2ZA%3D%3D",
@@ -78,21 +89,13 @@ const Home = ({openModal}) => {
             }
         },
         {
-            "image": annaHorshunovaName, "name": "Anna Horshunova", "position": "Real estate broker",
+            "image": annaHorshunovaName, "name": "Anna Horshunova", "position": "Real estate broker","qr":annaHorshunova,
             "social": {
                 facebook:"https://www.facebook.com/annagorshunova?mibextid=LQQJ4d"
             }
         },
         {
-            "image": tkachenkoNataliiaName, "name": "Tkachenko Nataliia", "position": "Real estate broker",
-            "social": {
-                telegram: "https://t.me/+380665228756",
-                instagram:"https://www.instagram.com/natali_invest_dubai?igshid=NzZlODBkYWE4Ng%3D%3D",
-                whatsapp:"https://api.whatsapp.com/send/?phone=971562453839&text&type=phone_number&app_absent=0",
-            }
-        },
-        {
-            "image": allaGerassimovaName, "name": "Alla Gerassimova", "position": "Marketer, content maker",
+            "image": allaGerassimovaName, "name": "Alla Gerassimova", "position": "Marketer, content maker","qr":allaGerassimova,
             "social": {
                 "telegram": "https://t.me/alla_gerassimova",
                 "instagram":"https://www.instagram.com/a11gep?igshid=NTc4MTIw+NjQ2YQ%3D%3D",
@@ -100,7 +103,7 @@ const Home = ({openModal}) => {
             }
         },
         {
-            "image": dmitriyKoltsovName, "name": "Dmitriy Koltsov", "position": "Real estate broker",
+            "image": dmitriyKoltsovName, "name": "Dmitriy Koltsov", "position": "Real estate broker","qr":dmitriyKoltsov,
             "social": {
                 "telegram": "https://t.me/brokervdubae",
                 "instagram":"https://www.instagram.com/brokervdubae",
@@ -119,7 +122,7 @@ const Home = ({openModal}) => {
             <div className="content">
                 <div className="tittle">
                     <div>Your Space, Your Sanctuary</div>
-                    <div>Property Partners - Redefining Home Living</div>
+                    <div>ProPart - Redefining Home Living</div>
                 </div>
                 <div className="advantages">
                     <div className="advantages-wrapper">
@@ -315,7 +318,8 @@ const Home = ({openModal}) => {
                                 </div>
                             </div>
 
-                            <div className="button" onClick={()=>openModal()}>
+                            <div className="button">
+                                <a href={rent}>
                                 Get the selection
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none">
@@ -323,6 +327,7 @@ const Home = ({openModal}) => {
                                         d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
                                         fill="black"/>
                                 </svg>
+                                </a>
                             </div>
 
                             </div>
@@ -362,8 +367,8 @@ const Home = ({openModal}) => {
                                         from $170,000
                                     </div>
                                 </div>
-                                <Link to={"real-estate"}>
                                     <div className="button">
+                                        <a href={family}>
                                         Get the selection
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                              fill="none">
@@ -371,8 +376,8 @@ const Home = ({openModal}) => {
                                                 d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
                                                 fill="black"/>
                                         </svg>
+                                        </a>
                                     </div>
-                                </Link>
                             </div>
 
                         </div>
@@ -412,8 +417,8 @@ const Home = ({openModal}) => {
                                         from $2,100,000
                                     </div>
                                 </div>
-                                <Link to={"real-estate"}>
                                     <div className="button">
+                                        <a href={villa}>
                                         Get the selection
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                              fill="none">
@@ -421,8 +426,8 @@ const Home = ({openModal}) => {
                                                 d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
                                                 fill="black"/>
                                         </svg>
+                                        </a>
                                     </div>
-                                </Link>
                             </div>
 
                         </div>
@@ -462,8 +467,9 @@ const Home = ({openModal}) => {
                                     from $150,000
                                 </div>
                             </div>
-                                <Link to={"real-estate"}>
+
                                     <div className="button">
+                                        <a href={resale}>
                                         Get the selection
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                              fill="none">
@@ -471,8 +477,9 @@ const Home = ({openModal}) => {
                                                 d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
                                                 fill="black"/>
                                         </svg>
+                                        </a>
                                     </div>
-                                </Link>
+
                             </div>
                         </div>
                     </div>
@@ -502,7 +509,7 @@ const Home = ({openModal}) => {
             </div>
             <div className={"orange"}>
                 <div className="tittle">Stability</div>
-                <div className="description">Recent years saw a 20-25% surge in property prices, ensuring a stable ROI
+                <div className="description">Recent years saw a 20-25% surge
                 </div>
             </div>
             <div className={"light"}>
@@ -511,14 +518,14 @@ const Home = ({openModal}) => {
             </div>
             <div className={"image-grid"}><img src={whyDubai}/></div>
             <div className={"light"}>
-                <div className="tittle">Stability</div>
-                <div className="description">Recent years saw a 20-25% surge in property prices, ensuring a stable ROI
+                <div className="tittle">No taxes</div>
+                <div className="description">No income or property taxes, enticing tax benefits
                 </div>
             </div>
         </div>
         <div className="kind-of-projects">
             <div className="image">
-                <img src={kindOfProjects}/>
+                <img src={homeMain}/>
             </div>
             <div className="content">
                 <div className="tittle">
@@ -549,8 +556,7 @@ const Home = ({openModal}) => {
                                     fill="#191C38"/>
                             </svg>
                         </div>
-                        <div className="hiden-text">Our partners are Dubai's largest real estate developers, which will
-                            allow you to get insider information on new projects.
+                        <div className="hiden-text">In Dubai, the secondary real estate market is also developed, where we can help you find a project that suits your preferences.
                         </div>
                     </div>
                     <div className={`type ${activeKind === 2 ? 'active' : ''}`}>
@@ -563,8 +569,7 @@ const Home = ({openModal}) => {
                                     fill="#191C38"/>
                             </svg>
                         </div>
-                        <div className="hiden-text">Our partners are Dubai's largest real estate developers, which will
-                            allow you to get insider information on new projects.
+                        <div className="hiden-text">Whether you're searching for a property or visiting Dubai for tourism or business, Property Partners will find the best long-term and short-term rental offers for you.
                         </div>
                     </div>
                     <div className={`type ${activeKind === 3 ? 'active' : ''}`}>
@@ -577,8 +582,7 @@ const Home = ({openModal}) => {
                                     fill="#191C38"/>
                             </svg>
                         </div>
-                        <div className="hiden-text">Our partners are Dubai's largest real estate developers, which will
-                            allow you to get insider information on new projects.
+                        <div className="hiden-text">Our specialists have  Dubai commercial real estate database. We assist in processing business documents and finding the right property for your company.
                         </div>
                     </div>
                 </div>
@@ -608,7 +612,7 @@ const Home = ({openModal}) => {
                                 d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM11.003 16L18.073 8.929L16.659 7.515L11.003 13.172L8.174 10.343L6.76 11.757L11.003 16Z"
                                 fill="#C29773"/>
                         </svg>
-                        Investor Visa for 22 years or 10 years
+                        Investor Visa for 2 years or 10 years
                     </div>
                     <div className="consult">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -635,12 +639,30 @@ const Home = ({openModal}) => {
             </div>
             <div className="team">
                 {displayedMembers.map((member, index) => (
+                    <Link
+                        key={index}
+                        className="member"
+                        to={"/agent"}
+                        state={{memberObject: member}}
+                    >
                     <div key={index} className="member">
                         <div className="image"><img src={member.image}/></div>
                         <div className="information">
                             <div className="general-info">
-                                <div className="name">{member.name}</div>
-                                <div className="position">{member.position}</div>
+                                <div className="name"><MaxLengthText text={member.name} maxLengthBreakpoints={{
+
+
+                                    768: 17,
+
+
+                                }}/></div>
+                                <div className="position"><MaxLengthText text={member.position} maxLengthBreakpoints={{
+
+
+                                    768: 15,
+
+
+                                }}/></div>
                             </div>
                             <div className="social">
 
@@ -676,11 +698,12 @@ const Home = ({openModal}) => {
 
                         </div>
                     </div>
+                    </Link>
                 ))}
 
             </div>
             {
-                visibleMembers<=displayedMembers.length&&
+                visibleMembers!=8&&
 
                 <div className="show-more" onClick={() => setVisibleMembers(visibleMembers + 4)}>
                     <div className="button">
@@ -698,7 +721,7 @@ const Home = ({openModal}) => {
                     <div>Would you like to the first to know about the launches of sales of promising projects in
                         Dubai?
                     </div>
-                    <div>Text your phone number, and our real estate expert real estate expert will contact you within 5
+                    <div>Text your phone number, and our real estate expert will contact you within 5
                         minutes.
                     </div>
                 </div>

@@ -522,5 +522,71 @@
     font-size: 14px;
   }
 }
+@media (max-width: 1100px) {
+  .concierge-wrapper .concierge-banner {
+    padding: 20px 64px;
+    height: 70vh;
+  }
+  .concierge-wrapper .concierge-banner .concierge-text div:first-child {
+    font-size: 50px;
+  }
+  .concierge-wrapper .concierge-banner .concierge-text div:last-child {
+    width: 60%;
+    padding: 15px;
+    font-size: 18px;
+  }
+  .concierge-wrapper .about-us .content1 {
+    font-size: 18px;
+  }
+  .concierge-wrapper .about-us .content2 {
+    font-size: 16px;
+  }
+  .concierge-wrapper .our-services {
+    padding: 20px 64px;
+    gap: 80px;
+  }
+  .concierge-wrapper .our-services .tittle {
+    font-size: 36px;
+  }
+  .concierge-wrapper .our-services .content .div1 {
+    margin: 0;
+  }
+  .concierge-wrapper .our-services .content .div1 img {
+    object-fit: cover;
+  }
+  .concierge-wrapper .our-services .content .div2 {
+    font-size: 36px;
+  }
+  .concierge-wrapper .our-services .content .div3 {
+    font-size: 16px;
+  }
+  .concierge-wrapper .our-services .services-life .div1 {
+    font-size: 36px;
+  }
+  .concierge-wrapper .our-services .services-life .div2 {
+    margin: 0;
+  }
+  .concierge-wrapper .our-services .services-life .life-text {
+    font-size: 16px;
+  }
+  .concierge-wrapper .our-services .vip-services .div1 {
+    margin: 0;
+  }
+  .concierge-wrapper .our-services .vip-services .div1 img {
+    object-fit: cover;
+  }
+  .concierge-wrapper .our-services .vip-services .div2 {
+    font-size: 36px;
+  }
+  .concierge-wrapper .our-services .vip-services .vip-text {
+    font-size: 16px;
+  }
+  .concierge-wrapper .contact-us {
+    margin-top: 30px;
+  }
+  .concierge-wrapper .contact-us .contact-us-form {
+    padding: 40px 64px 40px;
+  }
+}
 
 /*# sourceMappingURL=concierge.css.map */

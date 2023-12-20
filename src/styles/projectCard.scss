@@ -178,6 +178,9 @@
           align-items: flex-end;
 
           div:first-child {
+            span{
+              font-size: 30px;
+            }
             color: #000;
             leading-trim: both;
             text-edge: cap;
@@ -332,6 +335,7 @@
 
             .button:first-child {
               display: flex;
+              cursor: pointer;
               padding: 16px;
               justify-content: center;
               align-items: center;
@@ -351,6 +355,8 @@
 
             .button:last-child {
               display: flex;
+              cursor: pointer;
+
               padding: 16px;
               justify-content: center;
               align-items: center;
@@ -396,6 +402,13 @@
           }
 
           div:last-child {
+            display: flex;
+            gap: 7px;
+            align-items: flex-end;
+            span{
+              color: #939393;
+              font-size: 15px;
+            }
             color: #FFF;
             text-align: right;
             font-family: Helvetica, sans-serif;
@@ -549,12 +562,12 @@
     }
 
     .location {
-      height: 40vh;
+      height: 80vh;
       display: flex;
       flex-direction: column;
       align-items: flex-start;
       gap: 16px;
-      margin-bottom: 20px;
+      margin-bottom: 40px;
 
       .header {
         color: #191C38;
@@ -619,11 +632,13 @@
         }
       }
 
-      .floor-content {
+      .simillar-content{
         flex: 1;
         height: 100%;
-        width: 100%;
-        padding: 0;
+        .swiper-simillar{
+          height: 100%;
+
+        }
       }
     }
   }
@@ -815,7 +830,7 @@
         }
       }
       .simillar{
-        height: unset;
+
         margin-bottom: 20px;
         .header{
           align-items: center;

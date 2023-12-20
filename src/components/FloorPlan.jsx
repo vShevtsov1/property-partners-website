@@ -8,7 +8,7 @@ const FloorPlan = ({plan,type}) => {
             <div className="image-container"><img src={plan.imgSrc}/></div>
         <div className="plan-info">
             <div className="price-info">
-                <div>$ {formatNumberWithCommas(plan.price)}</div>
+                <div>from ${formatNumberWithCommas(plan.price)}</div>
                 <div>{plan.size} sq.ft</div>
             </div>
             <div className="type-info">{type} {type!="Studio"&&"BD"}</div>
