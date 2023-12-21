@@ -109,7 +109,7 @@ const Header = () => {
                             </svg>
                         </div></Link>
                         <Link to={"/real-estate"}> <div className="menu-option">
-                            Real Estate
+                            Buy
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
                                 <path d="M0.933333 15.8002L0 14.8669L6.86667 8.0002L0 1.13353L0.933333 0.200195L8.73333 8.0002L0.933333 15.8002Z" fill="#191C38"/>
                             </svg>
