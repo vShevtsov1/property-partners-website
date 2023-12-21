@@ -21,7 +21,7 @@ i18next
     .use(initReactI18next)
     .init({
         resources,
-        lng: "ru", // Set the default language
+        lng: "en", // Set the default language
         interpolation: {
             escapeValue: false,
         },
