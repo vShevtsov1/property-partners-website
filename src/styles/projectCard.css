@@ -115,7 +115,6 @@
 .project-card .content .project-information .general-information .name-block, .project-card .content .project-information-phone .general-information .name-block {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   width: 80%;
   background: white;
   gap: 15px;
@@ -149,31 +148,35 @@
   width: 100%;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   align-items: flex-end;
+  background: white;
+  gap: 15px;
 }
 .project-card .content .project-information .general-information .price-block div:first-child, .project-card .content .project-information-phone .general-information .price-block div:first-child {
   color: #000;
   leading-trim: both;
   text-edge: cap;
   font-family: HelveticaBold, sans-serif;
-  font-size: 48px;
+  font-size: 40px;
   font-style: normal;
-  font-weight: 400;
-  line-height: 24px; /* 50% */
+  font-weight: 700;
+  line-height: 43px; /* 107.5% */
 }
 .project-card .content .project-information .general-information .price-block div:first-child span, .project-card .content .project-information-phone .general-information .price-block div:first-child span {
   font-size: 30px;
 }
 .project-card .content .project-information .general-information .price-block div:last-child, .project-card .content .project-information-phone .general-information .price-block div:last-child {
   color: #8F8F8F;
+  display: flex;
+  align-items: center;
+  gap: 5px;
   leading-trim: both;
   text-edge: cap;
   font-family: Helvetica, sans-serif;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 24px; /* 150% */
+  line-height: 24px; /* 120% */
 }
 .project-card .content .project-information .additional-information, .project-card .content .project-information-phone .additional-information {
   flex: 1;
@@ -221,6 +224,7 @@
 .project-card .content .manager-plan-wrapper {
   display: flex;
   height: 380px;
+  gap: 10px;
   margin-bottom: 20px;
 }
 .project-card .content .manager-plan-wrapper .manager-view {
@@ -613,6 +617,7 @@
   .project-card .content .project-information-phone .general-information .name-block .name-block-2 .price-block div:first-child {
     font-family: HelveticaBold, sans-serif;
     font-size: 24px;
+    line-height: unset;
   }
   .project-card .content .project-information-phone .general-information .name-block div:first-child {
     font-size: 30px;
@@ -669,22 +674,22 @@
     align-items: center;
   }
   .project-card .content .manager-plan-wrapper .payment-plan .plan-header div:first-child {
-    font-size: 22px;
+    font-size: 22px !important;
   }
   .project-card .content .manager-plan-wrapper .payment-plan .plan-header div:last-child {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .project-card .content .manager-plan-wrapper .payment-plan .plan-type > div {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .project-card .content .manager-plan-wrapper .payment-plan .plan-type > div.active {
-    font-size: 16px;
+    font-size: 16px !important;
   }
   .project-card .content .manager-plan-wrapper .payment-plan .plan-content .column .header {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .project-card .content .manager-plan-wrapper .payment-plan .plan-content .column .values .value {
-    font-size: 16px;
+    font-size: 14px !important;
   }
   .project-card .content .floor-plans .header {
     font-size: 22px;
@@ -717,6 +722,88 @@
   .project-card .content .simillar .header .arrows > .right-arrow {
     width: 36px;
     height: 36px;
+  }
+}
+@media (max-width: 1300px) {
+  .project-card .content {
+    padding: 10px 30px;
+  }
+  .project-card .content .manager-plan-wrapper {
+    height: max-content;
+  }
+  .project-card .content .manager-plan-wrapper .manager-view .broker-info {
+    padding: 10px;
+  }
+  .project-card .content .manager-plan-wrapper .manager-view .broker-info .general-info {
+    margin-bottom: 5px;
+  }
+  .project-card .content .manager-plan-wrapper .manager-view .broker-info .additional-info {
+    font-size: 14px;
+  }
+  .project-card .content .manager-plan-wrapper .manager-view .broker-info .buttons-container .button:first-child, .project-card .content .manager-plan-wrapper .manager-view .broker-info .buttons-container .button:last-child {
+    font-size: 14px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-header div:first-child {
+    font-size: 28px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-type > div {
+    font-size: 16px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-type > div.active {
+    font-size: 16px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-content .column .header {
+    font-size: 16px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-content .column .values .value {
+    font-size: 16px;
+  }
+  .project-card .content .simillar {
+    height: 400px;
+  }
+}
+@media (max-width: 820px) {
+  .project-card .feedback {
+    display: none;
+  }
+  .project-card .content {
+    padding: 20px 16px;
+  }
+  .project-card .content .images-container {
+    grid-template-rows: repeat(2, 40%) 15%;
+    grid-column-gap: 14px;
+    grid-row-gap: 14px;
+  }
+  .project-card .content .project-information {
+    padding: 16px;
+  }
+  .project-card .content .project-information .additional-information {
+    flex-wrap: wrap;
+  }
+  .project-card .content .manager-plan-wrapper {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .project-card .content .manager-plan-wrapper .manager-view {
+    width: 100%;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-header div:first-child {
+    font-size: 38px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-header div:last-child {
+    font-size: 24px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-type > div {
+    font-size: 24px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-type > div.active {
+    font-size: 24px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-content .column .header {
+    font-size: 22px;
+  }
+  .project-card .content .manager-plan-wrapper .payment-plan .plan-content .column .values .value {
+    font-size: 22px;
   }
 }
 

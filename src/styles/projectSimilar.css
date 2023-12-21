@@ -17,6 +17,7 @@
 }
 .project-similar .project-details .general-info {
   flex: 1;
+  gap: 5px;
   height: 100%;
   display: flex;
   flex-direction: column;
@@ -44,6 +45,7 @@
 }
 .project-similar .project-details .price-info {
   flex: 1;
+  gap: 5px;
   text-overflow: ellipsis;
   white-space: nowrap;
   height: 100%;

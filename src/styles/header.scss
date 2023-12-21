@@ -92,7 +92,7 @@ header {
     }
 
     .menu {
-      display: none;
+      display: none!important;
     }
 
     .phone-view {
@@ -195,5 +195,42 @@ header {
 
     }
 
+  }
+}
+@media (max-width: 1100px) {
+
+  header{
+    .menu{
+      display: flex;
+      width: max-content;
+        .menu-option{
+
+
+          font-size: 20px;
+          flex-wrap: nowrap;
+        }
+
+
+    }
+    .additional{
+      .phone{
+        display: none;
+      }
+    }
+  }
+}
+@media (max-width: 820px) {
+  header{
+    .menu{
+      position: unset;
+      transform: unset;
+      order: 2;
+      .menu-option{
+        font-size: 14px;
+      }
+    }
+    .additional{
+      order: 3;
+    }
   }
 }

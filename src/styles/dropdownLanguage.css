@@ -1,0 +1,33 @@
+.dropdown-language {
+  position: relative;
+}
+.dropdown-language .dropdown-visible {
+  cursor: pointer;
+  display: flex;
+  padding: 8px 8px 8px 12px;
+  align-items: center;
+  gap: 8px;
+  background: #F5F5F5;
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+  text-transform: uppercase;
+  line-height: normal;
+}
+.dropdown-language .hiden-element {
+  position: absolute;
+  background: white;
+  top: 100%;
+  width: 100%;
+  left: 0;
+}
+.dropdown-language .hiden-element .option {
+  cursor: pointer;
+  padding: 8px 8px 8px 12px;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+}
+
+/*# sourceMappingURL=dropdownLanguage.css.map */

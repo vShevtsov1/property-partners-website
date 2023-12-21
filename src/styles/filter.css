@@ -65,5 +65,10 @@
     flex: 1;
   }
 }
+@media (max-width: 820px) {
+  .filter .dropdown {
+    flex: 1;
+  }
+}
 
 /*# sourceMappingURL=filter.css.map */

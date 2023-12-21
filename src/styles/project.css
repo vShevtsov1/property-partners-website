@@ -82,13 +82,14 @@
 
 @media (max-width: 600px) {
   .project {
-    width: 48%;
+    width: 48% !important;
+    height: 200px !important;
   }
   .project .image-container .information .name {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .project .image-container .information .bedrooms {
-    font-size: 14px;
+    font-size: 14px !important;
   }
   .project .project-info .project-information {
     flex-direction: column;
@@ -105,6 +106,42 @@
   .project .project-info .project-information .location svg {
     width: 16px;
     height: 16px;
+  }
+}
+@media (max-width: 1300px) {
+  .project {
+    height: 250px;
+  }
+  .project .image-container .information {
+    gap: 0px;
+  }
+  .project .image-container .information .name {
+    font-size: 16px;
+  }
+  .project .image-container .information .bedrooms {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
+}
+@media (max-width: 870px) {
+  .project {
+    height: 40%;
+  }
+  .project .image-container .information {
+    gap: 0px;
+  }
+  .project .image-container .information .name {
+    font-size: 25px;
+  }
+  .project .image-container .information .bedrooms {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+  .project .project-info .project-information .location {
+    font-size: 17px;
+  }
+  .project .project-info .project-information .price {
+    font-size: 17px;
   }
 }
 

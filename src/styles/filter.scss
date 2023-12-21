@@ -67,3 +67,10 @@
     }
   }
 }
+@media (max-width: 820px) {
+  .filter{
+    .dropdown{
+      flex: 1;
+    }
+  }
+}

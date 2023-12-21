@@ -247,3 +247,15 @@
     }
   }
 }
+@media (max-width: 870px){
+  .agent{
+    .content{
+      .broker-info{
+        flex-direction: column;
+        .images-container{
+          width: 100%;
+        }
+      }
+    }
+  }
+}

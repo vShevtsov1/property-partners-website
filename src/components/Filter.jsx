@@ -1,5 +1,7 @@
 import "../styles/filter.css"
+import {useTranslation} from "react-i18next";
 const Filter = () => {
+    const { t } = useTranslation();
 
     return(<div className={"filter"}>
         <div className="search">
@@ -9,37 +11,37 @@ const Filter = () => {
             <input placeholder={"Search on map..."} type="text"/>
         </div>
         <div className="dropdown">
-            Price
+            {t("filter1")}
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
             <path d="M12 14L8 10H16L12 14Z" fill="#09121F"/>
         </svg>
         </div>
         <div className="dropdown">
-            Size
+            {t("filter2")}
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M12 14L8 10H16L12 14Z" fill="#09121F"/>
             </svg>
         </div>
         <div className="dropdown">
-            Bedrooms
+            {t("filter3")}
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M12 14L8 10H16L12 14Z" fill="#09121F"/>
             </svg>
         </div>
         <div className="dropdown">
-            Location
+            {t("filter4")}
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M12 14L8 10H16L12 14Z" fill="#09121F"/>
             </svg>
         </div>
         <div className="dropdown">
-            Handover
+            {t("filter5")}
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M12 14L8 10H16L12 14Z" fill="#09121F"/>
             </svg>
         </div>
         <div className="dropdown">
-            Property type
+            {t("filter6")}
             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                 <path d="M12 14L8 10H16L12 14Z" fill="#09121F"/>
             </svg>

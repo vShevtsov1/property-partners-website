@@ -14,6 +14,7 @@
   object-fit: cover;
   width: 100%;
   height: 100%;
+  transform: scale(-1, 1);
 }
 .modal-content .modal-form {
   flex: 1;

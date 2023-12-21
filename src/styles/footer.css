@@ -8,6 +8,9 @@ footer {
 footer .phone-view {
   display: none;
 }
+footer .table-view {
+  display: none;
+}
 footer .logo-container {
   display: flex;
   max-width: 17%;
@@ -62,10 +65,8 @@ footer .menu-wrapper .menu .menu-option {
   line-height: 24px; /* 150% */
 }
 footer .information {
-  width: 40%;
-  max-width: 15%;
+  width: max-content;
   display: flex;
-  justify-content: flex-end;
   flex-direction: column;
   gap: 36px;
 }
@@ -129,6 +130,9 @@ footer .information .call-us {
   }
   footer .information {
     display: none;
+  }
+  footer .table-view {
+    display: none !important;
   }
   footer .phone-view {
     display: flex;
@@ -195,6 +199,67 @@ footer .information .call-us {
     display: flex;
     justify-content: flex-end;
     gap: 10px;
+  }
+}
+@media (max-width: 820px) {
+  footer {
+    padding: 16px;
+  }
+  footer .logo-container {
+    display: none;
+  }
+  footer .menu-wrapper {
+    display: none;
+  }
+  footer .information {
+    display: none;
+  }
+  footer .table-view {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+    flex-direction: column;
+  }
+  footer .table-view .logo-container {
+    display: unset;
+  }
+  footer .table-view .menu-wrapper {
+    display: unset;
+  }
+  footer .table-view .information {
+    display: unset;
+  }
+  footer .table-view .logo-wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  footer .table-view .logo-wrapper .logo-container {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    gap: 10px;
+    max-width: 50%;
+  }
+  footer .table-view .logo-wrapper .information {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  footer .table-view .logo-wrapper .information a {
+    order: 1;
+  }
+  footer .table-view .logo-wrapper .information .location {
+    order: 2;
+  }
+  footer .table-view .logo-wrapper .information .social {
+    order: 3;
+  }
+  footer .table-view .menu-wrapper {
+    display: flex;
+    transform: unset;
+    position: unset;
+    justify-content: center;
   }
 }
 

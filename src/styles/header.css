@@ -81,7 +81,7 @@ header .menu .menu-option {
     display: none;
   }
   header .menu {
-    display: none;
+    display: none !important;
   }
   header .phone-view {
     display: flex;
@@ -175,6 +175,32 @@ header .menu .menu-option {
     font-style: normal;
     font-weight: 600;
     line-height: normal;
+  }
+}
+@media (max-width: 1100px) {
+  header .menu {
+    display: flex;
+    width: max-content;
+  }
+  header .menu .menu-option {
+    font-size: 20px;
+    flex-wrap: nowrap;
+  }
+  header .additional .phone {
+    display: none;
+  }
+}
+@media (max-width: 820px) {
+  header .menu {
+    position: unset;
+    transform: unset;
+    order: 2;
+  }
+  header .menu .menu-option {
+    font-size: 14px;
+  }
+  header .additional {
+    order: 3;
   }
 }
 

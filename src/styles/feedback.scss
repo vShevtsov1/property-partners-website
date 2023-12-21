@@ -63,3 +63,19 @@
     }
   }
 }
+@media (max-width: 1300px) {
+  .feedback{
+    padding: 20px 30px;
+    .feedback-form{
+      .form-input{
+        input{
+          font-size:14px ;
+        }
+      }
+      .form-button{
+        flex:0.7;
+        font-size: 14px;
+      }
+    }
+  }
+}

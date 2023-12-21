@@ -43,7 +43,7 @@
   display: flex;
   flex-wrap: wrap;
   gap: 5px;
-  max-width: 65%;
+  max-width: 70%;
 }
 .home-page .home-banner .content .advantages .advantages-wrapper .advantage {
   display: flex;
@@ -731,9 +731,9 @@
   }
   .home-page .collections .content .collection {
     gap: 8px;
-    flex-direction: column;
-    height: auto;
-    width: 100%;
+    flex-direction: column !important;
+    height: auto !important;
+    width: 100% !important;
   }
   .home-page .collections .content .collection .image {
     width: 100% !important;
@@ -767,13 +767,13 @@
     display: none;
   }
   .home-page .why-dubai {
-    padding: 16px;
-    height: auto;
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(4, 1fr);
-    grid-column-gap: 8px;
-    grid-row-gap: 8px;
+    padding: 16px !important;
+    height: auto !important;
+    display: grid !important;
+    grid-template-columns: repeat(2, auto) !important;
+    grid-template-rows: repeat(4, 1fr) !important;
+    grid-column-gap: 8px !important;
+    grid-row-gap: 8px !important;
   }
   .home-page .why-dubai .div1 {
     grid-area: 3/2/5/3;
@@ -825,7 +825,6 @@
     margin-top: -20px;
   }
   .home-page .consulting .tittle {
-    padding: 16px;
     gap: 5px;
   }
   .home-page .consulting .tittle div:first-child {
@@ -839,8 +838,8 @@
     flex-direction: column;
   }
   .home-page .consulting .content .image {
-    padding: 16px;
-    width: 100%;
+    padding: 0 !important;
+    width: 100% !important;
   }
   .home-page .consulting .content .image img {
     width: 100%;
@@ -888,6 +887,7 @@
   }
   .home-page .contact-form .contact-form-form {
     gap: 15px;
+    flex-direction: column !important;
     width: 100%;
     padding: 0;
   }
@@ -901,7 +901,7 @@
     background: none;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .home-page .home-banner {
     height: auto;
   }
@@ -963,6 +963,9 @@
   }
   .home-page .collections .content .collection .content .collection-info div:last-child .properties {
     gap: 5px;
+  }
+  .home-page .why-dubai {
+    height: 70vh;
   }
   .home-page .why-dubai .dark {
     font-size: 36px;
@@ -1045,6 +1048,73 @@
   }
   .home-page .partners {
     padding: 10px 64px;
+  }
+}
+@media (max-width: 870px) {
+  .home-page .partners {
+    display: none;
+  }
+  .home-page .home-banner .content {
+    padding-left: 16px;
+  }
+  .home-page .home-banner .content .advantages {
+    width: 100%;
+  }
+  .home-page .home-banner .content .advantages .advantages-wrapper .advantage {
+    padding: 8px 12px 8px 8px;
+    gap: 8px;
+    font-size: 14px;
+  }
+  .home-page .collections {
+    padding: 30px 16px;
+  }
+  .home-page .collections .content {
+    flex-direction: column;
+  }
+  .home-page .collections .content .collection {
+    flex-direction: row;
+    width: 100%;
+    height: 100%;
+    align-items: flex-end;
+  }
+  .home-page .collections .content .collection .content {
+    height: 100%;
+    justify-content: flex-end;
+  }
+  .home-page .why-dubai {
+    height: 40vh;
+    padding: 30px 16px;
+    grid-template-columns: repeat(4, 25%);
+    grid-template-rows: repeat(2, auto);
+  }
+  .home-page .kind-of-projects {
+    padding: 30px 16px;
+  }
+  .home-page .consulting {
+    padding: 30px 16px;
+  }
+  .home-page .our-team {
+    padding: 30px 16px;
+  }
+  .home-page .our-team .team {
+    gap: 5px;
+  }
+  .home-page .contact-form {
+    padding: 30px 16px;
+  }
+  .home-page .contact-form .image {
+    display: none;
+  }
+  .home-page .contact-form .contact-form-form {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+  .home-page .contact-form .contact-form-form .tittle {
+    gap: 15px;
+  }
+  .home-page .contact-form .contact-form-form .form .form-text {
+    display: none;
   }
 }
 

@@ -234,5 +234,13 @@
     justify-content: center;
   }
 }
+@media (max-width: 870px) {
+  .agent .content .broker-info {
+    flex-direction: column;
+  }
+  .agent .content .broker-info .images-container {
+    width: 100%;
+  }
+}
 
 /*# sourceMappingURL=agent.css.map */

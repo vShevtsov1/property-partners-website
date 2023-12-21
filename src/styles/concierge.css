@@ -411,7 +411,7 @@
     grid-row-gap: 2px;
   }
   .concierge-wrapper .about-us .content1 {
-    grid-area: 1/1/2/3;
+    grid-area: 1/1/2/3 !important;
     font-size: 16px;
     justify-content: center;
     padding: 16px;
@@ -441,8 +441,8 @@
   }
   .concierge-wrapper .our-services .content {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(2, auto) !important;
+    grid-template-rows: repeat(6, auto) !important;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
   }
@@ -463,8 +463,8 @@
   }
   .concierge-wrapper .our-services .services-life {
     display: grid;
-    grid-template-columns: repeat(2, auto);
-    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(2, auto) !important;
+    grid-template-rows: repeat(6, auto) !important;
     grid-column-gap: 2px;
     grid-row-gap: 2px;
   }
@@ -485,14 +485,14 @@
   }
   .concierge-wrapper .our-services .vip-services {
     display: grid;
-    grid-template-columns: repeat(2, 50%);
-    grid-template-rows: repeat(4, auto);
-    grid-column-gap: 2px;
-    grid-row-gap: 2px;
+    grid-template-columns: repeat(2, 50%) !important;
+    grid-template-rows: repeat(4, 1fr) !important;
+    grid-column-gap: 2px !important;
+    grid-row-gap: 2px !important;
   }
   .concierge-wrapper .our-services .vip-services .div1 {
-    margin: 0;
-    grid-area: 1/1/5/2;
+    margin: 0 !important;
+    grid-area: 1/1/4/2 !important;
   }
   .concierge-wrapper .our-services .vip-services .div2 {
     padding: 16px;
@@ -503,14 +503,12 @@
     padding: 16px;
     font-size: 14px;
   }
-  .concierge-wrapper .our-services .vip-services .vip-text:last-child {
-    grid-area: 5/1/6/3;
-  }
   .concierge-wrapper .contact-us {
+    margin-bottom: -20px;
     display: unset;
   }
   .concierge-wrapper .contact-us .contact-us-form {
-    padding: 24px 16px;
+    padding: 24px 16px !important;
   }
   .concierge-wrapper .contact-us .contact-us-form .texts div:first-child {
     font-size: 24px;
@@ -522,10 +520,10 @@
     font-size: 14px;
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1300px) {
   .concierge-wrapper .concierge-banner {
     padding: 20px 64px;
-    height: 70vh;
+    height: 50vh;
   }
   .concierge-wrapper .concierge-banner .concierge-text div:first-child {
     font-size: 50px;
@@ -586,6 +584,78 @@
   }
   .concierge-wrapper .contact-us .contact-us-form {
     padding: 40px 64px 40px;
+  }
+}
+@media (max-width: 870px) {
+  .concierge-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px !important;
+  }
+  .concierge-wrapper .concierge-banner {
+    padding: 16px;
+    gap: 10px;
+    height: 30vh;
+  }
+  .concierge-wrapper .concierge-banner .concierge-text {
+    gap: 15px;
+  }
+  .concierge-wrapper .concierge-banner .concierge-text div:first-child, .concierge-wrapper .concierge-banner .concierge-text div:last-child {
+    width: 90%;
+  }
+  .concierge-wrapper .concierge-banner .concierge-text div:first-child {
+    font-size: 32px;
+  }
+  .concierge-wrapper .concierge-banner .concierge-text div:last-child {
+    font-size: 14px;
+  }
+  .concierge-wrapper .about-us {
+    padding: 16px;
+  }
+  .concierge-wrapper .our-services {
+    padding: 16px;
+    width: unset;
+  }
+  .concierge-wrapper .our-services .content {
+    width: unset;
+    grid-template-columns: 25% repeat(4, auto);
+    grid-template-rows: repeat(3, auto);
+  }
+  .concierge-wrapper .our-services .content .div3 {
+    font-size: 14px;
+  }
+  .concierge-wrapper .our-services .content .div2 {
+    font-size: 16px;
+  }
+  .concierge-wrapper .our-services .services-life {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+  }
+  .concierge-wrapper .our-services .services-life .life-text {
+    font-size: 14px;
+  }
+  .concierge-wrapper .our-services .services-life .div1 {
+    font-size: 16px;
+    grid-area: unset;
+  }
+  .concierge-wrapper .our-services .services-life .div2 {
+    grid-area: 1/1/6/2;
+  }
+  .concierge-wrapper .our-services .vip-services {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+  }
+  .concierge-wrapper .our-services .vip-services .div1 {
+    grid-area: 1/1/7/2;
+  }
+  .concierge-wrapper .our-services .vip-services .div2 {
+    font-size: 16px;
+  }
+  .concierge-wrapper .our-services .vip-services .vip-text {
+    font-size: 14px;
   }
 }
 

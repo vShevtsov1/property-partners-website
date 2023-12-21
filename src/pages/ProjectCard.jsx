@@ -32,6 +32,7 @@ import allaGerassimovaName from "../assets/teams/alla-gerassimova-min.jpg";
 import allaGerassimova from "../assets/teams/qr/alla-gerassimova.png";
 import dmitriyKoltsovName from "../assets/teams/dmitriy-koltsov-min.jpg";
 import dmitriyKoltsov from "../assets/teams/qr/dmitriy-koltsov.png";
+import {useTranslation} from "react-i18next";
 
 const ProjectCard = () => {
     const {id} = useParams();
@@ -46,6 +47,8 @@ const ProjectCard = () => {
         tittleText:"",
         buttonText:""
     });
+    const { t } = useTranslation();
+
     const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random() * 8));
 
     const breakpoints = {
@@ -70,7 +73,7 @@ const ProjectCard = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `http://157.175.196.127:8080/api/projects/${id}`,
+            url: `/api/projects/${id}`,
             headers: {}
         };
 
@@ -92,7 +95,7 @@ const ProjectCard = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: 'http://157.175.196.127:8080/api/projects/random',
+            url: '/api/projects/random',
             headers: {}
         };
 
@@ -231,7 +234,7 @@ const ProjectCard = () => {
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path d="M12 13V20L4 12L12 4V11H20V13H12Z" fill="white"/>
                         </svg>
-                        Back
+                        {t("r_but")}
                     </div>
                 </Link>
                 <div className="link" onClick={() => navigator.clipboard.writeText(window.location.href)}>
@@ -252,7 +255,7 @@ const ProjectCard = () => {
                             setModalText({tittleText:"To see more information - request it!",buttonText:"Get instant help from expert"})
                             setShowModal(true)
                         }
-                        }>Show More</div>
+                        }> {t("r_but1")}</div>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M13.1722 11.9997L8.22217 7.04974L9.63617 5.63574L16.0002 11.9997L9.63617 18.3637L8.22217 16.9497L13.1722 11.9997Z"
@@ -308,8 +311,8 @@ const ProjectCard = () => {
                         </div>
                     </div>
                     <div className="price-block">
-                        <div><span>from</span> ${formatNumberWithCommas(project.priceFrom)}</div>
-                        <div>from $ {(Number(project.priceFrom) / Number(project.sizeFrom)).toFixed(0)} for m²</div>
+                        <div><span>{t("r_pay2")}</span> ${formatNumberWithCommas(project.priceFrom)}</div>
+                        <div>{t("r_pay2")} {(Number(project.priceFrom) / Number(project.sizeFrom)).toFixed(0)} for m²</div>
                     </div>
                 </div>
                 <div className="additional-information">
@@ -320,7 +323,7 @@ const ProjectCard = () => {
                                 fill="#09121F"/>
                         </svg>
                         <div className="info">
-                            <div>Developer</div>
+                            <div>{t("r_block_type1")}</div>
                             <div>{project.developer}</div>
                         </div>
                     </div>
@@ -331,7 +334,7 @@ const ProjectCard = () => {
                                 fill="#09121F"/>
                         </svg>
                         <div className="info">
-                            <div>Completion</div>
+                            <div>{t("r_block_type2")}</div>
                             <div>{project.selectedStatus}</div>
                         </div>
                     </div>
@@ -343,7 +346,7 @@ const ProjectCard = () => {
                                 stroke="#191C38" stroke-width="2" stroke-linejoin="bevel"/>
                         </svg>
                         <div className="info">
-                            <div>Type</div>
+                            <div>{t("r_block_type3")}</div>
                             <div>{project.selectedProperty}</div>
                         </div>
                     </div>
@@ -368,7 +371,7 @@ const ProjectCard = () => {
                                   stroke-linejoin="round"/>
                         </svg>
                         <div className="info">
-                            <div>Handover</div>
+                            <div>{t("r_block_type4")}</div>
                             <div>{project.selectedMonth}Q 20{project.selectedYear}</div>
                         </div>
                     </div>
@@ -379,7 +382,7 @@ const ProjectCard = () => {
                                 fill="#09121F"/>
                         </svg>
                         <div className="info">
-                            <div>Bedrooms</div>
+                            <div>{t("r_block_type5")}</div>
                             <div>1</div>
                         </div>
                     </div>
@@ -410,7 +413,7 @@ const ProjectCard = () => {
                         </div>
                             <div className="price-block">
                                 <div>$ {formatNumberWithCommas(project.priceFrom)}</div>
-                                <div>$ {(Number(project.priceFrom) / Number(project.sizeFrom)).toFixed(0)} for m²</div>
+                                <div>{t("r_pay2")} {(Number(project.priceFrom) / Number(project.sizeFrom)).toFixed(0)} for m²</div>
                             </div>
                     </div>
                     </div>
@@ -423,7 +426,7 @@ const ProjectCard = () => {
                                 fill="#09121F"/>
                         </svg>
                         <div className="info">
-                            <div>Developer</div>
+                            <div>{t("r_block_type1")}</div>
                             <div>{project.developer}</div>
                         </div>
                     </div>
@@ -434,7 +437,7 @@ const ProjectCard = () => {
                                 fill="#09121F"/>
                         </svg>
                         <div className="info">
-                            <div>Completion</div>
+                            <div>{t("r_block_type2")}</div>
                             <div>{project.selectedStatus}</div>
                         </div>
                     </div>
@@ -446,7 +449,7 @@ const ProjectCard = () => {
                                 stroke="#191C38" stroke-width="2" stroke-linejoin="bevel"/>
                         </svg>
                         <div className="info">
-                            <div>Type</div>
+                            <div>{t("r_block_type3")}</div>
                             <div>{project.selectedProperty}</div>
                         </div>
                     </div>
@@ -471,7 +474,7 @@ const ProjectCard = () => {
                                   stroke-linejoin="round"/>
                         </svg>
                         <div className="info">
-                            <div>Handover</div>
+                            <div>{t("r_block_type4")}</div>
                             <div>{project.selectedMonth}Q 20{project.selectedYear}</div>
                         </div>
                     </div>
@@ -482,7 +485,7 @@ const ProjectCard = () => {
                                 fill="#09121F"/>
                         </svg>
                         <div className="info">
-                            <div>Bedrooms</div>
+                            <div>{t("r_block_type5")}</div>
                             <div>1</div>
                         </div>
                     </div>
@@ -500,23 +503,23 @@ const ProjectCard = () => {
                             <div>{team[randomNumber].name}</div>
                         </div>
                         <div className="additional-info">
-                            Off-plan properties, Investments, Commercial property, Mortgage
+                            {t("r_req2")}
                         </div>
                         <div className="buttons-container">
-                            <div className="button">Contact agent</div>
+                            <div className="button">{t("r_req3")}</div>
                             <div className="button" onClick={()=>
                             {
                                 setModalText({tittleText:"Get advice from our expert!",buttonText:"To request a call back"})
                                 setShowModal(true)
                             }
-                                }>Request</div>
+                                }>{t("r_req4")}</div>
                         </div>
                     </div>
                 </div>
                 <div className="payment-plan">
                     <div className="plan-header">
-                        <div>Payment Plan</div>
-                        <div><span>from</span> ${formattedTotalSum}</div>
+                        <div>{t("r_pay1")}</div>
+                        <div><span>{t("r_pay2")}</span> ${formattedTotalSum}</div>
                     </div>
                     <div className="plan-type">
                         {project.paymentPlans.Studio &&
@@ -557,16 +560,16 @@ const ProjectCard = () => {
                     </div>
                     <div className="plan-content">
                         <div className="column">
-                            <div className="header">Stage</div>
+                            <div className="header">{t("r_pay3")}</div>
                             <div className="values">
-                                <div className="value">Initial Payment</div>
+                                <div className="value">{t("r_pay3")}</div>
                                 <div className="value">During Construction</div>
                                 <div className="value">Upon Handover</div>
                                 <div className="value">After Handover</div>
                             </div>
                         </div>
                         <div className="column">
-                            <div className="header">Percent</div>
+                            <div className="header">{t("r_pay4")}</div>
                             <div className="values">
                                 <div className="value">{project.paymentPlans[activePlan].percent1}%</div>
                                 <div className="value">{project.paymentPlans[activePlan].percent2}%</div>
@@ -576,7 +579,7 @@ const ProjectCard = () => {
                             </div>
                         </div>
                         <div className="column">
-                            <div className="header">Price from</div>
+                            <div className="header">{t("r_pay5")}</div>
                             <div className="values">
                                 <div
                                     className="value">$ {formatNumberWithCommas(project.paymentPlans[activePlan].sum1)}</div>
@@ -592,8 +595,9 @@ const ProjectCard = () => {
                     </div>
                 </div>
             </div>
+
             <div className="floor-plans">
-                <div className="header">Floor plan</div>
+                <div className="header">{t("r_plan")}</div>
                 <div className="navigations">
                     <div className="floor-types">
                         {project.plans["Studio"].length != 0 &&
@@ -663,6 +667,37 @@ const ProjectCard = () => {
                             swiper.navigation.init();
                             swiper.navigation.update();
                         }}
+                        breakpoints={{
+                            // when window width is >= 320px
+                            320: {
+                                slidesPerView: 1,
+                                spaceBetween: 20,
+                            },
+                            // when window width is >= 480px
+                            480: {
+                                slidesPerView: 1,
+                                spaceBetween: 30,
+                            },
+                            // when window width is >= 768px
+                            768: {
+                                slidesPerView: 2,
+                                spaceBetween: 40,
+                            },
+
+                            // when window width is >= 1024px
+                            1200: {
+                                slidesPerView: 3,
+                                spaceBetween: 50,
+                            },
+                            1450:{
+                                slidesPerView: 4,
+                                spaceBetween: 50,
+                            },
+                            1400:{
+                                slidesPerView: 3,
+                                spaceBetween: 50,
+                            }
+                        }}
                     >
                         {project.plans[activeFloorPlan].map((plan, index) => (
                             <SwiperSlide key={index}>
@@ -675,7 +710,7 @@ const ProjectCard = () => {
                 </div>
             </div>
             <div className="location">
-                <div className="header">Location</div>
+                <div className="header">{t("r_loc")}</div>
                 <div className="map-container">
                     <div className="map">
                         <APIProvider apiKey={"AIzaSyAbaX7Vb6ERFTrWR4espV48g25lFRGGjIc"}>
@@ -716,7 +751,7 @@ const ProjectCard = () => {
             </div>
             <div className="simillar">
                 <div className="header">
-                    <div className="tittle">Similar properties</div>
+                    <div className="tittle">{t("r_sim")}</div>
                     <div className="arrows">
                         <div ref={navigationPrevRefSimilar} className="left-arrow">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"

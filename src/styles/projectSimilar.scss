@@ -19,6 +19,7 @@
     justify-content: space-between;
     .general-info{
       flex: 1;
+      gap: 5px;
       height: 100%;
       display: flex;
 
@@ -47,6 +48,7 @@
     }
     .price-info{
       flex: 1;
+      gap: 5px;
       text-overflow: ellipsis;
       white-space: nowrap;
       height: 100%;

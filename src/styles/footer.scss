@@ -7,6 +7,9 @@ footer{
   .phone-view{
     display: none;
   }
+  .table-view{
+    display: none;
+  }
   .logo-container{
     display: flex;
     max-width: 17%;
@@ -62,10 +65,9 @@ footer{
     }
   }
   .information{
-    width: 40%;
-    max-width: 15%;
+    width: max-content;
     display: flex;
-    justify-content: flex-end;
+
     flex-direction: column;
     gap: 36px;
     .location{
@@ -96,6 +98,7 @@ footer{
       display: flex;
       justify-content: flex-end;
       gap: 16px;
+
 
     }
     .call-us{
@@ -131,6 +134,9 @@ footer{
     }
     .information{
       display: none;
+    }
+    .table-view{
+      display: none!important;
     }
     .phone-view{
 
@@ -202,6 +208,71 @@ footer{
             gap: 10px;
           }
         }
+      }
+    }
+  }
+}
+@media (max-width: 820px) {
+  footer {
+    padding: 16px;
+    .logo-container {
+      display: none;
+    }
+
+    .menu-wrapper {
+      display: none;
+    }
+
+    .information {
+      display: none;
+    }
+    .table-view{
+      display: flex;
+      width: 100%;
+      gap: 30px;
+      flex-direction: column;
+      .logo-container {
+        display: unset;
+      }
+
+      .menu-wrapper {
+        display: unset;
+      }
+
+      .information {
+        display: unset;
+      }
+      .logo-wrapper{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        .logo-container{
+          display: flex;
+          flex-direction: column;
+          flex: 1;
+          gap: 10px;
+          max-width: 50%;
+        }
+        .information{
+          display: flex;
+          flex-direction: column;
+          gap: 20px;
+          a{
+            order: 1;
+          }
+          .location{
+            order: 2;
+          }
+          .social{
+            order: 3;
+          }
+        }
+      }
+      .menu-wrapper{
+        display: flex;
+        transform: unset;
+        position: unset;
+        justify-content: center;
       }
     }
   }

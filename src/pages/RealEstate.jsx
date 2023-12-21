@@ -15,16 +15,19 @@ import Project from "../components/Project.jsx";
 import Feedback from "../components/Feedback.jsx";
 import Footer from "../components/Footer.jsx";
 import axios from "axios";
+import {useTranslation} from "react-i18next";
 
 const RealEstate = () => {
     const [mapZoom, setMapZoom] = useState(10);
     const [projects,setProjects] = useState(null)
+    const { t } = useTranslation();
+
 
     useEffect(() => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: 'http://157.175.196.127:8080/api/projects/get-all',
+            url: '/api/projects/get-all',
             headers: { }
         };
 

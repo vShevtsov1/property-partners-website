@@ -44,9 +44,11 @@ import villa from "../assets/pdf/villa.pdf";
 import resale from "../assets/pdf/resale.pdf";
 import family from "../assets/pdf/family.pdf";
 import MaxLengthText from "../components/MaxLengthText.jsx";
+import {useTranslation} from "react-i18next";
 const Home = ({openModal}) => {
     const [activeKind, setActiveKind] = useState(null);
     const [visibleMembers, setVisibleMembers] = useState(4);
+    const { t } = useTranslation();
     const team = [
         {
             "image": alexLogachevName, "name": "Alex Logachev", "position": "CEO","qr":qrAlex,
@@ -121,8 +123,8 @@ const Home = ({openModal}) => {
         <div className="home-banner">
             <div className="content">
                 <div className="tittle">
-                    <div>Your Space, Your Sanctuary</div>
-                    <div>ProPart - Redefining Home Living</div>
+                    <div>{t("title_home1")}</div>
+                    <div>{t("title_home2")}</div>
                 </div>
                 <div className="advantages">
                     <div className="advantages-wrapper">
@@ -133,7 +135,7 @@ const Home = ({openModal}) => {
                                     d="M12 0.5L16.226 6.683L23.413 8.792L18.838 14.722L19.053 22.208L12 19.69L4.94698 22.208L5.16198 14.722L0.586975 8.792L7.77398 6.683L12 0.5ZM9.99998 12H7.99998C7.99996 13.0436 8.40776 14.0458 9.13638 14.7929C9.86499 15.54 10.8567 15.9727 11.8999 15.9988C12.9432 16.0249 13.9553 15.6423 14.7203 14.9326C15.4854 14.2228 15.9428 13.2422 15.995 12.2L16 12H14C14.0023 12.519 13.8028 13.0185 13.4436 13.3932C13.0844 13.7678 12.5937 13.9881 12.075 14.0075C11.5564 14.027 11.0505 13.8441 10.6643 13.4975C10.278 13.1509 10.0416 12.6677 10.005 12.15L9.99998 12Z"
                                     fill="white"/>
                             </svg>
-                            15 years of experience
+                            {t("home_box1")}
                         </div>
                         <div className="advantage">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -142,7 +144,7 @@ const Home = ({openModal}) => {
                                     d="M14 19.9995V21.9995H2V19.9995H14ZM14.586 0.685547L22.364 8.46355L20.95 9.87955L19.89 9.52555L17.413 11.9995L23.07 17.6565L21.656 19.0705L16 13.4135L13.596 15.8175L13.879 16.9495L12.464 18.3635L4.686 10.5855L6.101 9.17155L7.231 9.45355L13.525 3.16055L13.172 2.10055L14.586 0.685547Z"
                                     fill="white"/>
                             </svg>
-                            Legal counseling
+                            {t("home_box2")}
                         </div>
                         <div className="advantage">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -151,7 +153,7 @@ const Home = ({openModal}) => {
                                     d="M15.224 15.5084L13.011 20.1584C12.9691 20.2463 12.9065 20.3227 12.8285 20.381C12.7505 20.4393 12.6594 20.4778 12.5633 20.493C12.4671 20.5083 12.3686 20.4999 12.2764 20.4686C12.1842 20.4373 12.101 20.384 12.034 20.3134L8.49197 16.5744C8.39735 16.4746 8.27131 16.4104 8.13497 16.3924L3.02797 15.7244C2.93149 15.7117 2.83954 15.6757 2.76006 15.6195C2.68058 15.5634 2.61596 15.4887 2.57177 15.402C2.52758 15.3153 2.50514 15.2191 2.5064 15.1218C2.50765 15.0245 2.53256 14.9289 2.57897 14.8434L5.04097 10.3194C5.10642 10.1984 5.12831 10.0586 5.10297 9.9234L4.15997 4.8604C4.14207 4.76456 4.14778 4.66581 4.17662 4.57268C4.20546 4.47956 4.25656 4.39486 4.3255 4.32592C4.39444 4.25699 4.47913 4.20589 4.57226 4.17704C4.66539 4.1482 4.76414 4.14249 4.85997 4.1604L9.92297 5.1034C10.0582 5.12873 10.198 5.10685 10.319 5.0414L14.843 2.5794C14.9286 2.53297 15.0242 2.50808 15.1216 2.50688C15.219 2.50568 15.3152 2.5282 15.4019 2.5725C15.4887 2.61681 15.5633 2.68155 15.6194 2.76115C15.6755 2.84076 15.7114 2.93282 15.724 3.0294L16.392 8.1354C16.4099 8.27174 16.4742 8.39777 16.574 8.4924L20.313 12.0344C20.3836 12.1014 20.4369 12.1846 20.4682 12.2768C20.4995 12.3691 20.5079 12.4675 20.4926 12.5637C20.4774 12.6599 20.4389 12.7509 20.3806 12.8289C20.3223 12.9069 20.2459 12.9695 20.158 13.0114L15.508 15.2244C15.3835 15.2836 15.2832 15.3839 15.224 15.5084ZM16.021 17.4354L17.435 16.0214L21.678 20.2634L20.263 21.6784L16.021 17.4354Z"
                                     fill="white"/>
                             </svg>
-                            Individual approach
+                            {t("home_box3")}
                         </div>
                         <div className="advantage">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -160,7 +162,7 @@ const Home = ({openModal}) => {
                                     d="M13 21V23H11V21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V6H22V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H13ZM8 10C7.40666 10 6.82664 10.1759 6.33329 10.5056C5.83994 10.8352 5.45542 11.3038 5.22836 11.8519C5.0013 12.4001 4.94189 13.0033 5.05764 13.5853C5.1734 14.1672 5.45912 14.7018 5.87868 15.1213C6.29824 15.5409 6.83279 15.8266 7.41473 15.9424C7.99667 16.0581 8.59987 15.9987 9.14805 15.7716C9.69623 15.5446 10.1648 15.1601 10.4944 14.6667C10.8241 14.1734 11 13.5933 11 13H8V10ZM13 10V12H19V10H13ZM13 14V16H19V14H13ZM2 3H22V5H2V3Z"
                                     fill="white"/>
                             </svg>
-                            Unique Data
+                            {t("home_box4")}
                         </div>
                         <div className="advantage">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -169,7 +171,7 @@ const Home = ({openModal}) => {
                                     d="M14.121 10.4799C13.9335 10.2924 13.6792 10.1871 13.414 10.1871C13.1489 10.1871 12.8945 10.2924 12.707 10.4799L12 11.1859C11.8155 11.3769 11.5948 11.5293 11.3508 11.6341C11.1068 11.7389 10.8444 11.7941 10.5788 11.7964C10.3133 11.7987 10.0499 11.7481 9.80411 11.6475C9.55832 11.5469 9.33502 11.3984 9.14723 11.2107C8.95944 11.0229 8.81094 10.7996 8.71038 10.5538C8.60982 10.308 8.55921 10.0446 8.56152 9.77906C8.56383 9.51351 8.619 9.25107 8.72382 9.00706C8.82864 8.76305 8.981 8.54236 9.17202 8.35787L14.802 2.72587C16.1349 2.42269 17.5295 2.54746 18.7875 3.08244C20.0454 3.61742 21.1027 4.53536 21.8089 5.70576C22.5151 6.87615 22.8344 8.23941 22.7213 9.6017C22.6083 10.964 22.0686 12.2559 21.179 13.2939L19.071 15.4289L14.121 10.4789V10.4799ZM3.16102 4.46787C4.19578 3.43324 5.54924 2.77785 7.00258 2.60763C8.45592 2.43742 9.9242 2.76234 11.17 3.52987L7.75702 6.94387C7.01782 7.68159 6.59645 8.67917 6.58296 9.72343C6.56946 10.7677 6.96491 11.7758 7.6848 12.5324C8.40469 13.289 9.39193 13.734 10.4356 13.7724C11.4792 13.8108 12.4965 13.4395 13.27 12.7379L13.414 12.6009L17.657 16.8429L13.414 21.0859C13.039 21.4608 12.5303 21.6714 12 21.6714C11.4697 21.6714 10.9611 21.4608 10.586 21.0859L3.16002 13.6599C1.94115 12.4409 1.25641 10.7877 1.25641 9.06387C1.25641 7.34005 1.94115 5.68684 3.16002 4.46787H3.16102Z"
                                     fill="white"/>
                             </svg>
-                            Assistance in processing transactions
+                            {t("home_box5")}
                         </div>
                         <ScrollLink
                             to="collections"
@@ -180,7 +182,7 @@ const Home = ({openModal}) => {
                         >
                         <div className="learn-more">
 
-                            Learn more
+                            {t("home_button")}
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none">
                                 <path
@@ -200,8 +202,8 @@ const Home = ({openModal}) => {
         <div className="home-banner phone">
             <div className="content">
                 <div className="tittle">
-                    <div>Your Space, Your Sanctuary</div>
-                    <div>Property Partners - Redefining Home Living</div>
+                    <div>{t("block2_title")}</div>
+                    <div>{t("block2_text")}</div>
                 </div>
                 <div className="image">
                     <img src={homeMain}/>
@@ -215,7 +217,7 @@ const Home = ({openModal}) => {
                                     d="M12 0.5L16.226 6.683L23.413 8.792L18.838 14.722L19.053 22.208L12 19.69L4.94698 22.208L5.16198 14.722L0.586975 8.792L7.77398 6.683L12 0.5ZM9.99998 12H7.99998C7.99996 13.0436 8.40776 14.0458 9.13638 14.7929C9.86499 15.54 10.8567 15.9727 11.8999 15.9988C12.9432 16.0249 13.9553 15.6423 14.7203 14.9326C15.4854 14.2228 15.9428 13.2422 15.995 12.2L16 12H14C14.0023 12.519 13.8028 13.0185 13.4436 13.3932C13.0844 13.7678 12.5937 13.9881 12.075 14.0075C11.5564 14.027 11.0505 13.8441 10.6643 13.4975C10.278 13.1509 10.0416 12.6677 10.005 12.15L9.99998 12Z"
                                     fill="white"/>
                             </svg>
-                            15 years of experience
+                            {t("home_box1")}
                         </div>
                         <div className="advantage">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -224,7 +226,7 @@ const Home = ({openModal}) => {
                                     d="M14 19.9995V21.9995H2V19.9995H14ZM14.586 0.685547L22.364 8.46355L20.95 9.87955L19.89 9.52555L17.413 11.9995L23.07 17.6565L21.656 19.0705L16 13.4135L13.596 15.8175L13.879 16.9495L12.464 18.3635L4.686 10.5855L6.101 9.17155L7.231 9.45355L13.525 3.16055L13.172 2.10055L14.586 0.685547Z"
                                     fill="white"/>
                             </svg>
-                            Legal counseling
+                            {t("home_box2")}
                         </div>
                         <div className="advantage">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -233,7 +235,7 @@ const Home = ({openModal}) => {
                                     d="M15.224 15.5084L13.011 20.1584C12.9691 20.2463 12.9065 20.3227 12.8285 20.381C12.7505 20.4393 12.6594 20.4778 12.5633 20.493C12.4671 20.5083 12.3686 20.4999 12.2764 20.4686C12.1842 20.4373 12.101 20.384 12.034 20.3134L8.49197 16.5744C8.39735 16.4746 8.27131 16.4104 8.13497 16.3924L3.02797 15.7244C2.93149 15.7117 2.83954 15.6757 2.76006 15.6195C2.68058 15.5634 2.61596 15.4887 2.57177 15.402C2.52758 15.3153 2.50514 15.2191 2.5064 15.1218C2.50765 15.0245 2.53256 14.9289 2.57897 14.8434L5.04097 10.3194C5.10642 10.1984 5.12831 10.0586 5.10297 9.9234L4.15997 4.8604C4.14207 4.76456 4.14778 4.66581 4.17662 4.57268C4.20546 4.47956 4.25656 4.39486 4.3255 4.32592C4.39444 4.25699 4.47913 4.20589 4.57226 4.17704C4.66539 4.1482 4.76414 4.14249 4.85997 4.1604L9.92297 5.1034C10.0582 5.12873 10.198 5.10685 10.319 5.0414L14.843 2.5794C14.9286 2.53297 15.0242 2.50808 15.1216 2.50688C15.219 2.50568 15.3152 2.5282 15.4019 2.5725C15.4887 2.61681 15.5633 2.68155 15.6194 2.76115C15.6755 2.84076 15.7114 2.93282 15.724 3.0294L16.392 8.1354C16.4099 8.27174 16.4742 8.39777 16.574 8.4924L20.313 12.0344C20.3836 12.1014 20.4369 12.1846 20.4682 12.2768C20.4995 12.3691 20.5079 12.4675 20.4926 12.5637C20.4774 12.6599 20.4389 12.7509 20.3806 12.8289C20.3223 12.9069 20.2459 12.9695 20.158 13.0114L15.508 15.2244C15.3835 15.2836 15.2832 15.3839 15.224 15.5084ZM16.021 17.4354L17.435 16.0214L21.678 20.2634L20.263 21.6784L16.021 17.4354Z"
                                     fill="white"/>
                             </svg>
-                            Individual approach
+                            {t("home_box3")}
                         </div>
                         <div className="advantage">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -242,7 +244,7 @@ const Home = ({openModal}) => {
                                     d="M13 21V23H11V21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V6H22V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H13ZM8 10C7.40666 10 6.82664 10.1759 6.33329 10.5056C5.83994 10.8352 5.45542 11.3038 5.22836 11.8519C5.0013 12.4001 4.94189 13.0033 5.05764 13.5853C5.1734 14.1672 5.45912 14.7018 5.87868 15.1213C6.29824 15.5409 6.83279 15.8266 7.41473 15.9424C7.99667 16.0581 8.59987 15.9987 9.14805 15.7716C9.69623 15.5446 10.1648 15.1601 10.4944 14.6667C10.8241 14.1734 11 13.5933 11 13H8V10ZM13 10V12H19V10H13ZM13 14V16H19V14H13ZM2 3H22V5H2V3Z"
                                     fill="white"/>
                             </svg>
-                            Unique Data
+                            {t("home_box4")}
                         </div>
                         <div className="advantage">
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -251,7 +253,7 @@ const Home = ({openModal}) => {
                                     d="M14.121 10.4799C13.9335 10.2924 13.6792 10.1871 13.414 10.1871C13.1489 10.1871 12.8945 10.2924 12.707 10.4799L12 11.1859C11.8155 11.3769 11.5948 11.5293 11.3508 11.6341C11.1068 11.7389 10.8444 11.7941 10.5788 11.7964C10.3133 11.7987 10.0499 11.7481 9.80411 11.6475C9.55832 11.5469 9.33502 11.3984 9.14723 11.2107C8.95944 11.0229 8.81094 10.7996 8.71038 10.5538C8.60982 10.308 8.55921 10.0446 8.56152 9.77906C8.56383 9.51351 8.619 9.25107 8.72382 9.00706C8.82864 8.76305 8.981 8.54236 9.17202 8.35787L14.802 2.72587C16.1349 2.42269 17.5295 2.54746 18.7875 3.08244C20.0454 3.61742 21.1027 4.53536 21.8089 5.70576C22.5151 6.87615 22.8344 8.23941 22.7213 9.6017C22.6083 10.964 22.0686 12.2559 21.179 13.2939L19.071 15.4289L14.121 10.4789V10.4799ZM3.16102 4.46787C4.19578 3.43324 5.54924 2.77785 7.00258 2.60763C8.45592 2.43742 9.9242 2.76234 11.17 3.52987L7.75702 6.94387C7.01782 7.68159 6.59645 8.67917 6.58296 9.72343C6.56946 10.7677 6.96491 11.7758 7.6848 12.5324C8.40469 13.289 9.39193 13.734 10.4356 13.7724C11.4792 13.8108 12.4965 13.4395 13.27 12.7379L13.414 12.6009L17.657 16.8429L13.414 21.0859C13.039 21.4608 12.5303 21.6714 12 21.6714C11.4697 21.6714 10.9611 21.4608 10.586 21.0859L3.16002 13.6599C1.94115 12.4409 1.25641 10.7877 1.25641 9.06387C1.25641 7.34005 1.94115 5.68684 3.16002 4.46787H3.16102Z"
                                     fill="white"/>
                             </svg>
-                            Assistance in processing transactions
+                            {t("home_box5")}
                         </div>
                         <ScrollLink
                             to="collections"
@@ -262,7 +264,7 @@ const Home = ({openModal}) => {
                         >
                             <div className="learn-more">
 
-                                Learn more
+                                {t("home_button")}
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none">
                                     <path
@@ -279,9 +281,8 @@ const Home = ({openModal}) => {
         </div>
         <div id={"collections"} className="collections">
             <div className="tittle">
-                <div>Choose the best from the special collection</div>
-                <div>We've curated special offers to cater to a variety of preferences. Whether you're in search of budget-friendly apartments or luxurious villas, we have the perfect option for you. Simply choose the one that suits your preferences, and our expert will get in touch with you within 5 minutes. Your convenience and comfort are our top priorities!
-                </div>
+                <div> {t("block2_title")}</div>
+                <div> {t("block2_text")}</div>
             </div>
             <div className="content">
                 <div className="collection">
@@ -289,7 +290,7 @@ const Home = ({openModal}) => {
                     <div className="content">
                         <div className="collection-info">
                             <div className="tittle">
-                                Best for rent
+                                {t("sel_1")}
                             </div>
                             <div style={{
                                 display:"flex",
@@ -305,7 +306,7 @@ const Home = ({openModal}) => {
                                             d="M12 4H17.4H19.2H20.9C20.9552 4 21 4.04477 21 4.1V11.9C21 11.9552 20.9552 12 20.9 12H17.1C17.0448 12 17 12.0448 17 12.1V16.9C17 16.9552 16.9552 17 16.9 17H12M12 4H3.1C3.04477 4 3 4.04585 3 4.10108C3 7.54839 3 9.28378 3 12M12 4V6.55858C12 6.5851 12.0105 6.61054 12.0293 6.62929L14.25 8.85M8.4 12H11.9C11.9552 12 12 12.0448 12 12.1V17M3 12C3 14.7162 3 16.4516 3 19.8989C3 19.9541 3.04477 20 3.1 20H4.8H6.6M3 12H4.75858C4.7851 12 4.81054 11.9895 4.82929 11.9707L6.6 10.2M8.4 20H11.9C11.9552 20 12 19.9552 12 19.9V17"
                                             stroke="#191C38" stroke-width="2" stroke-linejoin="bevel"/>
                                     </svg>
-                                    4 projects
+                                    {t("proj_1")}
                                 </div>
                                 <div className="property">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -314,7 +315,7 @@ const Home = ({openModal}) => {
                                             d="M22 7H23V17H22V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V7ZM20 17H14C12.6739 17 11.4021 16.4732 10.4645 15.5355C9.52678 14.5979 9 13.3261 9 12C9 10.6739 9.52678 9.40215 10.4645 8.46447C11.4021 7.52678 12.6739 7 14 7H20V5H4V19H20V17ZM21 15V9H14C13.2044 9 12.4413 9.31607 11.8787 9.87868C11.3161 10.4413 11 11.2044 11 12C11 12.7956 11.3161 13.5587 11.8787 14.1213C12.4413 14.6839 13.2044 15 14 15H21ZM14 11H17V13H14V11Z"
                                             fill="#191C38"/>
                                     </svg>
-                                    from $190,000
+                                    {t("price_1")}
                                 </div>
                             </div>
 
@@ -339,7 +340,7 @@ const Home = ({openModal}) => {
                     <div className="content">
                         <div className="collection-info">
                             <div className="tittle">
-                                For families
+                                {t("sel_2")}
                             </div>
                             <div style={{
                                 display:"flex",
@@ -355,7 +356,7 @@ const Home = ({openModal}) => {
                                                 d="M12 4H17.4H19.2H20.9C20.9552 4 21 4.04477 21 4.1V11.9C21 11.9552 20.9552 12 20.9 12H17.1C17.0448 12 17 12.0448 17 12.1V16.9C17 16.9552 16.9552 17 16.9 17H12M12 4H3.1C3.04477 4 3 4.04585 3 4.10108C3 7.54839 3 9.28378 3 12M12 4V6.55858C12 6.5851 12.0105 6.61054 12.0293 6.62929L14.25 8.85M8.4 12H11.9C11.9552 12 12 12.0448 12 12.1V17M3 12C3 14.7162 3 16.4516 3 19.8989C3 19.9541 3.04477 20 3.1 20H4.8H6.6M3 12H4.75858C4.7851 12 4.81054 11.9895 4.82929 11.9707L6.6 10.2M8.4 20H11.9C11.9552 20 12 19.9552 12 19.9V17"
                                                 stroke="#191C38" stroke-width="2" stroke-linejoin="bevel"/>
                                         </svg>
-                                        13 projects
+                                        {t("proj_2")}
                                     </div>
                                     <div className="property">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -364,7 +365,7 @@ const Home = ({openModal}) => {
                                                 d="M22 7H23V17H22V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V7ZM20 17H14C12.6739 17 11.4021 16.4732 10.4645 15.5355C9.52678 14.5979 9 13.3261 9 12C9 10.6739 9.52678 9.40215 10.4645 8.46447C11.4021 7.52678 12.6739 7 14 7H20V5H4V19H20V17ZM21 15V9H14C13.2044 9 12.4413 9.31607 11.8787 9.87868C11.3161 10.4413 11 11.2044 11 12C11 12.7956 11.3161 13.5587 11.8787 14.1213C12.4413 14.6839 13.2044 15 14 15H21ZM14 11H17V13H14V11Z"
                                                 fill="#191C38"/>
                                         </svg>
-                                        from $170,000
+                                        {t("price_2")}
                                     </div>
                                 </div>
                                     <div className="button">
@@ -388,8 +389,7 @@ const Home = ({openModal}) => {
                     <div className="content">
                         <div className="collection-info">
                             <div className="tittle" style={{fontSize:36}}>
-                                Villas
-                                & Townhouses
+                                {t("sel_3")}
                             </div>
                             <div style={{
                                 display:"flex",
@@ -405,7 +405,7 @@ const Home = ({openModal}) => {
                                                 d="M12 4H17.4H19.2H20.9C20.9552 4 21 4.04477 21 4.1V11.9C21 11.9552 20.9552 12 20.9 12H17.1C17.0448 12 17 12.0448 17 12.1V16.9C17 16.9552 16.9552 17 16.9 17H12M12 4H3.1C3.04477 4 3 4.04585 3 4.10108C3 7.54839 3 9.28378 3 12M12 4V6.55858C12 6.5851 12.0105 6.61054 12.0293 6.62929L14.25 8.85M8.4 12H11.9C11.9552 12 12 12.0448 12 12.1V17M3 12C3 14.7162 3 16.4516 3 19.8989C3 19.9541 3.04477 20 3.1 20H4.8H6.6M3 12H4.75858C4.7851 12 4.81054 11.9895 4.82929 11.9707L6.6 10.2M8.4 20H11.9C11.9552 20 12 19.9552 12 19.9V17"
                                                 stroke="#191C38" stroke-width="2" stroke-linejoin="bevel"/>
                                         </svg>
-                                        5 projects
+                                        {t("proj_3")}
                                     </div>
                                     <div className="property">
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -414,7 +414,7 @@ const Home = ({openModal}) => {
                                                 d="M22 7H23V17H22V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V7ZM20 17H14C12.6739 17 11.4021 16.4732 10.4645 15.5355C9.52678 14.5979 9 13.3261 9 12C9 10.6739 9.52678 9.40215 10.4645 8.46447C11.4021 7.52678 12.6739 7 14 7H20V5H4V19H20V17ZM21 15V9H14C13.2044 9 12.4413 9.31607 11.8787 9.87868C11.3161 10.4413 11 11.2044 11 12C11 12.7956 11.3161 13.5587 11.8787 14.1213C12.4413 14.6839 13.2044 15 14 15H21ZM14 11H17V13H14V11Z"
                                                 fill="#191C38"/>
                                         </svg>
-                                        from $2,100,000
+                                        {t("price_3")}
                                     </div>
                                 </div>
                                     <div className="button">
@@ -438,7 +438,7 @@ const Home = ({openModal}) => {
                     <div className="content">
                         <div className="collection-info">
                             <div className="tittle">
-                                For resale
+                                {t("sel_4")}
                             </div>
                             <div style={{
                                 display:"flex",
@@ -455,7 +455,7 @@ const Home = ({openModal}) => {
                                             d="M12 4H17.4H19.2H20.9C20.9552 4 21 4.04477 21 4.1V11.9C21 11.9552 20.9552 12 20.9 12H17.1C17.0448 12 17 12.0448 17 12.1V16.9C17 16.9552 16.9552 17 16.9 17H12M12 4H3.1C3.04477 4 3 4.04585 3 4.10108C3 7.54839 3 9.28378 3 12M12 4V6.55858C12 6.5851 12.0105 6.61054 12.0293 6.62929L14.25 8.85M8.4 12H11.9C11.9552 12 12 12.0448 12 12.1V17M3 12C3 14.7162 3 16.4516 3 19.8989C3 19.9541 3.04477 20 3.1 20H4.8H6.6M3 12H4.75858C4.7851 12 4.81054 11.9895 4.82929 11.9707L6.6 10.2M8.4 20H11.9C11.9552 20 12 19.9552 12 19.9V17"
                                             stroke="#191C38" stroke-width="2" stroke-linejoin="bevel"/>
                                     </svg>
-                                    6 projects
+                                    {t("proj_4")}
                                 </div>
                                 <div className="property">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
@@ -464,7 +464,7 @@ const Home = ({openModal}) => {
                                             d="M22 7H23V17H22V20C22 20.2652 21.8946 20.5196 21.7071 20.7071C21.5196 20.8946 21.2652 21 21 21H3C2.73478 21 2.48043 20.8946 2.29289 20.7071C2.10536 20.5196 2 20.2652 2 20V4C2 3.73478 2.10536 3.48043 2.29289 3.29289C2.48043 3.10536 2.73478 3 3 3H21C21.2652 3 21.5196 3.10536 21.7071 3.29289C21.8946 3.48043 22 3.73478 22 4V7ZM20 17H14C12.6739 17 11.4021 16.4732 10.4645 15.5355C9.52678 14.5979 9 13.3261 9 12C9 10.6739 9.52678 9.40215 10.4645 8.46447C11.4021 7.52678 12.6739 7 14 7H20V5H4V19H20V17ZM21 15V9H14C13.2044 9 12.4413 9.31607 11.8787 9.87868C11.3161 10.4413 11 11.2044 11 12C11 12.7956 11.3161 13.5587 11.8787 14.1213C12.4413 14.6839 13.2044 15 14 15H21ZM14 11H17V13H14V11Z"
                                             fill="#191C38"/>
                                     </svg>
-                                    from $150,000
+                                    {t("price_4")}
                                 </div>
                             </div>
 
@@ -502,24 +502,24 @@ const Home = ({openModal}) => {
         </div>
         <div className="why-dubai">
             <div className={"div1"}><img src={whyDubaiMain}/></div>
-            <div className={"dark"}>Why Dubai?</div>
+            <div className={"dark"}>{t("square1")}</div>
             <div className={"light"}>
-                <div className="tittle">Profitable real estate</div>
-                <div className="description">Real estate is 50% of Dubai's GDP</div>
+                <div className="tittle">{t("square2")}</div>
+                <div className="description">{t("square2_1")}</div>
             </div>
             <div className={"orange"}>
-                <div className="tittle">Stability</div>
-                <div className="description">Recent years saw a 20-25% surge
+                <div className="tittle">{t("square3")}</div>
+                <div className="description">{t("square3_1")}
                 </div>
             </div>
             <div className={"light"}>
-                <div className="tittle">Dynamic market</div>
-                <div className="description">60-65K annual projects, 3-4% growth</div>
+                <div className="tittle">{t("square4")}</div>
+                <div className="description">{t("square4_1")}</div>
             </div>
             <div className={"image-grid"}><img src={whyDubai}/></div>
             <div className={"light"}>
-                <div className="tittle">No taxes</div>
-                <div className="description">No income or property taxes, enticing tax benefits
+                <div className="tittle">{t("square5")}</div>
+                <div className="description">{t("square5_1")}
                 </div>
             </div>
         </div>
@@ -529,12 +529,12 @@ const Home = ({openModal}) => {
             </div>
             <div className="content">
                 <div className="tittle">
-                    What kind of projects we can tailor to the client
+                    {t("block3_title")}
                 </div>
                 <div className="types">
                     <div className={`type ${activeKind === 0 ? 'active' : ''}`}>
                         <div className="visible-element" onClick={() => handleTypeClick(0)}>
-                            <div className="tittle">Primary real estate</div>
+                            <div className="tittle"> {t("drop_1")}</div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none">
                                 <path
@@ -542,13 +542,12 @@ const Home = ({openModal}) => {
                                     fill="#191C38"/>
                             </svg>
                         </div>
-                        <div className="hiden-text">Our partners are Dubai's largest real estate developers, which will
-                            allow you to get insider information on new projects.
+                        <div className="hiden-text"> {t("drop_text1")}
                         </div>
                     </div>
                     <div className={`type ${activeKind === 1 ? 'active' : ''}`}>
                         <div className="visible-element" onClick={() => handleTypeClick(1)}>
-                            <div className="tittle">Secondary real estate</div>
+                            <div className="tittle"> {t("drop_2")}</div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none">
                                 <path
@@ -556,12 +555,12 @@ const Home = ({openModal}) => {
                                     fill="#191C38"/>
                             </svg>
                         </div>
-                        <div className="hiden-text">In Dubai, the secondary real estate market is also developed, where we can help you find a project that suits your preferences.
+                        <div className="hiden-text"> {t("drop_text2")}
                         </div>
                     </div>
                     <div className={`type ${activeKind === 2 ? 'active' : ''}`}>
                         <div className="visible-element" onClick={() => handleTypeClick(2)}>
-                            <div className="tittle">Rentals</div>
+                            <div className="tittle"> {t("drop_3")}</div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none">
                                 <path
@@ -569,12 +568,12 @@ const Home = ({openModal}) => {
                                     fill="#191C38"/>
                             </svg>
                         </div>
-                        <div className="hiden-text">Whether you're searching for a property or visiting Dubai for tourism or business, Property Partners will find the best long-term and short-term rental offers for you.
+                        <div className="hiden-text"> {t("drop_text3")}
                         </div>
                     </div>
                     <div className={`type ${activeKind === 3 ? 'active' : ''}`}>
                         <div className="visible-element" onClick={() => handleTypeClick(3)}>
-                            <div className="tittle">Commercial real estate</div>
+                            <div className="tittle"> {t("drop_4")}</div>
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                  fill="none">
                                 <path
@@ -582,7 +581,7 @@ const Home = ({openModal}) => {
                                     fill="#191C38"/>
                             </svg>
                         </div>
-                        <div className="hiden-text">Our specialists have  Dubai commercial real estate database. We assist in processing business documents and finding the right property for your company.
+                        <div className="hiden-text"> {t("drop_text4")}
                         </div>
                     </div>
                 </div>
@@ -590,8 +589,8 @@ const Home = ({openModal}) => {
         </div>
         <div className="consulting">
             <div className="tittle">
-                <div>Consulting</div>
-                <div>What kind of consulting services do we provide?</div>
+                <div> {t("block4_title")}</div>
+                <div> {t("block4_text")}</div>
             </div>
             <div className="content">
                 <div className="image">
@@ -604,7 +603,7 @@ const Home = ({openModal}) => {
                                 d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM11.003 16L18.073 8.929L16.659 7.515L11.003 13.172L8.174 10.343L6.76 11.757L11.003 16Z"
                                 fill="#C29773"/>
                         </svg>
-                        Registration of a local company (LLC)
+                        {t("feat1")}
                     </div>
                     <div className="consult">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -612,7 +611,7 @@ const Home = ({openModal}) => {
                                 d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM11.003 16L18.073 8.929L16.659 7.515L11.003 13.172L8.174 10.343L6.76 11.757L11.003 16Z"
                                 fill="#C29773"/>
                         </svg>
-                        Investor Visa for 2 years or 10 years
+                        {t("feat2")}
                     </div>
                     <div className="consult">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -620,7 +619,7 @@ const Home = ({openModal}) => {
                                 d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM11.003 16L18.073 8.929L16.659 7.515L11.003 13.172L8.174 10.343L6.76 11.757L11.003 16Z"
                                 fill="#C29773"/>
                         </svg>
-                        Issuance of UAE resident visa (employee or freelancer)
+                        {t("feat3")}
                     </div>
                     <div className="consult">
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
@@ -628,14 +627,14 @@ const Home = ({openModal}) => {
                                 d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM11.003 16L18.073 8.929L16.659 7.515L11.003 13.172L8.174 10.343L6.76 11.757L11.003 16Z"
                                 fill="#C29773"/>
                         </svg>
-                        Registration of a company in a free economic zone
+                        {t("feat4")}
                     </div>
                 </div>
             </div>
         </div>
         <div className="our-team">
             <div className="tittle">
-                Our team
+                {t("block5_title")}
             </div>
             <div className="team">
                 {displayedMembers.map((member, index) => (
@@ -652,7 +651,7 @@ const Home = ({openModal}) => {
                                 <div className="name"><MaxLengthText text={member.name} maxLengthBreakpoints={{
 
 
-                                    768: 17,
+                                    768: 12,
 
 
                                 }}/></div>
@@ -718,16 +717,14 @@ const Home = ({openModal}) => {
             </div>
             <div className="contact-form-form">
                 <div className="tittle">
-                    <div>Would you like to the first to know about the launches of sales of promising projects in
-                        Dubai?
+                    <div>{t("block5_title")}
                     </div>
-                    <div>Text your phone number, and our real estate expert will contact you within 5
-                        minutes.
+                    <div>{t("block6_text1")}
                     </div>
                 </div>
                 <div className="form">
                     <div className="form-input">
-                        <input placeholder={"Your name"} type="text"/>
+                        <input placeholder={t("block6_line1")} type="text"/>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M20 22H4V20C4 18.6739 4.52678 17.4021 5.46447 16.4645C6.40215 15.5268 7.67392 15 9 15H15C16.3261 15 17.5979 15.5268 18.5355 16.4645C19.4732 17.4021 20 18.6739 20 20V22ZM12 13C11.2121 13 10.4319 12.8448 9.7039 12.5433C8.97595 12.2417 8.31451 11.7998 7.75736 11.2426C7.20021 10.6855 6.75825 10.0241 6.45672 9.2961C6.15519 8.56815 6 7.78793 6 7C6 6.21207 6.15519 5.43185 6.45672 4.7039C6.75825 3.97595 7.20021 3.31451 7.75736 2.75736C8.31451 2.20021 8.97595 1.75825 9.7039 1.45672C10.4319 1.15519 11.2121 1 12 1C13.5913 1 15.1174 1.63214 16.2426 2.75736C17.3679 3.88258 18 5.4087 18 7C18 8.5913 17.3679 10.1174 16.2426 11.2426C15.1174 12.3679 13.5913 13 12 13Z"
@@ -735,21 +732,20 @@ const Home = ({openModal}) => {
                         </svg>
                     </div>
                     <div className="form-input">
-                        <input placeholder={"Phone number"} type="text"/>
+                        <input placeholder={t("block6_line2")} type="text"/>
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M21 16.42V19.956C21.0001 20.2092 20.9042 20.453 20.7316 20.6382C20.559 20.8234 20.3226 20.9363 20.07 20.954C19.633 20.984 19.276 21 19 21C10.163 21 3 13.837 3 5C3 4.724 3.015 4.367 3.046 3.93C3.06372 3.67744 3.17658 3.44101 3.3618 3.26841C3.54703 3.09581 3.79082 2.99989 4.044 3H7.58C7.70404 2.99987 7.8237 3.04586 7.91573 3.12902C8.00776 3.21218 8.0656 3.32658 8.078 3.45C8.101 3.68 8.122 3.863 8.142 4.002C8.34073 5.38892 8.748 6.73783 9.35 8.003C9.445 8.203 9.383 8.442 9.203 8.57L7.045 10.112C8.36445 13.1865 10.8145 15.6365 13.889 16.956L15.429 14.802C15.4919 14.714 15.5838 14.6509 15.6885 14.6237C15.7932 14.5964 15.9042 14.6068 16.002 14.653C17.267 15.2539 18.6156 15.6601 20.002 15.858C20.141 15.878 20.324 15.9 20.552 15.922C20.6752 15.9346 20.7894 15.9926 20.8724 16.0846C20.9553 16.1766 21.0012 16.2961 21.001 16.42H21Z"
                                 fill="#C29773"/>
                         </svg>
                     </div>
-                    <div className="form-button">Send
+                    <div className="form-button">{t("block6_line3")}
                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                             <path
                                 d="M9.99999 15.172L19.192 5.979L20.607 7.393L9.99999 18L3.63599 11.636L5.04999 10.222L9.99999 15.172Z"
                                 fill="white"/>
                         </svg></div>
-                    <div className="form-text">By clicking on the button you agree to the terms and conditions of data
-                        processing
+                    <div className="form-text">{t("block6_text2")}
                     </div>
                 </div>
             </div>
