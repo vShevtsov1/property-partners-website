@@ -4,7 +4,7 @@ import * as i18n from "i18next";
 import i18next from "i18next";
 const Dropdown = () => {
     const [currentLanguage,serCurrentLanguage] = useState(i18next.language)
-    const[visible,setVisible] = useState(true)
+    const[visible,setVisible] = useState(false)
 
     function handleChangeLanguage(en) {
         setVisible(false)
