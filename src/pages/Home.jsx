@@ -39,10 +39,7 @@ import propertyPartnersDynin from '../assets/teams/qr/property-partners-dynin.pn
 import qrAlex from '../assets/teams/qr/qr-alex.svg';
 import tykhovaTatiana from '../assets/teams/qr/tykhova-tatiana.png';
 
-import rent from "../assets/pdf/rent.pdf";
-import villa from "../assets/pdf/villa.pdf";
-import resale from "../assets/pdf/resale.pdf";
-import family from "../assets/pdf/family.pdf";
+
 import MaxLengthText from "../components/MaxLengthText.jsx";
 import {useTranslation} from "react-i18next";
 const Home = ({openModal}) => {
@@ -202,8 +199,8 @@ const Home = ({openModal}) => {
         <div className="home-banner phone">
             <div className="content">
                 <div className="tittle">
-                    <div>{t("block2_title")}</div>
-                    <div>{t("block2_text")}</div>
+                    <div>{t("title_home1")}</div>
+                    <div>{t("title_home2")}</div>
                 </div>
                 <div className="image">
                     <img src={homeMain}/>
@@ -320,7 +317,7 @@ const Home = ({openModal}) => {
                             </div>
 
                             <div className="button">
-                                <a href={rent}>
+                                <a href={"https://drive.google.com/file/d/1yTp_KSKgA768y1bEB_Z4RmKVrTRL8Hie/view"} target={"_blank"}>
                                 Get the selection
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none">
@@ -369,7 +366,7 @@ const Home = ({openModal}) => {
                                     </div>
                                 </div>
                                     <div className="button">
-                                        <a href={family}>
+                                        <a href={"https://drive.google.com/file/d/1s2_0DBYwHEvBZnXozY25UXvRux4642S4/view"} target={"_blank"}>
                                         Get the selection
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                              fill="none">
@@ -418,7 +415,7 @@ const Home = ({openModal}) => {
                                     </div>
                                 </div>
                                     <div className="button">
-                                        <a href={villa}>
+                                        <a href={"https://drive.google.com/file/d/1BXD2ss_Lkqtq7NJLkkcqgGQDpN1999pP/view?usp=drive_open"} target={"_blank"}>
                                         Get the selection
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                              fill="none">
@@ -469,7 +466,7 @@ const Home = ({openModal}) => {
                             </div>
 
                                     <div className="button">
-                                        <a href={resale}>
+                                        <a href={"https://drive.google.com/file/d/1cZPNjLLotsad0hCzSKsdhF_kBLUCInoq/view"} target={"_blank"}>
                                         Get the selection
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                              fill="none">
