@@ -23,7 +23,11 @@ header .additional {
   display: flex;
   gap: 20px;
 }
-header .additional .phone {
+header .additional a {
+  display: flex;
+  align-items: center;
+}
+header .additional a .phone {
   display: flex;
   align-items: center;
   color: #FFF;
@@ -99,11 +103,11 @@ header .menu .menu-option {
     display: flex;
   }
   header .phone-view .phone-menu {
+    position: fixed;
     width: 100vw;
     z-index: 10000;
     height: 100vh;
     background: #FFF;
-    position: absolute;
     top: 0;
     padding: 24px;
     padding-bottom: 100px;

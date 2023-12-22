@@ -3,7 +3,7 @@ import Footer from "../components/Footer.jsx";
 import Feedback from "../components/Feedback.jsx";
 import "../styles/agent.css"
 import brokerTest from "../assets/teams/alla-gerassimova-min.jpg";
-import {useLocation} from "react-router-dom";
+import {Link, useLocation} from "react-router-dom";
 import {useTranslation} from "react-i18next";
 const Agent = () => {
     const {state} = useLocation();
@@ -15,12 +15,14 @@ const Agent = () => {
         <Feedback/>
         <div className="content">
             <div className="header">
+                <Link to={"/"}>
                 <div className="back">
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M12 13V20L4 12L12 4V11H20V13H12Z" fill="white"/>
                     </svg>
                     {t("q_but")}
                 </div>
+                </Link>
                 <div className="socials">
 
                     {member.social.facebook&&<svg style={{cursor:"pointer"}} onClick={()=>window.open(member.social.facebook)} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">

@@ -21,7 +21,7 @@ i18next
     .use(initReactI18next)
     .init({
         resources,
-        lng: "en", // Set the default language
+        lng: localStorage.getItem("lang")||"en",
         interpolation: {
             escapeValue: false,
         },

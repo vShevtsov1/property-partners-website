@@ -22,12 +22,11 @@ const RealEstate = () => {
     const [projects,setProjects] = useState(null)
     const { t } = useTranslation();
 
-
     useEffect(() => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: '/api/projects/get-all',
+            url: 'http://157.175.196.127:8080/api/projects/get-all',
             headers: { }
         };
 

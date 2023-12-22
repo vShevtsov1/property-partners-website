@@ -317,7 +317,7 @@ const Home = ({openModal}) => {
                             </div>
 
                             <div className="button">
-                                <a href={"https://drive.google.com/file/d/1yTp_KSKgA768y1bEB_Z4RmKVrTRL8Hie/view"} target={"_blank"}>
+                                <a href={"https://propart-pdfs.s3.me-south-1.amazonaws.com/%D0%A2%D0%BE%D0%BF-5+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2+%D0%B4%D0%BB%D1%8F+%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D1%8B.pdf"} target={"_blank"}>
                                 Get the selection
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none">
@@ -366,7 +366,7 @@ const Home = ({openModal}) => {
                                     </div>
                                 </div>
                                     <div className="button">
-                                        <a href={"https://drive.google.com/file/d/1s2_0DBYwHEvBZnXozY25UXvRux4642S4/view"} target={"_blank"}>
+                                        <a href={"https://propart-pdfs.s3.me-south-1.amazonaws.com/%D0%A2%D0%BE%D0%BF-5+%D1%80%D0%B0%D0%B8%CC%86%D0%BE%D0%BD%D0%BE%D0%B2+%D0%B4%D0%BB%D1%8F+%D1%81%D0%B5%D0%BC%D0%B5%D0%B8%CC%86.pdf"} target={"_blank"}>
                                         Get the selection
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                              fill="none">
@@ -415,7 +415,7 @@ const Home = ({openModal}) => {
                                     </div>
                                 </div>
                                     <div className="button">
-                                        <a href={"https://drive.google.com/file/d/1BXD2ss_Lkqtq7NJLkkcqgGQDpN1999pP/view?usp=drive_open"} target={"_blank"}>
+                                        <a href={"https://propart-pdfs.s3.me-south-1.amazonaws.com/%D0%A2%D0%BE%D0%BF-5+%D0%92%D0%B8%D0%BB%D0%BB.pdf"} target={"_blank"}>
                                         Get the selection
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                              fill="none">
@@ -466,7 +466,7 @@ const Home = ({openModal}) => {
                             </div>
 
                                     <div className="button">
-                                        <a href={"https://drive.google.com/file/d/1cZPNjLLotsad0hCzSKsdhF_kBLUCInoq/view"} target={"_blank"}>
+                                        <a href={"https://propart-pdfs.s3.me-south-1.amazonaws.com/%D0%A2%D0%BE%D0%BF+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2+%D0%B4%D0%BB%D1%8F+%D0%9F%D0%B5%D1%80%D0%B5%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B8.pdf"} target={"_blank"}>
                                         Get the selection
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                              fill="none">

@@ -33,6 +33,8 @@ import allaGerassimova from "../assets/teams/qr/alla-gerassimova.png";
 import dmitriyKoltsovName from "../assets/teams/dmitriy-koltsov-min.jpg";
 import dmitriyKoltsov from "../assets/teams/qr/dmitriy-koltsov.png";
 import {useTranslation} from "react-i18next";
+import i18next from "i18next";
+import * as i18n from "i18next";
 
 const ProjectCard = () => {
     const {id} = useParams();
@@ -47,6 +49,9 @@ const ProjectCard = () => {
         tittleText:"",
         buttonText:""
     });
+    useEffect(() => {
+        i18n.changeLanguage(localStorage.getItem("lang"))
+    }, [id]);
     const { t } = useTranslation();
 
     const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random() * 8));
@@ -73,7 +78,7 @@ const ProjectCard = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `/api/projects/${id}`,
+            url: `http://157.175.196.127:8080/api/projects/${id}`,
             headers: {}
         };
 
@@ -95,7 +100,7 @@ const ProjectCard = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: '/api/projects/random',
+            url: 'http://157.175.196.127:8080/api/projects/random',
             headers: {}
         };
 

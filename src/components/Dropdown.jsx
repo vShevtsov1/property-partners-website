@@ -10,6 +10,7 @@ const Dropdown = () => {
         setVisible(false)
         i18n.changeLanguage(en)
         serCurrentLanguage(en)
+        localStorage.setItem("lang",en)
     }
 
     return(<div className={"dropdown-language"}>
