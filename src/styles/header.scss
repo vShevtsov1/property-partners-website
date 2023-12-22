@@ -216,8 +216,10 @@ header {
 
     }
     .additional{
-      .phone{
-        display: none;
+      a {
+        .phone {
+          display: none;
+        }
       }
     }
   }

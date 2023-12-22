@@ -5,6 +5,7 @@ const RequestModal = ({showModal,closeModal,modalText,image}) => {
     function isMobile() {
         return window.innerWidth <= 768;
     }
+
     const modalStyles = {
         content: {
             width:isMobile()?"95vw":"50vw",

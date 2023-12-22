@@ -8,10 +8,21 @@ import servicesLife from "../assets/servicesLif.jpg"
 import vipService from "../assets/vipServices.jpg"
 import Footer from "../components/Footer.jsx";
 import {useTranslation} from "react-i18next";
+import ContactUsModal from "../components/ContactUsModal.jsx";
+import RequestModal from "../components/RequestModal.jsx";
+import React, {useState} from "react";
+import alexLogachevName from "../assets/teams/alex-logachev-min.jpg";
 
 const Concierge = () => {
     const { t } = useTranslation();
-
+    const [showModal,setShowModal] = useState(false);
+    const [modalText,setModalText] = useState({
+        tittleText:"Our expert will reach you out",
+        buttonText:"Get a free consultation"
+    });
+    const closeModal = () => {
+        setShowModal(false);
+    };
     return(<div className={"concierge-wrapper"}>
         <Header/>
         <div className="concierge-banner">
@@ -19,7 +30,7 @@ const Concierge = () => {
                 <div>
                     {t("e_title")}
                 </div>
-                <div>
+                <div onClick={()=>setShowModal(true)}>
                     {t("e_but")}
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M16.172 10.9997L10.808 5.63568L12.222 4.22168L20 11.9997L12.222 19.7777L10.808 18.3637L16.172 12.9997H4V10.9997H16.172Z" fill="white"/>
@@ -38,7 +49,7 @@ const Concierge = () => {
                 <div className="concierge-image">
                     <img src={conciergeMain}/>
                 </div>
-                <div>
+                <div onClick={()=>setShowModal(true)}>
                     {t("e_but")}
                     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                         <path d="M16.172 10.9997L10.808 5.63568L12.222 4.22168L20 11.9997L12.222 19.7777L10.808 18.3637L16.172 12.9997H4V10.9997H16.172Z" fill="white"/>
@@ -133,6 +144,8 @@ const Concierge = () => {
                 </div>
             </div>
         </div>
+        <RequestModal showModal={showModal} closeModal={closeModal} modalText={modalText} image={alexLogachevName}/>
+
         <Footer/>
     </div>)
 }

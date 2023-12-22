@@ -26,6 +26,7 @@
   line-height: 120%; /* 86.4px */
 }
 .concierge-wrapper .concierge-banner .concierge-text div:last-child {
+  cursor: pointer;
   padding: 24px;
   display: flex;
   justify-content: space-between;

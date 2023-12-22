@@ -42,6 +42,7 @@ import tykhovaTatiana from '../assets/teams/qr/tykhova-tatiana.png';
 
 import MaxLengthText from "../components/MaxLengthText.jsx";
 import {useTranslation} from "react-i18next";
+import PDFmodal from "../components/PDFmodal.jsx";
 const Home = ({openModal}) => {
     const [activeKind, setActiveKind] = useState(null);
     const [visibleMembers, setVisibleMembers] = useState(4);
@@ -111,10 +112,14 @@ const Home = ({openModal}) => {
         },
     ]
     const displayedMembers = team.slice(0, visibleMembers);
-
+    const [showModal,setShowModal] = useState(false);
+    const [modalContent,setModalContent] = useState("rent")
     const handleTypeClick = (kind) => {
         setActiveKind((prevActiveKind) => (prevActiveKind === kind ? null : kind));
     };
+    const closeModal = ()=>{
+        setShowModal(false)
+    }
     return (<div className={"home-page"}>
         <Header/>
         <div className="home-banner">
@@ -316,8 +321,10 @@ const Home = ({openModal}) => {
                                 </div>
                             </div>
 
-                            <div className="button">
-                                <a href={"https://propart-pdfs.s3.me-south-1.amazonaws.com/%D0%A2%D0%BE%D0%BF-5+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2+%D0%B4%D0%BB%D1%8F+%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D1%8B.pdf"} target={"_blank"}>
+                            <div className="button" onClick={()=>{
+                                setShowModal(true)
+                                modalContent("family")
+                            }}>
                                 Get the selection
                                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                      fill="none">
@@ -325,7 +332,6 @@ const Home = ({openModal}) => {
                                         d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
                                         fill="black"/>
                                 </svg>
-                                </a>
                             </div>
 
                             </div>
@@ -365,8 +371,10 @@ const Home = ({openModal}) => {
                                         {t("price_2")}
                                     </div>
                                 </div>
-                                    <div className="button">
-                                        <a href={"https://propart-pdfs.s3.me-south-1.amazonaws.com/%D0%A2%D0%BE%D0%BF-5+%D1%80%D0%B0%D0%B8%CC%86%D0%BE%D0%BD%D0%BE%D0%B2+%D0%B4%D0%BB%D1%8F+%D1%81%D0%B5%D0%BC%D0%B5%D0%B8%CC%86.pdf"} target={"_blank"}>
+                                    <div className="button" onClick={()=>{
+                                        setShowModal(true)
+                                        modalContent("rent")
+                                    }}>
                                         Get the selection
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                              fill="none">
@@ -374,7 +382,6 @@ const Home = ({openModal}) => {
                                                 d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
                                                 fill="black"/>
                                         </svg>
-                                        </a>
                                     </div>
                             </div>
 
@@ -414,8 +421,10 @@ const Home = ({openModal}) => {
                                         {t("price_3")}
                                     </div>
                                 </div>
-                                    <div className="button">
-                                        <a href={"https://propart-pdfs.s3.me-south-1.amazonaws.com/%D0%A2%D0%BE%D0%BF-5+%D0%92%D0%B8%D0%BB%D0%BB.pdf"} target={"_blank"}>
+                                    <div className="button" onClick={()=>{
+                                        setShowModal(true)
+                                        modalContent("villa")
+                                    }}>
                                         Get the selection
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                              fill="none">
@@ -423,7 +432,6 @@ const Home = ({openModal}) => {
                                                 d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
                                                 fill="black"/>
                                         </svg>
-                                        </a>
                                     </div>
                             </div>
 
@@ -465,8 +473,10 @@ const Home = ({openModal}) => {
                                 </div>
                             </div>
 
-                                    <div className="button">
-                                        <a href={"https://propart-pdfs.s3.me-south-1.amazonaws.com/%D0%A2%D0%BE%D0%BF+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2+%D0%B4%D0%BB%D1%8F+%D0%9F%D0%B5%D1%80%D0%B5%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B8.pdf"} target={"_blank"}>
+                                    <div className="button" onClick={()=>{
+                                        setShowModal(true)
+                                        modalContent("resale")
+                                    }}>
                                         Get the selection
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                              fill="none">
@@ -474,7 +484,6 @@ const Home = ({openModal}) => {
                                                 d="M16.172 11.0002L10.808 5.63617L12.222 4.22217L20 12.0002L12.222 19.7782L10.808 18.3642L16.172 13.0002H4V11.0002H16.172Z"
                                                 fill="black"/>
                                         </svg>
-                                        </a>
                                     </div>
 
                             </div>
@@ -647,15 +656,19 @@ const Home = ({openModal}) => {
                             <div className="general-info">
                                 <div className="name"><MaxLengthText text={member.name} maxLengthBreakpoints={{
 
-
-                                    768: 12,
+                                    400:14,
+                                    300:13,
+                                    768: 15,
+                                    1400: 15,
 
 
                                 }}/></div>
                                 <div className="position"><MaxLengthText text={member.position} maxLengthBreakpoints={{
 
-
+                                    400:15,
+                                    300:13,
                                     768: 15,
+                                    1400: 20,
 
 
                                 }}/></div>
@@ -747,6 +760,7 @@ const Home = ({openModal}) => {
                 </div>
             </div>
         </div>
+        <PDFmodal showModal={showModal} closeModal={closeModal} type={modalContent}/>
         <Footer/>
     </div>)
 }

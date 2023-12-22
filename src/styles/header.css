@@ -190,7 +190,7 @@ header .menu .menu-option {
     font-size: 20px;
     flex-wrap: nowrap;
   }
-  header .additional .phone {
+  header .additional a .phone {
     display: none;
   }
 }

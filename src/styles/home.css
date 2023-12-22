@@ -187,7 +187,7 @@
   font-weight: 400;
   line-height: 19.2px; /* 120% */
 }
-.home-page .collections .content .collection .content .collection-info .button a {
+.home-page .collections .content .collection .content .collection-info .button {
   cursor: pointer;
   display: flex;
   padding: 10px;

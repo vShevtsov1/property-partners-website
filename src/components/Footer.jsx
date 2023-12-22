@@ -193,11 +193,11 @@ const Footer = () => {
                 </div>
                 <div className="menu">
                     <div className="tittle">{t("foot6")}</div>
-                    <div className="menu-option">{t("foot7")}</div>
+                    <Link to={"https://propart-pdfs.s3.me-south-1.amazonaws.com/%D0%A2%D0%BE%D0%BF-5+%D1%80%D0%B0%D0%B8%CC%86%D0%BE%D0%BD%D0%BE%D0%B2+%D0%B4%D0%BB%D1%8F+%D1%81%D0%B5%D0%BC%D0%B5%D0%B8%CC%86.pdf"}><div className="menu-option">{t("foot7")}</div></Link>
                     <Link to={"/concierge"}>
                         <div className="menu-option">{t("foot8")}</div>
                     </Link>
-                    <div className="menu-option">{t("foot9")}</div>
+                    <Link to={"https://propart-pdfs.s3.me-south-1.amazonaws.com/PP-Catalog.pdf"}><div className="menu-option">{t("foot9")}</div></Link>
                 </div>
                 <div className="menu">
                     <div className="tittle">{t("foot10")}</div>
