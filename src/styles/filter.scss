@@ -129,6 +129,15 @@
 }
 @media (max-width: 820px) {
   .filter{
+    display: none;
+    .dropdown{
+      flex: 1;
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .filter{
+    display: none;
     .dropdown{
       flex: 1;
     }

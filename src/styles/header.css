@@ -185,9 +185,10 @@ header .menu .menu-option {
   header .menu {
     display: flex;
     width: max-content;
+    gap: 40px;
   }
   header .menu .menu-option {
-    font-size: 20px;
+    font-size: 15px;
     flex-wrap: nowrap;
   }
   header .additional a .phone {

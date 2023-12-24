@@ -1,5 +1,6 @@
 import "../styles/project.css"
 import MaxLengthText from "./MaxLengthText.jsx";
+import DynamicTruncatedText from "./DynamicTruncatedText.jsx";
 const Project = ({project}) => {
     function formatNumberWithCommas(value) {
         return value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -26,14 +27,10 @@ const Project = ({project}) => {
                                 <rect width="24" height="24" fill="white"/>
                             </clipPath>
                         </defs>
-                    </svg><MaxLengthText text={project.selectedLocation||project.ownLocation} maxLengthBreakpoints={{
-
-                    600:20,
-                    768: 5,
-                    1024: 10,
-                    1440:10,
-                    1540: 15,
-
+                    </svg><DynamicTruncatedText text={project.selectedLocation||project.ownLocation} customBreakpoints={{
+                    1920: 25,
+                    1440: 15,
+                    600: 10
                 }}/>
                 </div>
                 <div className="price">from ${formatNumberWithCommas(project.priceFrom)}</div>

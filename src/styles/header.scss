@@ -206,10 +206,9 @@ header {
     .menu{
       display: flex;
       width: max-content;
+      gap: 40px;
         .menu-option{
-
-
-          font-size: 20px;
+          font-size: 15px;
           flex-wrap: nowrap;
         }
 

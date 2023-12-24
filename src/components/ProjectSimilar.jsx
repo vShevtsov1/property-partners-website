@@ -1,6 +1,7 @@
 
 import "../styles/projectSimilar.css"
 import MaxLengthText from "./MaxLengthText.jsx";
+import DynamicTruncatedText from "./DynamicTruncatedText.jsx";
 const ProjectSimilar = ({project}) => {
     function formatNumberWithCommas(value) {
         return value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
@@ -18,27 +19,22 @@ const ProjectSimilar = ({project}) => {
             <div className="project-details">
                 <div className="general-info">
                     <div className="name">
-                        <MaxLengthText text={project.projectName} maxLengthBreakpoints={{
-
-                            600:20,
-                            768: 5,
-                            1024: 10,
-                            1440:5,
-                            1540: 15,
-
-                        }} />
+                      <DynamicTruncatedText text={project.projectName}
+                      customBreakpoints={{
+                          1920:15,
+                          1350:12,
+                          1199:50,
+                          910:12,
+                          767:50
+                      }}/>
                     </div>
                     <div className="developer">
-                        <MaxLengthText text={project.developer} maxLengthBreakpoints={{
-
-                            600:20,
-                            768: 5,
-                            1024: 15,
-
-                            1440:10,
-                            1540: 15,
-
-                        }} />
+                        <DynamicTruncatedText text={project.developer}
+                                              customBreakpoints={{
+                                                  1920:20,
+                                                  1199:50,
+                                                  767:50
+                                              }}/>
                     </div>
                 </div>
                 <div className="price-info">

@@ -96,6 +96,7 @@
           .buttons{
             display: flex;
             gap: 20px;
+            align-items: center;
             .button:first-child{
               cursor: pointer;
 
@@ -111,7 +112,6 @@
               font-size: 22px;
               font-style: normal;
               font-weight: 400;
-              line-height: normal;
             }
             .button:last-child{
               cursor: pointer;
@@ -127,7 +127,6 @@
               font-size: 22px;
               font-style: normal;
               font-weight: 400;
-              line-height: normal;
             }
           }
         }

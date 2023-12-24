@@ -258,7 +258,7 @@
   display: flex;
   margin-bottom: 24px;
   flex-direction: column;
-  gap: 16px;
+  gap: 8px;
 }
 .project-card .content .manager-plan-wrapper .manager-view .broker-info .general-info div:first-child {
   color: #939393;

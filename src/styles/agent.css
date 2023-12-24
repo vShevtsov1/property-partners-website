@@ -92,6 +92,7 @@
 .agent .content .broker-info .broker-information .general-info .buttons {
   display: flex;
   gap: 20px;
+  align-items: center;
 }
 .agent .content .broker-info .broker-information .general-info .buttons .button:first-child {
   cursor: pointer;
@@ -107,7 +108,6 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .agent .content .broker-info .broker-information .general-info .buttons .button:last-child {
   cursor: pointer;
@@ -123,7 +123,6 @@
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
-  line-height: normal;
 }
 .agent .content .broker-info .broker-information .contact-form {
   display: flex;

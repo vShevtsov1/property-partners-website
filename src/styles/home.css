@@ -525,6 +525,8 @@
 .home-page .our-team .team a .member .information .social {
   display: flex;
   gap: 16px;
+  overflow: hidden;
+  white-space: nowrap;
 }
 .home-page .our-team .show-more {
   width: 100%;
@@ -873,6 +875,9 @@
   .home-page .our-team .team .member .information .general-info .position {
     font-size: 14px;
   }
+  .home-page .our-team .team .member .information .social svg:nth-child(n+5) {
+    display: none;
+  }
   .home-page .our-team .show-more .button {
     width: 100%;
     font-size: 14px;
@@ -965,7 +970,7 @@
     gap: 5px;
   }
   .home-page .why-dubai {
-    height: 70vh;
+    height: max-content !important;
   }
   .home-page .why-dubai .dark {
     font-size: 36px;
@@ -1025,6 +1030,9 @@
     padding: 15px;
     gap: 18px;
   }
+  .home-page .our-team .team .member .member .information .social svg:nth-child(n+5) {
+    display: none;
+  }
   .home-page .our-team .team .member .member .information .general-info .name {
     font-size: 18px;
   }
@@ -1050,6 +1058,27 @@
     padding: 10px 64px;
   }
 }
+@media (max-width: 650px) {
+  .home-page .our-team {
+    padding: 20px 64px;
+  }
+  .home-page .our-team .team .member .member .image {
+    height: 250px;
+  }
+  .home-page .our-team .team .member .member .information {
+    padding: 15px;
+    gap: 18px;
+  }
+  .home-page .our-team .team .member .member .information .social svg:nth-child(n+4) {
+    display: none;
+  }
+  .home-page .our-team .team .member .member .information .general-info .name {
+    font-size: 18px;
+  }
+  .home-page .our-team .team .member .member .information .general-info .position {
+    text-overflow: ellipsis;
+  }
+}
 @media (max-width: 870px) {
   .home-page .partners {
     display: none;
@@ -1067,6 +1096,9 @@
   }
   .home-page .collections {
     padding: 30px 16px;
+  }
+  .home-page .collections .image {
+    max-width: 50vw;
   }
   .home-page .collections .content {
     flex-direction: column;

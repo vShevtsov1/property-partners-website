@@ -619,6 +619,10 @@
             .social {
               display: flex;
               gap: 16px;
+              overflow: hidden;
+              white-space: nowrap;
+
+
             }
           }
         }
@@ -1066,6 +1070,11 @@
               }
             ;
             }
+            .social{
+              svg:nth-child(n+5){
+                display: none;
+              }
+            }
           }
         }
       }
@@ -1159,6 +1168,7 @@
         gap: 30px;
         .collection{
           height: 470px;
+
           .content{
             gap: 10px;
             .collection-info{
@@ -1184,7 +1194,7 @@
       }
     }
     .why-dubai{
-      height: 70vh;
+      height: max-content!important;
       .dark{
         font-size: 36px;
       }
@@ -1261,6 +1271,11 @@
             .information{
               padding: 15px;
               gap: 18px;
+              .social{
+                svg:nth-child(n+5){
+                  display: none;
+                }
+              }
               .general-info{
                 .name{
                   font-size: 18px;
@@ -1296,6 +1311,40 @@
     }
   }
 }
+@media (max-width: 650px) {
+  .home-page{
+    .our-team{
+      padding: 20px 64px;
+      .team{
+        .member{
+          .member{
+            .image{
+              height: 250px;
+            }
+            .information{
+              padding: 15px;
+              gap: 18px;
+              .social{
+                svg:nth-child(n+4){
+                  display: none;
+                }
+              }
+              .general-info{
+                .name{
+                  font-size: 18px;
+                }
+                .position{
+
+                  text-overflow: ellipsis;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
 @media (max-width: 870px) {
   .home-page{
     .partners{
@@ -1319,6 +1368,9 @@
     }
     .collections{
       padding: 30px 16px;
+      .image{
+        max-width: 50vw;
+      }
       .content{
         flex-direction: column;
         .collection{

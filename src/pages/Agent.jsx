@@ -71,7 +71,7 @@ const Agent = () => {
                             <div>{member.position}</div>
                         </div>
                         <div className="buttons">
-                            <div className="button">{t("q_text3")}</div>
+                            <div className="button" onClick={()=>window.open(member.vcf)}>{t("q_text3")}</div>
                             <div className="button">{t("q_text4")}</div>
                         </div>
                     </div>

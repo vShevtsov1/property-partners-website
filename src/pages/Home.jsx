@@ -28,6 +28,8 @@ import dmitriyKoltsovName from "../assets/teams/dmitriy-koltsov-min.jpg";
 import kristinaSokolovskayaName from "../assets/teams/kristina-sokolovskaya-min.jpg";
 import pavelDyninName from "../assets/teams/pavel-dynin-min.jpg";
 import tykhovaTatianaName from "../assets/teams/tykhova-tatiana-min.jpg";
+import aleksandraBobrova from "../assets/teams/aleksandra-bobrova.png";
+import ruslanGeisha from "../assets/teams/ruslan-geisha.png";
 import {Link as ScrollLink} from 'react-scroll';
 import {Link} from "react-router-dom";
 import alekseiShyian from '../assets/teams/qr/aleksei-shyian.png';
@@ -43,71 +45,107 @@ import tykhovaTatiana from '../assets/teams/qr/tykhova-tatiana.png';
 import MaxLengthText from "../components/MaxLengthText.jsx";
 import {useTranslation} from "react-i18next";
 import PDFmodal from "../components/PDFmodal.jsx";
+import DynamicTruncatedText from "../components/DynamicTruncatedText.jsx";
 const Home = ({openModal}) => {
     const [activeKind, setActiveKind] = useState(null);
     const [visibleMembers, setVisibleMembers] = useState(4);
     const { t } = useTranslation();
     const team = [
         {
-            "image": alexLogachevName, "name": "Alex Logachev", "position": "CEO","qr":qrAlex,
+            "image": alexLogachevName, "name": "Lohachov Oleksandr", "position": "Owner & CEO Property Partners Real Estate","qr":qrAlex,
+            "vcf":"https://propart-vcf.s3.me-south-1.amazonaws.com/Lohachov.vcf",
             "social": {
                 "telegram": "https://t.me/oleksandr_logachev",
-                "instagram":"https://www.instagram.com/logachev_alexsandr?igshid=MzRlODBiNWFlZA%3D%3D",
-                "whatsapp":"https://api.whatsapp.com/send/?phone=971588395135&text&type=phone_number&app_absent=0",
-                "facebook":"https://www.facebook.com/logachev.alexsandr?mibextid=LQQJ4d"
+                "instagram":"https://instagram.com/logachev_alexsandr?igshid=MzRlODBiNWFlZA==",
+                "whatsapp":"https://wa.me/971588395135",
+                "facebook":"https://www.facebook.com/logachev.alexsandr?mibextid=LQQJ4d",
+                "youtube":"https://www.youtube.com/@logachev_alexsandr"
             }
         },
         {
-            "image": alekseiShyianName, "name": "Aleksei Shyian", "position": "Business Developer","qr":alekseiShyian,
+            "image": alekseiShyianName, "name": "Aleksei Shyian", "position": "Business Developer","qr":alekseiShyian,"vcf":"https://propart-vcf.s3.me-south-1.amazonaws.com/Shyian.vcf",
             "social": {
-                "instagram": "https://www.instagram.com/dubai_oleksii_shyian",
-                "telegram": "https://t.me/brodubai"
+                "instagram": "https://instagram.com/dubai_oleksii_shyian?igshid=MzRlODBiNWFlZA==",
+                "telegram": "https://t.me/brodubai",
+                "whatsapp":"https://wa.me/971585952108",
+                "linkedin":"https://www.linkedin.com/in/oleksii-shyian-86348b5b/"
+
+
             }
         },
         {
             "image": tykhovaTatianaName, "name": "Tykhova Tatiana", "position": "Real estate broker","qr":tykhovaTatiana,
+            "vcf":"https://propart-vcf.s3.me-south-1.amazonaws.com/Tykhova.vcf",
             "social": {
-                "instagram": "https://www.instagram.com/taffeeta",
+                "instagram": "https://instagram.com/taffeeta?igshid=NTc4MTIwNjQ2YQ==",
                 "telegram": "https://t.me/+971522419898",
-                "whatsapp":"https://api.whatsapp.com/send/?phone=971522419898&text&type=phone_number&app_absent=0"
+                "whatsapp":"https://wa.me/971522419898",
+                "facebook":"https://www.facebook.com/profile.php?id=100090630440600&mibextid=LQQJ4d",
+                "linkedin":"https://www.linkedin.com/in/tatiana-tykhova-2a7325135?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             }
         }
         ,
         {
-            "image": kristinaSokolovskayaName, "name": "Kristina Sokolovskaya", "position": "CEO Kristal Business Experts","qr":kristinaSokolovskaya,
+            "image": kristinaSokolovskayaName, "name": "Kristina Sokolovskaya", "position": "Owner & CEO Kristal Business Experts","qr":kristinaSokolovskaya,
+           "vcf":"https://propart-vcf.s3.me-south-1.amazonaws.com/Sokolovskaya.vcf",
             "social": {
-                "telegram": "https://t.me/+971529568%20390",
+                "telegram": "https://t.me/+971529568390",
+                "whatsapp":"https://wa.me/971529568390"
             }
         },
         {
             "image": pavelDyninName, "name": "Pavel Dynin", "position": "Real estate broker","qr":propertyPartnersDynin,
+            "vcf":"https://propart-vcf.s3.me-south-1.amazonaws.com/dynin.vcf",
             "social": {
                 "telegram": "https://t.me/pavel_dynin",
-                "instagram":"https://www.instagram.com/pavel.dynin?igshid=OGQ5Z%20Dc2ODk2ZA%3D%3D",
-                "whatsapp":"https://api.whatsapp.com/send/?phone=971585622362&text&type=phone_number&app_absent=0",
-                "facebook":"https://www.facebook.com/csdus?mibextid=LQQJ%204d"
+                "instagram":"https://instagram.com/pavel.dynin?igshid=OGQ5ZDc2ODk2ZA==",
+                "whatsapp":"https://wa.me/971585622362",
+                "facebook":"https://www.facebook.com/csdus?mibextid=LQQJ4d"
             }
         },
         {
             "image": annaHorshunovaName, "name": "Anna Horshunova", "position": "Real estate broker","qr":annaHorshunova,
+            "vcf":"https://propart-vcf.s3.me-south-1.amazonaws.com/Horshunova.vcf",
             "social": {
-                facebook:"https://www.facebook.com/annagorshunova?mibextid=LQQJ4d"
+                "facebook":"https://www.facebook.com/annagorshunova?mibextid=LQQJ4d",
+                "telegram": "https://t.me/annagorshunova",
+                "whatsapp":"https://wa.me/971506585962",
+                "instagram":"https://instagram.com/annagorshunova?igshid=YTQwZjQ0NmI0OA%3D%3D&utm_source=qr",
             }
         },
         {
-            "image": allaGerassimovaName, "name": "Alla Gerassimova", "position": "Marketer, content maker","qr":allaGerassimova,
+            "image": allaGerassimovaName, "name": "Alla Gerassimova", "position": "Marketing specialist, content creator ","qr":allaGerassimova,
+            "vcf":"https://propart-vcf.s3.me-south-1.amazonaws.com/Gerassimova.vcf",
             "social": {
                 "telegram": "https://t.me/alla_gerassimova",
-                "instagram":"https://www.instagram.com/a11gep?igshid=NTc4MTIw+NjQ2YQ%3D%3D",
-                "whatsapp":"https://api.whatsapp.com/send/?phone=971555728933&text&type=phone_number&app_absent=0",
+                "instagram":"https://instagram.com/a11gep?igshid=NTc4MTIwNjQ2YQ==",
+                "whatsapp":"https://wa.me/971555728933",
             }
         },
         {
             "image": dmitriyKoltsovName, "name": "Dmitriy Koltsov", "position": "Real estate broker","qr":dmitriyKoltsov,
+            "vcf":"https://propart-vcf.s3.me-south-1.amazonaws.com/Koltsov.vcf",
             "social": {
                 "telegram": "https://t.me/brokervdubae",
-                "instagram":"https://www.instagram.com/brokervdubae",
-                "whatsapp":"https://api.whatsapp.com/send/?phone=971585589938&text&type=phone_number&app_absent=0",
+                "instagram":"https://instagram.com/brokervdubae",
+                "whatsapp":"https://wa.me/971585589938",
+            }
+        },
+        // {
+        //     "image": aleksandraBobrova, "name": "Aleksandra Bobrova", "position": "Sales manager secondary market","qr":qrAlex,
+        //     "social": {
+        //         "telegram": "https://t.me/alexandraa_ab",
+        //         "instagram":"https://www.instagram.com/alexandraa_ab?igsh=NTl0NTNiaHk5em9w",
+        //         "whatsapp":"https://wa.me/971566510053",
+        //     }
+        // },
+        {
+            "image": ruslanGeisha, "name": "Ruslan Geisha", "position": "Real estate broker","qr":qrAlex,
+            "vcf":"https://propart-vcf.s3.me-south-1.amazonaws.com/Geisha.vcf",
+            "social": {
+                "telegram": "https://t.me/ruslan_geisha",
+                "instagram":"https://www.instagram.com/mister_geisha?igsh=eWs3aTluNmN0NXdq",
+                "whatsapp":"https://wa.me/971503886822",
             }
         },
     ]
@@ -654,27 +692,29 @@ const Home = ({openModal}) => {
                         <div className="image"><img src={member.image}/></div>
                         <div className="information">
                             <div className="general-info">
-                                <div className="name"><MaxLengthText text={member.name} maxLengthBreakpoints={{
-
-                                    400:14,
-                                    300:13,
-                                    768: 15,
-                                    1400: 15,
-
-
-                                }}/></div>
-                                <div className="position"><MaxLengthText text={member.position} maxLengthBreakpoints={{
-
-                                    400:15,
-                                    300:13,
-                                    768: 15,
-                                    1400: 20,
-
-
-                                }}/></div>
+                                <div className="name"><DynamicTruncatedText text={member.name} customBreakpoints={
+                                    {
+                                        1920:50,
+                                        1440:17,
+                                        1000:13,
+                                        768:10,
+                                        725:9,
+                                        650:8,
+                                        600:11
+                                    }
+                                }/></div>
+                                <div className="position"><DynamicTruncatedText text={member.position} customBreakpoints={
+                                    {
+                                        1920:50,
+                                        1440:20,
+                                        1000:13,
+                                        725:10,
+                                        650:8,
+                                        600:13
+                                    }
+                                }/></div>
                             </div>
                             <div className="social">
-
                                 {member.social.facebook&&<svg style={{cursor:"pointer"}} onClick={()=>window.open(member.social.facebook)} xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                     <path
                                         d="M12 2C6.477 2 2 6.477 2 12C2 16.991 5.657 21.128 10.438 21.879V14.89H7.898V12H10.438V9.797C10.438 7.291 11.93 5.907 14.215 5.907C15.309 5.907 16.453 6.102 16.453 6.102V8.562H15.193C13.95 8.562 13.563 9.333 13.563 10.124V12H16.336L15.893 14.89H13.563V21.879C18.343 21.129 22 16.99 22 12C22 6.477 17.523 2 12 2Z"
@@ -702,6 +742,21 @@ const Home = ({openModal}) => {
                                             d="M12 22C6.477 22 2 17.523 2 12C2 6.477 6.477 2 12 2C17.523 2 22 6.477 22 12C22 17.523 17.523 22 12 22ZM8.89 13.17L8.903 13.163L9.773 16.033C9.885 16.344 10.039 16.4 10.226 16.374C10.414 16.349 10.513 16.248 10.636 16.13L11.824 14.982L14.374 16.87C14.84 17.127 15.175 16.994 15.291 16.438L16.948 8.616C17.131 7.888 16.811 7.596 16.246 7.828L6.513 11.588C5.849 11.854 5.853 12.226 6.393 12.391L8.89 13.171V13.17Z"
                                             fill="#191C38"/>
                                     </svg>}
+                                {member.social.youtube&&
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <g clip-path="url(#clip0_908_6319)">
+                                            <path fill-rule="evenodd" clip-rule="evenodd" d="M9.58613 15.1029V8.36877C11.9768 9.49368 13.8283 10.5804 16.0181 11.752C14.212 12.7536 11.9768 13.8775 9.58613 15.1029ZM22.9092 5.01955C22.4968 4.47624 21.794 4.05332 21.0457 3.9133C18.8463 3.49564 5.12518 3.49445 2.92698 3.9133C2.32693 4.02579 1.7926 4.29769 1.3336 4.72014C-0.600435 6.51522 0.00559942 16.1417 0.471777 17.701C0.667809 18.3759 0.921228 18.8627 1.24038 19.1822C1.65157 19.6047 2.21456 19.8956 2.86123 20.026C4.67215 20.4006 14.0016 20.61 21.0074 20.0822C21.6529 19.9698 22.2243 19.6695 22.6749 19.2291C24.4631 17.4412 24.3412 7.27417 22.9092 5.01955Z" fill="#191C38"/>
+                                        </g>
+                                        <defs>
+                                            <clipPath id="clip0_908_6319">
+                                                <rect width="24" height="24" fill="white"/>
+                                            </clipPath>
+                                        </defs>
+                                    </svg>}
+                                {member.social.linkedin&&
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                        <path d="M12 0C5.37188 0 0 5.37188 0 12C0 18.6281 5.37188 24 12 24C18.6281 24 24 18.6281 24 12C24 5.37188 18.6281 0 12 0ZM8.64375 17.0203H6.30469V9.53437H8.64375V17.0203ZM7.41094 8.59687H7.39219C6.54375 8.59687 5.99531 8.025 5.99531 7.29844C5.99531 6.55781 6.5625 6 7.425 6C8.2875 6 8.81719 6.55781 8.83594 7.29844C8.84063 8.02031 8.29219 8.59687 7.41094 8.59687ZM18 17.0203H15.3469V13.1484C15.3469 12.1359 14.9344 11.4422 14.0203 11.4422C13.3219 11.4422 12.9328 11.9109 12.7547 12.3609C12.6891 12.5203 12.6984 12.7453 12.6984 12.975V17.0203H10.0688C10.0688 17.0203 10.1016 10.1578 10.0688 9.53437H12.6984V10.7109C12.8531 10.1953 13.6922 9.46406 15.0328 9.46406C16.6969 9.46406 18 10.5422 18 12.8578V17.0203Z" fill="#191C38"/>
+                                    </svg>}
 
                             </div>
 
@@ -712,7 +767,7 @@ const Home = ({openModal}) => {
 
             </div>
             {
-                visibleMembers!=8&&
+                visibleMembers!=12&&
 
                 <div className="show-more" onClick={() => setVisibleMembers(visibleMembers + 4)}>
                     <div className="button">
