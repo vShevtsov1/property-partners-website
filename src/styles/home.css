@@ -738,6 +738,7 @@
     width: 100% !important;
   }
   .home-page .collections .content .collection .image {
+    max-width: unset;
     width: 100% !important;
     height: auto;
     min-height: 0;
