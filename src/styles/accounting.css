@@ -1,14 +1,13 @@
 .accounting-wrapper .accounting-container {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 40px;
   margin-bottom: 64px;
 }
 .accounting-wrapper .accounting-container .accounting-guide {
   display: flex;
   flex-direction: column;
   gap: 60px;
-  padding: 0px 0px;
 }
 .accounting-wrapper .accounting-container .accounting-guide .accounting-baner {
   display: flex;
@@ -49,6 +48,7 @@
   width: 68%;
 }
 .accounting-wrapper .accounting-container .accounting-guide .accounting-baner .content .leave-a-request {
+  cursor: pointer;
   display: flex;
   padding: 24px;
   justify-content: space-between;
@@ -75,31 +75,28 @@
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
-  padding-top: 64px;
-  padding: 64px;
+  padding: 0 64px;
 }
 .accounting-wrapper .accounting-container .accounting-guide .guide-blocks .guide-block {
   display: flex;
   background: #FFF;
   width: 100%;
-  padding: 24px;
+  padding: 20px;
   flex-direction: column;
   align-items: flex-start;
-  padding: 16px;
 }
 .accounting-wrapper .accounting-container .accounting-guide .guide-blocks .guide-block div {
   color: #1F1E1E;
   font-family: HelveticaBold, sans-serif;
   font-size: 22px;
   font-style: normal;
+  line-height: 30px; /* 150% */
   font-weight: 400;
-  line-height: normal;
 }
 .accounting-wrapper .accounting-container .cost-of-epmloyment {
   padding: 0px 64px;
 }
 .accounting-wrapper .accounting-container .cost-of-epmloyment .title {
-  width: 70%;
   display: flex;
   flex-direction: column;
   gap: 16px;
@@ -261,6 +258,7 @@
   outline: none;
 }
 .accounting-wrapper .accounting-container .free-consult .free-consult-form .contact-us-form .form .form-button {
+  cursor: pointer;
   display: flex;
   padding: 16px;
   justify-content: space-between;
@@ -305,7 +303,7 @@
 .accounting-wrapper .accounting-container .lower-blocks-additional {
   display: flex;
   flex-direction: column;
-  gap: 80px;
+  gap: 40px;
   padding: 0px 64px;
   margin-top: 50px;
 }
@@ -380,7 +378,6 @@
   width: 50%;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
   gap: 16px;
 }
 .accounting-wrapper .accounting-container .lower-blocks-additional .lower-blocks-container .lower-block .text-container .right-text .title {
@@ -472,6 +469,7 @@
     /* 21.6px */
   }
   .accounting-container .accounting-guide .accounting-baner .content .leave-a-request {
+    cursor: pointer;
     display: flex;
     padding: 16px;
     justify-content: space-between;
@@ -527,7 +525,6 @@
     gap: 24px !important;
   }
   .accounting-container .cost-of-epmloyment .title {
-    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 8px !important;
@@ -812,7 +809,6 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 16px;
   }
   .accounting-container .lower-blocks-additional .lower-blocks-container .lower-block .text-container .right-text .title {
@@ -852,13 +848,13 @@
   .accounting-container {
     display: flex;
     flex-direction: column;
-    gap: 0px !important;
+    gap: 40px !important;
     margin-bottom: 70px !important;
   }
   .accounting-container .accounting-guide {
     display: flex;
     flex-direction: column;
-    gap: 24px !important;
+    gap: 60px !important;
     padding: 0px 0px !important;
   }
   .accounting-container .accounting-guide .accounting-baner {
@@ -911,9 +907,6 @@
     font-weight: 400;
     line-height: normal;
   }
-  .accounting-container .accounting-guide .accounting-baner .content .leave-a-request svg {
-    transform: rotate(90deg);
-  }
   .accounting-container .accounting-guide .accounting-baner .image {
     width: 50% !important;
   }
@@ -950,7 +943,6 @@
     gap: 24px !important;
   }
   .accounting-container .cost-of-epmloyment .title {
-    width: 70%;
     display: flex;
     flex-direction: column;
     gap: 8px !important;
@@ -1237,7 +1229,6 @@
     width: 50%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 16px;
   }
   .accounting-container .lower-blocks-additional .lower-blocks-container .lower-block .text-container .right-text .title {
@@ -1275,7 +1266,7 @@
 }
 @media (min-width: 830px) and (max-width: 1024px) {
   .accounting-container .accounting-guide .accounting-baner {
-    height: 700px !important;
+    height: 600px !important;
   }
 }
 @media (max-width: 630px) {
@@ -1290,7 +1281,7 @@
   .accounting-container .accounting-guide {
     display: flex;
     flex-direction: column;
-    gap: 64px !important;
+    gap: 40px !important;
     padding: 0px 16px !important;
     padding-left: 0px !important;
   }
@@ -1349,9 +1340,6 @@
     font-weight: 400;
     line-height: normal;
   }
-  .accounting-container .accounting-guide .accounting-baner .content .leave-a-request svg {
-    transform: rotate(90deg);
-  }
   .accounting-container .accounting-guide .accounting-baner .content .image {
     display: block;
     width: 100% !important;
@@ -1366,9 +1354,9 @@
   }
   .accounting-container .accounting-guide .guide-blocks {
     display: grid !important;
-    gap: 4px !important;
+    gap: 7px !important;
     grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
-    padding: 16px !important;
+    padding: 16px 0 0 16px !important;
   }
   .accounting-container .accounting-guide .guide-blocks .guide-block {
     display: flex;
@@ -1693,7 +1681,6 @@
     width: 100% !important;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     gap: 14px;
   }
   .accounting-container .lower-blocks-additional .lower-blocks-container .lower-block .text-container .right-text .title {

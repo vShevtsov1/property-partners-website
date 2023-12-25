@@ -911,6 +911,9 @@
   .home-page .home-banner {
     height: auto;
   }
+  .home-page .home-banner .content {
+    height: unset;
+  }
   .home-page .home-banner .content .tittle div:first-child {
     font-size: 40px;
   }

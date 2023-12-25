@@ -3,7 +3,7 @@
   height: 100%;
   display: flex;
   .image-container{
-    width: 40%;
+    width: 50%;
     background-image: url("../assets/memberBackground.png");
     background-repeat: no-repeat;
     background-size: cover;
@@ -113,6 +113,12 @@
   }
   .ReactModal__Content .ReactModal__Content--after-open{
     width: auto;
-    background: red;
+  }
+}
+@media (max-width: 800px) {
+  .modal-content{
+    .image-container{
+      display: none;
+    }
   }
 }

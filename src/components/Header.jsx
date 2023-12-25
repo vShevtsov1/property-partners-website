@@ -3,10 +3,12 @@ import {Link} from "react-router-dom";
 import {useState} from "react";
 import {useTranslation} from "react-i18next";
 import Dropdown from "./Dropdown.jsx";
+import i18next from "i18next";
+import * as i18n from "i18next";
 const Header = () => {
     const [phoneMenuVisible,setPhoneMenuVisible] = useState(false);
     const { t } = useTranslation();
-
+    const [activeLanguage,setActiveLanguage] = useState(i18next.language)
     return(<header>
         <Link to={"/"}> <div className="logo-container">
                <svg xmlns="http://www.w3.org/2000/svg" width="143" height="56" viewBox="0 0 143 56" fill="none">
@@ -44,7 +46,7 @@ const Header = () => {
         <div className="menu">
             <Link to={"/"}><div className="menu-option">{t('header_option0')}</div></Link>
            <Link to={"/real-estate"}><div className="menu-option">{t('header_option1')}</div></Link>
-            <div className="menu-option">{t('header_option2')}</div>
+            <Link to={"/accounting"}> <div className="menu-option">{t('header_option2')}</div></Link>
             <Link to={"/concierge"}> <div className="menu-option">{t('header_option3')}</div></Link>
         </div>
         <div className="phone-view">
@@ -105,36 +107,47 @@ const Header = () => {
 
                     <div className="menu-options">
                         <Link to={"/"}> <div className="menu-option">
-                            Home
+                            {t('header_option0')}
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
                                 <path d="M0.933333 15.8002L0 14.8669L6.86667 8.0002L0 1.13353L0.933333 0.200195L8.73333 8.0002L0.933333 15.8002Z" fill="#191C38"/>
                             </svg>
                         </div></Link>
                         <Link to={"/real-estate"}> <div className="menu-option">
-                            Buy
+                            {t('header_option1')}
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
                                 <path d="M0.933333 15.8002L0 14.8669L6.86667 8.0002L0 1.13353L0.933333 0.200195L8.73333 8.0002L0.933333 15.8002Z" fill="#191C38"/>
                             </svg>
                         </div></Link>
                         <Link to={"/concierge"}> <div className="menu-option">
-                            Concierge
+                            {t('header_option2')}
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
                                 <path d="M0.933333 15.8002L0 14.8669L6.86667 8.0002L0 1.13353L0.933333 0.200195L8.73333 8.0002L0.933333 15.8002Z" fill="#191C38"/>
                             </svg>
                         </div></Link>
+                        <Link to={"/accounting"}>
                         <div className="menu-option">
-                            Consulting
+                            {t('header_option3')}
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
                                 <path d="M0.933333 15.8002L0 14.8669L6.86667 8.0002L0 1.13353L0.933333 0.200195L8.73333 8.0002L0.933333 15.8002Z" fill="#191C38"/>
                             </svg>
                         </div>
+                        </Link>
                     </div>
                 </div>
 
                 <div className="language">
-                    <div className="lang">UA</div>
-                    <div className="lang">RU</div>
-                    <div className="lang active">EN</div>
+                    <div onClick={()=>{ i18n.changeLanguage("ua")
+                        localStorage.setItem("lang","ua")
+                        setActiveLanguage("ua")
+                    }} className={`lang ${activeLanguage==='ua' ? 'active' : ''}`}>UA</div>
+                    <div  onClick={()=>{ i18n.changeLanguage("ru")
+                        localStorage.setItem("lang","ru")
+                        setActiveLanguage("ru")
+                    }} className={`lang ${activeLanguage==='ru' ? 'active' : ''}`}>RU</div>
+                    <div onClick={()=>{ i18n.changeLanguage("en")
+                        localStorage.setItem("lang","en")
+                        setActiveLanguage("en")
+                    }}  className={`lang ${activeLanguage==='en' ? 'active' : ''}`}>EN</div>
                 </div>
             </div>}
         </div>

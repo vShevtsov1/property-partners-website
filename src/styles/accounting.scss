@@ -2,7 +2,7 @@
     .accounting-container {
         display: flex;
         flex-direction: column;
-        gap: 60px;
+        gap: 40px;
 
         margin-bottom: 64px;
 
@@ -10,7 +10,7 @@
             display: flex;
             flex-direction: column;
             gap: 60px;
-            padding: 0px 0px;
+
 
             .accounting-baner {
                 display: flex;
@@ -54,6 +54,7 @@
                     }
 
                     .leave-a-request {
+                        cursor: pointer;
                         display: flex;
                         padding: 24px;
                         justify-content: space-between;
@@ -88,25 +89,26 @@
                 display: grid;
                 gap: 16px;
                 grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
-                padding-top: 64px;
-                padding: 64px;
+                padding: 0 64px;
 
                 .guide-block {
                     display: flex;
                     background: #FFF;
                     width: 100%;
-                    padding: 24px;
+                    padding: 20px;
                     flex-direction: column;
                     align-items: flex-start;
-                    padding: 16px;
+
 
                     div {
                         color: #1F1E1E;
                         font-family: HelveticaBold, sans-serif;
                         font-size: 22px;
                         font-style: normal;
+                        line-height: 30px; /* 150% */
+
                         font-weight: 400;
-                        line-height: normal;
+
                     }
                 }
             }
@@ -116,7 +118,7 @@
             padding: 0px 64px;
 
             .title {
-                width: 70%;
+
                 display: flex;
                 flex-direction: column;
                 gap: 16px;
@@ -302,6 +304,7 @@
                         }
 
                         .form-button {
+                            cursor: pointer;
                             display: flex;
                             padding: 16px;
                             justify-content: space-between;
@@ -354,7 +357,7 @@
         .lower-blocks-additional {
             display: flex;
             flex-direction: column;
-            gap: 80px;
+            gap: 40px;
             padding: 0px 64px;
             margin-top: 50px;
 
@@ -437,7 +440,7 @@
                             width: 50%;
                             display: flex;
                             flex-direction: column;
-                            justify-content: space-between;
+
                             gap: 16px;
 
                             .title {
@@ -552,6 +555,8 @@
                     }
 
                     .leave-a-request {
+                        cursor: pointer;
+
                         display: flex;
                         padding: 16px;
                         justify-content: space-between;
@@ -620,7 +625,7 @@
             gap: 24px !important;
 
             .title {
-                width: 70%;
+
                 display: flex;
                 flex-direction: column;
                 gap: 8px !important;
@@ -945,7 +950,7 @@
                             width: 50%;
                             display: flex;
                             flex-direction: column;
-                            justify-content: space-between;
+
                             gap: 16px;
 
                             .title {
@@ -1000,13 +1005,13 @@
     .accounting-container {
         display: flex;
         flex-direction: column;
-        gap: 0px !important;
+        gap: 40px !important;
         margin-bottom: 70px !important;
 
         .accounting-guide {
             display: flex;
             flex-direction: column;
-            gap: 24px !important;
+            gap: 60px !important;
             padding: 0px 0px !important;
 
             .accounting-baner {
@@ -1064,9 +1069,7 @@
                         font-weight: 400;
                         line-height: normal;
 
-                        svg {
-                            transform: rotate(90deg);
-                        }
+
                     }
                 }
 
@@ -1115,7 +1118,7 @@
             gap: 24px !important;
 
             .title {
-                width: 70%;
+
                 display: flex;
                 flex-direction: column;
                 gap: 8px !important;
@@ -1442,7 +1445,7 @@
                             width: 50%;
                             display: flex;
                             flex-direction: column;
-                            justify-content: space-between;
+
                             gap: 16px;
 
                             .title {
@@ -1497,7 +1500,7 @@
     .accounting-container {
         .accounting-guide {
             .accounting-baner {
-                height: 700px !important;
+                height:600px !important;
             }
         }
     }
@@ -1516,7 +1519,7 @@
         .accounting-guide {
             display: flex;
             flex-direction: column;
-            gap: 64px !important;
+            gap: 40px !important;
             padding: 0px 16px !important;
             padding-left: 0px !important;
 
@@ -1579,9 +1582,7 @@
                         font-weight: 400;
                         line-height: normal;
 
-                        svg {
-                            transform: rotate(90deg);
-                        }
+
                     }
 
                     .image {
@@ -1605,9 +1606,9 @@
 
             .guide-blocks {
                 display: grid !important;
-                gap: 4px !important;
+                gap: 7px !important;
                 grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
-                padding: 16px !important;
+                padding: 16px  0 0 16px !important;
 
                 .guide-block {
                     display: flex;
@@ -1978,7 +1979,6 @@
                             width: 100% !important;
                             display: flex;
                             flex-direction: column;
-                            justify-content: space-between;
                             gap: 14px;
 
                             .title {

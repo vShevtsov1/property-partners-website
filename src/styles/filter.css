@@ -3,7 +3,7 @@
   border-bottom: 1px solid #DADADA;
   background: #FFF;
   justify-content: space-between;
-  display: flex;
+  display: none;
   gap: 24px;
 }
 .filter .search {
