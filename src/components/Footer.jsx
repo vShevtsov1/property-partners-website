@@ -175,7 +175,7 @@ const Footer = () => {
                     <Link to={"/real-estate"}>
                         <div className="menu-option">{t("foot4")}</div>
                     </Link>
-                    <Link to={"/"}>
+                    <Link to={"/accounting"}>
                         <div className="menu-option">{t("foot_consulting")}</div>
                     </Link>
                     <Link to={"/concierge"}>
