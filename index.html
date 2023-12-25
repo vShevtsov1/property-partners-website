@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale = 1.0,
+maximum-scale=1.0, user-scalable=no" />
+    <title>ProPart | Dubai Real Estate</title>
+    <style>
+      body{
+        margin: 0;
+        padding: 0;
+        background: #F1F1F1;
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      * {
+        scrollbar-width: auto;
+        scrollbar-color: #191c38 #ffffff;
+      }
+
+      *::-webkit-scrollbar {
+        width: 9px;
+      }
+
+      *::-webkit-scrollbar-track {
+        background: #ffffff;
+      }
+
+      *::-webkit-scrollbar-thumb {
+        background-color: #191c38;
+        border-radius: 10px;
+        border: 3px solid #ffffff;
+      }
+      a{
+        text-decoration: none;
+      }
+      .ReactModal__Content{
+        width: 65vh;
+      }
+      @media (max-width: 1300px) {
+        .ReactModal__Content{
+          width: 50vh;
+          height: 45vh!important;
+        }
+      }
+      @media (max-width: 1300px) {
+        .ReactModal__Content{
+          width: 60vh!important;
+          height: max-content!important;
+        }
+      }
+      @media (max-width: 600px) {
+
+        .ReactModal__Content{
+          width: 45vh!important;
+        height: max-content!important;
+        }
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
+</html>

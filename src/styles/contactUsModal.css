@@ -1,0 +1,118 @@
+.modal-content {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.modal-content .image-container {
+  width: 40%;
+  background-image: url("../assets/memberBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.modal-content .image-container img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+  object-position: top;
+  transform: scale(-1, 1);
+}
+.modal-content .modal-form {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  padding: 24px 24px 35px;
+}
+.modal-content .modal-form .close-button {
+  display: flex;
+  justify-content: flex-end;
+}
+.modal-content .modal-form .close-button .close {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  border: 1px solid #CACACA;
+  background: #FFF;
+}
+.modal-content .modal-form .form {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.modal-content .modal-form .form .tittle {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.modal-content .modal-form .form .tittle div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%; /* 28.8px */
+}
+.modal-content .modal-form .form .tittle div:last-child {
+  color: #575757;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.modal-content .modal-form .form .form-form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.modal-content .modal-form .form .form-form .form-input {
+  border: 1px solid #CACACA;
+  display: flex;
+  padding: 16px;
+  gap: 24px;
+}
+.modal-content .modal-form .form .form-form .form-input input {
+  border: none;
+  width: 95%;
+  color: #8F8F8F;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+}
+.modal-content .modal-form .form .form-form .form-input input:focus {
+  outline: none;
+}
+.modal-content .modal-form .form .form-form .form-button {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  background: #191C38;
+  color: #FFF;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 600px) {
+  .modal-content .image-container {
+    display: none;
+  }
+  .ReactModal__Content .ReactModal__Content--after-open {
+    width: auto;
+    background: red;
+  }
+}
+
+/*# sourceMappingURL=contactUsModal.css.map */

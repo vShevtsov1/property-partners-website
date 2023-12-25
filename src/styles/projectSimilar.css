@@ -1,0 +1,103 @@
+.project-similar {
+  height: 100%;
+  width: 100%;
+  cursor: pointer;
+}
+.project-similar .image-container {
+  width: 100%;
+  height: 75%;
+  object-fit: cover;
+}
+.project-similar .project-details {
+  flex: 1;
+  padding: 16px;
+  background: white;
+  display: flex;
+  justify-content: space-between;
+}
+.project-similar .project-details .general-info {
+  flex: 1;
+  gap: 5px;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project-similar .project-details .general-info .name {
+  color: #000;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+.project-similar .project-details .general-info .developer {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #8F8F8F;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 133.333% */
+}
+.project-similar .project-details .price-info {
+  flex: 1;
+  gap: 5px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  height: 100%;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+}
+.project-similar .project-details .price-info .price {
+  text-align: right;
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px;
+}
+.project-similar .project-details .price-info .price span {
+  color: #8F8F8F;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.project-similar .project-details .price-info .price-m2 {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  color: #8F8F8F;
+  font-family: Helvetica, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  text-align: right;
+  line-height: 24px; /* 133.333% */
+}
+
+@media (max-width: 600px) {
+  .project-similar .project-details .general-info .name {
+    font-size: 18px;
+  }
+  .project-similar .project-details .general-info .developer {
+    font-size: 16px;
+  }
+  .project-similar .project-details .price-info .price {
+    font-size: 18px;
+  }
+  .project-similar .project-details .price-info .price span {
+    font-size: 12px;
+  }
+  .project-similar .project-details .price-info .price-m2 {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=projectSimilar.css.map */

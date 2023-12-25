@@ -1,0 +1,69 @@
+.floor-plan {
+  display: flex;
+  padding-bottom: 16px;
+  flex-direction: column;
+  background: white;
+  gap: 16px;
+}
+.floor-plan .image-container {
+  border-bottom: 1px solid #CACACA;
+}
+.floor-plan .image-container img {
+  width: 100%;
+  height: 100%;
+}
+.floor-plan .plan-info {
+  display: flex;
+  padding: 0 20px;
+  justify-content: space-between;
+}
+.floor-plan .plan-info .price-info {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+.floor-plan .plan-info .price-info div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.floor-plan .plan-info .price-info div:last-child {
+  color: #8F8F8F;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+.floor-plan .plan-info .type-info {
+  display: flex;
+  align-items: center;
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 24px; /* 150% */
+}
+
+@media (max-width: 600px) {
+  .floor-plan .plan-info {
+    padding: 5px;
+  }
+  .floor-plan .plan-info .price-info div:first-child {
+    font-size: 16px;
+  }
+  .floor-plan .plan-info .price-info div:last-child {
+    font-size: 14px;
+  }
+  .floor-plan .plan-info .type-info {
+    font-size: 14px;
+  }
+}
+
+/*# sourceMappingURL=floorPlan.css.map */
