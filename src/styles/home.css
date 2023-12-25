@@ -171,6 +171,7 @@
   display: flex;
 }
 .home-page .collections .content .collection .content .collection-info .properties .property {
+  cursor: pointer;
   flex: 1;
   display: flex;
   padding: 12px 16px 12px 12px;

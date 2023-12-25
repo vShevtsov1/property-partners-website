@@ -339,7 +339,10 @@ const Home = ({ openModal }) => {
                                 gap: 16
                             }}>
                                 <div className="properties">
-                                    <div className="property">
+                                    <div className="property"  onClick={() => {
+                                        setShowModal(true)
+                                        modalContent("family")
+                                    }}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none">
                                             <rect width="24" height="24" fill="white" />
@@ -349,7 +352,10 @@ const Home = ({ openModal }) => {
                                         </svg>
                                         {t("proj_1")}
                                     </div>
-                                    <div className="property">
+                                    <div className="property"  onClick={() => {
+                                        setShowModal(true)
+                                        modalContent("family")
+                                    }}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none">
                                             <path
@@ -390,7 +396,10 @@ const Home = ({ openModal }) => {
                                 gap: 16
                             }}>
                                 <div className="properties">
-                                    <div className="property">
+                                    <div className="property"  onClick={() => {
+                                        setShowModal(true)
+                                        modalContent("rent")
+                                    }}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none">
                                             <rect width="24" height="24" fill="white" />
@@ -400,7 +409,10 @@ const Home = ({ openModal }) => {
                                         </svg>
                                         {t("proj_2")}
                                     </div>
-                                    <div className="property">
+                                    <div className="property"  onClick={() => {
+                                        setShowModal(true)
+                                        modalContent("rent")
+                                    }}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none">
                                             <path
@@ -440,7 +452,10 @@ const Home = ({ openModal }) => {
                                 gap: 16
                             }}>
                                 <div className="properties">
-                                    <div className="property">
+                                    <div className="property" onClick={() => {
+                                        setShowModal(true)
+                                        modalContent("villa")
+                                    }}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none">
                                             <rect width="24" height="24" fill="white" />
@@ -450,7 +465,10 @@ const Home = ({ openModal }) => {
                                         </svg>
                                         {t("proj_3")}
                                     </div>
-                                    <div className="property">
+                                    <div className="property" onClick={() => {
+                                        setShowModal(true)
+                                        modalContent("villa")
+                                    }}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none">
                                             <path
@@ -491,7 +509,10 @@ const Home = ({ openModal }) => {
                             }}>
 
                                 <div className="properties">
-                                    <div className="property">
+                                    <div className="property" onClick={() => {
+                                        setShowModal(true)
+                                        modalContent("resale")
+                                    }}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none">
                                             <rect width="24" height="24" fill="white" />
@@ -501,7 +522,10 @@ const Home = ({ openModal }) => {
                                         </svg>
                                         {t("proj_4")}
                                     </div>
-                                    <div className="property">
+                                    <div className="property" onClick={() => {
+                                        setShowModal(true)
+                                        modalContent("resale")
+                                    }}>
                                         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
                                             fill="none">
                                             <path
