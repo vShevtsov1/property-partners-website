@@ -257,7 +257,7 @@ const ProjectCard = () => {
                     <div className="button" onClick={() => setShowImages(true)}>
                         <div onClick={()=>
                         {
-                            setModalText({tittleText:"To see more information - request it!",buttonText:"Get instant help from expert"})
+                            setModalText({tittleText:t("modalHeader1"),buttonText:t("modalButton")})
                             setShowModal(true)
                         }
                         }> {t("r_but1")}</div>
@@ -514,7 +514,7 @@ const ProjectCard = () => {
                             <div className="button">{t("r_req3")}</div>
                             <div className="button" onClick={()=>
                             {
-                                setModalText({tittleText:"Get advice from our expert!",buttonText:"To request a call back"})
+                                setModalText({tittleText:t("modalHeader"),buttonText:t("modalButton")})
                                 setShowModal(true)
                             }
                                 }>{t("r_req4")}</div>

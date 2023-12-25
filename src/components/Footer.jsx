@@ -2,9 +2,96 @@ import "../styles/footer.css"
 import {Link} from "react-router-dom";
 import {Link as ScrollLink} from 'react-scroll';
 import {useTranslation} from "react-i18next";
+import RequestModal from "./RequestModal.jsx";
+import React, {useState} from "react";
+import alexLogachevName from "../assets/teams/alex-logachev-min.jpg";
+import qrAlex from "../assets/teams/qr/qr-alex.svg";
+import alekseiShyianName from "../assets/teams/aleksei-shyian-min.jpg";
+import alekseiShyian from "../assets/teams/qr/aleksei-shyian.png";
+import tykhovaTatianaName from "../assets/teams/tykhova-tatiana-min.jpg";
+import tykhovaTatiana from "../assets/teams/qr/tykhova-tatiana.png";
+import kristinaSokolovskayaName from "../assets/teams/kristina-sokolovskaya-min.jpg";
+import kristinaSokolovskaya from "../assets/teams/qr/kristina-sokolovskaya.png";
+import pavelDyninName from "../assets/teams/pavel-dynin-min.jpg";
+import propertyPartnersDynin from "../assets/teams/qr/property-partners-dynin.png";
+import annaHorshunovaName from "../assets/teams/anna-horshunova-min.jpg";
+import annaHorshunova from "../assets/teams/qr/anna-horshunova.png";
+import allaGerassimovaName from "../assets/teams/alla-gerassimova-min.jpg";
+import allaGerassimova from "../assets/teams/qr/alla-gerassimova.png";
+import dmitriyKoltsovName from "../assets/teams/dmitriy-koltsov-min.jpg";
+import dmitriyKoltsov from "../assets/teams/qr/dmitriy-koltsov.png";
 
 const Footer = () => {
     const { t } = useTranslation();
+    const [showModal,setShowModal] = useState(false);
+    const closeModal = () => {
+        setShowModal(false);
+    };
+    const team = [
+        {
+            "image": alexLogachevName, "name": "Alex Logachev", "position": "CEO","qr":qrAlex,
+            "social": {
+                "telegram": "https://t.me/oleksandr_logachev",
+                "instagram":"https://www.instagram.com/logachev_alexsandr?igshid=MzRlODBiNWFlZA%3D%3D",
+                "whatsapp":"https://api.whatsapp.com/send/?phone=971588395135&text&type=phone_number&app_absent=0",
+                "facebook":"https://www.facebook.com/logachev.alexsandr?mibextid=LQQJ4d"
+            }
+        },
+        {
+            "image": alekseiShyianName, "name": "Aleksei Shyian", "position": "Business Developer","qr":alekseiShyian,
+            "social": {
+                "instagram": "https://www.instagram.com/dubai_oleksii_shyian",
+                "telegram": "https://t.me/brodubai"
+            }
+        },
+        {
+            "image": tykhovaTatianaName, "name": "Tykhova Tatiana", "position": "Real estate broker","qr":tykhovaTatiana,
+            "social": {
+                "instagram": "https://www.instagram.com/taffeeta",
+                "telegram": "https://t.me/+971522419898",
+                "whatsapp":"https://api.whatsapp.com/send/?phone=971522419898&text&type=phone_number&app_absent=0"
+            }
+        }
+        ,
+        {
+            "image": kristinaSokolovskayaName, "name": "Kristina Sokolovskaya", "position": "CEO Kristal Business Experts","qr":kristinaSokolovskaya,
+            "social": {
+                "telegram": "https://t.me/+971529568%20390",
+            }
+        },
+        {
+            "image": pavelDyninName, "name": "Pavel Dynin", "position": "Real estate broker","qr":propertyPartnersDynin,
+            "social": {
+                "telegram": "https://t.me/pavel_dynin",
+                "instagram":"https://www.instagram.com/pavel.dynin?igshid=OGQ5Z%20Dc2ODk2ZA%3D%3D",
+                "whatsapp":"https://api.whatsapp.com/send/?phone=971585622362&text&type=phone_number&app_absent=0",
+                "facebook":"https://www.facebook.com/csdus?mibextid=LQQJ%204d"
+            }
+        },
+        {
+            "image": annaHorshunovaName, "name": "Anna Horshunova", "position": "Real estate broker","qr":annaHorshunova,
+            "social": {
+                facebook:"https://www.facebook.com/annagorshunova?mibextid=LQQJ4d"
+            }
+        },
+        {
+            "image": allaGerassimovaName, "name": "Alla Gerassimova", "position": "Marketer, content maker","qr":allaGerassimova,
+            "social": {
+                "telegram": "https://t.me/alla_gerassimova",
+                "instagram":"https://www.instagram.com/a11gep?igshid=NTc4MTIw+NjQ2YQ%3D%3D",
+                "whatsapp":"https://api.whatsapp.com/send/?phone=971555728933&text&type=phone_number&app_absent=0",
+            }
+        },
+        {
+            "image": dmitriyKoltsovName, "name": "Dmitriy Koltsov", "position": "Real estate broker","qr":dmitriyKoltsov,
+            "social": {
+                "telegram": "https://t.me/brokervdubae",
+                "instagram":"https://www.instagram.com/brokervdubae",
+                "whatsapp":"https://api.whatsapp.com/send/?phone=971585589938&text&type=phone_number&app_absent=0",
+            }
+        },
+    ]
+    const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random() * 8));
 
     return (<footer>
         <div className="logo-container">
@@ -76,7 +163,7 @@ const Footer = () => {
                 <Link to={"/concierge"}>
                     <div className="menu-option">{t("foot8")}</div>
                 </Link>
-                <Link to={"https://propart-pdfs.s3.me-south-1.amazonaws.com/PP-Catalog.pdf"}><div className="menu-option">{t("foot9")}</div></Link>
+                <div className="menu-option" style={{cursor:"pointer"}} onClick={()=>setShowModal(true)}>{t("foot9")}</div>
             </div>
             <div className="menu">
                 <div className="tittle">{t("foot10")}</div>
@@ -197,7 +284,7 @@ const Footer = () => {
                     <Link to={"/concierge"}>
                         <div className="menu-option">{t("foot8")}</div>
                     </Link>
-                    <Link to={"https://propart-pdfs.s3.me-south-1.amazonaws.com/PP-Catalog.pdf"}><div className="menu-option">{t("foot9")}</div></Link>
+                    <div className="menu-option" onClick={()=>setShowModal(true)}>{t("foot9")}</div>
                 </div>
                 <div className="menu">
                     <div className="tittle">{t("foot10")}</div>
@@ -335,7 +422,7 @@ const Footer = () => {
                     <Link to={"/concierge"}>
                         <div className="menu-option">{t("foot8")}</div>
                     </Link>
-                    <div className="menu-option">{t("foot9")}</div>
+                    <div className="menu-option" onClick={()=>setShowModal(true)}>{t("foot9")}</div>
                 </div>
                 <div className="menu">
                     <div className="tittle">{t("foot10")}</div>
@@ -351,6 +438,7 @@ const Footer = () => {
             </div>
 
         </div>
+        <RequestModal showModal={showModal} closeModal={closeModal} modalText={{tittleText:t("modalHeader"),buttonText:t("modalButton")}} image={team[randomNumber].image}/>
     </footer>)
 }
 export default Footer

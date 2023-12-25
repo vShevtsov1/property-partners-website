@@ -245,5 +245,11 @@
     "j_title48":"Additional services, such as obtaining visas for family members or household staff, opening bank accounts for individuals and companies, accounting services for companies, you can study on our website or leave a request via the feedback form above.",
     "j_title49":"Your future employee has a full package of documents and is ready for employment..",
     "j_title50":"4 day",
-    "j_title51":"At this stage, information is also collected that is necessary for the formation of an employment contract."
+    "j_title51":"At this stage, information is also collected that is necessary for the formation of an employment contract.",
+    "modalHeader": "Get advice from our expert!",
+  "modalDesc": "Leave your phone number and our specialist will contact you!",
+  "modalButton": "To request a call back",
+
+  "modalHeader1": "To see more information - request it!",
+  "modalButton1": "Get instant help from expert"
 }

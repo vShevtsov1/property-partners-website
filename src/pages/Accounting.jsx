@@ -363,7 +363,7 @@ const Accounting = () => {
 
             </div>
         </div>
-        <RequestModal showModal={showModal} closeModal={closeModal} modalText={modalText} image={team[randomNumber].image} />
+        <RequestModal showModal={showModal} closeModal={closeModal} modalText={{tittleText:t("modalHeader"),buttonText:t("modalButton")}} image={team[randomNumber].image} />
         <Footer />
     </div>
     )

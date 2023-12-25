@@ -16,10 +16,7 @@ import alexLogachevName from "../assets/teams/alex-logachev-min.jpg";
 const Concierge = () => {
     const { t } = useTranslation();
     const [showModal, setShowModal] = useState(false);
-    const [modalText, setModalText] = useState({
-        tittleText: "Our expert will reach you out",
-        buttonText: "Get a free consultation"
-    });
+
     const closeModal = () => {
         setShowModal(false);
     };
@@ -144,7 +141,7 @@ const Concierge = () => {
                 </div>
             </div>
         </div>
-        <RequestModal showModal={showModal} closeModal={closeModal} modalText={modalText} image={alexLogachevName} />
+        <RequestModal showModal={showModal} closeModal={closeModal} modalText={{tittleText:t("modalHeader"),buttonText:t("modalButton")}} image={alexLogachevName} />
 
         <Footer />
     </div>)

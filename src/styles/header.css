@@ -172,10 +172,8 @@ header .menu .menu-option {
     gap: 10px;
     border-radius: 5px;
     background: #191C38;
-    order: 2;
   }
   header .phone-view .phone-menu .language .lang.active {
-    order: 1;
     border-radius: 5px;
     background: #C29773;
     color: #FFF;
