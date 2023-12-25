@@ -2,6 +2,7 @@ import Modal from "react-modal";
 import ceo from "../assets/teams/alex-logachev-min.jpg"
 import "../styles/contactUsModal.css"
 import {useEffect, useState} from "react";
+import {useTranslation} from "react-i18next";
 const PDFmodal = ({closeModal,showModal,type}) => {
     const types = {
         "rent":"https://propart-pdfs.s3.me-south-1.amazonaws.com/%D0%A2%D0%BE%D0%BF-5+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2+%D0%B4%D0%BB%D1%8F+%D0%90%D1%80%D0%B5%D0%BD%D0%B4%D1%8B.pdf",
@@ -9,6 +10,7 @@ const PDFmodal = ({closeModal,showModal,type}) => {
         "vila":"https://propart-pdfs.s3.me-south-1.amazonaws.com/%D0%A2%D0%BE%D0%BF-5+%D0%92%D0%B8%D0%BB%D0%BB.pdf",
         "resale":"https://propart-pdfs.s3.me-south-1.amazonaws.com/%D0%A2%D0%BE%D0%BF+%D0%BF%D1%80%D0%BE%D0%B5%D0%BA%D1%82%D0%BE%D0%B2+%D0%B4%D0%BB%D1%8F+%D0%9F%D0%B5%D1%80%D0%B5%D0%BF%D1%80%D0%BE%D0%B4%D0%B0%D0%B6%D0%B8.pdf"
     }
+    const {t} = useTranslation();
     function isMobile() {
         return window.innerWidth <= 768;
     }
@@ -45,8 +47,8 @@ const PDFmodal = ({closeModal,showModal,type}) => {
                 </div>
                 <div className="form">
                     <div className="tittle">
-                        <div>Get the best selection from us!</div>
-                        <div>Leave your phone number and our specialist will contact you!</div>
+                        <div>{t("modalHeader2")}</div>
+                        <div>{t("modalDesc")}</div>
                     </div>
                     <div className="form-form">
                         <div className="form-input">
@@ -62,7 +64,7 @@ const PDFmodal = ({closeModal,showModal,type}) => {
                             </svg>
                         </div>
                         <a href={types[type]} download><div className="form-button">
-                            Get offers in PDF
+                            {t("modalButton2")}
                             <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
                                 <path d="M10 15.172L19.192 5.979L20.607 7.393L10 18L3.636 11.636L5.05 10.222L10 15.172Z" fill="white"/>
                             </svg>

@@ -264,5 +264,8 @@
   "modalButton": "Зателефонуй мені",
 
   "modalHeader1": "Щоб отримати більше інформації - напишіть нам!",
-  "modalButton1": "Get instant help from expert"
+  "modalButton1": "Get instant help from expert",
+
+  "modalHeader2": "Отримайте найкращу підбірку у нас!",
+  "modalButton2": "Отримати PDF"
 }
