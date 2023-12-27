@@ -20,13 +20,15 @@ import { useTranslation } from "react-i18next";
 const RealEstate = () => {
     const [mapZoom, setMapZoom] = useState(10);
     const [projects, setProjects] = useState(null)
+    const [visibleProjects, setVisibleProjects] = useState([])
     const { t } = useTranslation();
+    const map = useMap();
 
     useEffect(() => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: '/api/projects/get-all',
+            url: 'http://157.175.196.127:8080/api/projects/get-all',
             headers: {}
         };
 
@@ -50,6 +52,39 @@ const RealEstate = () => {
         return price.toFixed(1) + suffixes[suffixIndex];
     }
 
+    const updateProjectsVisibility = () => {
+        const currentZoom = mapZoom;
+        let visiblePercentage = 100;
+
+        switch (true) {
+            case currentZoom < 10:
+                visiblePercentage = 5;
+                break;
+            case currentZoom < 11:
+                visiblePercentage = 20;
+                break;
+            case currentZoom < 12:
+                visiblePercentage = 40;
+                break;
+            case currentZoom < 13:
+                visiblePercentage = 60;
+                break;
+            case currentZoom < 14:
+                visiblePercentage = 80;
+                break;
+            case currentZoom < 15:
+                visiblePercentage = 100;
+                break;
+            default:
+                break;
+        }
+
+        const totalProjects = projects.length;
+        const visibleProjectsCount = Math.ceil((visiblePercentage / 100) * totalProjects);
+        const slicedVisibleProjects = projects.slice(0, visibleProjectsCount);
+        setVisibleProjects(slicedVisibleProjects);
+
+    };
 
     if (projects === null) {
         return null;
@@ -70,13 +105,15 @@ const RealEstate = () => {
                             gestureHandling={"greedy"}
                             mapId={"eafda8fe79279394"}
                             fullscreenControl={true}
-                            onZoomChanged={ev => { setMapZoom(ev.detail.zoom) }}
+                            onZoomChanged={ev => { setMapZoom(ev.detail.zoom);
+                                updateProjectsVisibility()
+                            }}
                         >
 
                             <MapControl position={ControlPosition.TOP_LEFT}>
 
                             </MapControl>
-                            {projects.map((marker, index) => (
+                            {visibleProjects.map((marker, index) => (
                                 <AdvancedMarker
                                     key={index}
                                     onClick={() => window.open(`/project/${marker._id}`)}
