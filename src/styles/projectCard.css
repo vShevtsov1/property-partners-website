@@ -38,6 +38,7 @@
   display: none;
 }
 .project-card .content .images-container {
+  max-height: 70vh;
   width: 100%;
   margin-bottom: 20px;
   display: grid;
@@ -220,6 +221,40 @@
 }
 .project-card .content .project-information-phone {
   display: none;
+}
+.project-card .content .project-description {
+  background: white;
+  padding: 24px;
+  width: 100%;
+}
+.project-card .content .project-description .header {
+  color: #191C38;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%; /* 38.4px */
+}
+.project-card .content .project-description .about-project {
+  color: black;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.project-card .content .project-description .show {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  color: #191C38;
+  font-family: Helvetica, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 .project-card .content .manager-plan-wrapper {
   display: flex;
@@ -493,6 +528,9 @@
 .project-card .content .floor-plans .floor-content {
   width: 100%;
 }
+.project-card .content .floor-plans .floor-content .swiper-simillar {
+  max-height: 40vh;
+}
 .project-card .content .location {
   height: 80vh;
   display: flex;
@@ -723,6 +761,29 @@
     width: 36px;
     height: 36px;
   }
+  .project-card .content .project-description {
+    background: white;
+    padding: 16px;
+    width: 100%;
+  }
+  .project-card .content .project-description .header {
+    color: #191C38;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 38.4px */
+  }
+  .project-card .content .project-description .about-project {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
 }
 @media (max-width: 1300px) {
   .project-card .content {
@@ -804,6 +865,29 @@
   }
   .project-card .content .manager-plan-wrapper .payment-plan .plan-content .column .values .value {
     font-size: 22px;
+  }
+  .project-card .content .project-description {
+    background: white;
+    padding: 16px;
+    width: 100%;
+  }
+  .project-card .content .project-description .header {
+    color: #191C38;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%; /* 38.4px */
+  }
+  .project-card .content .project-description .about-project {
+    color: black;
+    font-family: Helvetica, sans-serif;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
   }
 }
 

@@ -3,10 +3,12 @@
   padding-bottom: 16px;
   flex-direction: column;
   background: white;
+  height: 40vh;
   gap: 16px;
 }
 .floor-plan .image-container {
   border-bottom: 1px solid #CACACA;
+  height: 80%;
 }
 .floor-plan .image-container img {
   width: 100%;

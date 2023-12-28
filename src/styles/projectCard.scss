@@ -43,7 +43,7 @@
   display: none;
 }
     .images-container {
-
+      max-height: 70vh;
       width: 100%;
       margin-bottom: 20px;
 
@@ -255,6 +255,41 @@
     }
     .project-information-phone{
       display: none;
+    }
+    .project-description{
+      background: white;
+      padding: 24px;
+      width: 100%;
+      .header {
+        color: #191C38;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: HelveticaBold, sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 38.4px */
+      }
+      .about-project{
+        color: black;
+        font-family: Helvetica,sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+      .show{
+        cursor: pointer;
+        display: flex;
+        justify-content: flex-end;
+        color: #191C38;
+        font-family: Helvetica,sans-serif;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+
+      }
     }
     .manager-plan-wrapper {
 
@@ -563,6 +598,9 @@
 
       .floor-content {
         width: 100%;
+        .swiper-simillar{
+          max-height: 40vh;
+        }
       }
     }
 
@@ -852,6 +890,30 @@
           }
         }
       }
+      .project-description{
+        background: white;
+        padding: 16px;
+        width: 100%;
+        .header {
+          color: #191C38;
+          leading-trim: both;
+          text-edge: cap;
+          font-family: HelveticaBold, sans-serif;
+          font-size: 32px;
+          font-style: normal;
+          font-weight: 700;
+          line-height: 120%; /* 38.4px */
+        }
+        .about-project{
+          color: black;
+          font-family: Helvetica,sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+
+      }
     }
   }
 }
@@ -961,6 +1023,29 @@ font-size: 16px;
             }
           }
         }
+      }
+    }
+    .project-description{
+      background: white;
+      padding: 16px;
+      width: 100%;
+      .header {
+        color: #191C38;
+        leading-trim: both;
+        text-edge: cap;
+        font-family: HelveticaBold, sans-serif;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 120%; /* 38.4px */
+      }
+      .about-project{
+        color: black;
+        font-family: Helvetica,sans-serif;
+        font-size: 17px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
       }
     }
   }

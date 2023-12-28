@@ -36,6 +36,8 @@ import {useTranslation} from "react-i18next";
 import i18next from "i18next";
 import * as i18n from "i18next";
 
+
+
 const ProjectCard = () => {
     const {id} = useParams();
     const [showImages, setShowImages] = useState(false);
@@ -44,15 +46,19 @@ const ProjectCard = () => {
     const [activePlan, setActivePlan] = useState(0)
     const [activeFloorPlan, setActiveFloorPlan] = useState(0)
     const [mapZoom, setMapZoom] = useState(15);
-    const [showModal,setShowModal] = useState(false);
-    const [modalText,setModalText] = useState({
-        tittleText:"",
-        buttonText:""
+    const [showModal, setShowModal] = useState(false);
+    const [showMore, setShowMore] = useState(false);
+    const [translatedText, setTranslatedText] = useState('');
+
+    const [modalText, setModalText] = useState({
+        tittleText: "",
+        buttonText: ""
     });
     useEffect(() => {
         i18n.changeLanguage(localStorage.getItem("lang"))
+        handleTranslate();
     }, [id]);
-    const { t } = useTranslation();
+    const {t} = useTranslation();
 
     const [randomNumber, setRandomNumber] = useState(Math.floor(Math.random() * 8));
 
@@ -78,7 +84,7 @@ const ProjectCard = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `/api/projects/${id}`,
+            url: `http://157.175.196.127:8080/api/projects/${id}`,
             headers: {}
         };
 
@@ -100,7 +106,7 @@ const ProjectCard = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: '/api/projects/random',
+            url: 'http://157.175.196.127:8080/api/projects/random',
             headers: {}
         };
 
@@ -120,6 +126,7 @@ const ProjectCard = () => {
     const closeModal = () => {
         setShowModal(false);
     };
+
     function formatNumberWithCommas(value) {
         return value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
@@ -147,9 +154,34 @@ const ProjectCard = () => {
 
         formattedTotalSum = formatNumberWithCommas(totalSum.toString());
     }
+
     function isMobile() {
         return window.innerWidth <= 768;
     }
+
+
+    const toggleShowMore = () => {
+        setShowMore(!showMore);
+    };
+
+
+    const handleTranslate = async () => {
+        try {
+            const response = await axios.post('https://libretranslate.com/translate', {
+                q: "Hello world",
+                source: 'auto',
+                target: "ru",
+                format: 'text',
+            });
+
+            console.log(response.data.translatedText);
+        } catch (error) {
+            console.error('Translation error:', error);
+        }
+    };
+
+
+
     function convertPriceToShortFormat(price) {
         const suffixes = ['', 'K', 'M', 'B', 'T'];
         let suffixIndex = 0;
@@ -161,67 +193,86 @@ const ProjectCard = () => {
 
         return price.toFixed(1) + suffixes[suffixIndex];
     }
+
     const team = [
         {
-            "image": alexLogachevName, "name": "Alex Logachev", "position": "CEO","qr":qrAlex,
+            "image": alexLogachevName, "name": "Alex Logachev", "position": "CEO", "qr": qrAlex,
             "social": {
                 "telegram": "https://t.me/oleksandr_logachev",
-                "instagram":"https://www.instagram.com/logachev_alexsandr?igshid=MzRlODBiNWFlZA%3D%3D",
-                "whatsapp":"https://api.whatsapp.com/send/?phone=971588395135&text&type=phone_number&app_absent=0",
-                "facebook":"https://www.facebook.com/logachev.alexsandr?mibextid=LQQJ4d"
+                "instagram": "https://www.instagram.com/logachev_alexsandr?igshid=MzRlODBiNWFlZA%3D%3D",
+                "whatsapp": "https://api.whatsapp.com/send/?phone=971588395135&text&type=phone_number&app_absent=0",
+                "facebook": "https://www.facebook.com/logachev.alexsandr?mibextid=LQQJ4d"
             }
         },
         {
-            "image": alekseiShyianName, "name": "Aleksei Shyian", "position": "Business Developer","qr":alekseiShyian,
+            "image": alekseiShyianName, "name": "Aleksei Shyian", "position": "Business Developer", "qr": alekseiShyian,
             "social": {
                 "instagram": "https://www.instagram.com/dubai_oleksii_shyian",
                 "telegram": "https://t.me/brodubai"
             }
         },
         {
-            "image": tykhovaTatianaName, "name": "Tykhova Tatiana", "position": "Real estate broker","qr":tykhovaTatiana,
+            "image": tykhovaTatianaName,
+            "name": "Tykhova Tatiana",
+            "position": "Real estate broker",
+            "qr": tykhovaTatiana,
             "social": {
                 "instagram": "https://www.instagram.com/taffeeta",
                 "telegram": "https://t.me/+971522419898",
-                "whatsapp":"https://api.whatsapp.com/send/?phone=971522419898&text&type=phone_number&app_absent=0"
+                "whatsapp": "https://api.whatsapp.com/send/?phone=971522419898&text&type=phone_number&app_absent=0"
             }
         }
         ,
         {
-            "image": kristinaSokolovskayaName, "name": "Kristina Sokolovskaya", "position": "CEO Kristal Business Experts","qr":kristinaSokolovskaya,
+            "image": kristinaSokolovskayaName,
+            "name": "Kristina Sokolovskaya",
+            "position": "CEO Kristal Business Experts",
+            "qr": kristinaSokolovskaya,
             "social": {
                 "telegram": "https://t.me/+971529568%20390",
             }
         },
         {
-            "image": pavelDyninName, "name": "Pavel Dynin", "position": "Real estate broker","qr":propertyPartnersDynin,
+            "image": pavelDyninName,
+            "name": "Pavel Dynin",
+            "position": "Real estate broker",
+            "qr": propertyPartnersDynin,
             "social": {
                 "telegram": "https://t.me/pavel_dynin",
-                "instagram":"https://www.instagram.com/pavel.dynin?igshid=OGQ5Z%20Dc2ODk2ZA%3D%3D",
-                "whatsapp":"https://api.whatsapp.com/send/?phone=971585622362&text&type=phone_number&app_absent=0",
-                "facebook":"https://www.facebook.com/csdus?mibextid=LQQJ%204d"
+                "instagram": "https://www.instagram.com/pavel.dynin?igshid=OGQ5Z%20Dc2ODk2ZA%3D%3D",
+                "whatsapp": "https://api.whatsapp.com/send/?phone=971585622362&text&type=phone_number&app_absent=0",
+                "facebook": "https://www.facebook.com/csdus?mibextid=LQQJ%204d"
             }
         },
         {
-            "image": annaHorshunovaName, "name": "Anna Horshunova", "position": "Real estate broker","qr":annaHorshunova,
+            "image": annaHorshunovaName,
+            "name": "Anna Horshunova",
+            "position": "Real estate broker",
+            "qr": annaHorshunova,
             "social": {
-                facebook:"https://www.facebook.com/annagorshunova?mibextid=LQQJ4d"
+                facebook: "https://www.facebook.com/annagorshunova?mibextid=LQQJ4d"
             }
         },
         {
-            "image": allaGerassimovaName, "name": "Alla Gerassimova", "position": "Marketer, content maker","qr":allaGerassimova,
+            "image": allaGerassimovaName,
+            "name": "Alla Gerassimova",
+            "position": "Marketer, content maker",
+            "qr": allaGerassimova,
             "social": {
                 "telegram": "https://t.me/alla_gerassimova",
-                "instagram":"https://www.instagram.com/a11gep?igshid=NTc4MTIw+NjQ2YQ%3D%3D",
-                "whatsapp":"https://api.whatsapp.com/send/?phone=971555728933&text&type=phone_number&app_absent=0",
+                "instagram": "https://www.instagram.com/a11gep?igshid=NTc4MTIw+NjQ2YQ%3D%3D",
+                "whatsapp": "https://api.whatsapp.com/send/?phone=971555728933&text&type=phone_number&app_absent=0",
             }
         },
         {
-            "image": dmitriyKoltsovName, "name": "Dmitriy Koltsov", "position": "Real estate broker","qr":dmitriyKoltsov,
+            "image": dmitriyKoltsovName,
+            "name": "Dmitriy Koltsov",
+            "position": "Real estate broker",
+            "qr": dmitriyKoltsov,
             "social": {
                 "telegram": "https://t.me/brokervdubae",
-                "instagram":"https://www.instagram.com/brokervdubae",
-                "whatsapp":"https://api.whatsapp.com/send/?phone=971585589938&text&type=phone_number&app_absent=0",
+                "instagram": "https://www.instagram.com/brokervdubae",
+                "whatsapp": "https://api.whatsapp.com/send/?phone=971585589938&text&type=phone_number&app_absent=0",
             }
         },
     ]
@@ -231,7 +282,8 @@ const ProjectCard = () => {
     return (<div className={"project-card"}>
         <Header/>
         <Feedback/>
-        <RequestModal showModal={showModal} closeModal={closeModal} modalText={modalText} image={team[randomNumber].image}/>
+        <RequestModal showModal={showModal} closeModal={closeModal} modalText={modalText}
+                      image={team[randomNumber].image}/>
         <div className="content">
             <div className="navigation">
                 <Link to={"/real-estate"}>
@@ -255,9 +307,8 @@ const ProjectCard = () => {
                 <div className="main-image"><img src={project.imageSrcMain}/></div>
                 <div className="more">
                     <div className="button" onClick={() => setShowImages(true)}>
-                        <div onClick={()=>
-                        {
-                            setModalText({tittleText:t("modalHeader1"),buttonText:t("modalButton")})
+                        <div onClick={() => {
+                            setModalText({tittleText: t("modalHeader1"), buttonText: t("modalButton")})
                             setShowModal(true)
                         }
                         }> {t("r_but1")}</div>
@@ -285,7 +336,7 @@ const ProjectCard = () => {
                     }}
                     loop
                     modules={[Autoplay, Pagination, Navigation]}
-                    >
+                >
                     <SwiperSlide><img src={project.imageSrcMain}/></SwiperSlide>
                     <SwiperSlide><img src={project.interiorGallery[1]}/></SwiperSlide>
                     <SwiperSlide><img src={project.interiorGallery[2]}/></SwiperSlide>
@@ -317,7 +368,8 @@ const ProjectCard = () => {
                     </div>
                     <div className="price-block">
                         <div><span>{t("r_pay2")}</span> ${formatNumberWithCommas(project.priceFrom)}</div>
-                        <div>{t("r_pay2")} {(Number(project.priceFrom) / Number(project.sizeFrom)).toFixed(0)} for m²</div>
+                        <div>{t("r_pay2")} {(Number(project.priceFrom) / Number(project.sizeFrom)).toFixed(0)} for m²
+                        </div>
                     </div>
                 </div>
                 <div className="additional-information">
@@ -399,28 +451,30 @@ const ProjectCard = () => {
                     <div className="name-block">
                         <div>{project.projectName}</div>
                         <div className={"name-block-2"}>
-                        <div>
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
-                                 fill="none">
-                                <g clip-path="url(#clip0_317_448)">
-                                    <path fill-rule="evenodd" clip-rule="evenodd"
-                                          d="M8.25 9C8.25 11.0715 9.92925 12.75 12 12.75C14.0708 12.75 15.75 11.0715 15.75 9C15.75 6.9285 14.0708 5.25 12 5.25C9.92925 5.25 8.25 6.9285 8.25 9ZM3 9C3 4.02975 7.02975 0 12 0C16.9703 0 21 4.02975 21 9C21 12.7125 13.473 24.0083 12 24C10.5037 24.0083 3 12.7635 3 9Z"
-                                          fill="#C29773"/>
-                                    <circle cx="12" cy="9" r="2" fill="#C29773"/>
-                                </g>
-                                <defs>
-                                    <clipPath id="clip0_317_448">
-                                        <rect width="24" height="24" fill="white"/>
-                                    </clipPath>
-                                </defs>
-                            </svg>
-                            {project.selectedLocation || project.ownLocation}
-                        </div>
+                            <div>
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                     fill="none">
+                                    <g clip-path="url(#clip0_317_448)">
+                                        <path fill-rule="evenodd" clip-rule="evenodd"
+                                              d="M8.25 9C8.25 11.0715 9.92925 12.75 12 12.75C14.0708 12.75 15.75 11.0715 15.75 9C15.75 6.9285 14.0708 5.25 12 5.25C9.92925 5.25 8.25 6.9285 8.25 9ZM3 9C3 4.02975 7.02975 0 12 0C16.9703 0 21 4.02975 21 9C21 12.7125 13.473 24.0083 12 24C10.5037 24.0083 3 12.7635 3 9Z"
+                                              fill="#C29773"/>
+                                        <circle cx="12" cy="9" r="2" fill="#C29773"/>
+                                    </g>
+                                    <defs>
+                                        <clipPath id="clip0_317_448">
+                                            <rect width="24" height="24" fill="white"/>
+                                        </clipPath>
+                                    </defs>
+                                </svg>
+                                {project.selectedLocation || project.ownLocation}
+                            </div>
                             <div className="price-block">
                                 <div>$ {formatNumberWithCommas(project.priceFrom)}</div>
-                                <div>{t("r_pay2")} {(Number(project.priceFrom) / Number(project.sizeFrom)).toFixed(0)} for m²</div>
+                                <div>{t("r_pay2")} {(Number(project.priceFrom) / Number(project.sizeFrom)).toFixed(0)} for
+                                    m²
+                                </div>
                             </div>
-                    </div>
+                        </div>
                     </div>
                 </div>
                 <div className="additional-information">
@@ -497,6 +551,15 @@ const ProjectCard = () => {
 
                 </div>
             </div>
+            <div className="project-description">
+                <div className="header">{t("projectInfo")}</div>
+                <div className="about-project"
+                     dangerouslySetInnerHTML={{
+                         __html: project.description
+                     }}
+                />
+
+            </div>
             <div className="manager-plan-wrapper">
                 <div className="manager-view">
                     <div className="image-container">
@@ -512,12 +575,11 @@ const ProjectCard = () => {
                         </div>
                         <div className="buttons-container">
                             <div className="button">{t("r_req3")}</div>
-                            <div className="button" onClick={()=>
-                            {
-                                setModalText({tittleText:t("modalHeader"),buttonText:t("modalButton")})
+                            <div className="button" onClick={() => {
+                                setModalText({tittleText: t("modalHeader"), buttonText: t("modalButton")})
                                 setShowModal(true)
                             }
-                                }>{t("r_req4")}</div>
+                            }>{t("r_req4")}</div>
                         </div>
                     </div>
                 </div>
@@ -664,7 +726,8 @@ const ProjectCard = () => {
                 <div className="floor-content">
                     <Swiper
                         spaceBetween={10}
-                        slidesPerView={isMobile()?2:4} style={{zIndex: -999}}
+                        className={"swiper-simillar"}
+                        slidesPerView={isMobile() ? 2 : 4} style={{zIndex: -999}}
                         modules={[Pagination, Navigation]}
                         onInit={(swiper) => {
                             swiper.params.navigation.prevEl = navigationPrevRef.current;
@@ -694,11 +757,11 @@ const ProjectCard = () => {
                                 slidesPerView: 3,
                                 spaceBetween: 50,
                             },
-                            1450:{
+                            1450: {
                                 slidesPerView: 4,
                                 spaceBetween: 50,
                             },
-                            1400:{
+                            1400: {
                                 slidesPerView: 3,
                                 spaceBetween: 50,
                             }
@@ -724,14 +787,21 @@ const ProjectCard = () => {
                                 center={{lat: Number(project.lat), lng: Number(project.lng)}}
                                 gestureHandling={"greedy"}
                                 fullscreenControl={true}
-                                onZoomChanged={ev => {setMapZoom(ev.detail.zoom)}}
+                                onZoomChanged={ev => {
+                                    setMapZoom(ev.detail.zoom)
+                                }}
                                 mapId={"eafda8fe79279394"}
                             >
                                 <AdvancedMarker
                                     className={"marker"}
                                     position={{lat: Number(project.lat), lng: Number(project.lng)}}>
-                                    <div style={{ borderRadius: mapZoom < 13 ? 20 : 5, padding: mapZoom < 13 ? 7 : 0,background:"#C29773" }}>
-                                        <div style={{ display: mapZoom < 13 ? "none" : "block",background:"#C29773" }} className="price">
+                                    <div style={{
+                                        borderRadius: mapZoom < 13 ? 20 : 5,
+                                        padding: mapZoom < 13 ? 7 : 0,
+                                        background: "#C29773"
+                                    }}>
+                                        <div style={{display: mapZoom < 13 ? "none" : "block", background: "#C29773"}}
+                                             className="price">
                                             {convertPriceToShortFormat(project.priceFrom)}
                                         </div>
                                     </div>
@@ -739,11 +809,14 @@ const ProjectCard = () => {
                                 {randomProjects.map((marker, index) => (
                                     <AdvancedMarker
                                         key={index}
-                                        onClick={()=>window.open(`/project/${marker._id}`)}
+                                        onClick={() => window.open(`/project/${marker._id}`)}
                                         className={"marker"}
-                                        position={{ lat: Number(marker.lat), lng: Number(marker.lng) }}>
-                                        <div style={{ borderRadius: mapZoom < 13 ? 20 : 5, padding: mapZoom < 13 ? 7 : 0 }}>
-                                            <div style={{ display: mapZoom < 13 ? "none" : "block" }} className="price">
+                                        position={{lat: Number(marker.lat), lng: Number(marker.lng)}}>
+                                        <div style={{
+                                            borderRadius: mapZoom < 13 ? 20 : 5,
+                                            padding: mapZoom < 13 ? 7 : 0
+                                        }}>
+                                            <div style={{display: mapZoom < 13 ? "none" : "block"}} className="price">
                                                 {convertPriceToShortFormat(marker.priceFrom)}
                                             </div>
                                         </div>
@@ -808,19 +881,19 @@ const ProjectCard = () => {
                                     slidesPerView: 3,
                                     spaceBetween: 50,
                                 },
-                                1450:{
+                                1450: {
                                     slidesPerView: 4,
                                     spaceBetween: 50,
                                 },
-                                1400:{
+                                1400: {
                                     slidesPerView: 3,
                                     spaceBetween: 50,
                                 }
                             }}
                     >
                         {randomProjects.map((project, index) => (
-                            <SwiperSlide key={index} style={{ height: "100%", background: "white" }}>
-                                <ProjectSimilar project={project} />
+                            <SwiperSlide key={index} style={{height: "100%", background: "white"}}>
+                                <ProjectSimilar project={project}/>
                             </SwiperSlide>
                         ))}
                     </Swiper>

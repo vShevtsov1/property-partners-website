@@ -28,9 +28,9 @@ const Project = ({project}) => {
                             </clipPath>
                         </defs>
                     </svg><DynamicTruncatedText text={project.selectedLocation||project.ownLocation} customBreakpoints={{
-                    1920: 25,
-                    1440: 15,
-                    600: 10
+                    1920: 18,
+                    1440: 12,
+                    600: 5
                 }}/>
                 </div>
                 <div className="price">from ${formatNumberWithCommas(project.priceFrom)}</div>
