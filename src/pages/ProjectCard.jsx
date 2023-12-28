@@ -84,7 +84,7 @@ const ProjectCard = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `http://157.175.196.127:8080/api/projects/${id}`,
+            url: `/api/projects/${id}`,
             headers: {}
         };
 
@@ -106,7 +106,7 @@ const ProjectCard = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: 'http://157.175.196.127:8080/api/projects/random',
+            url: '/api/projects/random',
             headers: {}
         };
 
