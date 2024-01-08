@@ -2,6 +2,7 @@ import "../styles/floorPlan.css"
 import floorplan from "../assets/floorPlan.png"
 const FloorPlan = ({plan,type}) => {
     function formatNumberWithCommas(value) {
+        value = (Number(value)/3.16).toFixed(0).toString()
         return value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
     return(<div className={"floor-plan"}>

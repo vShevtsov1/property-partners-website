@@ -2,7 +2,7 @@
   padding: 16px !important;
 }
 .project-card .content {
-  padding: 10px 64px;
+  padding: 10px 64px 40px 64px;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -561,7 +561,7 @@
   gap: 20px;
   height: 45vh;
   width: 100%;
-  margin-bottom: 70px;
+  margin-bottom: 20px;
   flex-direction: column;
 }
 .project-card .content .simillar .header {
@@ -599,6 +599,14 @@
 }
 .project-card .content .simillar .simillar-content .swiper-simillar {
   height: 100%;
+}
+.project-card .content .warning {
+  color: #8F8F8F;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 @media (max-width: 600px) {

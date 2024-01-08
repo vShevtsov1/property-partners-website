@@ -45,8 +45,26 @@
       height: 100%;
       gap: 20px;
       overflow-x:hidden ;
+      .show-more-wrapper{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        .show-more{
+          cursor: pointer;
+
+          background: #191c38;
+          padding: 10px;
+          color: #FFF;
+          font-family: Helvetica, sans-serif;
+          font-size: 14px;
+          font-style: normal;
+          font-weight: 400;
+          line-height: normal;
+        }
+      }
 
     }
+
     }
   .down-arrow{
     position: fixed;

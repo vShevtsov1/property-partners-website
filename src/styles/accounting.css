@@ -90,7 +90,8 @@
   font-family: HelveticaBold, sans-serif;
   font-size: 22px;
   font-style: normal;
-  line-height: 30px; /* 150% */
+  line-height: 30px;
+  /* 150% */
   font-weight: 400;
 }
 .accounting-wrapper .accounting-container .cost-of-epmloyment {

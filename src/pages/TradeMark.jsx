@@ -1,6 +1,6 @@
 import Header from "../components/Header"
 import Footer from "../components/Footer"
-import "../styles/trademark.scss"
+import "../styles/trademark.css"
 import accountaingBaner from "../assets/accounting-main.jpeg";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";

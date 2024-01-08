@@ -23,12 +23,12 @@ const RealEstate = () => {
     const [visibleProjects, setVisibleProjects] = useState([])
     const { t } = useTranslation();
     const map = useMap();
-
+    const [projectPerView,setprojectsPerView] = useState(10)
     useEffect(() => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: '/api/projects/get-all',
+            url: 'http://157.175.196.127:8080/api/projects/get-all',
             headers: {}
         };
 
@@ -41,6 +41,7 @@ const RealEstate = () => {
             });
     }, []);
     function convertPriceToShortFormat(price) {
+        price = (Number(price)/3.16).toFixed(0).toString()
         const suffixes = ['', 'K', 'M', 'B', 'T'];
         let suffixIndex = 0;
 
@@ -132,11 +133,14 @@ const RealEstate = () => {
                 </div>
                 <div className="projects">
                     {
-                        projects.map((project, index) => (
+                        projects.slice(0,projectPerView).map((project, index) => (
                             <Project project={project} key={index} />
                         ))
                     }
 
+                    {projectPerView<projects.length&&<div className="show-more-wrapper">
+                        <div className="show-more" onClick={()=>setprojectsPerView(projectPerView+10)}>Show more</div>
+                    </div>}
 
                 </div>
             </div>

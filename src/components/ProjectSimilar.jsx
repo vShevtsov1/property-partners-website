@@ -4,6 +4,7 @@ import MaxLengthText from "./MaxLengthText.jsx";
 import DynamicTruncatedText from "./DynamicTruncatedText.jsx";
 const ProjectSimilar = ({project}) => {
     function formatNumberWithCommas(value) {
+        value = (Number(value)/3.16).toFixed(0).toString()
         return value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
@@ -39,7 +40,7 @@ const ProjectSimilar = ({project}) => {
                 </div>
                 <div className="price-info">
                     <div className="price"><span>from</span> ${formatNumberWithCommas(project.priceFrom)}</div>
-                    <div className="price-m2">$ {(Number(project.priceFrom) / Number(project.sizeFrom)).toFixed(0)} for m²</div>
+                    <div className="price-m2">$ {(Number(project.priceFrom)/3.16 / Number(project.sizeFrom)).toFixed(0)} for m²</div>
                 </div>
             </div>
 

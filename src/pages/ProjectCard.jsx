@@ -84,7 +84,7 @@ const ProjectCard = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: `/api/projects/${id}`,
+            url: `http://157.175.196.127:8080/api/projects/${id}`,
             headers: {}
         };
 
@@ -106,7 +106,7 @@ const ProjectCard = () => {
         let config = {
             method: 'get',
             maxBodyLength: Infinity,
-            url: '/api/projects/random',
+            url: 'http://157.175.196.127:8080/api/projects/random',
             headers: {}
         };
 
@@ -128,6 +128,7 @@ const ProjectCard = () => {
     };
 
     function formatNumberWithCommas(value) {
+        value = (Number(value)/3.16).toFixed(0).toString()
         return value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
 
@@ -183,6 +184,7 @@ const ProjectCard = () => {
 
 
     function convertPriceToShortFormat(price) {
+        price = (Number(price)/3.16).toFixed(0).toString()
         const suffixes = ['', 'K', 'M', 'B', 'T'];
         let suffixIndex = 0;
 
@@ -368,7 +370,7 @@ const ProjectCard = () => {
                     </div>
                     <div className="price-block">
                         <div><span>{t("r_pay2")}</span> ${formatNumberWithCommas(project.priceFrom)}</div>
-                        <div>{t("r_pay2")} {(Number(project.priceFrom) / Number(project.sizeFrom)).toFixed(0)} for m²
+                        <div>{t("r_pay2")} {(Number(project.priceFrom)/3.16 / Number(project.sizeFrom)).toFixed(0)} for m²
                         </div>
                     </div>
                 </div>
@@ -551,15 +553,15 @@ const ProjectCard = () => {
 
                 </div>
             </div>
-            <div className="project-description">
-                <div className="header">{t("projectInfo")}</div>
-                <div className="about-project"
-                     dangerouslySetInnerHTML={{
-                         __html: project.description
-                     }}
-                />
+            {/*<div className="project-description">*/}
+            {/*    <div className="header">{t("projectInfo")}</div>*/}
+            {/*    <div className="about-project"*/}
+            {/*         dangerouslySetInnerHTML={{*/}
+            {/*             __html: project.description*/}
+            {/*         }}*/}
+            {/*    />*/}
 
-            </div>
+            {/*</div>*/}
             <div className="manager-plan-wrapper">
                 <div className="manager-view">
                     <div className="image-container">
@@ -574,7 +576,7 @@ const ProjectCard = () => {
                             {t("r_req2")}
                         </div>
                         <div className="buttons-container">
-                            <div className="button">{t("r_req3")}</div>
+                            <div className="button" onClick={()=>window.open("tel:+971521038793")}>{t("r_req3")}</div>
                             <div className="button" onClick={() => {
                                 setModalText({tittleText: t("modalHeader"), buttonText: t("modalButton")})
                                 setShowModal(true)
@@ -752,7 +754,10 @@ const ProjectCard = () => {
                                 spaceBetween: 40,
                             },
 
-                            // when window width is >= 1024px
+                            900: {
+                                slidesPerView: 3,
+                                spaceBetween: 50,
+                            },
                             1200: {
                                 slidesPerView: 3,
                                 spaceBetween: 50,
@@ -898,6 +903,9 @@ const ProjectCard = () => {
                         ))}
                     </Swiper>
                 </div>
+            </div>
+            <div className="warning">
+                All information provided on this website, including but not limited to prices and property sizes, is sourced from publicly available platforms such as Property Finder, Bayut, among others. We do not claim ownership of any rights to the information presented here.
             </div>
         </div>
 

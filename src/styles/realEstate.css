@@ -46,6 +46,22 @@
   gap: 20px;
   overflow-x: hidden;
 }
+.real-estate .content .projects .show-more-wrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.real-estate .content .projects .show-more-wrapper .show-more {
+  cursor: pointer;
+  background: #191c38;
+  padding: 10px;
+  color: #FFF;
+  font-family: Helvetica, sans-serif;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
 .real-estate .down-arrow {
   position: fixed;
   bottom: 10px;

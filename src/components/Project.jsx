@@ -3,6 +3,7 @@ import MaxLengthText from "./MaxLengthText.jsx";
 import DynamicTruncatedText from "./DynamicTruncatedText.jsx";
 const Project = ({project}) => {
     function formatNumberWithCommas(value) {
+        value = (Number(value)/3.16).toFixed(0).toString()
         return value.replace(/,/g, '').replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
     return(<div onClick={() => window.location.href = `/project/${project._id}`} className={"project"}>

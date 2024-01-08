@@ -9,6 +9,7 @@ const Header = () => {
     const [phoneMenuVisible, setPhoneMenuVisible] = useState(false);
     const { t } = useTranslation();
     const [activeLanguage, setActiveLanguage] = useState(i18next.language)
+    const [consultingVisible,setConsultingVisible] = useState(false)
     return (<header>
         <Link to={"/"}> <div className="logo-container">
             <svg xmlns="http://www.w3.org/2000/svg" width="143" height="56" viewBox="0 0 143 56" fill="none">
@@ -46,7 +47,7 @@ const Header = () => {
         <div className="menu">
             <Link to={"/"}><div className="menu-option">{t('header_option0')}</div></Link>
             <Link to={"/real-estate"}><div className="menu-option">{t('header_option1')}</div></Link>
-            <Link to={"/accounting"}> <div className="menu-option">{t('header_option2')}</div></Link>
+             <div className="menu-option" onClick={()=>setConsultingVisible(!consultingVisible)}>{t('header_option2')}</div>
             <Link to={"/concierge"}> <div className="menu-option">{t('header_option3')}</div></Link>
         </div>
         <div className="phone-view">
@@ -154,7 +155,33 @@ const Header = () => {
                 </div>
             </div>}
         </div>
+        {consultingVisible&&<div className="consulting-dropdown">
+            <div className="option">
+                Company registration
+            </div>
+            <div className="option">
+                Bank account
+            </div>
+            <div className="option">
+                Mainland
+            </div>
+            <div className="option">
+                Attorney power
+            </div>
+            <div className="option">
+                Resident Visa
+            </div>
+            <div className="option">
+                UAE employment
+            </div>
+            <div className="option">
+                Accounting
+            </div>
+            <div className="option">
+                Trademark registration
+            </div>
 
+        </div>}
     </header>)
 }
 export default Header

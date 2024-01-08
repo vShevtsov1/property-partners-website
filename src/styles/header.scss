@@ -71,6 +71,8 @@ header {
     gap: 64px;
 
     .menu-option {
+
+      cursor: pointer;
       color: #FFF;
       leading-trim: both;
       text-edge: cap;
@@ -80,6 +82,39 @@ header {
       font-weight: 400;
       line-height: normal;
       text-transform: capitalize;
+    }
+  }
+
+  .consulting-dropdown {
+    position: absolute;
+    background: #FFF;
+    left: -16px;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 50px;
+    row-gap: 16px;
+    justify-content: center;
+    padding: 20px 20vh;
+    width: calc(100% + 16px);
+    top: 92px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+    .option {
+      cursor: pointer;
+      display: flex;
+      width: 200px;
+      padding: 18px 30px;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      border: 1px solid #CACACA;
+      color: #000;
+      font-family: HelveticaBold, sans-serif;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 700;
+      line-height: normal;
+      white-space: nowrap; /* Prevent text wrapping */
     }
   }
 }
@@ -120,7 +155,8 @@ header {
         }
       }
 
-      .top-menu {}
+      .top-menu {
+      }
 
       .phone-menu {
         position: fixed;
