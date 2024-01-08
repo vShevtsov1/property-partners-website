@@ -105,7 +105,8 @@ const RealEstate = () => {
                             gestureHandling={"greedy"}
                             mapId={"eafda8fe79279394"}
                             fullscreenControl={true}
-                            onZoomChanged={ev => { setMapZoom(ev.detail.zoom);
+                            onZoomChanged={ev => {
+                                setMapZoom(ev.detail.zoom);
                                 updateProjectsVisibility()
                             }}
                         >
@@ -139,13 +140,13 @@ const RealEstate = () => {
 
                 </div>
             </div>
-            <div onClick={()=>window.scrollTo({
+            <div onClick={() => window.scrollTo({
                 top: document.body.scrollHeight,
                 behavior: 'smooth',
             })} className="down-arrow">
                 <svg xmlns="http://www.w3.org/2000/svg" width="60" height="60" viewBox="0 0 60 60" fill="none">
-                    <rect width="60" height="60" rx="30" fill="#191C38"/>
-                    <path d="M16 27L29.5 40L43 27" stroke="#C29773" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+                    <rect width="60" height="60" rx="30" fill="#191C38" />
+                    <path d="M16 27L29.5 40L43 27" stroke="#C29773" stroke-width="3" stroke-linecap="round" stroke-linejoin="round" />
                 </svg>
             </div>
             <Feedback />

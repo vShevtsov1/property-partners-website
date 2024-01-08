@@ -1,0 +1,131 @@
+.card {
+    background-color: #fff;
+    width: calc(50% - 16px);
+
+    img {
+        height: 250px;
+        width: 50px;
+    }
+
+    .description {
+        display: flex;
+        padding: 12px 11px;
+        justify-content: space-between;
+        background-color: white;
+
+        .name {
+            color: #191C38;
+            font-family: HelveticaBold, sans-serif;
+            font-size: 32px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 57.6px;
+        }
+
+        .button {
+            display: flex;
+            align-items: center;
+            gap: 44px;
+            color: #000;
+            font-family: Helvetica;
+            font-size: 24px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            padding: 12px 10px;
+            border: 1px solid #CACACA;
+            height: fit-content;
+            cursor: pointer;
+
+            img {
+                margin-top: 3px;
+                height: 24px;
+                width: 24px;
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .card {
+        background-color: #fff;
+        width: calc(50% - 8px);
+
+        img {
+            height: 250px;
+            width: 50px;
+        }
+
+        .description {
+            display: flex;
+            padding: 12px 11px;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 24px;
+            background-color: white;
+
+            .name {
+                color: #191C38;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 57.6px;
+            }
+
+            .button {
+                justify-content: space-between;
+                gap: 0px;
+                font-size: 18px;
+
+
+                img {
+                    margin-top: 3px;
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .card {
+        background-color: #fff;
+        width: 100%;
+
+        img {
+            height: 250px;
+            width: 50px;
+        }
+
+        .description {
+            display: flex;
+            padding: 5px 11px 12px 11px;
+            justify-content: space-between;
+            flex-direction: column;
+            gap: 8px;
+            background-color: white;
+
+            .name {
+                color: #191C38;
+                font-size: 32px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 57.6px;
+            }
+
+            .button {
+                justify-content: space-between;
+                gap: 0px;
+                font-size: 18px;
+
+
+                img {
+                    margin-top: 3px;
+                    height: 24px;
+                    width: 24px;
+                }
+            }
+        }
+    }
+}

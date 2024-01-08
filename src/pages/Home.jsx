@@ -53,7 +53,7 @@ const Home = ({ openModal }) => {
     const team = [
         {
             "image": alexLogachevName, "name": "Lohachov Oleksandr", "position": "Owner & CEO Property Partners Real Estate", "qr": qrAlex,
-            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Lohachov.vcf","email":"lohachov@propart.ae",
+            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Lohachov.vcf", "email": "lohachov@propart.ae",
             "social": {
                 "telegram": "https://t.me/oleksandr_logachev",
                 "instagram": "https://instagram.com/logachev_alexsandr?igshid=MzRlODBiNWFlZA==",
@@ -64,7 +64,7 @@ const Home = ({ openModal }) => {
         },
         {
             "image": alekseiShyianName, "name": "Aleksei Shyian", "position": "Business Developer", "qr": alekseiShyian,
-            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Shyian.vcf","email":"info@kristalexperts.com",
+            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Shyian.vcf", "email": "info@kristalexperts.com",
             "social": {
                 "instagram": "https://instagram.com/dubai_oleksii_shyian?igshid=MzRlODBiNWFlZA==",
                 "telegram": "https://t.me/brodubai",
@@ -76,7 +76,7 @@ const Home = ({ openModal }) => {
         },
         {
             "image": tykhovaTatianaName, "name": "Tykhova Tatiana", "position": "Real estate broker", "qr": tykhovaTatiana,
-            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Tykhova.vcf","email":"tykhova@propart.ae",
+            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Tykhova.vcf", "email": "tykhova@propart.ae",
             "social": {
                 "instagram": "https://instagram.com/taffeeta?igshid=NTc4MTIwNjQ2YQ==",
                 "telegram": "https://t.me/+971522419898",
@@ -88,7 +88,7 @@ const Home = ({ openModal }) => {
         ,
         {
             "image": kristinaSokolovskayaName, "name": "Kristina Sokolovskaya", "position": "Owner & CEO Kristal Business Experts", "qr": kristinaSokolovskaya,
-            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Sokolovskaya.vcf","email":"info@kristalexperts.com",
+            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Sokolovskaya.vcf", "email": "info@kristalexperts.com",
             "social": {
                 "telegram": "https://t.me/+971529568390",
                 "whatsapp": "https://wa.me/971529568390"
@@ -96,7 +96,7 @@ const Home = ({ openModal }) => {
         },
         {
             "image": pavelDyninName, "name": "Pavel Dynin", "position": "Real estate broker", "qr": propertyPartnersDynin,
-            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/dynin.vcf","email":"dynin@propart.ae",
+            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/dynin.vcf", "email": "dynin@propart.ae",
             "social": {
                 "telegram": "https://t.me/pavel_dynin",
                 "instagram": "https://instagram.com/pavel.dynin?igshid=OGQ5ZDc2ODk2ZA==",
@@ -106,7 +106,7 @@ const Home = ({ openModal }) => {
         },
         {
             "image": annaHorshunovaName, "name": "Anna Horshunova", "position": "Real estate broker", "qr": annaHorshunova,
-            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Horshunova.vcf","email":"Horshunova@propart.ae",
+            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Horshunova.vcf", "email": "Horshunova@propart.ae",
             "social": {
                 "facebook": "https://www.facebook.com/annagorshunova?mibextid=LQQJ4d",
                 "telegram": "https://t.me/annagorshunova",
@@ -116,7 +116,7 @@ const Home = ({ openModal }) => {
         },
         {
             "image": allaGerassimovaName, "name": "Alla Gerassimova", "position": "Marketing specialist, content creator ", "qr": allaGerassimova,
-            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Gerassimova.vcf","email":"gerassimova@propart.ae",
+            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Gerassimova.vcf", "email": "gerassimova@propart.ae",
             "social": {
                 "telegram": "https://t.me/alla_gerassimova",
                 "instagram": "https://instagram.com/a11gep?igshid=NTc4MTIwNjQ2YQ==",
@@ -125,7 +125,7 @@ const Home = ({ openModal }) => {
         },
         {
             "image": dmitriyKoltsovName, "name": "Dmitriy Koltsov", "position": "Real estate broker", "qr": dmitriyKoltsov,
-            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Koltsov.vcf","email":"koltsov@propart.ae",
+            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Koltsov.vcf", "email": "koltsov@propart.ae",
             "social": {
                 "telegram": "https://t.me/brokervdubae",
                 "instagram": "https://instagram.com/brokervdubae",
@@ -142,7 +142,7 @@ const Home = ({ openModal }) => {
         // },
         {
             "image": ruslanGeisha, "name": "Ruslan Geisha", "position": "Real estate broker", "qr": qrAlex,
-            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Geisha.vcf","email":"geisha@propart.ae",
+            "vcf": "https://propart-vcf.s3.me-south-1.amazonaws.com/Geisha.vcf", "email": "geisha@propart.ae",
             "social": {
                 "telegram": "https://t.me/ruslan_geisha",
                 "instagram": "https://www.instagram.com/mister_geisha?igsh=eWs3aTluNmN0NXdq",
@@ -339,7 +339,7 @@ const Home = ({ openModal }) => {
                                 gap: 16
                             }}>
                                 <div className="properties">
-                                    <div className="property"  onClick={() => {
+                                    <div className="property" onClick={() => {
                                         setShowModal(true)
                                         modalContent("family")
                                     }}>
@@ -352,7 +352,7 @@ const Home = ({ openModal }) => {
                                         </svg>
                                         {t("proj_1")}
                                     </div>
-                                    <div className="property"  onClick={() => {
+                                    <div className="property" onClick={() => {
                                         setShowModal(true)
                                         modalContent("family")
                                     }}>
@@ -396,7 +396,7 @@ const Home = ({ openModal }) => {
                                 gap: 16
                             }}>
                                 <div className="properties">
-                                    <div className="property"  onClick={() => {
+                                    <div className="property" onClick={() => {
                                         setShowModal(true)
                                         modalContent("rent")
                                     }}>
@@ -409,7 +409,7 @@ const Home = ({ openModal }) => {
                                         </svg>
                                         {t("proj_2")}
                                     </div>
-                                    <div className="property"  onClick={() => {
+                                    <div className="property" onClick={() => {
                                         setShowModal(true)
                                         modalContent("rent")
                                     }}>
@@ -721,7 +721,7 @@ const Home = ({ openModal }) => {
                                         {
                                             1920: 50,
                                             1450: 15,
-                                            1720:17,
+                                            1720: 17,
                                             1000: 13,
                                             768: 10,
                                             725: 9,
@@ -734,7 +734,7 @@ const Home = ({ openModal }) => {
                                             1920: 50,
                                             1450: 16,
                                             1000: 13,
-                                            1720:17,
+                                            1720: 17,
                                             725: 10,
                                             650: 8,
                                             600: 13

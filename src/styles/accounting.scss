@@ -105,7 +105,8 @@
                         font-family: HelveticaBold, sans-serif;
                         font-size: 22px;
                         font-style: normal;
-                        line-height: 30px; /* 150% */
+                        line-height: 30px;
+                        /* 150% */
 
                         font-weight: 400;
 
@@ -1500,7 +1501,7 @@
     .accounting-container {
         .accounting-guide {
             .accounting-baner {
-                height:600px !important;
+                height: 600px !important;
             }
         }
     }
@@ -1608,7 +1609,7 @@
                 display: grid !important;
                 gap: 7px !important;
                 grid-template-columns: repeat(auto-fill, minmax(130px, 1fr)) !important;
-                padding: 16px  0 0 16px !important;
+                padding: 16px 0 0 16px !important;
 
                 .guide-block {
                     display: flex;

@@ -1,0 +1,431 @@
+.get-consult {
+    display: flex;
+    padding: 0px 64px;
+    height: 632px;
+
+    .image {
+        height: 100%;
+        background-image: url("../assets/memberBackground.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+
+        img {
+            height: 100%;
+            transform: scaleX(-1) !important;
+        }
+    }
+
+    .get-consult-form {
+        background: #FFF;
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .contact-us-form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 48px;
+            flex-shrink: 0;
+            width: 88%;
+
+            .texts-form {
+                display: flex;
+                flex-direction: column;
+                gap: 32px;
+
+                .texts {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 23px;
+
+                    div:first-child {
+                        color: #191C38;
+                        font-family: HelveticaBold;
+                        font-size: 22px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: 120%;
+                        /* 26.4px */
+                    }
+
+                }
+
+                .form {
+                    width: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+
+                    .form-input {
+                        border: 1px solid #CACACA;
+                        display: flex;
+                        padding: 16px;
+                        align-items: center;
+                        gap: 24px;
+                        align-self: stretch;
+
+                        input {
+                            width: 95%;
+                            height: 100%;
+                            background: none;
+                            border: none;
+                            color: #8F8F8F;
+                            leading-trim: both;
+                            text-edge: cap;
+                            font-family: Helvetica, sans-serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                            letter-spacing: 0.64px;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+                    }
+
+                    .form-button {
+                        cursor: pointer;
+                        display: flex;
+                        padding: 16px;
+                        justify-content: space-between;
+                        align-items: center;
+                        align-self: stretch;
+                        background: #191C38;
+                        color: #FFF;
+                        font-family: HelveticaBold, serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+
+            .agree-terms {
+                width: 80%;
+                color: #9E9E9E;
+                text-align: center;
+                font-family: Helvetica, sans-serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            .privacy {
+                margin-top: -20px;
+                color: #9E9E9E;
+                font-family: Helvetica, serif;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                span {
+                    color: #C29773;
+                    text-align: center;
+                    font-family: Helvetica, serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 1300px) {
+    .get-consult {
+        display: flex;
+        padding: 0px 16px;
+        height: 481px;
+
+        .image {
+            height: 100%;
+            background-image: url("../assets/memberBackground.png");
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+
+            img {
+                height: 100%;
+                transform: scaleX(-1) !important;
+            }
+        }
+
+        .get-consult-form {
+            background: #FFF;
+            width: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 16px;
+
+            .contact-us-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0px;
+                flex-shrink: 0;
+                width: 100%;
+
+                .texts-form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    width: 100%;
+                    padding: 16px;
+
+
+                    .texts {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 23px;
+
+                        div:first-child {
+                            color: #191C38;
+                            font-family: HelveticaBold;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 120%;
+                            /* 26.4px */
+                        }
+
+                    }
+
+                    .form {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        .form-input {
+                            border: 1px solid #CACACA;
+                            display: flex;
+                            padding: 16px;
+                            align-items: center;
+                            gap: 24px;
+                            align-self: stretch;
+
+                            input {
+                                width: 95%;
+                                height: 100%;
+                                background: none;
+                                border: none;
+                                color: #8F8F8F;
+                                leading-trim: both;
+                                text-edge: cap;
+                                font-family: Helvetica, sans-serif;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: 0.64px;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                        }
+
+                        .form-button {
+                            cursor: pointer;
+                            display: flex;
+                            padding: 16px;
+                            justify-content: space-between;
+                            align-items: center;
+                            align-self: stretch;
+                            background: #191C38;
+                            color: #FFF;
+                            font-family: HelveticaBold, serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+                .agree-terms {
+                    width: 80%;
+                    color: #9E9E9E;
+                    text-align: center;
+                    font-family: Helvetica, sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .privacy {
+                    margin-top: -20px;
+                    color: #9E9E9E;
+                    font-family: Helvetica, serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    span {
+                        color: #C29773;
+                        text-align: center;
+                        font-family: Helvetica, serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 830px) {
+    .get-consult {
+        padding: 16px;
+        height: auto;
+
+        .image {
+            display: none;
+        }
+
+        .get-consult-form {
+            background: #FFF;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 0px 16px 16px 16px;
+
+            .contact-us-form {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 0px;
+                flex-shrink: 0;
+                width: 100%;
+
+                .texts-form {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 16px;
+                    width: 100%;
+                    padding: 16px;
+
+
+                    .texts {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 23px;
+
+                        div:first-child {
+                            color: #191C38;
+                            font-family: HelveticaBold;
+                            font-size: 22px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: 120%;
+                            /* 26.4px */
+                        }
+
+                    }
+
+                    .form {
+                        width: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;
+
+                        .form-input {
+                            border: 1px solid #CACACA;
+                            display: flex;
+                            padding: 16px;
+                            align-items: center;
+                            gap: 24px;
+                            align-self: stretch;
+
+                            input {
+                                width: 95%;
+                                height: 100%;
+                                background: none;
+                                border: none;
+                                color: #8F8F8F;
+                                leading-trim: both;
+                                text-edge: cap;
+                                font-family: Helvetica, sans-serif;
+                                font-size: 16px;
+                                font-style: normal;
+                                font-weight: 400;
+                                line-height: normal;
+                                letter-spacing: 0.64px;
+
+                                &:focus {
+                                    outline: none;
+                                }
+                            }
+                        }
+
+                        .form-button {
+                            cursor: pointer;
+                            display: flex;
+                            padding: 16px;
+                            justify-content: space-between;
+                            align-items: center;
+                            align-self: stretch;
+                            background: #191C38;
+                            color: #FFF;
+                            font-family: HelveticaBold, serif;
+                            font-size: 16px;
+                            font-style: normal;
+                            font-weight: 400;
+                            line-height: normal;
+                        }
+                    }
+                }
+
+                .agree-terms {
+                    width: 80%;
+                    color: #9E9E9E;
+                    text-align: center;
+                    font-family: Helvetica, sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                .privacy {
+                    margin-top: -20px;
+                    color: #9E9E9E;
+                    font-family: Helvetica, serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    span {
+                        color: #C29773;
+                        text-align: center;
+                        font-family: Helvetica, serif;
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+        }
+    }
+}

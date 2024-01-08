@@ -141,7 +141,7 @@ const Concierge = () => {
                 </div>
             </div>
         </div>
-        <RequestModal showModal={showModal} closeModal={closeModal} modalText={{tittleText:t("modalHeader"),buttonText:t("modalButton")}} image={alexLogachevName} />
+        <RequestModal showModal={showModal} closeModal={closeModal} modalText={{ tittleText: t("modalHeader"), buttonText: t("modalButton") }} image={alexLogachevName} />
 
         <Footer />
     </div>)
