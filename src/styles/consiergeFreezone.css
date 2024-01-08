@@ -1,0 +1,1415 @@
+.cons-free-wrapper .cons-free-container {
+  display: flex;
+  flex-direction: column;
+}
+.cons-free-wrapper .cons-free-container .page-title {
+  color: #191C38;
+  font-family: Helvetica;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 101px;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  gap: 40px;
+  padding: 64px 64px 0px 0px;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49%;
+  padding: 0px 0px 0px 64px;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 90%;
+  /* 57.6px */
+  margin-top: 64px;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .title div:last-child {
+  color: #616161;
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 68%;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .image img {
+  display: none;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .leave-a-request {
+  cursor: pointer;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  width: 73%;
+  flex-shrink: 0;
+  background: #191C38;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .image {
+  flex: 1;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide .guide-blocks {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  padding: 0 64px;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide .guide-blocks .guide-block {
+  display: flex;
+  background: #FFF;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide .guide-blocks .guide-block div:first-child {
+  color: #1F1E1E;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 30px;
+  font-weight: 400;
+}
+.cons-free-wrapper .cons-free-container .cons-baner-guide .guide-blocks .guide-block div:last-child {
+  color: #717171;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .registring {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+  padding: 101px 64px 64px 64px;
+}
+.cons-free-wrapper .cons-free-container .registring .title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cons-free-wrapper .cons-free-container .registring .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.cons-free-wrapper .cons-free-container .registring .title div:last-child {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .registring .resolve-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.cons-free-wrapper .cons-free-container .registring .resolve-container .resolve-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #fff;
+  gap: 24px;
+  width: 100%;
+}
+.cons-free-wrapper .cons-free-container .registring .resolve-container .resolve-card .resolve-title {
+  display: flex;
+  justify-content: space-between;
+}
+.cons-free-wrapper .cons-free-container .registring .resolve-container .resolve-card .resolve-title div:first-child {
+  color: #000;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .registring .resolve-container .resolve-card .resolve-title div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .registring .resolve-container .resolve-card .resolve-description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cons-free-wrapper .cons-free-container .registring .resolve-container .resolve-card .resolve-description div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .registring .resolve-container .resolve-card .resolve-description div:last-child {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .table {
+  display: flex;
+  flex-direction: column;
+  padding: 64px 64px 128px 64px;
+}
+.cons-free-wrapper .cons-free-container .table .table-row {
+  display: flex;
+  width: 100%;
+}
+.cons-free-wrapper .cons-free-container .table .table-row .first-table-row {
+  width: 25%;
+  padding: 16px;
+  color: #000;
+  text-align: center;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  background: #fff;
+}
+.cons-free-wrapper .cons-free-container .table .table-row .second-table-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37%;
+  padding: 16px;
+  background: #C29773;
+  color: #FFF;
+  text-align: center;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .table .table-row .third-table-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37%;
+  padding: 16px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .table .table-row .first-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  color: #191C38;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 16px;
+  border-top: 2px solid #D2D2D2;
+  border-right: 2px solid #D2D2D2;
+  border-left: 2px solid #D2D2D2;
+}
+.cons-free-wrapper .cons-free-container .table .table-row .second-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37%;
+  padding: 16px;
+  border-bottom: 2px solid #C29773;
+  border-right: 2px solid #C29773;
+  border-left: 2px solid #C29773;
+  padding: 16px;
+  color: #191C38;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .table .table-row .third-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37%;
+  padding: 16px;
+  border-bottom: 2px solid #D2D2D2;
+  border-right: 2px solid #D2D2D2;
+  border-left: 2px solid #D2D2D2;
+  color: #191C38;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .table .table-row:last-child .first-table {
+  border-bottom: 2px solid #D2D2D2;
+}
+.cons-free-wrapper .cons-free-container .cost-service {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 128px 64px 32px 64px;
+}
+.cons-free-wrapper .cons-free-container .cost-service .title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cons-free-wrapper .cons-free-container .cost-service .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.cons-free-wrapper .cons-free-container .cost-service .title div:last-child {
+  color: #191C38;
+  font-family: Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.cons-free-wrapper .cons-free-container .cost-service .setups-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup {
+  display: flex;
+}
+.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-name {
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  background: #C29773;
+  width: 23%;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: #FFF;
+  flex: 1;
+}
+.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-list .setup-list-elem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #000;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-price {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-price div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-price div:last-child {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .blue {
+  background: #191C38 !important;
+}
+.cons-free-wrapper .cons-free-container .support-discount {
+  display: flex;
+  gap: 24px;
+  padding: 42px 64px;
+}
+.cons-free-wrapper .cons-free-container .support-discount .support {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  width: 100%;
+  background-color: #fff;
+}
+.cons-free-wrapper .cons-free-container .support-discount .support .support-text {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .support-discount .support .support-button {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .support-discount .discount {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #fff;
+  gap: 24px;
+  width: 100%;
+}
+.cons-free-wrapper .cons-free-container .support-discount .discount .title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.cons-free-wrapper .cons-free-container .support-discount .discount .title div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .support-discount .discount .title div:last-child {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .support-discount .discount .title div:last-child span {
+  font-family: HelveticaBold, sans-serif;
+}
+.cons-free-wrapper .cons-free-container .big-info-card {
+  display: flex;
+  flex-direction: column;
+  padding: 32px 64px 128px 64px;
+  gap: 32px;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: #191C38;
+  gap: 32px;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .title .name {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  color: #FFF;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: fit-content;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .title .cost {
+  display: flex;
+  gap: 16px;
+  color: #FFF;
+  align-items: center;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .title .cost div {
+  font-family: HelveticaLight, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .title .cost div span {
+  font-family: HelveticaBold, sans-serif;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .top-content-descr {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .top-content-descr .title-descr {
+  color: #FFF;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .top-content-descr .descr-temp-container {
+  display: flex;
+  gap: 32px;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .top-content-descr .descr-temp-container .descr-temp {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #FFF;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .bottom-content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background: #FFF;
+  gap: 32px;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .bottom-content .content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .bottom-content .content .unactive {
+  display: none !important;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .bottom-content .content .paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .bottom-content .content .paragraph div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .bottom-content .content .paragraph div:last-child {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .bottom-content .show-hide {
+  display: flex;
+  gap: 16px;
+  cursor: pointer;
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-container .bottom-content .rotate180 {
+  transform: rotate(180deg);
+}
+.cons-free-wrapper .cons-free-container .big-info-card .info-card-button {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  background: #C29773;
+  width: 34%;
+  align-self: center;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19.2px;
+}
+.cons-free-wrapper .cons-free-container .consult-help {
+  display: flex;
+  flex-direction: column;
+  gap: 128px;
+}
+.cons-free-wrapper .cons-free-container .transparent {
+  padding: 128px 64px 64px 64px;
+  gap: 24px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(48%, 1fr));
+}
+.cons-free-wrapper .cons-free-container .transparent .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 24px;
+  background-color: #fff;
+  width: 100%;
+  gap: 24px;
+}
+.cons-free-wrapper .cons-free-container .transparent .content .title {
+  display: flex;
+  justify-content: space-between;
+}
+.cons-free-wrapper .cons-free-container .transparent .content .title div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 30%;
+}
+.cons-free-wrapper .cons-free-container .transparent .content .title div:last-child {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .transparent .content .title-tg div:first-child {
+  width: 45%;
+}
+.cons-free-wrapper .cons-free-container .transparent .content .descr {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .transparent .content .descr span {
+  text-decoration-line: underline;
+}
+.cons-free-wrapper .cons-free-container .transparent .image {
+  background-image: url("../assets/watch-laptop.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.cons-free-wrapper .cons-free-container .transparent .tg {
+  background-image: url("../assets/telegram-big.png");
+}
+.cons-free-wrapper .cons-free-container .our-services {
+  display: flex;
+  padding: 64px;
+  gap: 50px;
+  flex-direction: column;
+}
+.cons-free-wrapper .cons-free-container .our-services .title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.cons-free-wrapper .cons-free-container .our-services .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.cons-free-wrapper .cons-free-container .our-services .title div.buttons-container {
+  display: flex;
+  gap: 16px;
+}
+.cons-free-wrapper .cons-free-container .our-services .title div.buttons-container .button {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  background: #191C38;
+}
+.cons-free-wrapper .cons-free-container .our-services .title div.buttons-container .rotate180deg img {
+  transform: rotate(180deg);
+}
+.cons-free-wrapper .cons-free-container .our-services .card-container {
+  display: flex;
+  gap: 24px;
+}
+.cons-free-wrapper .cons-free-container .our-services .card-container .card {
+  display: flex;
+  flex-direction: column;
+}
+.cons-free-wrapper .cons-free-container .our-services .card-container .card .content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+  background: #FFF;
+  height: 100%;
+  justify-content: space-between;
+}
+.cons-free-wrapper .cons-free-container .our-services .card-container .card .content div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .our-services .card-container .card .content div:last-child {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .our-services .card-container .card .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 24px;
+  background: #191C38;
+}
+.cons-free-wrapper .cons-free-container .reliable-partner {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 64px 64px 64px;
+  gap: 16px;
+}
+.cons-free-wrapper .cons-free-container .reliable-partner .title {
+  color: #fff;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 45%;
+  background: #191C38;
+  padding: 16px;
+}
+.cons-free-wrapper .cons-free-container .reliable-partner .blocks-container {
+  display: flex;
+  gap: 16px;
+  height: 210px;
+}
+.cons-free-wrapper .cons-free-container .reliable-partner .blocks-container .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 24px;
+  flex: 1;
+}
+.cons-free-wrapper .cons-free-container .reliable-partner .blocks-container .block img {
+  height: 24px;
+  width: 24px;
+}
+.cons-free-wrapper .cons-free-container .reliable-partner .blocks-container .block .descr {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cons-free-wrapper .cons-free-container .reliable-partner .blocks-container .block .descr div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+  letter-spacing: -0.44px;
+}
+.cons-free-wrapper .cons-free-container .reliable-partner .blocks-container .block .descr div:last-child {
+  color: #6D6D6D;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.cons-free-wrapper .cons-free-container .access {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 64px 64px 110px 64px;
+  gap: 48px;
+}
+.cons-free-wrapper .cons-free-container .access .title {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cons-free-wrapper .cons-free-container .access .blocks-container {
+  display: flex;
+  gap: 16px;
+  height: 210px;
+  width: 100%;
+}
+.cons-free-wrapper .cons-free-container .access .blocks-container .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 24px;
+  flex: 1;
+}
+.cons-free-wrapper .cons-free-container .access .blocks-container .block img {
+  height: 24px;
+  width: 24px;
+}
+.cons-free-wrapper .cons-free-container .access .blocks-container .block .descr {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cons-free-wrapper .cons-free-container .access .blocks-container .block .descr div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+  letter-spacing: -0.44px;
+}
+.cons-free-wrapper .cons-free-container .access .blocks-container .block .descr div:last-child {
+  color: #6D6D6D;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.cons-free-wrapper .cons-free-container .no-taxes {
+  display: flex;
+  padding: 40px 64px 40px 64px;
+  margin: 128px 0px 0px 0px;
+  background-color: #fff;
+  gap: 48px;
+}
+.cons-free-wrapper .cons-free-container .no-taxes .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+.cons-free-wrapper .cons-free-container .no-taxes .content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cons-free-wrapper .cons-free-container .no-taxes .content .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.cons-free-wrapper .cons-free-container .no-taxes .content .title div:last-child {
+  color: #191C38;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.cons-free-wrapper .cons-free-container .no-taxes .content .list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cons-free-wrapper .cons-free-container .no-taxes .content .list .list-elem {
+  display: flex;
+  gap: 16px;
+  color: #191C38;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.cons-free-wrapper .cons-free-container .no-taxes .content .list .list-elem img {
+  align-self: flex-start;
+}
+.cons-free-wrapper .cons-free-container .no-taxes .procent {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+}
+.cons-free-wrapper .cons-free-container .no-taxes .procent .procent-elem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cons-free-wrapper .cons-free-container .no-taxes .procent .procent-elem .number {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.cons-free-wrapper .cons-free-container .no-taxes .procent .procent-elem .line {
+  width: 100%;
+  height: 2px;
+  background: #D2D2D2;
+}
+.cons-free-wrapper .cons-free-container .no-taxes .procent .procent-elem .descr {
+  color: #717171;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+
+@media (max-width: 1300px) {
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner {
+    height: 70vh;
+    gap: 40px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content {
+    width: 49%;
+    padding: 0px 0px 0px 16px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .title div:first-child {
+    font-size: 32px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .title div:last-child {
+    font-size: 18px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .leave-a-request {
+    width: 100%;
+    font-size: 14px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .guide-blocks {
+    padding: 32px 16px;
+    gap: 8px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .guide-blocks .guide-block {
+    font-size: 18px;
+    padding: 16px;
+    line-height: 30px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .cons-free-wrapper .cons-free-container .registring {
+    padding: 32px 16px 32px 16px;
+    gap: 24px;
+  }
+  .cons-free-wrapper .cons-free-container .registring .title div:first-child {
+    font-size: 32px;
+  }
+  .cons-free-wrapper .cons-free-container .registring .title div:last-child {
+    font-size: 18px;
+  }
+  .cons-free-wrapper .cons-free-container .registring .resolve-container {
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+  .cons-free-wrapper .cons-free-container .registring .resolve-container .resolve-card .resolve-title div:first-child {
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .registring .resolve-container .resolve-card .resolve-title div:last-child {
+    font-size: 18px;
+  }
+  .cons-free-wrapper .cons-free-container .registring .resolve-container .resolve-card .resolve-description div:first-child {
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .registring .resolve-container .resolve-card .resolve-description div:last-child {
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .table {
+    padding: 32px 16px 64px 16px;
+  }
+  .cons-free-wrapper .cons-free-container .cost-service {
+    padding: 64px 16px 32px 16px;
+    gap: 24px;
+  }
+  .cons-free-wrapper .cons-free-container .cost-service .title div:first-child {
+    font-size: 32px;
+  }
+  .cons-free-wrapper .cons-free-container .cost-service .title div:last-child {
+    font-size: 18px;
+  }
+  .cons-free-wrapper .cons-free-container .cost-service .setups-container {
+    gap: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-name {
+    padding: 16px;
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content {
+    padding: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-price div:first-child {
+    font-size: 18px;
+  }
+  .cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-price div:last-child {
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .support-discount {
+    padding: 32px 16px 32px 16px;
+    gap: 8px;
+  }
+  .cons-free-wrapper .cons-free-container .support-discount .support {
+    padding: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .support-discount .support .support-text {
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .support-discount .support .support-button {
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .support-discount .support .support-button img {
+    height: 24px;
+  }
+  .cons-free-wrapper .cons-free-container .support-discount .discount {
+    padding: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .support-discount .discount .title div:first-child {
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .support-discount .discount .title div:last-child span {
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card {
+    padding: 32px 16px 64px 16px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content {
+    padding: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .title .name {
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .title .name img {
+    width: 24px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .title .cost div {
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .title .cost div span {
+    font-size: 18px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .top-content-descr .title-descr {
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .top-content-descr .descr-temp-container {
+    gap: 24px;
+    flex-wrap: wrap;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .top-content-descr .descr-temp-container .descr-temp {
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .bottom-content {
+    padding: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .bottom-content .content .paragraph div:first-child {
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .bottom-content .content .paragraph div:last-child {
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .bottom-content .show-hide {
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .transparent {
+    padding: 64px 16px 32px 16px;
+  }
+  .cons-free-wrapper .cons-free-container .transparent .content .title div:first-child {
+    font-size: 20px;
+    width: 100%;
+  }
+  .cons-free-wrapper .cons-free-container .transparent .content .title img {
+    height: 42px;
+  }
+  .cons-free-wrapper .cons-free-container .transparent .content .title div:last-child {
+    font-size: 42px;
+  }
+  .cons-free-wrapper .cons-free-container .transparent .content .descr {
+    font-size: 16px;
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .our-services {
+    padding: 32px 16px 32px 16px;
+    gap: 24px;
+  }
+  .cons-free-wrapper .cons-free-container .our-services .title div:first-child {
+    font-size: 28px;
+  }
+  .cons-free-wrapper .cons-free-container .our-services .title div.buttons-container .button {
+    width: 36px;
+    height: 36px;
+  }
+  .cons-free-wrapper .cons-free-container .our-services .card-container .card .content {
+    padding: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .our-services .card-container .card .content div:first-child {
+    font-size: 20px;
+  }
+  .cons-free-wrapper .cons-free-container .our-services .card-container .card .content div:last-child {
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .our-services .card-container .card .button {
+    padding: 16px;
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .reliable-partner {
+    padding: 8px 16px 64px 16px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .cons-free-wrapper .cons-free-container .reliable-partner .title {
+    color: #000;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    background-color: transparent;
+  }
+  .cons-free-wrapper .cons-free-container .reliable-partner .blocks-container {
+    display: flex;
+    gap: 16px;
+    height: auto;
+    width: auto;
+  }
+  .cons-free-wrapper .cons-free-container .reliable-partner .blocks-container .block {
+    padding: 16px;
+    flex: 1;
+    gap: 24px;
+  }
+  .cons-free-wrapper .cons-free-container .reliable-partner .blocks-container .block .descr div:first-child {
+    font-size: 20px;
+  }
+  .cons-free-wrapper .cons-free-container .reliable-partner .blocks-container .block .descr div:last-child {
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .access {
+    padding: 32px 16px 64px 16px;
+    gap: 32px;
+  }
+  .cons-free-wrapper .cons-free-container .access .title {
+    font-size: 32px;
+  }
+  .cons-free-wrapper .cons-free-container .access .blocks-container {
+    height: auto;
+  }
+  .cons-free-wrapper .cons-free-container .access .blocks-container .block {
+    gap: 24px;
+    padding: 16px;
+    justify-content: unset;
+  }
+  .cons-free-wrapper .cons-free-container .access .blocks-container .block .descr {
+    gap: 8px;
+  }
+  .cons-free-wrapper .cons-free-container .no-taxes {
+    padding: 16px 16px 64px 16px;
+    flex-direction: column;
+    margin: 64px 0px 0px 0px;
+  }
+  .cons-free-wrapper .cons-free-container .no-taxes .content {
+    gap: 36px;
+  }
+  .cons-free-wrapper .cons-free-container .no-taxes .content .title {
+    gap: 12px;
+  }
+  .cons-free-wrapper .cons-free-container .no-taxes .content .title div:first-child {
+    font-size: 20px;
+  }
+  .cons-free-wrapper .cons-free-container .no-taxes .content .title div:last-child {
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .no-taxes .content .list .list-elem {
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .no-taxes .procent .procent-elem .number {
+    font-size: 18px;
+  }
+  .cons-free-wrapper .cons-free-container .no-taxes .procent .procent-elem .descr {
+    font-size: 14px;
+  }
+}
+@media (max-width: 830px) {
+  .mob-none {
+    display: none;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide {
+    gap: 40px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner {
+    height: auto;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content {
+    width: 100%;
+    padding: 0px 16px 0px 16px;
+    gap: 24px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .title div:first-child {
+    width: 100%;
+    font-size: 24px;
+    margin-top: 24px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .title div:last-child {
+    width: 100%;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .image {
+    display: block;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .image img {
+    display: block;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .leave-a-request {
+    padding: 16px;
+    font-style: 14px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .leave-a-request svg {
+    transform: rotate(90deg);
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .image {
+    display: none;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .guide-blocks {
+    padding: 0px 16px 64px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .guide-blocks .guide-block {
+    flex: 1;
+    font-size: 16px;
+    min-width: 170px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .cons-baner-guide .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .cons-free-wrapper .cons-free-container .registring .resolve-container {
+    grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+  .cons-free-wrapper .cons-free-container .table .table-row .first-table-row {
+    font-size: 12px;
+  }
+  .cons-free-wrapper .cons-free-container .table .table-row .second-table-row {
+    font-size: 12px;
+  }
+  .cons-free-wrapper .cons-free-container .table .table-row .third-table-row {
+    font-size: 12px;
+  }
+  .cons-free-wrapper .cons-free-container .table .table-row .first-table {
+    height: 126px;
+    font-size: 12px;
+  }
+  .cons-free-wrapper .cons-free-container .table .table-row .first-table div {
+    transform: rotate(270deg);
+  }
+  .cons-free-wrapper .cons-free-container .table .table-row .second-table {
+    height: 126px;
+    font-size: 12px;
+  }
+  .cons-free-wrapper .cons-free-container .table .table-row .third-table {
+    font-size: 12px;
+    height: 126px;
+  }
+  .cons-free-wrapper .cons-free-container .cost-service {
+    display: none;
+  }
+  .cons-free-wrapper .cons-free-container .support-discount {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .cons-free-wrapper .cons-free-container .support-discount .support {
+    gap: 120px;
+  }
+  .cons-free-wrapper .cons-free-container .support-discount .discount {
+    padding: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .support-discount .discount .title div:first-child {
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .support-discount .discount .title div:last-child {
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container {
+    gap: 96px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content {
+    padding: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content .title {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .big-info-card .info-card-button {
+    width: 100%;
+  }
+  .cons-free-wrapper .cons-free-container .consult-help {
+    display: flex;
+    padding: 32px 0px 0px 0px;
+    gap: 32px;
+  }
+  .cons-free-wrapper .cons-free-container .transparent {
+    gap: 8px;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  .cons-free-wrapper .cons-free-container .transparent .content {
+    gap: 50px;
+    height: 300px;
+  }
+  .cons-free-wrapper .cons-free-container .transparent .image {
+    width: 100%;
+    height: 300px;
+  }
+  .cons-free-wrapper .cons-free-container .transparent .tg {
+    display: none;
+  }
+  .cons-free-wrapper .cons-free-container .transparent .mob-tg {
+    display: block;
+    background-image: url("../assets/telegram-big.png");
+  }
+  .cons-free-wrapper .cons-free-container .our-services .card-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .cons-free-wrapper .cons-free-container .reliable-partner {
+    display: none;
+  }
+  .cons-free-wrapper .cons-free-container .access .title {
+    font-size: 16px;
+  }
+  .cons-free-wrapper .cons-free-container .access .blocks-container {
+    padding: 0px 0px 64px 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .cons-free-wrapper .cons-free-container .access .blocks-container .block {
+    flex: 1;
+    font-size: 16px;
+    min-width: 170px;
+  }
+  .cons-free-wrapper .cons-free-container .access .blocks-container .block .descr div:first-child {
+    font-size: 22px;
+  }
+  .cons-free-wrapper .cons-free-container .access .blocks-container .block .descr div:last-child {
+    font-size: 18px;
+  }
+  .cons-free-wrapper .cons-free-container .no-taxes {
+    padding: 16px 16px 16px 16px;
+    margin: 96px 0px 0px 0px;
+    background-color: transparent;
+    gap: 0px;
+  }
+  .cons-free-wrapper .cons-free-container .no-taxes .content {
+    padding: 16px;
+    background-color: #fff;
+    gap: 48px;
+  }
+  .cons-free-wrapper .cons-free-container .no-taxes .content .list .list-elem {
+    flex-direction: column;
+  }
+  .cons-free-wrapper .cons-free-container .no-taxes .procent {
+    padding: 16px;
+    background-color: #fff;
+  }
+}
+
+/*# sourceMappingURL=consiergeFreezone.css.map */

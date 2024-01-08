@@ -1,0 +1,591 @@
+.areas-page-wrapper .areas-page-container {
+  display: flex;
+  flex-direction: column;
+}
+.areas-page-wrapper .areas-page-container .back-container {
+  padding: 48px 64px 12px 64px;
+  display: flex;
+  justify-content: space-between;
+}
+.areas-page-wrapper .areas-page-container .back-container .back {
+  display: flex;
+  gap: 24px;
+  padding: 12px 24px 12px 12px;
+  width: fit-content;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 24px;
+  background-color: #191C38;
+}
+.areas-page-wrapper .areas-page-container .back-container .share {
+  display: flex;
+  padding: 12px;
+  align-items: center;
+  gap: 16px;
+  width: fit-content;
+  background: #191C38;
+}
+.areas-page-wrapper .areas-page-container .main-content {
+  display: flex;
+  padding: 16px 64px 16px 64px;
+  gap: 97px;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-left {
+  display: flex;
+  width: 50%;
+  gap: 39px;
+  flex-direction: column;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-left .block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-left .block .big-title {
+  color: #191C38;
+  font-family: Helvetica;
+  font-size: 72px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-left .block .title {
+  color: #191C38;
+  font-family: Helvetica;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  /* 57.6px */
+}
+.areas-page-wrapper .areas-page-container .main-content .content-left .block .description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-left .block .description .text {
+  color: #575757;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-left .block .description .broker {
+  display: none;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  justify-content: space-between;
+  gap: 44px;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .image {
+  height: 100%;
+  background-size: cover;
+  width: 100%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .broker {
+  display: flex;
+  height: 364px;
+  width: 100%;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .broker .image {
+  height: 100%;
+  background-image: url("../assets/memberBackground.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 45%;
+  display: flex;
+  justify-content: center;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .broker .image img {
+  align-self: flex-end;
+  height: 96%;
+  transform: scaleX(-1) !important;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .broker .get-consult-form {
+  background: #FFF;
+  width: 55%;
+  display: flex;
+  padding: 24px 24px 24px 24px;
+  align-items: flex-end;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .broker .get-consult-form .content {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+  height: fit-content;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .broker .get-consult-form .content .title-description {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .broker .get-consult-form .content .title-description .title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .broker .get-consult-form .content .title-description .title div:first-child {
+  color: #939393;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .broker .get-consult-form .content .title-description .title div:last-child {
+  color: #191C38;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .broker .get-consult-form .content .title-description .description {
+  color: #191C38;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .broker .get-consult-form .content .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .broker .get-consult-form .content .buttons .button-white {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  color: #000;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  border: 1px solid #CACACA;
+}
+.areas-page-wrapper .areas-page-container .main-content .content-right .broker .get-consult-form .content .buttons .button-brown {
+  display: flex;
+  padding: 16px;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+  background: #C29773;
+}
+.areas-page-wrapper .areas-page-container .lower-container {
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+  padding: 32px 64px 16px 64px;
+}
+.areas-page-wrapper .areas-page-container .lower-container .block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.areas-page-wrapper .areas-page-container .lower-container .block .title {
+  color: #191C38;
+  font-family: Helvetica;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 120%;
+  /* 57.6px */
+}
+.areas-page-wrapper .areas-page-container .lower-container .block .description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.areas-page-wrapper .areas-page-container .lower-container .block .description .text {
+  color: #575757;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 37px;
+}
+.areas-page-wrapper .areas-page-container .get-consult-box {
+  padding: 55px 0px 85px 0px;
+}
+
+@media (max-width: 1300px) {
+  .areas-page-wrapper .areas-page-container .back-container {
+    padding: 16px 16px 24px 16px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content {
+    display: flex;
+    padding: 16px 16px 32px 16px;
+    gap: 62px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left {
+    width: 100%;
+    gap: 24px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block {
+    gap: 24px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .big-title {
+    font-size: 48px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .title {
+    font-size: 24px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .description {
+    gap: 24px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .description .text {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .description .image {
+    height: 414px;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .description .image:last-child {
+    height: 414px;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 16px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker {
+    display: flex !important;
+    height: fit-content;
+    width: 100%;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .image {
+    height: 100%;
+    background-image: url("../assets/memberBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 35%;
+    display: flex;
+    justify-content: center;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .image img {
+    align-self: flex-end;
+    height: 240px;
+    transform: scaleX(-1) !important;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form {
+    background: #FFF;
+    width: 100%;
+    display: flex;
+    padding: 24px 24px 24px 24px;
+    justify-content: space-between;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: fit-content;
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .title-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .title-description .title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .title-description .title div:first-child {
+    font-size: 14px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .title-description .title div:last-child {
+    font-size: 22px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .title-description .description {
+    color: #191C38;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .buttons .button-white {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    color: #000;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    border: 1px solid #CACACA;
+    flex: 1;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .buttons .button-brown {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    background: #C29773;
+    flex: 1;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-right {
+    display: none;
+  }
+  .areas-page-wrapper .areas-page-container .lower-container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 32px 16px;
+  }
+  .areas-page-wrapper .areas-page-container .lower-container .block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .areas-page-wrapper .areas-page-container .lower-container .block .title {
+    color: #191C38;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .areas-page-wrapper .areas-page-container .lower-container .block .description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .areas-page-wrapper .areas-page-container .lower-container .block .description .text {
+    color: #575757;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .areas-page-wrapper .areas-page-container .get-consult-box {
+    padding: 44px 0px 84px 0px;
+  }
+}
+@media (max-width: 876px) {
+  .areas-page-wrapper .areas-page-container .back-container {
+    padding: 16px 16px 24px 16px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content {
+    display: flex;
+    padding: 16px 16px 32px 16px;
+    gap: 62px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left {
+    width: 100%;
+    gap: 24px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block {
+    gap: 24px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .big-title {
+    font-size: 48px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .title {
+    font-size: 24px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .description {
+    gap: 24px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .description .text {
+    font-size: 16px;
+    line-height: normal;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .description .image {
+    height: 414px;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .description .image:last-child {
+    height: 414px;
+    background-size: cover;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 16px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker {
+    display: flex;
+    height: fit-content;
+    width: 100%;
+    flex-direction: column;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .image {
+    height: 100%;
+    width: 100%;
+    background-image: url("../assets/memberBackground.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .image img {
+    align-self: flex-end;
+    height: 240px;
+    transform: scaleX(-1) !important;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form {
+    background: #FFF;
+    width: 100%;
+    display: flex;
+    padding: 24px 24px 24px 24px;
+    justify-content: space-between;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    height: fit-content;
+    width: 100%;
+    justify-content: space-between;
+    height: 100%;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .title-description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .title-description .title {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .title-description .title div:first-child {
+    font-size: 14px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .title-description .title div:last-child {
+    font-size: 22px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .title-description .description {
+    color: #191C38;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .buttons .button-white {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    color: #000;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    border: 1px solid #CACACA;
+    flex: 1;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-left .block .broker .get-consult-form .content .buttons .button-brown {
+    display: flex;
+    padding: 16px;
+    justify-content: center;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.56px;
+    background: #C29773;
+    flex: 1;
+  }
+  .areas-page-wrapper .areas-page-container .main-content .content-right {
+    display: none;
+  }
+  .areas-page-wrapper .areas-page-container .lower-container {
+    display: flex;
+    flex-direction: column;
+    gap: 64px;
+    padding: 16px 32px;
+  }
+  .areas-page-wrapper .areas-page-container .lower-container .block {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .areas-page-wrapper .areas-page-container .lower-container .block .title {
+    color: #191C38;
+    font-family: Helvetica;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 120%;
+  }
+  .areas-page-wrapper .areas-page-container .lower-container .block .description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .areas-page-wrapper .areas-page-container .lower-container .block .description .text {
+    color: #575757;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .areas-page-wrapper .areas-page-container .get-consult-box {
+    padding: 44px 0px 60px 0px;
+  }
+}
+
+/*# sourceMappingURL=business.css.map */

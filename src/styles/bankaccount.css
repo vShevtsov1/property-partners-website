@@ -1,0 +1,1466 @@
+.bank-acc-wrapper .bank-acc-container {
+  display: flex;
+  flex-direction: column;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  gap: 40px;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49%;
+  padding-left: 64px;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 90%;
+  /* 57.6px */
+  margin-top: 64px;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .title div:last-child {
+  color: #616161;
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 68%;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .image img {
+  display: none;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .leave-a-request {
+  cursor: pointer;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  width: 73%;
+  flex-shrink: 0;
+  background: #191C38;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .image {
+  flex: 1;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide .guide-blocks {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  padding: 0 64px;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide .guide-blocks .guide-block {
+  display: flex;
+  background: #FFF;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide .guide-blocks .guide-block div:first-child {
+  color: #1F1E1E;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 30px;
+  font-weight: 400;
+}
+.bank-acc-wrapper .bank-acc-container .bank-baner-guide .guide-blocks .guide-block div:last-child {
+  color: #717171;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bank-acc-wrapper .bank-acc-container .banc-learn-more {
+  padding: 128px 64px 12px 64px;
+}
+.bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container {
+  display: flex;
+  gap: 24px;
+}
+.bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+.bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+  background: #FFF;
+  height: 100%;
+  justify-content: space-between;
+}
+.bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .content div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .content div:nth-child(2) {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .content .descr {
+  color: #717171;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 24px;
+  background: #191C38;
+}
+.bank-acc-wrapper .bank-acc-container .percent-hours {
+  display: flex;
+  justify-content: space-between;
+  padding: 64px 64px 94px 64px;
+  gap: 24px;
+}
+.bank-acc-wrapper .bank-acc-container .percent-hours .time-perc {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 144px;
+  width: 100%;
+  padding: 24px;
+}
+.bank-acc-wrapper .bank-acc-container .percent-hours .time-perc .title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.bank-acc-wrapper .bank-acc-container .percent-hours .time-perc .content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.bank-acc-wrapper .bank-acc-container .percent-hours .time-perc .content div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+  /* 26.18px */
+  letter-spacing: -0.44px;
+}
+.bank-acc-wrapper .bank-acc-container .percent-hours .time-perc .content div:last-child {
+  color: #6D6D6D;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.bank-acc-wrapper .bank-acc-container .reliable-partner {
+  display: flex;
+  justify-content: space-between;
+  padding: 96px 64px 64px 64px;
+  gap: 16px;
+}
+.bank-acc-wrapper .bank-acc-container .reliable-partner .title {
+  color: #fff;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  width: 45%;
+  background: #191C38;
+  padding: 16px;
+}
+.bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container {
+  display: flex;
+  gap: 16px;
+  height: 210px;
+}
+.bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 24px;
+  flex: 1;
+}
+.bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block img {
+  height: 24px;
+  width: 24px;
+}
+.bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block .descr {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block .descr div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+  letter-spacing: -0.44px;
+}
+.bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block .descr div:last-child {
+  color: #6D6D6D;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.bank-acc-wrapper .bank-acc-container .access {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 64px 64px 128px 64px;
+  gap: 48px;
+}
+.bank-acc-wrapper .bank-acc-container .access .title {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bank-acc-wrapper .bank-acc-container .access .blocks-container {
+  display: flex;
+  gap: 16px;
+  height: 210px;
+  width: 100%;
+}
+.bank-acc-wrapper .bank-acc-container .access .blocks-container .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 24px;
+  flex: 1;
+}
+.bank-acc-wrapper .bank-acc-container .access .blocks-container .block img {
+  height: 24px;
+  width: 24px;
+}
+.bank-acc-wrapper .bank-acc-container .access .blocks-container .block .descr {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.bank-acc-wrapper .bank-acc-container .access .blocks-container .block .descr div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+  letter-spacing: -0.44px;
+}
+.bank-acc-wrapper .bank-acc-container .access .blocks-container .block .descr div:last-child {
+  color: #6D6D6D;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.bank-acc-wrapper .bank-acc-container .our-services {
+  display: flex;
+  padding: 128px 64px 64px 64px;
+  gap: 50px;
+  flex-direction: column;
+}
+.bank-acc-wrapper .bank-acc-container .our-services .title {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+.bank-acc-wrapper .bank-acc-container .our-services .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.bank-acc-wrapper .bank-acc-container .our-services .title div.buttons-container {
+  display: flex;
+  gap: 16px;
+}
+.bank-acc-wrapper .bank-acc-container .our-services .title div.buttons-container .button {
+  display: flex;
+  width: 48px;
+  height: 48px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 45px;
+  background: #191C38;
+}
+.bank-acc-wrapper .bank-acc-container .our-services .title div.buttons-container .rotate180deg img {
+  transform: rotate(180deg);
+}
+.bank-acc-wrapper .bank-acc-container .our-services .card-container {
+  display: flex;
+  gap: 24px;
+}
+.bank-acc-wrapper .bank-acc-container .our-services .card-container .card {
+  display: flex;
+  flex-direction: column;
+}
+.bank-acc-wrapper .bank-acc-container .our-services .card-container .card .content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  gap: 16px;
+  background: #FFF;
+  height: 100%;
+  justify-content: space-between;
+}
+.bank-acc-wrapper .bank-acc-container .our-services .card-container .card .content div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bank-acc-wrapper .bank-acc-container .our-services .card-container .card .content div:last-child {
+  color: #000;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.bank-acc-wrapper .bank-acc-container .our-services .card-container .card .button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 24px;
+  background: #191C38;
+}
+.bank-acc-wrapper .bank-acc-container .no-taxes {
+  display: flex;
+  padding: 24px 64px 24px 64px;
+  margin: 64px 0px 64px 0px;
+  gap: 48px;
+  background-color: #fff;
+}
+.bank-acc-wrapper .bank-acc-container .no-taxes .content {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: space-between;
+}
+.bank-acc-wrapper .bank-acc-container .no-taxes .content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.bank-acc-wrapper .bank-acc-container .no-taxes .content .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.bank-acc-wrapper .bank-acc-container .no-taxes .content .title div:last-child {
+  color: #191C38;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.bank-acc-wrapper .bank-acc-container .no-taxes .content .list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.bank-acc-wrapper .bank-acc-container .no-taxes .content .list .list-elem {
+  display: flex;
+  gap: 16px;
+  color: #191C38;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.bank-acc-wrapper .bank-acc-container .no-taxes .content .list .list-elem img {
+  align-self: flex-start;
+}
+.bank-acc-wrapper .bank-acc-container .no-taxes .procent {
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+  width: 100%;
+}
+.bank-acc-wrapper .bank-acc-container .no-taxes .procent .procent-elem {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.bank-acc-wrapper .bank-acc-container .no-taxes .procent .procent-elem .number {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.bank-acc-wrapper .bank-acc-container .no-taxes .procent .procent-elem .line {
+  width: 100%;
+  height: 2px;
+  background: #D2D2D2;
+}
+.bank-acc-wrapper .bank-acc-container .no-taxes .procent .procent-elem .descr {
+  color: #717171;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.bank-acc-wrapper .bank-acc-container .forbse-container {
+  display: none;
+}
+.bank-acc-wrapper .bank-acc-container .interesting-facts {
+  display: flex;
+  flex-direction: 48px;
+  padding: 64px;
+  flex-direction: column;
+  gap: 24px;
+}
+.bank-acc-wrapper .bank-acc-container .interesting-facts .title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 50.4px */
+}
+.bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+.bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container .block-fact {
+  display: flex;
+  width: 100%;
+  padding: 24px;
+  flex-direction: column;
+  gap: 16px;
+  background: #FFF;
+}
+.bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container .block-fact .elem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container .block-fact .elem div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container .block-fact .elem div:last-child {
+  color: #191C38;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 21.6px */
+}
+.bank-acc-wrapper .bank-acc-container .fortune {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 64px 64px 128px 64px;
+}
+.bank-acc-wrapper .bank-acc-container .fortune .title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 50.4px */
+}
+.bank-acc-wrapper .bank-acc-container .fortune .stat-container {
+  display: flex;
+  width: 100%;
+  gap: 24px;
+}
+.bank-acc-wrapper .bank-acc-container .fortune .stat-container .inflation {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 34px;
+  width: 100%;
+}
+.bank-acc-wrapper .bank-acc-container .fortune .stat-container .inflation .inflation-title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 26.4px */
+}
+.bank-acc-wrapper .bank-acc-container .fortune .stat-container .inflation img {
+  width: 100%;
+}
+.bank-acc-wrapper .bank-acc-container .fortune .stat-container .stable {
+  width: 100%;
+  display: flex;
+  padding: 24px;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 34px;
+}
+.bank-acc-wrapper .bank-acc-container .fortune .stat-container .stable .stable-title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 26.4px */
+}
+.bank-acc-wrapper .bank-acc-container .fortune .stat-container .stable .image-cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+.bank-acc-wrapper .bank-acc-container .fortune .stat-container .stable .image-cont img {
+  width: 100%;
+  height: 100%;
+}
+.bank-acc-wrapper .bank-acc-container .blog {
+  display: flex;
+  flex-direction: column;
+  padding: 128px 64px 128px 64px;
+  gap: 48px;
+}
+.bank-acc-wrapper .bank-acc-container .blog .title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 50.4px */
+}
+.bank-acc-wrapper .bank-acc-container .blog .blog-card-container {
+  display: flex;
+  flex-direction: column;
+}
+.bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card {
+  display: flex;
+  width: 100%;
+}
+.bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-content {
+  padding: 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+.bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-content div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 38.4px */
+}
+.bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-content div:last-child {
+  color: #8F8F8F;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 28.8px */
+}
+.bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-image {
+  position: relative;
+  width: 50%;
+}
+.bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-image img:first-child {
+  width: 100%;
+}
+.bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-image img:last-child {
+  top: 24px;
+  right: 24px;
+  position: absolute;
+}
+
+@media (max-width: 1300px) {
+  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .bank-acc-baner {
+    height: 70vh;
+    gap: 40px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .bank-acc-baner .content {
+    width: 49%;
+    padding: 0px 0px 0px 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .bank-acc-baner .content .title div:first-child {
+    font-size: 72px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .bank-acc-baner .content .title div:last-child {
+    font-size: 18px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .bank-acc-baner .content .leave-a-request {
+    width: 100%;
+    font-size: 14px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .guide-blocks {
+    padding: 32px 16px;
+    gap: 8px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .guide-blocks .guide-block {
+    font-size: 18px;
+    padding: 16px;
+    line-height: 30px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more {
+    padding: 64px 16px 32px 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container {
+    display: flex;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .content div:first-child {
+    font-size: 28px;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .content div:nth-child(2) {
+    color: #000;
+    font-size: 22px;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .content .descr {
+    font-size: 22px;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 24px;
+    background: #191C38;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-goal {
+    padding: 32px 16px;
+    flex-direction: column;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-goal .title {
+    font-size: 32px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-goal .content {
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-goal .content div:first-child {
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-goal .content .list {
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-goal .content .list .list-elem {
+    font-size: 18px;
+  }
+  .bank-acc-wrapper .bank-acc-container .percent-hours {
+    padding: 32px 16px;
+    gap: 8px;
+  }
+  .bank-acc-wrapper .bank-acc-container .percent-hours .time-perc {
+    gap: 70px;
+    padding: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .percent-hours .time-perc .title {
+    font-size: 36px;
+  }
+  .bank-acc-wrapper .bank-acc-container .percent-hours .time-perc .content {
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .percent-hours .time-perc .content div:first-child {
+    font-size: 20px;
+  }
+  .bank-acc-wrapper .bank-acc-container .percent-hours .time-perc .content div:last-child {
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .get-consult-block {
+    padding: 0px 0px 64px 0px;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 89px;
+    position: relative;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse .bg {
+    position: absolute;
+    height: 89px;
+    background-image: url("/src/assets/bank/bank-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse .bout-us {
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    z-index: 100;
+    white-space: nowrap;
+    padding-left: 92px;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse .forbse {
+    z-index: 100;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse .forbse img {
+    height: 70px;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse .read {
+    display: flex;
+    gap: 16px;
+    z-index: 100;
+    align-items: center;
+    padding-right: 92px;
+    color: #FFF;
+    text-edge: cap;
+    font-family: Helvetica;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse .read img {
+    height: 40px;
+  }
+  .bank-acc-wrapper .bank-acc-container .reliable-partner {
+    padding: 8px 16px 64px 16px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .reliable-partner .title {
+    color: #000;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    background-color: transparent;
+  }
+  .bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container {
+    display: flex;
+    gap: 16px;
+    height: auto;
+    width: auto;
+  }
+  .bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block {
+    padding: 16px;
+    flex: 1;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block .descr div:first-child {
+    font-size: 20px;
+  }
+  .bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block .descr div:last-child {
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access {
+    padding: 32px 16px 64px 16px;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .title {
+    font-size: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .blocks-container {
+    display: flex;
+    gap: 16px;
+    height: fit-content;
+    width: 100%;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .blocks-container .block {
+    flex: 1;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .blocks-container .block img {
+    height: 24px;
+    width: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .blocks-container .block .descr {
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .blocks-container .block .descr div:first-child {
+    font-size: 20px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .blocks-container .block .descr div:last-child {
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services {
+    display: flex;
+    padding: 64px 16px 32px 16px;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .title {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .title div:first-child {
+    color: #191C38;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .title .buttons-container {
+    display: flex;
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .title .buttons-container .button {
+    display: flex;
+    height: 24px;
+    width: 24px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 45px;
+    background: #191C38;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .title .buttons-container .rotate180deg img {
+    transform: rotate(180deg);
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .card-container {
+    display: flex;
+    gap: 8px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .card-container .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .card-container .card .content {
+    padding: 16px;
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .card-container .card .content div:first-child {
+    font-size: 18px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .card-container .card .content div:last-child {
+    color: #000;
+    font-family: HelveticaRegular, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .card-container .card .button {
+    font-size: 16px;
+    padding: 12px;
+    background: #191C38;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes {
+    padding: 32px 16px 32px 16px;
+    margin: 32px 0px 64px 0px;
+    gap: 48px;
+    flex-direction: column;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes .content {
+    gap: 32px;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes .content .title {
+    gap: 12px;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes .content .title div:first-child {
+    font-size: 20px;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes .content .title div:last-child {
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes .content .list {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes .content .list .list-elem {
+    gap: 16px;
+    font-family: HelveticaLight, sans-serif;
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes .procent {
+    width: 100%;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes .procent .procent-elem {
+    gap: 12px;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes .procent .procent-elem .number {
+    font-size: 18px;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes .procent .procent-elem .descr {
+    font-size: 14px;
+  }
+  .bank-acc-wrapper .bank-acc-container .interesting-facts {
+    display: flex;
+    flex-direction: 48px;
+    padding: 32px 16px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .interesting-facts .title {
+    color: #191C38;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 50.4px */
+  }
+  .bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container {
+    display: flex;
+    gap: 24px;
+    width: 100%;
+  }
+  .bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container .block-fact {
+    display: flex;
+    width: 100%;
+    padding: 24px;
+    flex-direction: column;
+    gap: 16px;
+    background: #FFF;
+  }
+  .bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container .block-fact .elem {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container .block-fact .elem div:first-child {
+    color: #191C38;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container .block-fact .elem div:last-child {
+    color: #191C38;
+    font-family: HelveticaLight, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    /* 21.6px */
+  }
+  .bank-acc-wrapper .bank-acc-container .fortune {
+    gap: 24px;
+    padding: 32px 16px 64px 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .fortune .title {
+    font-size: 32px;
+    /* 50.4px */
+  }
+  .bank-acc-wrapper .bank-acc-container .fortune .stat-container {
+    width: 100%;
+    gap: 8px;
+  }
+  .bank-acc-wrapper .bank-acc-container .fortune .stat-container .inflation {
+    padding: 16px;
+    gap: 8px;
+    width: 100%;
+    gap: 12px;
+  }
+  .bank-acc-wrapper .bank-acc-container .fortune .stat-container .inflation .inflation-title {
+    font-size: 14px;
+  }
+  .bank-acc-wrapper .bank-acc-container .fortune .stat-container .inflation img {
+    width: 100%;
+  }
+  .bank-acc-wrapper .bank-acc-container .fortune .stat-container .stable {
+    padding: 16px;
+    gap: 12px;
+  }
+  .bank-acc-wrapper .bank-acc-container .fortune .stat-container .stable .stable-title {
+    font-size: 14px;
+    /* 26.4px */
+  }
+  .bank-acc-wrapper .bank-acc-container .blog {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 16px 64px 16px;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .title {
+    font-size: 32px;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .blog-card-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card {
+    display: flex;
+    width: 100%;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-content {
+    padding: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-content div:first-child {
+    font-size: 20px;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-content div:last-child {
+    font-size: 16px;
+  }
+}
+@media (max-width: 876px) {
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide {
+    gap: 40px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner {
+    height: auto;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content {
+    width: 100%;
+    padding: 0px 16px 0px 16px;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .title div:first-child {
+    width: 100%;
+    font-size: 24px;
+    margin-top: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .title div:last-child {
+    width: 100%;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .image {
+    display: block;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .image img {
+    display: block;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .leave-a-request {
+    padding: 16px;
+    font-style: 14px;
+    width: 100%;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .leave-a-request svg {
+    transform: rotate(90deg);
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .image {
+    display: none;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .guide-blocks {
+    padding: 96px 16px 96px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .guide-blocks .guide-block {
+    flex: 1;
+    font-size: 16px;
+    min-width: 170px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more {
+    display: flex;
+    padding: 96px 16px 48px 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container {
+    flex-direction: column;
+    gap: 8px;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card {
+    width: 100%;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .content div:first-child {
+    font-size: 20px;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .content div:nth-child(2) {
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .content .descr {
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .button {
+    font-size: 16px;
+    padding: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-goal {
+    padding: 48px 16px;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-goal .title {
+    font-size: 32px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-goal .content {
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-goal .content div:first-child {
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-goal .content .list {
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-goal .content .list .list-elem {
+    font-size: 18px;
+  }
+  .bank-acc-wrapper .bank-acc-container .percent-hours {
+    padding: 48px 16px 96px 16px;
+    gap: 8px;
+    flex-direction: column;
+  }
+  .bank-acc-wrapper .bank-acc-container .percent-hours .time-perc {
+    gap: 70px;
+    padding: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .percent-hours .time-perc .title {
+    font-size: 36px;
+  }
+  .bank-acc-wrapper .bank-acc-container .percent-hours .time-perc .content {
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .percent-hours .time-perc .content div:first-child {
+    font-size: 20px;
+  }
+  .bank-acc-wrapper .bank-acc-container .percent-hours .time-perc .content div:last-child {
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .get-consult-block {
+    display: none;
+    padding: 0px 0px 64px 0px;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container {
+    padding: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 170px;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse .bg {
+    height: fit-content;
+    background-image: url("/src/assets/bank/bank-bg.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-direction: column;
+    padding: 16px 16px;
+    align-items: center;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse .bout-us {
+    color: #FFF;
+    font-size: 16px;
+    padding-left: 0px;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse .forbse {
+    z-index: 100;
+    height: fit-content;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse .forbse img {
+    height: fit-content;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse .read {
+    padding-right: 0px;
+  }
+  .bank-acc-wrapper .bank-acc-container .forbse-container .forbse .read img {
+    height: 40px;
+  }
+  .bank-acc-wrapper .bank-acc-container .reliable-partner {
+    padding: 96px 16px 48px 16px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .reliable-partner .title {
+    font-size: 32px;
+  }
+  .bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container {
+    display: flex;
+    gap: 16px;
+    height: auto;
+    width: auto;
+    flex-direction: column;
+  }
+  .bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block {
+    padding: 16px;
+    flex: 1;
+    gap: 36px;
+  }
+  .bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block .descr {
+    gap: 8px;
+  }
+  .bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block .descr div:first-child {
+    font-size: 20px;
+  }
+  .bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block .descr div:last-child {
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access {
+    padding: 48px 16px 48px 16px;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .title {
+    font-size: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .blocks-container {
+    display: flex;
+    gap: 8px;
+    height: fit-content;
+    width: 100%;
+    flex-wrap: wrap;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .blocks-container .block {
+    flex: 1;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .blocks-container .block img {
+    height: 24px;
+    width: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .blocks-container .block .descr {
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .blocks-container .block .descr div:first-child {
+    font-size: 20px;
+  }
+  .bank-acc-wrapper .bank-acc-container .access .blocks-container .block .descr div:last-child {
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services {
+    display: flex;
+    padding: 96px 16px 48px 16px;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .title .buttons-container {
+    gap: 8px !important;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .title .buttons-container .button {
+    height: 36px !important;
+    width: 36px !important;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .card-container {
+    display: flex;
+    gap: 8px;
+    flex-direction: column;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .card-container .card {
+    display: flex;
+    flex-direction: column;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .card-container .card .content {
+    padding: 16px;
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .our-services .card-container .card .button {
+    font-size: 16px;
+    padding: 12px;
+    background: #191C38;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes {
+    padding: 48px 16px 48px 16px;
+    margin: 32px 0px 64px 0px;
+    gap: 0px;
+    flex-direction: column;
+    background-color: transparent;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes .content {
+    background-color: #fff;
+    padding: 16px;
+    gap: 32px;
+  }
+  .bank-acc-wrapper .bank-acc-container .no-taxes .procent {
+    background-color: #fff;
+    padding: 48px 16px 16px 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .interesting-facts {
+    padding: 48px 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .interesting-facts .title {
+    font-size: 32px;
+  }
+  .bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container .block-fact {
+    padding: 16px;
+    flex-direction: column;
+    gap: 14px;
+    background: #FFF;
+  }
+  .bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container .block-fact .elem div:first-child {
+    font-size: 22px;
+  }
+  .bank-acc-wrapper .bank-acc-container .interesting-facts .block-fact-container .block-fact .elem div:last-child {
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .fortune {
+    gap: 24px;
+    padding: 48px 16px 96 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .fortune .title {
+    font-size: 32px;
+  }
+  .bank-acc-wrapper .bank-acc-container .fortune .stat-container {
+    width: 100%;
+    gap: 8px;
+    flex-direction: column;
+  }
+  .bank-acc-wrapper .bank-acc-container .fortune .stat-container .stable {
+    padding: 16px;
+    gap: 12px;
+  }
+  .bank-acc-wrapper .bank-acc-container .fortune .stat-container .stable .stable-title {
+    font-size: 14px;
+    /* 26.4px */
+  }
+  .bank-acc-wrapper .bank-acc-container .get-consult {
+    padding: 0px 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .get-consult .get-consult-form {
+    width: 100%;
+  }
+  .bank-acc-wrapper .bank-acc-container .get-consult .get-consult-form .contact-us-form {
+    width: 100%;
+    background-color: #fff;
+    padding: 16px;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog {
+    display: flex;
+    flex-direction: column;
+    padding: 96px 16px;
+    gap: 24px;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .title {
+    font-size: 32px;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .blog-card-container {
+    display: flex;
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card {
+    display: flex;
+    width: 100%;
+    flex-direction: column-reverse;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-content {
+    padding: 16px;
+    width: 100%;
+    gap: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-content div:first-child {
+    font-size: 20px;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-content div:last-child {
+    font-size: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-image {
+    width: 100%;
+  }
+  .bank-acc-wrapper .bank-acc-container .blog .blog-card-container .blog-card .blog-image img:last-child {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=bankaccount.css.map */

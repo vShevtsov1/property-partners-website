@@ -72,6 +72,9 @@ header .menu .menu-option {
   line-height: normal;
   text-transform: capitalize;
 }
+header .tablet-view {
+  display: none;
+}
 header .consulting-dropdown {
   position: absolute;
   background: #FFF;
@@ -95,7 +98,7 @@ header .consulting-dropdown .option {
   align-items: center;
   gap: 10px;
   border: 1px solid #CACACA;
-  color: #000;
+  color: #191C38;
   font-family: HelveticaBold, sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -110,6 +113,9 @@ header .consulting-dropdown .option {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+  }
+  header .tablet-view {
+    display: none !important;
   }
   header .logo-container {
     display: none;
@@ -186,6 +192,49 @@ header .consulting-dropdown .option {
     font-weight: 400;
     line-height: normal;
   }
+  header .phone-view .phone-menu .consulting-options {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  header .phone-view .phone-menu .consulting-options .option {
+    flex: 1;
+    display: flex;
+    padding: 18px 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    flex-shrink: 0;
+    flex-wrap: nowrap;
+    width: max-content;
+    border: 1px solid #CACACA;
+    color: #191C38;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    white-space: nowrap;
+  }
+  header .phone-view .phone-menu .back-button {
+    display: flex;
+    padding: 18px 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: #191C38;
+    width: max-content;
+    align-self: center;
+    color: #FFF;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+  }
   header .phone-view .phone-menu .language {
     display: flex;
     gap: 40px;
@@ -219,18 +268,125 @@ header .consulting-dropdown .option {
     /* 120% */
   }
 }
-@media (max-width: 1100px) {
+@media (max-width: 1200px) {
   header .menu {
+    display: none;
+  }
+  header .additional {
+    display: none;
+  }
+  header .tablet-view {
+    display: unset;
+  }
+  header .tablet-view .tablet-menu {
+    position: absolute;
+    left: 0;
+    background: #FFF;
+    width: 100%;
+    top: 92px;
     display: flex;
-    width: max-content;
+    padding: 25px 51px;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  header .tablet-view .tablet-menu .tablet-menu-menu {
+    display: flex;
+    gap: 60px;
+  }
+  header .tablet-view .tablet-menu .tablet-menu-menu .option {
+    color: #191C38;
+    leading-trim: both;
+    text-edge: cap;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  header .tablet-view .tablet-menu .language {
+    display: flex;
     gap: 40px;
   }
-  header .menu .menu-option {
-    font-size: 15px;
-    flex-wrap: nowrap;
+  header .tablet-view .tablet-menu .language .lang {
+    color: #FFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 120% */
+    display: flex;
+    padding: 8px;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 5px;
+    background: #191C38;
   }
-  header .additional a .phone {
-    display: none;
+  header .tablet-view .tablet-menu .language .lang.active {
+    border-radius: 5px;
+    background: #C29773;
+    color: #FFF;
+    font-family: Helvetica, sans-serif;
+    font-size: 16px;
+    padding: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    /* 120% */
+  }
+  header .tablet-view .consulting-options {
+    padding: 20px 41px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  header .tablet-view .consulting-options .options {
+    display: flex;
+    gap: 8px;
+    flex-wrap: wrap;
+  }
+  header .tablet-view .consulting-options .options .option {
+    flex: 1;
+    display: flex;
+    padding: 18px 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    border: 1px solid #CACACA;
+    color: #191C38;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    white-space: nowrap;
+    line-height: normal;
+  }
+  header .tablet-view .consulting-options .back-button {
+    cursor: pointer;
+    align-self: flex-end;
+    width: max-content;
+    display: flex;
+    padding: 18px 30px;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+    background: #191C38;
+    color: #FFF;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
   }
 }
 @media (max-width: 820px) {

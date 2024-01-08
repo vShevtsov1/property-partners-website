@@ -1,0 +1,468 @@
+.trademark-wrapper .trademark-container {
+  display: flex;
+  flex-direction: column;
+}
+.trademark-wrapper .trademark-container .trademark-baner-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  gap: 40px;
+}
+.trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49%;
+  padding-left: 64px;
+}
+.trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 95%;
+  /* 57.6px */
+  margin-top: 64px;
+}
+.trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .title .text {
+  color: #616161;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 68%;
+}
+.trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .image img {
+  display: none;
+}
+.trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .leave-a-request {
+  cursor: pointer;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  width: 73%;
+  flex-shrink: 0;
+  background: #191C38;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .leave-a-request svg {
+  transform: rotate(90deg);
+}
+.trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .image {
+  flex: 1;
+}
+.trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.trademark-wrapper .trademark-container .registering-trademark {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 64px 64px 36px 64px;
+}
+.trademark-wrapper .trademark-container .registering-trademark div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 57.6px */
+}
+.trademark-wrapper .trademark-container .registering-trademark div:last-child {
+  color: #717171;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.trademark-wrapper .trademark-container .register-cost {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 36px 64px 64px 64px;
+}
+.trademark-wrapper .trademark-container .register-cost .registring {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.trademark-wrapper .trademark-container .register-cost .registring .title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.trademark-wrapper .trademark-container .register-cost .registring .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.trademark-wrapper .trademark-container .register-cost .registring .resolve-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(40%, 1fr));
+  grid-column-gap: 20px;
+  grid-row-gap: 20px;
+}
+.trademark-wrapper .trademark-container .register-cost .registring .resolve-container .resolve-card {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #fff;
+  gap: 24px;
+  width: 100%;
+}
+.trademark-wrapper .trademark-container .register-cost .registring .resolve-container .resolve-card .resolve-title {
+  display: flex;
+  justify-content: space-between;
+}
+.trademark-wrapper .trademark-container .register-cost .registring .resolve-container .resolve-card .resolve-title div:first-child {
+  color: #000;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.trademark-wrapper .trademark-container .register-cost .registring .resolve-container .resolve-card .resolve-title div:last-child {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.trademark-wrapper .trademark-container .register-cost .registring .resolve-container .resolve-card .resolve-description {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.trademark-wrapper .trademark-container .register-cost .registring .resolve-container .resolve-card .resolve-description div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.trademark-wrapper .trademark-container .register-cost .cost {
+  color: #191C38;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.trademark-wrapper .trademark-container .register-cost .cost span {
+  font-family: HelveticaBold, sans-serif;
+}
+.trademark-wrapper .trademark-container .interesting-facts {
+  display: flex;
+  flex-direction: 48px;
+  padding: 64px 64px 128px 64px;
+  flex-direction: column;
+  gap: 48px;
+}
+.trademark-wrapper .trademark-container .interesting-facts .title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 42px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 50.4px */
+}
+.trademark-wrapper .trademark-container .interesting-facts .block-fact-container {
+  display: flex;
+  gap: 24px;
+  width: 100%;
+}
+.trademark-wrapper .trademark-container .interesting-facts .block-fact-container .block-fact {
+  display: flex;
+  width: 100%;
+  padding: 24px;
+  flex-direction: column;
+  gap: 16px;
+  background: #FFF;
+}
+.trademark-wrapper .trademark-container .interesting-facts .block-fact-container .block-fact .elem {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+.trademark-wrapper .trademark-container .interesting-facts .block-fact-container .block-fact .elem div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.trademark-wrapper .trademark-container .interesting-facts .block-fact-container .block-fact .elem div:last-child {
+  color: #191C38;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 21.6px */
+}
+.trademark-wrapper .trademark-container .get-consult-box {
+  padding: 0px 0px 124px 0px;
+}
+
+@media (max-width: 1300px) {
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner {
+    height: 70vh;
+    gap: 40px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content {
+    width: 49%;
+    padding: 0px 0px 0px 16px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .title div:first-child {
+    font-size: 32px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .title .text {
+    color: #616161;
+    font-family: HelveticaLight, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    width: 68%;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .leave-a-request {
+    width: 100%;
+    font-size: 14px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .guide-blocks {
+    padding: 32px 16px;
+    gap: 8px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .guide-blocks .guide-block {
+    font-size: 18px;
+    padding: 16px;
+    line-height: 30px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .trademark-wrapper .trademark-container .registering-trademark {
+    padding: 64px 16px 32px 16px;
+  }
+  .trademark-wrapper .trademark-container .registering-trademark div:first-child {
+    font-size: 20px;
+  }
+  .trademark-wrapper .trademark-container .registering-trademark div:last-child {
+    font-size: 16px;
+  }
+  .trademark-wrapper .trademark-container .register-cost {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 32px 16px 32px 16px;
+  }
+  .trademark-wrapper .trademark-container .register-cost .registring {
+    gap: 24px;
+  }
+  .trademark-wrapper .trademark-container .register-cost .registring .title div:first-child {
+    font-size: 20px;
+  }
+  .trademark-wrapper .trademark-container .register-cost .registring .resolve-container {
+    grid-column-gap: 8px;
+    grid-row-gap: 8px;
+  }
+  .trademark-wrapper .trademark-container .register-cost .registring .resolve-container .resolve-card .resolve-title div:first-child {
+    font-size: 22px;
+  }
+  .trademark-wrapper .trademark-container .register-cost .registring .resolve-container .resolve-card .resolve-title div:last-child {
+    font-size: 18px;
+  }
+  .trademark-wrapper .trademark-container .register-cost .registring .resolve-container .resolve-card .resolve-description div:first-child {
+    font-size: 22px;
+  }
+  .trademark-wrapper .trademark-container .register-cost .cost {
+    color: #191C38;
+    font-family: HelveticaLight, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .trademark-wrapper .trademark-container .register-cost .cost span {
+    font-family: HelveticaBold, sans-serif;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts {
+    padding: 32px 16px;
+    gap: 24px;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts .title {
+    font-size: 20px;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts .block-fact-container {
+    gap: 14px;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts .block-fact-container .block-fact {
+    padding: 24px;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts .block-fact-container .block-fact .elem {
+    gap: 16px;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts .block-fact-container .block-fact .elem div:first-child {
+    font-size: 22px;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts .block-fact-container .block-fact .elem div:last-child {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .trademark-wrapper .trademark-container .trademark-baner-guide {
+    gap: 40px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner {
+    height: auto;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content {
+    width: 100%;
+    padding: 0px 16px 0px 16px;
+    gap: 24px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .title div:first-child {
+    width: 100%;
+    font-size: 24px;
+    margin-top: 24px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .title .text {
+    color: #616161;
+    font-family: HelveticaLight, sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+    width: 100%;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .image {
+    display: block;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .image img {
+    display: block;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .leave-a-request {
+    padding: 16px;
+    font-style: 14px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .content .leave-a-request svg {
+    transform: rotate(90deg);
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .trademark-baner .image {
+    display: none;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .guide-blocks {
+    padding: 96px 16px 96px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .guide-blocks .guide-block {
+    flex: 1;
+    font-size: 16px;
+    min-width: 170px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .trademark-wrapper .trademark-container .trademark-baner-guide .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .trademark-wrapper .trademark-container .registering-trademark {
+    padding: 96px 16px 48px 16px;
+  }
+  .trademark-wrapper .trademark-container .registering-trademark div:first-child {
+    font-size: 20px;
+  }
+  .trademark-wrapper .trademark-container .registering-trademark div:last-child {
+    font-size: 16px;
+  }
+  .trademark-wrapper .trademark-container .register-cost {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 48px 16px 48px 16px;
+  }
+  .trademark-wrapper .trademark-container .register-cost .registring {
+    gap: 24px;
+  }
+  .trademark-wrapper .trademark-container .register-cost .registring .title div:first-child {
+    font-size: 20px;
+  }
+  .trademark-wrapper .trademark-container .register-cost .registring .resolve-container {
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+  }
+  .trademark-wrapper .trademark-container .register-cost .cost {
+    color: #191C38;
+    font-family: HelveticaLight, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .trademark-wrapper .trademark-container .register-cost .cost span {
+    font-family: HelveticaBold, sans-serif;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts {
+    padding: 48px 16px 96px 16px;
+    gap: 24px;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts .title {
+    font-size: 20px;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts .block-fact-container {
+    flex-direction: column;
+    gap: 14px;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts .block-fact-container .block-fact {
+    padding: 24px;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts .block-fact-container .block-fact .elem {
+    gap: 16px;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts .block-fact-container .block-fact .elem div:first-child {
+    font-size: 22px;
+  }
+  .trademark-wrapper .trademark-container .interesting-facts .block-fact-container .block-fact .elem div:last-child {
+    font-size: 16px;
+  }
+}
+
+/*# sourceMappingURL=tradeMark.css.map */

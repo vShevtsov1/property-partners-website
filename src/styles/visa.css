@@ -1,0 +1,1664 @@
+.visa-wrapper .visa-container {
+  display: flex;
+  flex-direction: column;
+}
+.visa-wrapper .visa-container .visa-baner-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.visa-wrapper .visa-container .visa-baner-guide .visa-baner {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  gap: 40px;
+}
+.visa-wrapper .visa-container .visa-baner-guide .visa-baner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49%;
+  padding-left: 64px;
+}
+.visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 90%;
+  /* 57.6px */
+  margin-top: 64px;
+}
+.visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .title div:last-child {
+  color: #616161;
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 68%;
+}
+.visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .image img {
+  display: none;
+}
+.visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .leave-a-request {
+  cursor: pointer;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  width: 73%;
+  flex-shrink: 0;
+  background: #191C38;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .leave-a-request svg {
+  transform: rotate(90deg);
+}
+.visa-wrapper .visa-container .visa-baner-guide .visa-baner .image {
+  flex: 1;
+}
+.visa-wrapper .visa-container .visa-baner-guide .visa-baner .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.visa-wrapper .visa-container .visa-baner-guide .guide-blocks {
+  display: flex;
+  gap: 16px;
+  padding: 0 64px;
+}
+.visa-wrapper .visa-container .visa-baner-guide .guide-blocks .guide-block {
+  flex: 1;
+  display: flex;
+  background: #FFF;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.visa-wrapper .visa-container .visa-baner-guide .guide-blocks .guide-block div:first-child {
+  color: #1F1E1E;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 30px;
+  font-weight: 400;
+}
+.visa-wrapper .visa-container .visa-baner-guide .guide-blocks .guide-block div:last-child {
+  color: #717171;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .detail {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 128px 64px 24px 64px;
+}
+.visa-wrapper .visa-container .detail div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 57.6px */
+}
+.visa-wrapper .visa-container .detail div:last-child {
+  color: #717171;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .residence {
+  display: flex;
+  gap: 24px;
+  padding: 24px 64px 128px 64px;
+}
+.visa-wrapper .visa-container .residence .permit {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 24px;
+  width: 50%;
+}
+.visa-wrapper .visa-container .residence .permit .title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .residence .permit .list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.visa-wrapper .visa-container .residence .permit .list .elem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.visa-wrapper .visa-container .residence .permit .list .elem div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 26.4px */
+}
+.visa-wrapper .visa-container .residence .permit .list .elem div:last-child {
+  color: #717171;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .residence .pro-part {
+  background: #191C38;
+  padding: 24px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+}
+.visa-wrapper .visa-container .residence .pro-part .title {
+  color: #FFF;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .residence .pro-part .list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.visa-wrapper .visa-container .residence .pro-part .list .elem {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.visa-wrapper .visa-container .residence .pro-part .list .elem div:first-child {
+  color: #FFF;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 26.4px */
+}
+.visa-wrapper .visa-container .residence .pro-part .list .elem div:last-child {
+  color: #B9BCD8;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .what-table {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 128px 64px 64px 64px;
+}
+.visa-wrapper .visa-container .what-table .title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.visa-wrapper .visa-container .what-table .table {
+  display: flex;
+  flex-direction: column;
+}
+.visa-wrapper .visa-container .what-table .table .table-row {
+  display: flex;
+  width: 100%;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .what-table .table .table-row .first-table-row {
+  width: 49.16%;
+  background: #191C38;
+  border-right: 1px solid #CACACA;
+}
+.visa-wrapper .visa-container .what-table .table .table-row .second-table-row {
+  padding: 16px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16.92%;
+  background: #191C38;
+  border-right: 1px solid #CACACA;
+}
+.visa-wrapper .visa-container .what-table .table .table-row .third-table-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16.92%;
+  background: #191C38;
+  border-right: 1px solid #CACACA;
+}
+.visa-wrapper .visa-container .what-table .table .table-row .fourth-table-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16.92%;
+  background: #191C38;
+}
+.visa-wrapper .visa-container .what-table .table .table-row .first-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 49.16%;
+  color: #191C38;
+  text-align: center;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 48px 24px;
+  border-left: 2px solid #D2D2D2;
+  border-bottom: 2px solid #D2D2D2;
+}
+.visa-wrapper .visa-container .what-table .table .table-row .second-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16.92%;
+  padding: 24px;
+  color: #000;
+  text-align: center;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-left: 2px solid #D2D2D2;
+  border-bottom: 2px solid #D2D2D2;
+}
+.visa-wrapper .visa-container .what-table .table .table-row .third-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16.92%;
+  padding: 24px;
+  color: #000;
+  text-align: center;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-left: 2px solid #D2D2D2;
+  border-bottom: 2px solid #D2D2D2;
+}
+.visa-wrapper .visa-container .what-table .table .table-row .fourth-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 16.92%;
+  padding: 24px;
+  color: #000;
+  text-align: center;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  border-left: 2px solid #D2D2D2;
+  border-right: 2px solid #D2D2D2;
+  border-bottom: 2px solid #D2D2D2;
+}
+.visa-wrapper .visa-container .what-table .table .table-row:last-child .first-table {
+  border-bottom: 2px solid #D2D2D2;
+}
+.visa-wrapper .visa-container .emirates-id {
+  display: flex;
+  flex-direction: column;
+  gap: 47px;
+  padding: 64px 64px;
+}
+.visa-wrapper .visa-container .emirates-id .title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .emirates-id .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 57.6px */
+}
+.visa-wrapper .visa-container .emirates-id .title div:last-child {
+  color: #707070;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .emirates-id .id-percent {
+  display: flex;
+  gap: 24px;
+}
+.visa-wrapper .visa-container .emirates-id .id-percent .id-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+}
+.visa-wrapper .visa-container .emirates-id .id-percent .id-text .id {
+  padding: 34px;
+  background-color: #fff;
+}
+.visa-wrapper .visa-container .emirates-id .id-percent .id-text .id img {
+  border-radius: 24px;
+  width: 100%;
+}
+.visa-wrapper .visa-container .emirates-id .id-percent .id-text .text {
+  color: #707070;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.visa-wrapper .visa-container .emirates-id .id-percent .percent {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+}
+.visa-wrapper .visa-container .emirates-id .id-percent .percent .block {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 100%;
+  padding: 24px;
+  background-color: #fff;
+}
+.visa-wrapper .visa-container .emirates-id .id-percent .percent .block div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.72px;
+}
+.visa-wrapper .visa-container .emirates-id .id-percent .percent .block div:last-child {
+  color: #4B4B4B;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.36px;
+}
+.visa-wrapper .visa-container .get-residance {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 64px;
+}
+.visa-wrapper .visa-container .get-residance .title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.visa-wrapper .visa-container .get-residance .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.visa-wrapper .visa-container .get-residance .card-container .card {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 24px;
+  background-color: #fff;
+  width: calc(50% - 12px);
+}
+.visa-wrapper .visa-container .get-residance .card-container .card .card-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .get-residance .card-container .card .card-title .category {
+  color: #5E5E5E;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .get-residance .card-container .card .card-title .category-title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 26.4px */
+}
+.visa-wrapper .visa-container .get-residance .card-container .card .card-title .text {
+  color: #000;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .get-residance .card-container .card .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+.visa-wrapper .visa-container .get-residance .card-container .card .buttons .button-title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+}
+.visa-wrapper .visa-container .get-residance .card-container .card .buttons .button-container {
+  display: flex;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .get-residance .card-container .card .buttons .button-container .button {
+  cursor: pointer;
+  padding: 16px;
+  background: #191C38;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .how-long {
+  display: flex;
+  padding: 64px;
+  gap: 24px;
+}
+.visa-wrapper .visa-container .how-long .content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .how-long .content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .how-long .content .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.visa-wrapper .visa-container .how-long .content .title div:last-child {
+  color: #707070;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .how-long .content .button-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #707070;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .how-long .content .button-text .text {
+  width: 80%;
+}
+.visa-wrapper .visa-container .how-long .content .buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .how-long .content .buttons .button-title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.visa-wrapper .visa-container .how-long .content .buttons .button-container {
+  display: flex;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .how-long .content .buttons .button-container .button {
+  cursor: pointer;
+  padding: 16px;
+  background: #191C38;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .how-long .image {
+  width: 50%;
+  background-image: url("../assets/visa/sea.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+}
+.visa-wrapper .visa-container .deadline-grounds {
+  display: flex;
+  gap: 12px;
+  padding: 64px;
+}
+.visa-wrapper .visa-container .deadline-grounds .block {
+  height: 208px;
+  padding: 24px;
+  width: 50%;
+  justify-content: space-between;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+.visa-wrapper .visa-container .deadline-grounds .block img {
+  height: 24px;
+  width: 23px;
+}
+.visa-wrapper .visa-container .deadline-grounds .block .description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .deadline-grounds .block .description div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+  /* 26.18px */
+  letter-spacing: -0.44px;
+}
+.visa-wrapper .visa-container .deadline-grounds .block .description div:last-child {
+  color: #6D6D6D;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.visa-wrapper .visa-container .types-visas {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 64px 64px 128px 64px;
+}
+.visa-wrapper .visa-container .types-visas .title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 43.2px */
+}
+.visa-wrapper .visa-container .types-visas .card-container {
+  display: flex;
+  gap: 16px;
+  flex-direction: column;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card {
+  display: flex;
+  padding: 24px;
+  background-color: #fff;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  gap: 36px;
+  padding: 0px 24px 0px 0px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .content-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .content-title div:first-child {
+  color: #5E5E5E;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .content-title div:last-child {
+  color: #191C38;
+  font-family: Helvetica;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 26.4px */
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions .conditions-title {
+  color: #191C38;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions .list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions .list-container .list-title {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions .list-container .list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions .list-container .list .list-elem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions .list-container .list .list-elem .circle {
+  height: 5px;
+  width: 5px;
+  background-color: #000;
+  border-radius: 45px;
+  margin-left: 8px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .or-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .or-container .line {
+  height: 1px;
+  background: #D4D4D4;
+  width: 40%;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .or-container .or {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .text-container .text {
+  color: #000;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .text-container .list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .text-container .list .list-elem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .left-content .text-container .list .list-elem .circle {
+  height: 5px;
+  width: 5px;
+  background-color: #000;
+  border-radius: 45px;
+  margin-left: 8px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #fff;
+  padding: 0px 0px 0px 24px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content-title {
+  color: #5E5E5E;
+  text-align: right;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .content-text {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .content-text div:first-child {
+  color: #5E5E5E;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .content-text .content-text-title {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .content-text .content-text-title .text {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .content-text .content-text-title .text-light {
+  color: #000;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price {
+  display: flex;
+  justify-content: space-between;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .aed-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .aed-block div:first-child {
+  color: #C29773;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .aed-block div:last-child {
+  color: #000;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .dol-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .dol-block div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .dol-block div:last-child {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .days-block {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .days-block div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .days-block div:first-child span {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .days-block div:last-child {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .bottom-text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .bottom-text div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .bottom-text div:last-child {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .contact-us {
+  background: #FFF;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.visa-wrapper .visa-container .contact-us .contact-us-form {
+  display: flex;
+  padding: 64px 64px 40px;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+  flex-shrink: 0;
+}
+.visa-wrapper .visa-container .contact-us .contact-us-form .texts {
+  display: flex;
+  flex-direction: column;
+  gap: 23px;
+}
+.visa-wrapper .visa-container .contact-us .contact-us-form .texts div:first-child {
+  color: #191C38;
+  leading-trim: both;
+  text-align: center;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 28.8px */
+}
+.visa-wrapper .visa-container .contact-us .contact-us-form .form {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.visa-wrapper .visa-container .contact-us .contact-us-form .form .form-input {
+  border: 1px solid #CACACA;
+  display: flex;
+  padding: 16px;
+  align-items: center;
+  gap: 24px;
+  align-self: stretch;
+}
+.visa-wrapper .visa-container .contact-us .contact-us-form .form .form-input input {
+  width: 95%;
+  height: 100%;
+  background: none;
+  border: none;
+  color: #8F8F8F;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.64px;
+}
+.visa-wrapper .visa-container .contact-us .contact-us-form .form .form-input input:focus {
+  outline: none;
+}
+.visa-wrapper .visa-container .contact-us .contact-us-form .form .form-button {
+  display: flex;
+  padding: 16px;
+  justify-content: space-between;
+  align-items: center;
+  align-self: stretch;
+  background: #191C38;
+  color: #FFF;
+  font-family: HelveticaBold, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .contact-us .contact-us-form .agree-terms {
+  width: 80%;
+  color: #9E9E9E;
+  text-align: center;
+  font-family: Helvetica, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .contact-us .contact-us-form .privacy {
+  margin-top: -20px;
+  color: #9E9E9E;
+  text-align: center;
+  font-family: Helvetica, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.visa-wrapper .visa-container .contact-us .contact-us-form .privacy span {
+  color: #C29773;
+  text-align: center;
+  font-family: Helvetica, serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+@media (max-width: 1300px) {
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner {
+    height: 70vh;
+    gap: 40px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content {
+    width: 49%;
+    padding: 0px 0px 0px 16px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .title div:first-child {
+    font-size: 72px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .title div:last-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .leave-a-request {
+    width: 100%;
+    font-size: 14px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .guide-blocks {
+    padding: 32px 16px;
+    gap: 8px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .guide-blocks .guide-block {
+    font-size: 18px;
+    padding: 16px;
+    line-height: 30px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .detail {
+    padding: 16px 16px;
+  }
+  .visa-wrapper .visa-container .detail div:first-child {
+    font-size: 20px;
+  }
+  .visa-wrapper .visa-container .detail div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .residence {
+    padding: 16px 16px 32px 16px;
+  }
+  .visa-wrapper .visa-container .residence .permit .title {
+    font-size: 32px;
+  }
+  .visa-wrapper .visa-container .residence .permit .list .elem div:first-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .residence .permit .list .elem div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .residence .pro-part .title {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .residence .pro-part .list .elem div:first-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .residence .pro-part .list .elem div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .what-table {
+    padding: 64px 16px 32px 16px;
+    gap: 24px;
+  }
+  .visa-wrapper .visa-container .what-table .title {
+    font-size: 20px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row {
+    font-size: 14px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row .first-table {
+    font-size: 14px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row .second-table {
+    font-size: 14px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row .third-table {
+    font-size: 14px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row .fourth-table {
+    font-size: 14px;
+  }
+  .visa-wrapper .visa-container .emirates-id {
+    gap: 24px;
+    padding: 32px 16px;
+  }
+  .visa-wrapper .visa-container .emirates-id .title div:first-child {
+    font-size: 20px;
+  }
+  .visa-wrapper .visa-container .emirates-id .title div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .emirates-id .id-percent .id-text .id {
+    padding: 14.141px 19.217px 14.14px 19.783px;
+  }
+  .visa-wrapper .visa-container .emirates-id .id-percent .id-text .text {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .emirates-id .id-percent .percent .block div:first-child {
+    font-size: 24px;
+  }
+  .visa-wrapper .visa-container .emirates-id .id-percent .percent .block div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .get-residance {
+    padding: 32px 16px;
+    gap: 24px;
+  }
+  .visa-wrapper .visa-container .get-residance .title {
+    font-size: 20px;
+  }
+  .visa-wrapper .visa-container .get-residance .card-container {
+    gap: 8px;
+  }
+  .visa-wrapper .visa-container .get-residance .card-container .card .card-title .category {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .get-residance .card-container .card .card-title .category-title {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .get-residance .card-container .card .card-title .text {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .get-residance .card-container .card .buttons .button-title {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .get-residance .card-container .card .buttons .button-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .visa-wrapper .visa-container .get-residance .card-container .card .buttons .button-container .button {
+    white-space: nowrap;
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .how-long {
+    padding: 32px 16px;
+  }
+  .visa-wrapper .visa-container .how-long .content {
+    width: 100%;
+    gap: 16px;
+  }
+  .visa-wrapper .visa-container .how-long .content .title {
+    padding-bottom: 8px;
+  }
+  .visa-wrapper .visa-container .how-long .image {
+    display: none;
+  }
+  .visa-wrapper .visa-container .deadline-grounds {
+    padding: 32px 16px;
+  }
+  .visa-wrapper .visa-container .types-visas {
+    padding: 32px 16px;
+    gap: 24px;
+  }
+  .visa-wrapper .visa-container .types-visas .title {
+    font-size: 20px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content {
+    gap: 16px;
+    width: 100%;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .content-title div:first-child {
+    font-size: 14px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .content-title div:last-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions {
+    gap: 8px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions .conditions-title {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions .list-container .list-title {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions .list-container .list .list-elem {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .or-container {
+    padding: 0px 60px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .or-container .line {
+    width: 45%;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .or-container .or {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .text-container .list .list-elem {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content {
+    width: 100%;
+    padding: 0;
+    gap: 24px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content-title {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .content-text div:first-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .content-text .content-text-title .text {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .content-text .content-text-title .text-light {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .aed-block div:first-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .aed-block div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .dol-block div:first-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .dol-block div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .days-block div:first-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .days-block div:first-child span {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .days-block div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .bottom-text {
+    display: none;
+  }
+  .visa-wrapper .visa-container .contact-us {
+    width: 100%;
+  }
+  .visa-wrapper .visa-container .contact-us .contact-us-form {
+    padding: 24px 16px 24px;
+    gap: 24px;
+    width: 100%;
+  }
+  .visa-wrapper .visa-container .contact-us .contact-us-form .form {
+    width: 100%;
+  }
+  .tablet-none {
+    display: none !important;
+  }
+}
+@media (max-width: 876px) {
+  .visa-wrapper .visa-container .visa-baner-guide {
+    gap: 40px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner {
+    height: auto;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content {
+    width: 100%;
+    padding: 0px 16px 0px 16px;
+    gap: 24px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .title div:first-child {
+    width: 100%;
+    font-size: 24px;
+    margin-top: 24px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .title div:last-child {
+    width: 100%;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .image {
+    display: block;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .image img {
+    display: block;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .leave-a-request {
+    padding: 16px;
+    font-style: 14px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content .leave-a-request svg {
+    transform: rotate(90deg);
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .visa-baner .image {
+    display: none;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .guide-blocks {
+    padding: 96px 16px 96px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .guide-blocks .guide-block {
+    flex: 1;
+    font-size: 16px;
+    min-width: 170px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .visa-wrapper .visa-container .visa-baner-guide .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .detail {
+    padding: 16px 16px;
+  }
+  .visa-wrapper .visa-container .detail div:first-child {
+    font-size: 20px;
+  }
+  .visa-wrapper .visa-container .detail div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .residence {
+    flex-direction: column;
+    padding: 16px 16px 32px 16px;
+    gap: 0px;
+  }
+  .visa-wrapper .visa-container .residence .permit {
+    width: 100%;
+    gap: 80px;
+  }
+  .visa-wrapper .visa-container .residence .permit .title {
+    font-size: 32px;
+  }
+  .visa-wrapper .visa-container .residence .permit .list .elem div:first-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .residence .permit .list .elem div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .residence .pro-part {
+    width: 100%;
+  }
+  .visa-wrapper .visa-container .residence .pro-part .title {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .residence .pro-part .list .elem div:first-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .residence .pro-part .list .elem div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .get-consult {
+    padding: 64px 16px;
+  }
+  .visa-wrapper .visa-container .get-consult .get-consult-form {
+    width: 100%;
+  }
+  .visa-wrapper .visa-container .get-consult .get-consult-form .contact-us-form {
+    width: 100%;
+    background-color: #fff;
+    padding: 16px;
+    gap: 24px;
+  }
+  .visa-wrapper .visa-container .what-table {
+    padding: 32px 16px 64px 16px;
+    gap: 24px;
+  }
+  .visa-wrapper .visa-container .what-table .title {
+    font-size: 20px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row {
+    font-size: 12px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row .first-table-row {
+    width: 25%;
+    padding: 24px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row .second-table-row {
+    width: 25%;
+    padding: 24px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row .third-table-row {
+    width: 25%;
+    padding: 24px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row .fourth-table-row {
+    width: 25%;
+    padding: 24px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row .first-table {
+    width: 25%;
+    padding: 8px;
+    font-size: 12px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row .second-table {
+    width: 25%;
+    font-size: 12px;
+    padding: 8px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row .third-table {
+    width: 25%;
+    padding: 8px;
+    font-size: 12px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row .fourth-table {
+    width: 25%;
+    padding: 8px;
+    font-size: 12px;
+  }
+  .visa-wrapper .visa-container .what-table .table .table-row:last-child .first-table {
+    padding: 8px;
+  }
+  .visa-wrapper .visa-container .emirates-id {
+    gap: 24px;
+    padding: 32px 16px;
+  }
+  .visa-wrapper .visa-container .emirates-id .title {
+    gap: 8px;
+  }
+  .visa-wrapper .visa-container .emirates-id .title div:first-child {
+    font-size: 20px;
+  }
+  .visa-wrapper .visa-container .emirates-id .title div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .emirates-id .id-percent {
+    flex-direction: column;
+  }
+  .visa-wrapper .visa-container .emirates-id .id-percent .id-text {
+    width: 100%;
+  }
+  .visa-wrapper .visa-container .emirates-id .id-percent .id-text .id {
+    padding: 14.141px 19.217px 14.14px 19.783px;
+  }
+  .visa-wrapper .visa-container .emirates-id .id-percent .id-text .text {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .emirates-id .id-percent .percent {
+    width: 100%;
+  }
+  .visa-wrapper .visa-container .emirates-id .id-percent .percent .block {
+    width: 100%;
+  }
+  .visa-wrapper .visa-container .emirates-id .id-percent .percent .block div:first-child {
+    font-size: 24px;
+  }
+  .visa-wrapper .visa-container .emirates-id .id-percent .percent .block div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .get-residance {
+    padding: 64px 16px;
+    gap: 24px;
+  }
+  .visa-wrapper .visa-container .get-residance .title {
+    font-size: 20px;
+  }
+  .visa-wrapper .visa-container .get-residance .card-container {
+    gap: 8px;
+    flex-direction: column;
+  }
+  .visa-wrapper .visa-container .get-residance .card-container .card {
+    width: 100%;
+  }
+  .visa-wrapper .visa-container .how-long {
+    padding: 64px 16px;
+  }
+  .visa-wrapper .visa-container .how-long .content {
+    width: 100%;
+    gap: 16px;
+  }
+  .visa-wrapper .visa-container .how-long .content .title {
+    padding-bottom: 8px;
+  }
+  .visa-wrapper .visa-container .how-long .content .buttons .button-container {
+    flex-wrap: wrap;
+  }
+  .visa-wrapper .visa-container .how-long .content .buttons .button-container .button {
+    white-space: nowrap;
+  }
+  .visa-wrapper .visa-container .how-long .image {
+    display: none;
+  }
+  .visa-wrapper .visa-container .deadline-grounds {
+    padding: 32px 16px;
+    flex-direction: column;
+  }
+  .visa-wrapper .visa-container .deadline-grounds .block {
+    gap: 24px;
+    width: 100%;
+    height: auto;
+  }
+  .visa-wrapper .visa-container .types-visas {
+    padding: 64px 16px;
+    gap: 24px;
+  }
+  .visa-wrapper .visa-container .types-visas .title {
+    font-size: 20px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    padding: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content {
+    gap: 16px;
+    width: 100%;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .content-title div:first-child {
+    font-size: 14px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .content-title div:last-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions {
+    gap: 8px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions .conditions-title {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions .list-container .list-title {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .conditions .list-container .list .list-elem {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .or-container {
+    padding: 0px 0px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .or-container .line {
+    width: 45%;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .or-container .or {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .left-content .text-container .list .list-elem {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content {
+    width: 100%;
+    padding: 0;
+    gap: 24px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content-title {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .content-text div:first-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .content-text .content-text-title .text {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .content-text .content-text-title .text-light {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price {
+    flex-direction: column;
+    gap: 24px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .aed-block div:first-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .aed-block div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .dol-block div:first-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .dol-block div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .days-block div:first-child {
+    font-size: 18px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .days-block div:first-child span {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .price .days-block div:last-child {
+    font-size: 16px;
+  }
+  .visa-wrapper .visa-container .types-visas .card-container .card .right-content .content .bottom-text {
+    display: none;
+  }
+  .visa-wrapper .visa-container .contact-us {
+    width: 100%;
+  }
+  .visa-wrapper .visa-container .contact-us .contact-us-form {
+    padding: 24px 16px 24px;
+    gap: 24px;
+    width: 100%;
+  }
+  .visa-wrapper .visa-container .contact-us .contact-us-form .texts div:first-child {
+    text-align: start;
+  }
+  .visa-wrapper .visa-container .contact-us .contact-us-form .form {
+    width: 100%;
+  }
+  .tablet-none {
+    display: none !important;
+  }
+}
+
+/*# sourceMappingURL=visa.css.map */

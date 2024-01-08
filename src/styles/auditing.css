@@ -1,0 +1,882 @@
+.auditing-wrapper .auditing-container {
+  display: flex;
+  flex-direction: column;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  gap: 40px;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49%;
+  padding-left: 64px;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 90%;
+  /* 57.6px */
+  margin-top: 64px;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .title div:last-child {
+  color: #616161;
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 68%;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .image img {
+  display: none;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .leave-a-request {
+  cursor: pointer;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  width: 73%;
+  flex-shrink: 0;
+  background: #191C38;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .leave-a-request svg {
+  transform: rotate(90deg);
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .image {
+  flex: 1;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .guide-blocks {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  padding: 0 64px;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .guide-blocks .guide-block {
+  display: flex;
+  background: #FFF;
+  width: 100%;
+  padding: 20px;
+  gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .guide-blocks .guide-block div:first-child {
+  color: #1F1E1E;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 30px;
+  font-weight: 400;
+}
+.auditing-wrapper .auditing-container .auditing-baner-guide .guide-blocks .guide-block div:last-child {
+  color: #717171;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.auditing-wrapper .auditing-container .process {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 128px 64px 64px 64px;
+}
+.auditing-wrapper .auditing-container .process .title {
+  display: none;
+}
+.auditing-wrapper .auditing-container .process .process-block-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 24px;
+}
+.auditing-wrapper .auditing-container .process .process-block-container .process-block-title {
+  display: flex;
+  align-items: flex-end;
+  color: #191C38;
+  font-family: Onest, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: #fff;
+  padding: 24px;
+}
+.auditing-wrapper .auditing-container .process .process-block-container .process-block {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 83px;
+  padding: 24px;
+}
+.auditing-wrapper .auditing-container .process .process-block-container .process-block div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+  /* 26.18px */
+  letter-spacing: -0.44px;
+}
+.auditing-wrapper .auditing-container .process .process-block-container .process-block .description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.auditing-wrapper .auditing-container .process .process-block-container .process-block .description div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+  letter-spacing: -0.44px;
+}
+.auditing-wrapper .auditing-container .process .process-block-container .process-block .description div:last-child {
+  color: #6D6D6D;
+  font-family: HelveticaRegualr, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.auditing-wrapper .auditing-container .additional {
+  padding: 64px 64px 128px 64px;
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+}
+.auditing-wrapper .auditing-container .additional .title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 57.6px */
+}
+.auditing-wrapper .auditing-container .additional .content-container {
+  display: flex;
+  gap: 16px;
+}
+.auditing-wrapper .auditing-container .additional .content-container .block {
+  width: 100%;
+  padding: 36px;
+  gap: 16px;
+  display: flex;
+  flex-direction: column;
+  background: #FFF;
+  width: 50%;
+  justify-content: space-between;
+}
+.auditing-wrapper .auditing-container .additional .content-container .block div:first-child {
+  color: #000;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.auditing-wrapper .auditing-container .additional .content-container .block div:last-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 26.4px */
+}
+.auditing-wrapper .auditing-container .additional .content-container .blocks {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+}
+.auditing-wrapper .auditing-container .additional .content-container .blocks .block {
+  height: 100%;
+  padding: 16px;
+  gap: 16px;
+  width: 100%;
+}
+.auditing-wrapper .auditing-container .other-services {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 128px 64px 64px 64px;
+}
+.auditing-wrapper .auditing-container .other-services .process-block-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+  gap: 24px;
+}
+.auditing-wrapper .auditing-container .other-services .process-block-container .process-block-title {
+  display: flex;
+  align-items: flex-end;
+  color: #191C38;
+  font-family: Onest, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  background-color: #fff;
+  padding: 24px;
+}
+.auditing-wrapper .auditing-container .other-services .process-block-container .process-block {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  gap: 83px;
+  padding: 24px;
+}
+.auditing-wrapper .auditing-container .other-services .process-block-container .process-block div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+  /* 26.18px */
+  letter-spacing: -0.44px;
+}
+.auditing-wrapper .auditing-container .other-services .process-block-container .process-block .description {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.auditing-wrapper .auditing-container .other-services .process-block-container .process-block .description div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+  letter-spacing: -0.44px;
+}
+.auditing-wrapper .auditing-container .other-services .process-block-container .process-block .description div:last-child {
+  color: #6D6D6D;
+  font-family: HelveticaRegualr, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+.auditing-wrapper .auditing-container .main-services {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 24px 64px;
+}
+.auditing-wrapper .auditing-container .main-services .title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.auditing-wrapper .auditing-container .main-services .guide-blocks {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+}
+.auditing-wrapper .auditing-container .main-services .guide-blocks .guide-block {
+  display: flex;
+  background: #FFF;
+  width: 100%;
+  padding: 20px;
+  gap: 16px;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.auditing-wrapper .auditing-container .main-services .guide-blocks .guide-block div:first-child {
+  color: #1F1E1E;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 30px;
+  font-weight: 400;
+}
+.auditing-wrapper .auditing-container .main-services .guide-blocks .guide-block div:last-child {
+  color: #717171;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.auditing-wrapper .auditing-container .numbers {
+  display: flex;
+  gap: 16px;
+  padding: 64px;
+}
+.auditing-wrapper .auditing-container .numbers .clients {
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  width: 50%;
+  background-color: #fff;
+  justify-content: flex-end;
+}
+.auditing-wrapper .auditing-container .numbers .clients div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 148px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -2.96px;
+}
+.auditing-wrapper .auditing-container .numbers .clients div:last-child {
+  color: #4B4B4B;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+.auditing-wrapper .auditing-container .numbers .employees-companies {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+}
+.auditing-wrapper .auditing-container .numbers .employees-companies .block {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #fff;
+  gap: 50px;
+}
+.auditing-wrapper .auditing-container .numbers .employees-companies .block div:first-child {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.12px;
+}
+.auditing-wrapper .auditing-container .numbers .employees-companies .block div:last-child {
+  color: #4B4B4B;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+.auditing-wrapper .auditing-container .offices {
+  display: flex;
+  padding: 64px 64px 64px 64px;
+}
+.auditing-wrapper .auditing-container .offices .title {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: center;
+}
+.auditing-wrapper .auditing-container .offices .offices-page-title {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: center;
+}
+.auditing-wrapper .auditing-container .offices .countries {
+  display: flex;
+  gap: 16px;
+}
+.auditing-wrapper .auditing-container .offices .countries .country-block {
+  padding: 24px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 74px;
+  flex: 1;
+}
+.auditing-wrapper .auditing-container .offices .countries .country-block img {
+  height: 32px;
+  width: 32px;
+}
+.auditing-wrapper .auditing-container .offices .countries .country-block .text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.auditing-wrapper .auditing-container .offices .countries .country-block .text div:first-child {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+  /* 38.08px */
+  letter-spacing: -0.64px;
+}
+.auditing-wrapper .auditing-container .offices .countries .country-block .text div:last-child {
+  color: #6D6D6D;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+@media (max-width: 1300px) {
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner {
+    height: 70vh;
+    gap: 40px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content {
+    width: 49%;
+    padding: 0px 0px 0px 16px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .title div:first-child {
+    font-size: 32px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .title div:last-child {
+    font-size: 18px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .leave-a-request {
+    width: 100%;
+    font-size: 14px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .guide-blocks {
+    padding: 32px 16px;
+    gap: 8px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .guide-blocks .guide-block {
+    font-size: 18px;
+    padding: 16px;
+    line-height: 30px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .auditing-wrapper .auditing-container .process {
+    gap: 24px;
+    padding: 32px 16px 32px 16px;
+  }
+  .auditing-wrapper .auditing-container .process .process-block-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 8px;
+  }
+  .auditing-wrapper .auditing-container .process .process-block-container .process-block-title {
+    font-size: 22px;
+  }
+  .auditing-wrapper .auditing-container .process .process-block-container .process-block {
+    gap: 75px;
+    padding: 16px;
+  }
+  .auditing-wrapper .auditing-container .process .process-block-container .process-block .description {
+    gap: 8px;
+  }
+  .auditing-wrapper .auditing-container .process .process-block-container .process-block .description div:first-child {
+    font-size: 18px;
+  }
+  .auditing-wrapper .auditing-container .process .process-block-container .process-block .description div:last-child {
+    font-size: 16px;
+  }
+  .auditing-wrapper .auditing-container .main-services .title {
+    font-size: 20px;
+  }
+  .auditing-wrapper .auditing-container .main-services .guide-blocks {
+    padding: 32px 16px;
+    gap: 8px;
+  }
+  .auditing-wrapper .auditing-container .main-services .guide-blocks .guide-block {
+    font-size: 18px;
+    padding: 16px;
+    line-height: 30px;
+  }
+  .auditing-wrapper .auditing-container .main-services .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .auditing-wrapper .auditing-container .main-services .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .auditing-wrapper .auditing-container .additional {
+    padding: 32px 16px 64px 16px;
+    gap: 24px;
+  }
+  .auditing-wrapper .auditing-container .additional .title {
+    font-size: 20px;
+  }
+  .auditing-wrapper .auditing-container .additional .content-container {
+    gap: 16px;
+  }
+  .auditing-wrapper .auditing-container .additional .content-container .block {
+    padding: 16px;
+  }
+  .auditing-wrapper .auditing-container .additional .content-container .block div:first-child {
+    font-size: 16px;
+  }
+  .auditing-wrapper .auditing-container .additional .content-container .block div:last-child {
+    font-size: 18px;
+  }
+  .auditing-wrapper .auditing-container .main-services {
+    gap: 24px;
+    padding: 24px 16px;
+  }
+  .auditing-wrapper .auditing-container .main-services .title {
+    font-size: 20px;
+  }
+  .auditing-wrapper .auditing-container .main-services .guide-blocks {
+    display: grid;
+    gap: 16px;
+    grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+    padding: 0;
+  }
+  .auditing-wrapper .auditing-container .main-services .guide-blocks .guide-blocks {
+    padding: 32px 16px;
+    gap: 8px;
+  }
+  .auditing-wrapper .auditing-container .main-services .guide-blocks .guide-blocks .guide-block {
+    font-size: 18px;
+    padding: 16px;
+    line-height: 30px;
+  }
+  .auditing-wrapper .auditing-container .main-services .guide-blocks .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .auditing-wrapper .auditing-container .main-services .guide-blocks .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .auditing-wrapper .auditing-container .other-services {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    padding: 64px 16px 32px 16px;
+  }
+  .auditing-wrapper .auditing-container .other-services .process-block-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(30%, 1fr));
+    gap: 8px;
+  }
+  .auditing-wrapper .auditing-container .other-services .process-block-container .process-block-title {
+    font-size: 18px;
+  }
+  .auditing-wrapper .auditing-container .other-services .process-block-container .process-block {
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    gap: 83px;
+    padding: 24px;
+  }
+  .auditing-wrapper .auditing-container .other-services .process-block-container .process-block div:first-child {
+    color: #191C38;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 119%;
+    /* 26.18px */
+    letter-spacing: -0.44px;
+  }
+  .auditing-wrapper .auditing-container .other-services .process-block-container .process-block .description {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  .auditing-wrapper .auditing-container .other-services .process-block-container .process-block .description div:first-child {
+    color: #191C38;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 119%;
+    letter-spacing: -0.44px;
+  }
+  .auditing-wrapper .auditing-container .other-services .process-block-container .process-block .description div:last-child {
+    color: #6D6D6D;
+    font-family: HelveticaRegualr, sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.32px;
+  }
+  .auditing-wrapper .auditing-container .numbers {
+    gap: 8px;
+    padding: 32px 16px;
+  }
+  .auditing-wrapper .auditing-container .numbers .clients {
+    justify-content: start;
+  }
+  .auditing-wrapper .auditing-container .numbers .clients div:first-child {
+    font-size: 64px;
+  }
+  .auditing-wrapper .auditing-container .numbers .clients div:last-child {
+    font-size: 16px;
+  }
+  .auditing-wrapper .auditing-container .numbers .employees-companies .block {
+    gap: 24px;
+  }
+  .auditing-wrapper .auditing-container .numbers .employees-companies .block div:first-child {
+    font-size: 32px;
+  }
+  .auditing-wrapper .auditing-container .numbers .employees-companies .block div:last-child {
+    font-size: 16px;
+  }
+  .auditing-wrapper .auditing-container .offices {
+    display: flex;
+    padding: 32px 16px 64px 16px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .auditing-wrapper .auditing-container .offices .offices-page-title {
+    align-self: flex-start;
+    font-size: 32px;
+  }
+  .auditing-wrapper .auditing-container .offices .countries {
+    gap: 14px;
+  }
+  .auditing-wrapper .auditing-container .offices .countries .country-block {
+    gap: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .auditing-wrapper .auditing-container .auditing-baner-guide {
+    gap: 40px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner {
+    height: auto;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content {
+    width: 100%;
+    padding: 0px 16px 0px 16px;
+    gap: 24px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .title div:first-child {
+    width: 100%;
+    font-size: 24px;
+    margin-top: 24px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .title div:last-child {
+    width: 100%;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .image {
+    display: block;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .image img {
+    display: block;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .leave-a-request {
+    padding: 16px;
+    font-style: 14px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .content .leave-a-request svg {
+    transform: rotate(90deg);
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .auditing-baner .image {
+    display: none;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .guide-blocks {
+    padding: 96px 16px 96px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .guide-blocks .guide-block {
+    flex: 1;
+    font-size: 16px;
+    min-width: 170px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .auditing-wrapper .auditing-container .auditing-baner-guide .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .auditing-wrapper .auditing-container .process {
+    gap: 24px;
+    padding: 48px 16px;
+  }
+  .auditing-wrapper .auditing-container .process .title {
+    display: flex;
+    color: #191C38;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .auditing-wrapper .auditing-container .process .process-block-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
+    gap: 8px;
+  }
+  .auditing-wrapper .auditing-container .process .process-block-container .process-block-title {
+    display: none;
+    font-size: 22px;
+    padding-bottom: 16px;
+  }
+  .auditing-wrapper .auditing-container .process .process-block-container .process-block {
+    gap: 24px;
+    padding: 16px;
+  }
+  .auditing-wrapper .auditing-container .process .process-block-container .process-block .description {
+    gap: 8px;
+  }
+  .auditing-wrapper .auditing-container .additional {
+    padding: 48px 16px;
+    gap: 24px;
+  }
+  .auditing-wrapper .auditing-container .additional .title {
+    font-size: 20px;
+    /* 57.6px */
+  }
+  .auditing-wrapper .auditing-container .additional .content-container {
+    gap: 8px;
+    flex-direction: column;
+  }
+  .auditing-wrapper .auditing-container .additional .content-container .block {
+    width: 100%;
+    padding: 16px;
+    gap: 16px;
+  }
+  .auditing-wrapper .auditing-container .additional .content-container .block div:first-child {
+    font-size: 16px;
+  }
+  .auditing-wrapper .auditing-container .additional .content-container .block div:last-child {
+    font-size: 18px;
+    /* 26.4px */
+  }
+  .auditing-wrapper .auditing-container .additional .content-container .blocks {
+    gap: 8px;
+    width: 100%;
+  }
+  .auditing-wrapper .auditing-container .additional .content-container .blocks .block {
+    padding: 16px;
+    gap: 16px;
+    width: 100%;
+  }
+  .auditing-wrapper .auditing-container .get-consult-box {
+    display: none;
+  }
+  .auditing-wrapper .auditing-container .other-services {
+    display: none;
+  }
+  .auditing-wrapper .auditing-container .main-services {
+    padding: 48px 16px;
+  }
+  .auditing-wrapper .auditing-container .main-services .title {
+    font-size: 20px;
+  }
+  .auditing-wrapper .auditing-container .main-services .guide-blocks {
+    padding: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .auditing-wrapper .auditing-container .main-services .guide-blocks .guide-block {
+    flex: 1;
+    font-size: 16px;
+    min-width: 170px;
+  }
+  .auditing-wrapper .auditing-container .main-services .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .auditing-wrapper .auditing-container .main-services .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .auditing-wrapper .auditing-container .numbers {
+    gap: 8px;
+    padding: 48px 16px;
+    flex-direction: column;
+  }
+  .auditing-wrapper .auditing-container .numbers .clients {
+    width: 100%;
+    padding: 16px;
+    justify-content: start;
+    gap: 16px;
+  }
+  .auditing-wrapper .auditing-container .numbers .clients div:first-child {
+    font-size: 64px;
+  }
+  .auditing-wrapper .auditing-container .numbers .clients div:last-child {
+    font-size: 16px;
+  }
+  .auditing-wrapper .auditing-container .numbers .employees-companies {
+    width: 100%;
+    gap: 8px;
+  }
+  .auditing-wrapper .auditing-container .numbers .employees-companies .block {
+    gap: 24px;
+  }
+  .auditing-wrapper .auditing-container .numbers .employees-companies .block div:first-child {
+    font-size: 32px;
+  }
+  .auditing-wrapper .auditing-container .numbers .employees-companies .block div:last-child {
+    font-size: 16px;
+  }
+  .auditing-wrapper .auditing-container .offices {
+    display: flex;
+    padding: 32px 16px 96px 16px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .auditing-wrapper .auditing-container .offices .offices-page-title {
+    align-self: start;
+    font-size: 32px;
+  }
+  .auditing-wrapper .auditing-container .offices .countries {
+    gap: 14px;
+    flex-direction: column;
+  }
+  .auditing-wrapper .auditing-container .offices .countries .country-block {
+    gap: 24px;
+  }
+}
+
+/*# sourceMappingURL=auditing.css.map */

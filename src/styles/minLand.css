@@ -1,0 +1,1103 @@
+.minland-wrapper .minland-container {
+  display: flex;
+  flex-direction: column;
+}
+.minland-wrapper .minland-container .page-title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.minland-wrapper .minland-container .minland-baner-guide {
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+.minland-wrapper .minland-container .minland-baner-guide .minland-baner {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  gap: 40px;
+}
+.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49%;
+  padding-left: 64px;
+}
+.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 90%;
+  /* 57.6px */
+  margin-top: 64px;
+}
+.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title div:last-child {
+  color: #616161;
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 68%;
+}
+.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .image img {
+  display: none;
+}
+.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .leave-a-request {
+  cursor: pointer;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  width: 73%;
+  flex-shrink: 0;
+  background: #191C38;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content svg {
+  transform: rotate(90deg);
+}
+.minland-wrapper .minland-container .minland-baner-guide .minland-baner .image {
+  flex: 1;
+}
+.minland-wrapper .minland-container .minland-baner-guide .minland-baner .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+.minland-wrapper .minland-container .minland-baner-guide .guide-blocks {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fill, minmax(20%, 1fr));
+  padding: 0 64px;
+}
+.minland-wrapper .minland-container .minland-baner-guide .guide-blocks .guide-block {
+  display: flex;
+  background: #FFF;
+  width: 100%;
+  padding: 20px;
+  gap: 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.minland-wrapper .minland-container .minland-baner-guide .guide-blocks .guide-block div:first-child {
+  color: #1F1E1E;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  line-height: 30px;
+  font-weight: 400;
+}
+.minland-wrapper .minland-container .minland-baner-guide .guide-blocks .guide-block div:last-child {
+  color: #717171;
+  font-family: Helvetica;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .process-of-setuping {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 128px 64px 24px 64px;
+}
+.minland-wrapper .minland-container .process-of-setuping div:last-child {
+  color: #717171;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .table {
+  display: flex;
+  flex-direction: column;
+  padding: 24px 64px 64px 64px;
+}
+.minland-wrapper .minland-container .table .table-row {
+  display: flex;
+  width: 100%;
+}
+.minland-wrapper .minland-container .table .table-row .first-table-row {
+  width: 25%;
+  padding: 16px;
+  color: #000000;
+  text-align: center;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .table .table-row .second-table-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37%;
+  padding: 16px;
+  background: #C29773;
+  color: #FFF;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .table .table-row .third-table-row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37%;
+  padding: 16px;
+  background-color: #fff;
+  color: #000;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .table .table-row .first-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25%;
+  color: #191C38;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  padding: 16px;
+  border-top: 2px solid #D2D2D2;
+  border-right: 2px solid #D2D2D2;
+  border-left: 2px solid #D2D2D2;
+}
+.minland-wrapper .minland-container .table .table-row .second-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37%;
+  padding: 16px;
+  border-bottom: 2px solid #C29773;
+  border-right: 2px solid #C29773;
+  border-left: 2px solid #C29773;
+  padding: 16px;
+  color: #191C38;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .table .table-row .third-table {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 37%;
+  padding: 16px;
+  border-bottom: 2px solid #D2D2D2;
+  border-right: 2px solid #D2D2D2;
+  border-left: 2px solid #D2D2D2;
+  color: #191C38;
+  text-align: center;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .table .table-row:last-child .first-table {
+  border-bottom: 2px solid #D2D2D2;
+}
+.minland-wrapper .minland-container .accompany {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 64px 64px 128px 64px;
+}
+.minland-wrapper .minland-container .accompany .title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .list-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .list-container .list-title {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .list-container .list-upper {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .list-container .list-upper .list-elem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .list-container .list-lower {
+  display: flex;
+  gap: 24px;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .list-container .list-lower .list-elem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block {
+  display: flex;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content {
+  padding: 24px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 36px;
+  width: 50%;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .stage-title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .stage-title div:first-child {
+  color: #5E5E5E;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .stage-title div:last-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  /* 33.6px */
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .accompany-paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .accompany-paragraph .underline {
+  text-decoration-line: underline;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .accompany-paragraph .big-description {
+  font-size: 20px;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .accompany-paragraph div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .accompany-paragraph div:last-child {
+  color: #000;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .right-content {
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+  padding: 24px;
+  justify-content: space-between;
+  width: 50%;
+  gap: 10px;
+}
+.minland-wrapper .minland-container .cost-service {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 128px 64px 64px 64px;
+}
+.minland-wrapper .minland-container .cost-service .title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.minland-wrapper .minland-container .cost-service .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.minland-wrapper .minland-container .cost-service .title div:last-child {
+  color: #191C38;
+  font-family: Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.minland-wrapper .minland-container .cost-service .setups-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.minland-wrapper .minland-container .cost-service .setups-container .setup {
+  display: flex;
+}
+.minland-wrapper .minland-container .cost-service .setups-container .setup .setup-name {
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  background: #C29773;
+  width: 23%;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .cost-service .setups-container .setup .setup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: #FFF;
+  flex: 1;
+}
+.minland-wrapper .minland-container .cost-service .setups-container .setup .setup-content .setup-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.minland-wrapper .minland-container .cost-service .setups-container .setup .setup-content .setup-list .setup-list-elem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #000;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .cost-service .setups-container .setup .setup-content .setup-price {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+.minland-wrapper .minland-container .cost-service .setups-container .setup .setup-content .setup-price div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .cost-service .setups-container .setup .setup-content .setup-price div:last-child {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .cost-service .setups-container .setup .blue {
+  background: #191C38 !important;
+}
+.minland-wrapper .minland-container .pro-part {
+  display: flex;
+  gap: 16px;
+  padding: 64px 64px 64px 64px;
+}
+.minland-wrapper .minland-container .pro-part .content {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  justify-content: space-between;
+  background: #191C38;
+  width: 70%;
+}
+.minland-wrapper .minland-container .pro-part .content div:first-child {
+  color: #FFF;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .pro-part .content div:last-child {
+  color: #FFF;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .pro-part .image {
+  width: 30%;
+  height: 190px;
+  background-image: url(/src/assets/minland/pro-part.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+}
+.minland-wrapper .minland-container .main-services {
+  display: flex;
+  padding: 64px;
+  gap: 48px;
+}
+.minland-wrapper .minland-container .main-services .sercives-title {
+  display: flex;
+  align-items: center;
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.minland-wrapper .minland-container .main-services .cards-container {
+  display: flex;
+  gap: 16px;
+  max-width: 100%;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.minland-wrapper .minland-container .main-services .cards-container .card {
+  width: calc(50% - 12px);
+  box-sizing: border-box;
+  display: flex;
+  padding: 124px 24px 24px 24px;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-start;
+  color: #000;
+  font-family: Helvetica;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+  border: 1px solid #CACACA;
+}
+.minland-wrapper .minland-container .numbers {
+  display: flex;
+  gap: 16px;
+  padding: 64px;
+}
+.minland-wrapper .minland-container .numbers .clients {
+  display: flex;
+  flex-direction: column;
+  padding: 36px;
+  width: 50%;
+  background-color: #fff;
+  justify-content: space-between;
+}
+.minland-wrapper .minland-container .numbers .clients div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 148px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -2.96px;
+}
+.minland-wrapper .minland-container .numbers .clients div:last-child {
+  color: #4B4B4B;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+.minland-wrapper .minland-container .numbers .employees-companies {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  width: 50%;
+}
+.minland-wrapper .minland-container .numbers .employees-companies .block {
+  display: flex;
+  flex-direction: column;
+  padding: 24px;
+  background-color: #fff;
+  gap: 50px;
+}
+.minland-wrapper .minland-container .numbers .employees-companies .block div:first-child {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 56px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -1.12px;
+}
+.minland-wrapper .minland-container .numbers .employees-companies .block div:last-child {
+  color: #4B4B4B;
+  font-family: HelveticaRegular, sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.4px;
+}
+.minland-wrapper .minland-container .offices {
+  display: flex;
+  padding: 64px 64px 64px 64px;
+}
+.minland-wrapper .minland-container .offices .title {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: center;
+}
+.minland-wrapper .minland-container .offices .offices-page-title {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  align-self: center;
+}
+.minland-wrapper .minland-container .offices .countries {
+  display: flex;
+  gap: 16px;
+}
+.minland-wrapper .minland-container .offices .countries .country-block {
+  padding: 24px;
+  background: #FFF;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 74px;
+  flex: 1;
+}
+.minland-wrapper .minland-container .offices .countries .country-block img {
+  height: 32px;
+  width: 32px;
+}
+.minland-wrapper .minland-container .offices .countries .country-block .text {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.minland-wrapper .minland-container .offices .countries .country-block .text div:first-child {
+  color: #000;
+  leading-trim: both;
+  text-edge: cap;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 119%;
+  /* 38.08px */
+  letter-spacing: -0.64px;
+}
+.minland-wrapper .minland-container .offices .countries .country-block .text div:last-child {
+  color: #6D6D6D;
+  font-family: HelveticaLight, sans-serif;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.32px;
+}
+
+@media (max-width: 1300px) {
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner {
+    height: 70vh;
+    gap: 40px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content {
+    width: 49%;
+    padding: 0px 0px 0px 16px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title div:first-child {
+    font-size: 72px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title div:last-child {
+    font-size: 18px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .leave-a-request {
+    width: 100%;
+    font-size: 14px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .guide-blocks {
+    padding: 32px 16px;
+    gap: 8px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .guide-blocks .guide-block {
+    font-size: 18px;
+    padding: 16px;
+    line-height: 30px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .minland-wrapper .minland-container .page-title {
+    color: #191C38;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .minland-wrapper .minland-container .table {
+    padding: 32px 16px 64px 16px;
+  }
+  .minland-wrapper .minland-container .process-of-setuping {
+    padding: 48px 16px 24px 16px;
+  }
+  .minland-wrapper .minland-container .process-of-setuping div:first-child {
+    /* ... */
+  }
+  .minland-wrapper .minland-container .process-of-setuping div:last-child {
+    /* ... */
+  }
+  .minland-wrapper .minland-container .accompany {
+    gap: 24px;
+    padding: 32px 16px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .list-container .list-title {
+    font-size: 18px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .list-container .list-upper .list-elem {
+    font-size: 16px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .list-container .list-lower .list-elem {
+    font-size: 16px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .stage-title div:first-child {
+    font-size: 14px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .stage-title div:last-child {
+    font-size: 22px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .accompany-paragraph .underline {
+    text-decoration: none;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .accompany-paragraph .big-description {
+    font-size: 18px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .accompany-paragraph div:first-child {
+    color: #191C38;
+    font-size: 18px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .accompany-paragraph div:last-child {
+    font-size: 16px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .right-content {
+    gap: 24px;
+  }
+  .minland-wrapper .minland-container .cost-service {
+    padding: 32px 16px 32px 16px;
+    gap: 24px;
+  }
+  .minland-wrapper .minland-container .cost-service .title div:last-child {
+    font-size: 18px;
+  }
+  .minland-wrapper .minland-container .cost-service .setups-container .setup .setup-name {
+    font-size: 22px;
+  }
+  .minland-wrapper .minland-container .cost-service .setups-container .setup .setup-content {
+    padding: 16px;
+  }
+  .minland-wrapper .minland-container .cost-service .setups-container .setup .setup-content .setup-price div:first-child {
+    font-size: 18px;
+  }
+  .minland-wrapper .minland-container .cost-service .setups-container .setup .setup-content .setup-price div:last-child {
+    font-size: 16px;
+  }
+  .minland-wrapper .minland-container .cost-service .setups-container .setup .blue {
+    background: #191C38 !important;
+  }
+  .minland-wrapper .minland-container .pro-part {
+    padding: 32px 16px;
+  }
+  .minland-wrapper .minland-container .pro-part .content div:first-child {
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .minland-wrapper .minland-container .main-services {
+    padding: 32px 16px;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .minland-wrapper .minland-container .main-services .sercives-title {
+    font-size: 32px;
+  }
+  .minland-wrapper .minland-container .main-services .cards-container {
+    gap: 8px;
+  }
+  .minland-wrapper .minland-container .numbers {
+    gap: 8px;
+    padding: 32px 16px;
+  }
+  .minland-wrapper .minland-container .numbers .clients {
+    justify-content: start;
+  }
+  .minland-wrapper .minland-container .numbers .clients div:first-child {
+    font-size: 64px;
+  }
+  .minland-wrapper .minland-container .numbers .clients div:last-child {
+    font-size: 16px;
+  }
+  .minland-wrapper .minland-container .numbers .employees-companies .block {
+    gap: 24px;
+  }
+  .minland-wrapper .minland-container .numbers .employees-companies .block div:first-child {
+    font-size: 32px;
+  }
+  .minland-wrapper .minland-container .numbers .employees-companies .block div:last-child {
+    font-size: 16px;
+  }
+  .minland-wrapper .minland-container .offices {
+    display: flex;
+    padding: 32px 16px 64px 16px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .minland-wrapper .minland-container .offices .offices-page-title {
+    align-self: flex-start;
+    font-size: 32px;
+  }
+  .minland-wrapper .minland-container .offices .countries {
+    gap: 14px;
+  }
+  .minland-wrapper .minland-container .offices .countries .country-block {
+    gap: 24px;
+  }
+}
+@media (max-width: 786px) {
+  .minland-wrapper .minland-container .minland-baner-guide {
+    gap: 40px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner {
+    height: auto;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content {
+    width: 100%;
+    padding: 0px 16px 0px 16px;
+    gap: 24px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title div:first-child {
+    width: 100%;
+    font-size: 24px;
+    margin-top: 24px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title div:last-child {
+    width: 100%;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .image {
+    display: block;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .image img {
+    display: block;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .leave-a-request {
+    padding: 16px;
+    font-style: 14px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .leave-a-request svg {
+    transform: rotate(90deg);
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .image {
+    display: none;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .guide-blocks {
+    padding: 96px 16px 96px 16px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .guide-blocks .guide-block {
+    flex: 1;
+    font-size: 16px;
+    min-width: 170px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .guide-blocks .guide-block div:first-child {
+    font-size: 22px;
+  }
+  .minland-wrapper .minland-container .minland-baner-guide .guide-blocks .guide-block div:last-child {
+    font-size: 18px;
+  }
+  .minland-wrapper .minland-container .table {
+    padding: 48px 16px;
+  }
+  .minland-wrapper .minland-container .table .table-row .first-table-row {
+    font-size: 12px;
+  }
+  .minland-wrapper .minland-container .table .table-row .second-table-row {
+    font-size: 12px;
+  }
+  .minland-wrapper .minland-container .table .table-row .third-table-row {
+    font-size: 12px;
+  }
+  .minland-wrapper .minland-container .table .table-row .first-table {
+    height: 126px;
+    font-size: 12px;
+  }
+  .minland-wrapper .minland-container .table .table-row .first-table div {
+    transform: rotate(270deg);
+  }
+  .minland-wrapper .minland-container .table .table-row .second-table {
+    height: 126px;
+    font-size: 12px;
+  }
+  .minland-wrapper .minland-container .table .table-row .third-table {
+    font-size: 12px;
+    height: 126px;
+  }
+  .minland-wrapper .minland-container .page-title {
+    color: #191C38;
+    font-family: HelveticaBold, sans-serif;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 120%;
+  }
+  .minland-wrapper .minland-container .process-of-setuping {
+    padding: 48px 16px;
+  }
+  .minland-wrapper .minland-container .process-of-setuping div:first-child {
+    /* ... */
+  }
+  .minland-wrapper .minland-container .process-of-setuping div:last-child {
+    /* ... */
+  }
+  .minland-wrapper .minland-container .accompany {
+    gap: 24px;
+    padding: 48px 16px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .list-container .list-title {
+    font-size: 18px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .list-container .list-upper .list-elem {
+    font-size: 16px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .list-container .list-lower {
+    flex-direction: column;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .list-container .list-lower .list-elem {
+    font-size: 16px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block {
+    flex-direction: column;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content {
+    width: 100%;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .stage-title div:first-child {
+    font-size: 14px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .stage-title div:last-child {
+    font-size: 22px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .accompany-paragraph .underline {
+    text-decoration: none;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .accompany-paragraph .big-description {
+    font-size: 18px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .accompany-paragraph div:first-child {
+    color: #191C38;
+    font-size: 18px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .left-content .accompany-paragraph div:last-child {
+    font-size: 16px;
+  }
+  .minland-wrapper .minland-container .accompany .accompany-blocks-container .accompany-block .right-content {
+    width: 100%;
+    gap: 24px;
+  }
+  .minland-wrapper .minland-container .get-consult-block {
+    display: none;
+  }
+  .minland-wrapper .minland-container .cost-service {
+    padding: 48px 16px;
+    gap: 24px;
+  }
+  .minland-wrapper .minland-container .cost-service .title {
+    display: none;
+  }
+  .minland-wrapper .minland-container .cost-service .title div:last-child {
+    font-size: 18px;
+  }
+  .minland-wrapper .minland-container .cost-service .setups-container .setup {
+    flex-direction: column;
+  }
+  .minland-wrapper .minland-container .cost-service .setups-container .setup .setup-name {
+    width: 100%;
+    font-size: 22px;
+  }
+  .minland-wrapper .minland-container .cost-service .setups-container .setup .setup-content {
+    padding: 16px;
+  }
+  .minland-wrapper .minland-container .cost-service .setups-container .setup .setup-content .setup-price div:first-child {
+    font-size: 18px;
+  }
+  .minland-wrapper .minland-container .cost-service .setups-container .setup .setup-content .setup-price div:last-child {
+    font-size: 16px;
+  }
+  .minland-wrapper .minland-container .cost-service .setups-container .setup .blue {
+    background: #191C38 !important;
+  }
+  .minland-wrapper .minland-container .pro-part {
+    padding: 48px 16px;
+    flex-direction: column;
+  }
+  .minland-wrapper .minland-container .pro-part .content {
+    width: 100%;
+    height: 190px;
+  }
+  .minland-wrapper .minland-container .pro-part .content div:first-child {
+    color: #FFF;
+    font-family: Helvetica;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+  }
+  .minland-wrapper .minland-container .pro-part .image {
+    width: 100%;
+  }
+  .minland-wrapper .minland-container .main-services {
+    padding: 48px 16px;
+    gap: 24px;
+    flex-direction: column;
+  }
+  .minland-wrapper .minland-container .main-services .cards-container {
+    gap: 8px;
+  }
+  .minland-wrapper .minland-container .main-services .cards-container .card {
+    width: 100%;
+    padding: 20px 16px 16px 16px;
+    font-size: 16px;
+  }
+  .minland-wrapper .minland-container .numbers {
+    gap: 8px;
+    padding: 48px 16px;
+    flex-direction: column;
+  }
+  .minland-wrapper .minland-container .numbers .clients {
+    width: 100%;
+    padding: 16px;
+    justify-content: start;
+    gap: 16px;
+  }
+  .minland-wrapper .minland-container .numbers .clients div:first-child {
+    font-size: 64px;
+  }
+  .minland-wrapper .minland-container .numbers .clients div:last-child {
+    font-size: 16px;
+  }
+  .minland-wrapper .minland-container .numbers .employees-companies {
+    width: 100%;
+    gap: 8px;
+  }
+  .minland-wrapper .minland-container .numbers .employees-companies .block {
+    gap: 24px;
+  }
+  .minland-wrapper .minland-container .numbers .employees-companies .block div:first-child {
+    font-size: 32px;
+  }
+  .minland-wrapper .minland-container .numbers .employees-companies .block div:last-child {
+    font-size: 16px;
+  }
+  .minland-wrapper .minland-container .offices {
+    display: flex;
+    padding: 32px 16px 96px 16px;
+    flex-direction: column;
+    gap: 24px;
+  }
+  .minland-wrapper .minland-container .offices .offices-page-title {
+    align-self: start;
+    font-size: 32px;
+  }
+  .minland-wrapper .minland-container .offices .countries {
+    gap: 14px;
+    flex-direction: column;
+  }
+  .minland-wrapper .minland-container .offices .countries .country-block {
+    gap: 24px;
+  }
+}
+
+/*# sourceMappingURL=minLand.css.map */
