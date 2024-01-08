@@ -163,7 +163,7 @@ function ConsiergeFreezone() {
                     </div>
                     <div className="guide-block">
                         <div>04</div>
-                        <div>Annual support</div>
+                        <div>Annual support from our team</div>
                     </div>
                 </div>
             </div>
@@ -255,7 +255,7 @@ function ConsiergeFreezone() {
             </div>
             <div className="table">
                 <div className="table-row">
-                    <div className="first-table-row"></div>
+                    <div className="first-table-row">Type</div>
                     <div className="second-table-row">Free Zone</div>
                     <div className="third-table-row">Mainland</div>
                 </div>
@@ -414,7 +414,7 @@ function ConsiergeFreezone() {
                             </div>
                             <div className="setup-price">
                                 <div>From $8,800</div>
-                                <div>((AED 32,000))</div>
+                                <div>(AED 32,000)</div>
                             </div>
                         </div>
                     </div>
@@ -694,15 +694,10 @@ function ConsiergeFreezone() {
                         </div>
                     </div>
                 </div>
-                <div className="info-card-button">
-                    Show more
-                </div>
             </div>
 
             <div className="consult-help">
                 <GetConsult />
-
-                <Help />
             </div>
 
 

@@ -1,4 +1,4 @@
-import "../styles/header.css"
+import "../styles/header.scss"
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -9,7 +9,7 @@ const Header = () => {
     const [phoneMenuVisible, setPhoneMenuVisible] = useState(false);
     const { t } = useTranslation();
     const [activeLanguage, setActiveLanguage] = useState(i18next.language)
-    const [consultingVisible,setConsultingVisible] = useState(false)
+    const [consultingVisible, setConsultingVisible] = useState(false)
     return (<header>
         <Link to={"/"}> <div className="logo-container">
             <svg xmlns="http://www.w3.org/2000/svg" width="143" height="56" viewBox="0 0 143 56" fill="none">
@@ -47,7 +47,7 @@ const Header = () => {
         <div className="menu">
             <Link to={"/"}><div className="menu-option">{t('header_option0')}</div></Link>
             <Link to={"/real-estate"}><div className="menu-option">{t('header_option1')}</div></Link>
-             <div className="menu-option" onClick={()=>setConsultingVisible(!consultingVisible)}>{t('header_option2')}</div>
+            <div className="menu-option" onClick={() => setConsultingVisible(!consultingVisible)}>{t('header_option2')}</div>
             <Link to={"/concierge"}> <div className="menu-option">{t('header_option3')}</div></Link>
         </div>
         <div className="phone-view">
@@ -92,7 +92,7 @@ const Header = () => {
 
             {phoneMenuVisible && <div className="phone-menu">
                 <div className="header">
-                    <div style={{
+                    <div className="phone-show" style={{
                         display: "flex",
                         justifyContent: "space-between",
                         alignItems: "center",
@@ -114,25 +114,31 @@ const Header = () => {
                             </svg>
                         </div></Link>
                         <Link to={"/real-estate"}> <div className="menu-option">
-                            {t('header_option1')}
+                            Real Esate
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
                                 <path d="M0.933333 15.8002L0 14.8669L6.86667 8.0002L0 1.13353L0.933333 0.200195L8.73333 8.0002L0.933333 15.8002Z" fill="#191C38" />
                             </svg>
                         </div></Link>
-                        <Link to={"/accounting"}> <div className="menu-option">
-                            {t('header_option2')}
+                        <Link to={"/real-estate"}> <div className="menu-option">
+                            Areas
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
                                 <path d="M0.933333 15.8002L0 14.8669L6.86667 8.0002L0 1.13353L0.933333 0.200195L8.73333 8.0002L0.933333 15.8002Z" fill="#191C38" />
                             </svg>
                         </div></Link>
-                        <Link to={"/concierge"}>
-                            <div className="menu-option">
-                                {t('header_option3')}
+                        <Link to={"/concierge"} >
+                            <div className="menu-option" >
+                                Concierge service
                                 <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
                                     <path d="M0.933333 15.8002L0 14.8669L6.86667 8.0002L0 1.13353L0.933333 0.200195L8.73333 8.0002L0.933333 15.8002Z" fill="#191C38" />
                                 </svg>
                             </div>
                         </Link>
+                        <Link to={"/accounting"}> <div className="menu-option" onClick={() => setConsultingVisible(!consultingVisible)}>
+                            {t('header_option2')}
+                            < svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
+                                <path d="M0.933333 15.8002L0 14.8669L6.86667 8.0002L0 1.13353L0.933333 0.200195L8.73333 8.0002L0.933333 15.8002Z" fill="#191C38" />
+                            </svg>
+                        </div></Link>
                     </div>
                 </div>
 
@@ -154,34 +160,40 @@ const Header = () => {
                     }} className={`lang ${activeLanguage === 'ru' ? 'active' : ''}`}>RU</div>
                 </div>
             </div>}
-        </div>
-        {consultingVisible&&<div className="consulting-dropdown">
-            <div className="option">
-                Company registration
+        </div >
+        {consultingVisible && <div className="consulting-dropdown">
+            <div className="areas-option">
+                <div className="option">
+                    Company registration
+                </div>
+                <div className="option">
+                    Bank account
+                </div>
+                <div className="option">
+                    Mainland
+                </div>
+                <div className="option">
+                    Attorney power
+                </div>
+                <div className="option">
+                    Resident Visa
+                </div>
+                <div className="option">
+                    UAE employment
+                </div>
+                <div className="option">
+                    Accounting
+                </div>
+                <div className="option">
+                    Trademark registration
+                </div>
+                <div className="back-option">
+                    <div className="back">
+                        Back
+                    </div>
+                </div>
             </div>
-            <div className="option">
-                Bank account
-            </div>
-            <div className="option">
-                Mainland
-            </div>
-            <div className="option">
-                Attorney power
-            </div>
-            <div className="option">
-                Resident Visa
-            </div>
-            <div className="option">
-                UAE employment
-            </div>
-            <div className="option">
-                Accounting
-            </div>
-            <div className="option">
-                Trademark registration
-            </div>
-
         </div>}
-    </header>)
+    </header >)
 }
 export default Header

@@ -15,20 +15,21 @@
         .cons-baner-guide {
             display: flex;
             flex-direction: column;
-            gap: 60px;
+            gap: 101px;
 
             .cons-free-baner {
                 display: flex;
                 justify-content: space-between;
                 height: 80vh;
                 gap: 40px;
+                padding: 64px 64px 0px 0px;
 
                 .content {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     width: 49%;
-                    padding-left: 64px;
+                    padding: 0px 0px 0px 64px;
 
 
                     .title {
@@ -140,7 +141,7 @@
             display: flex;
             flex-direction: column;
             gap: 60px;
-            padding: 128px 64px 64px 64px;
+            padding: 101px 64px 64px 64px;
 
             .title {
                 display: flex;
@@ -248,6 +249,16 @@
                 .first-table-row {
                     width: 25%;
                     padding: 16px;
+                    color: #000;
+                    text-align: center;
+
+                    font-family: HelveticaBold, sans-serif;
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                    background: #fff;
+
                 }
 
                 .second-table-row {
@@ -260,7 +271,7 @@
 
                     color: #FFF;
                     text-align: center;
-                    font-family: Helvetica;
+                    font-family: HelveticaBold, sans-serif;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
@@ -277,7 +288,7 @@
 
                     color: #000;
                     text-align: center;
-                    font-family: Helvetica;
+                    font-family: HelveticaBold, sans-serif;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
@@ -358,7 +369,7 @@
             flex-direction: column;
             gap: 48px;
 
-            padding: 128px 64px 64px 64px;
+            padding: 128px 64px 32px 64px;
 
             .title {
                 display: flex;
@@ -471,7 +482,7 @@
         .support-discount {
             display: flex;
             gap: 24px;
-            padding: 64px;
+            padding: 42px 64px;
 
             .support {
                 display: flex;
@@ -548,7 +559,7 @@
         .big-info-card {
             display: flex;
             flex-direction: column;
-            padding: 64px 64px 128px 64px;
+            padding: 32px 64px 128px 64px;
             gap: 32px;
 
             .info-card-container {
@@ -897,22 +908,25 @@
         .reliable-partner {
             display: flex;
             justify-content: space-between;
-            padding: 64px;
+            padding: 64px 64px 64px 64px;
+            gap: 16px;
 
             .title {
-                color: #000;
+                color: #fff;
                 font-family: HelveticaBold, sans-serif;
                 font-size: 48px;
                 font-style: normal;
                 font-weight: 400;
                 line-height: normal;
+                width: 45%;
+                background: #191C38;
+                padding: 16px;
             }
 
             .blocks-container {
                 display: flex;
                 gap: 16px;
                 height: 210px;
-                width: 64%;
 
                 .block {
                     display: flex;
@@ -960,7 +974,7 @@
             display: flex;
             flex-direction: column;
             justify-content: space-between;
-            padding: 64px;
+            padding: 64px 64px 110px 64px;
             gap: 48px;
 
             .title {
@@ -1022,7 +1036,7 @@
 
         .no-taxes {
             display: flex;
-            padding: 24px 64px 24px 64px;
+            padding: 40px 64px 40px 64px;
             margin: 128px 0px 0px 0px;
             background-color: #fff;
             gap: 48px;
@@ -1460,22 +1474,35 @@
             }
 
             .reliable-partner {
+                padding: 8px 16px 64px 16px;
                 flex-direction: column;
                 gap: 24px;
-                padding: 32px 16px 32px 16px;
 
                 .title {
-                    font-size: 32px;
+                    color: #000;
+                    font-family: HelveticaBold, sans-serif;
+                    font-size: 48px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+
+                    padding: 0;
+                    background-color: transparent;
                 }
 
                 .blocks-container {
-                    width: 100%;
+                    display: flex;
+                    gap: 16px;
+                    height: auto;
+                    width: auto;
 
                     .block {
-                        img {}
+                        padding: 16px;
+                        flex: 1;
+                        gap: 24px;
+
 
                         .descr {
-                            gap: 8px;
 
                             div:first-child {
                                 font-size: 20px;
