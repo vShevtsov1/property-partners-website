@@ -1139,7 +1139,10 @@
     .cons-free-wrapper {
         .cons-free-container {
             .cons-baner-guide {
+                gap: 20px;
+
                 .cons-free-baner {
+                    padding: 16px 16px 0px 0px;
                     height: 70vh;
                     gap: 40px;
 
@@ -1474,12 +1477,12 @@
             }
 
             .reliable-partner {
-                padding: 8px 16px 64px 16px;
+                padding: 48px 16px 64px 16px;
                 flex-direction: column;
                 gap: 24px;
 
                 .title {
-                    color: #000;
+                    color: #191C38;
                     font-family: HelveticaBold, sans-serif;
                     font-size: 48px;
                     font-style: normal;
@@ -1505,6 +1508,7 @@
                         .descr {
 
                             div:first-child {
+                                color: #191C38;
                                 font-size: 20px;
                             }
 
@@ -1521,6 +1525,7 @@
                 gap: 32px;
 
                 .title {
+                    color: #191C38;
                     font-size: 32px;
                 }
 
@@ -1535,7 +1540,9 @@
                         .descr {
                             gap: 8px;
 
-                            div:first-child {}
+                            div:first-child {
+                                color: #191C38;
+                            }
 
                             div:last-child {}
                         }
@@ -1606,7 +1613,7 @@
 
                     .content {
                         width: 100%;
-                        padding: 0px 16px 0px 16px;
+                        padding: 0px 0px 0px 16px;
                         gap: 24px;
 
                         .title {
@@ -1670,6 +1677,7 @@
             }
 
             .registring {
+                padding-top: 0px;
 
                 .title {
                     div:first-child {}
@@ -1698,7 +1706,7 @@
 
 
             .table {
-
+                padding-bottom: 32px;
 
                 .table-row {
 
@@ -1777,8 +1785,10 @@
             }
 
             .big-info-card {
+                padding-bottom: 32px;
+
                 .info-card-container {
-                    gap: 96px;
+                    gap: 32px;
 
                     .top-content {
                         padding: 16px;
@@ -1896,7 +1906,9 @@
                     flex-direction: column;
                     gap: 8px;
 
-                    .card {
+                    .card:last-child {
+                        display: none;
+
                         .content {
 
                             div:first-child {}
@@ -1914,13 +1926,14 @@
             }
 
             .access {
+                padding: 32px 16px 32px 16px;
 
                 .title {
                     font-size: 16px;
                 }
 
                 .blocks-container {
-                    padding: 0px 0px 64px 0px;
+                    padding: 0px 0px 32px 0px;
                     display: flex;
                     flex-wrap: wrap;
                     gap: 7px;
@@ -1947,7 +1960,7 @@
 
             .no-taxes {
                 padding: 16px 16px 16px 16px;
-                margin: 96px 0px 0px 0px;
+                margin: 58px 0px 0px 0px;
                 background-color: transparent;
                 gap: 0px;
 

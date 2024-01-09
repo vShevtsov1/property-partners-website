@@ -9,13 +9,18 @@ import {
     useMapsLibrary
 } from '@vis.gl/react-google-maps';
 import { useEffect, useState } from "react";
-import "../styles/realEstate.css"
+import "../styles/realEstate.scss"
 import Filter from "../components/Filter.jsx";
 import Project from "../components/Project.jsx";
 import Feedback from "../components/Feedback.jsx";
 import Footer from "../components/Footer.jsx";
+import Marker from "../components/Marker.jsx";
 import axios from "axios";
 import { useTranslation } from "react-i18next";
+import {
+    InfoWindow,
+    useAdvancedMarkerRef
+} from '@vis.gl/react-google-maps';
 
 const RealEstate = () => {
     const [mapZoom, setMapZoom] = useState(10);
@@ -23,7 +28,9 @@ const RealEstate = () => {
     const [visibleProjects, setVisibleProjects] = useState([])
     const { t } = useTranslation();
     const map = useMap();
-    const [projectPerView,setprojectsPerView] = useState(10)
+    const [projectPerView, setprojectsPerView] = useState(10)
+    const [infowindowOpen, setInfowindowOpen] = useState(true);
+    const [markerRef, marker] = useAdvancedMarkerRef();
     useEffect(() => {
         let config = {
             method: 'get',
@@ -41,7 +48,7 @@ const RealEstate = () => {
             });
     }, []);
     function convertPriceToShortFormat(price) {
-        price = (Number(price)/3.16).toFixed(0).toString()
+        price = (Number(price) / 3.16).toFixed(0).toString()
         const suffixes = ['', 'K', 'M', 'B', 'T'];
         let suffixIndex = 0;
 
@@ -115,31 +122,26 @@ const RealEstate = () => {
                             <MapControl position={ControlPosition.TOP_LEFT}>
 
                             </MapControl>
+
                             {visibleProjects.map((marker, index) => (
-                                <AdvancedMarker
-                                    key={index}
-                                    onClick={() => window.open(`/project/${marker._id}`)}
-                                    className={"marker"}
-                                    position={{ lat: Number(marker.lat), lng: Number(marker.lng) }}>
-                                    <div style={{ borderRadius: mapZoom < 13 ? 20 : 5, padding: mapZoom < 13 ? 7 : 0 }}>
-                                        <div style={{ display: mapZoom < 13 ? "none" : "block" }} className="price">
-                                            {convertPriceToShortFormat(marker.priceFrom)}
-                                        </div>
-                                    </div>
-                                </AdvancedMarker>
+                                <Marker key={index}
+                                    index={index}
+                                    mapZoom={mapZoom}
+                                    project={marker}
+                                />
                             ))}
                         </Map>
                     </APIProvider>
                 </div>
                 <div className="projects">
                     {
-                        projects.slice(0,projectPerView).map((project, index) => (
+                        projects.slice(0, projectPerView).map((project, index) => (
                             <Project project={project} key={index} />
                         ))
                     }
 
-                    {projectPerView<projects.length&&<div className="show-more-wrapper">
-                        <div className="show-more" onClick={()=>setprojectsPerView(projectPerView+10)}>Show more</div>
+                    {projectPerView < projects.length && <div className="show-more-wrapper">
+                        <div className="show-more" onClick={() => setprojectsPerView(projectPerView + 10)}>Show more</div>
                     </div>}
 
                 </div>
@@ -155,7 +157,7 @@ const RealEstate = () => {
             </div>
             <Feedback />
             <Footer />
-        </div>
+        </div >
     );
 
 };

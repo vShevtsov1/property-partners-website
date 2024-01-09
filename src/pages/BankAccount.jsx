@@ -30,7 +30,7 @@ import headset from "../assets/freezone/headset.svg";
 import legal from "../assets/freezone/legal.svg";
 import over from "../assets/freezone/over.svg";
 import world from "../assets/freezone/world.svg";
-
+import ConsulatingBaner from "../components/ConsulatingBaner"
 
 import arrowButton from "../assets/arrow-left.png";
 
@@ -44,27 +44,12 @@ function BankAccount() {
             <Header></Header>
             <div className="bank-acc-container">
                 <div className="bank-baner-guide">
-                    <div className="bank-free-baner">
-                        <div className="content">
-                            <div className="title">
-                                <div>Company registration in the UAE, Legal and Accounting Support</div>
-                                <div>Remote business registration and launch of all operational processes</div>
-                            </div>
-                            <div className="image">
-                                <img src={accountaingBaner} alt="" />
-                            </div>
-                            {/* <div className="leave-a-request" onClick={setShowModal}> */}
-                            <div className="leave-a-request">
-                                Consultation
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M16.172 10.9997L10.808 5.63568L12.222 4.22168L20 11.9997L12.222 19.7777L10.808 18.3637L16.172 12.9997H4V10.9997H16.172Z" fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="image">
-                            <img src={accountaingBaner} alt="" />
-                        </div>
-                    </div>
+                    <ConsulatingBaner
+                        img={accountaingBaner}
+                        title="Bank account opening"
+                        description={['Our job is to prove to the banks your legitimacy and transparency of your funds. Since we know how the banking system works in the UAE, we show and convince the bank the following with full confidence and step by step:']}
+                        setShowModal="showModal"
+                    />
                     <div className="guide-blocks">
                         <div className="guide-block">
                             <div>01</div>
@@ -215,40 +200,6 @@ function BankAccount() {
 
                 <GetAdvice />
 
-                <div className="our-services">
-                    <div className="title">
-                        <div>Our services</div>
-                        <div className="buttons-container">
-                            <div className="button">
-                                <img src={arrowButton} alt="" />
-                            </div>
-                            <div className="button rotate180deg">
-                                <img src={arrowButton} alt="" />
-                            </div>
-                        </div>
-                    </div>
-                    <div className="card-container">
-                        <div className="card">
-                            <div className="content">
-                                <div>Business structuring in new realities</div>
-                                <div>Selection of the optimal zone in the UAE for company setup Development of an optimal corporate structure with a simultaneous presence in the UAE and Russia</div>
-                            </div>
-                            <div className="button">
-                                Read more
-                            </div>
-                        </div>
-
-                        <div className="card">
-                            <div className="content">
-                                <div>Commercial and operational</div>
-                                <div>Development of a commercialization model and cash flow structure Assessment of the need to obtain licenses, permits, membership in SROs for certain types of activities</div>
-                            </div>
-                            <div className="button">
-                                Read more
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
                 <div className="no-taxes">
                     <div className="content">

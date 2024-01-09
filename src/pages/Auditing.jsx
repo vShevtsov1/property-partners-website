@@ -11,6 +11,7 @@ import egypt from "../assets/minLand/egypt.svg";
 import turkey from "../assets/minLand/turkey.svg";
 import usa from "../assets/minLand/usa.svg";
 import GetConsult from "../components/GetConsult"
+import ConsulatingBaner from "../components/ConsulatingBaner"
 
 import alexLogachevName from "../assets/teams/alex-logachev-min.jpg";
 import qrAlex from "../assets/teams/qr/qr-alex.svg";
@@ -112,26 +113,12 @@ function Auditing() {
             <Header></Header>
             <div className="auditing-container">
                 <div className="auditing-baner-guide">
-                    <div className="auditing-baner">
-                        <div className="content">
-                            <div className="title">
-                                <div> Accounting and auditing services in the UAE</div>
-                                <div>Building management reporting and all administrative issues related to taxes and accounting</div>
-                            </div>
-                            <div className="image">
-                                <img src={accountaingBaner} alt="" />
-                            </div>
-                            <div className="leave-a-request" onClick={setShowModal}>
-                                Consultation
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M16.172 10.9997L10.808 5.63568L12.222 4.22168L20 11.9997L12.222 19.7777L10.808 18.3637L16.172 12.9997H4V10.9997H16.172Z" fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="image">
-                            <img src={accountaingBaner} alt="" />
-                        </div>
-                    </div>
+                    <ConsulatingBaner
+                        img={accountaingBaner}
+                        title="Accounting and auditing services in the UAE"
+                        description={['Building management reporting and all administrative issues related to taxes and accounting']}
+                        setShowModal="showModal"
+                    />
                     <div className="guide-blocks">
                         <div className="guide-block">
                             <div>We will submit the reports on time and without errors</div>

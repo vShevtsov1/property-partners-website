@@ -30,7 +30,8 @@
           font-size: 60px;
           font-style: normal;
           font-weight: 400;
-          line-height: 120%; /* 72px */
+          line-height: 120%;
+          /* 72px */
         }
 
         div:last-child {
@@ -67,11 +68,14 @@
             font-size: 16px;
             font-style: normal;
             font-weight: 400;
-            line-height: 19.2px; /* 120% */
+            line-height: 19.2px;
+            /* 120% */
           }
-          a{
+
+          a {
             min-width: 50%;
             cursor: pointer;
+
             .learn-more {
 
               display: flex;
@@ -125,7 +129,8 @@
         font-size: 48px;
         font-style: normal;
         font-weight: 400;
-        line-height: 120%; /* 57.6px */
+        line-height: 120%;
+        /* 57.6px */
       }
 
       div:last-child {
@@ -144,7 +149,7 @@
       height: 100%;
       display: flex;
       flex-wrap: wrap;
-      gap:33px;
+      gap: 33px;
 
       .collection {
         height: 500px;
@@ -152,6 +157,7 @@
         flex-direction: column;
         gap: 12px;
         width: 48%;
+
         .image {
           width: 100%;
           min-height: 70%;
@@ -181,7 +187,8 @@
             gap: 24px;
             width: 100%;
 
-              justify-content: space-between;
+            justify-content: space-between;
+
             .tittle {
               width: 30%;
               color: #191C38;
@@ -189,7 +196,8 @@
               font-size: 48px;
               font-style: normal;
               font-weight: 400;
-              line-height: 57.6px; /* 120% */
+              line-height: 57.6px;
+              /* 120% */
             }
 
 
@@ -213,7 +221,8 @@
                 font-size: 16px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 19.2px; /* 120% */
+                line-height: 19.2px;
+                /* 120% */
               }
             }
 
@@ -377,7 +386,7 @@
       flex: 1;
       display: flex;
       flex-direction: column;
-     justify-content: flex-end;
+      justify-content: flex-end;
       gap: 30px;
 
       .tittle {
@@ -386,7 +395,8 @@
         font-size: 48px;
         font-style: normal;
         font-weight: 400;
-        line-height: 120%; /* 57.6px */
+        line-height: 120%;
+        /* 57.6px */
       }
 
       .types {
@@ -539,7 +549,8 @@
           font-size: 24px;
           font-style: normal;
           font-weight: 400;
-          line-height: 160%; /* 38.4px */
+          line-height: 160%;
+          /* 38.4px */
         }
       }
     }
@@ -557,7 +568,8 @@
       font-size: 48px;
       font-style: normal;
       font-weight: 400;
-      line-height: 120%; /* 57.6px */
+      line-height: 120%;
+      /* 57.6px */
     }
 
     .team {
@@ -566,8 +578,10 @@
       gap: 20px;
       display: flex;
       justify-content: space-between;
+
       a {
         width: 23%;
+
         .member {
           background: #FFF;
           width: 100%;
@@ -651,7 +665,8 @@
         font-size: 16px;
         font-style: normal;
         font-weight: 400;
-        line-height: 19.2px; /* 120% */
+        line-height: 19.2px;
+        /* 120% */
       }
 
     }
@@ -660,7 +675,7 @@
   .contact-form {
     display: flex;
     padding: 0px 125px 0px 125px;
-   justify-content: center;
+    justify-content: center;
     gap: 142px;
     background: white;
     align-items: flex-end;
@@ -700,7 +715,8 @@
           font-size: 26px;
           font-style: normal;
           font-weight: 400;
-          line-height: 120%; /* 28.8px */
+          line-height: 120%;
+          /* 28.8px */
         }
 
         div:last-child {
@@ -789,6 +805,7 @@
         display: flex;
         height: auto;
         margin-top: -60px;
+
         .content {
           padding: 16px;
           width: 100%;
@@ -808,7 +825,8 @@
               font-size: 32px;
               font-style: normal;
               font-weight: 400;
-              line-height: 120%; /* 38.4px */
+              line-height: 120%;
+              /* 38.4px */
             }
 
             div:last-child {
@@ -836,7 +854,8 @@
                 font-size: 14px;
                 font-style: normal;
                 font-weight: 400;
-                line-height: 19.2px; /* 137.143% */
+                line-height: 19.2px;
+                /* 137.143% */
               }
 
               .learn-more {
@@ -871,9 +890,9 @@
       .content {
         .collection {
           gap: 8px;
-          flex-direction: column!important;
-          height: auto!important;
-          width: 100%!important;
+          flex-direction: column !important;
+          height: auto !important;
+          width: 100% !important;
 
           .image {
             max-width: unset;
@@ -895,7 +914,7 @@
               max-width: 100%;
 
               .tittle {
-                font-size: 24px!important;
+                font-size: 24px !important;
                 line-height: 25px;
                 width: 100%;
               }
@@ -921,14 +940,14 @@
     }
 
     .why-dubai {
-      padding: 16px!important;
+      padding: 16px !important;
 
-      height: auto!important;
-      display: grid!important;
-      grid-template-columns: repeat(2, auto)!important;
-      grid-template-rows: repeat(4, 1fr)!important;
-      grid-column-gap: 8px!important;
-      grid-row-gap: 8px!important;
+      height: auto !important;
+      display: grid !important;
+      grid-template-columns: repeat(2, auto) !important;
+      grid-template-rows: repeat(4, 1fr) !important;
+      grid-column-gap: 8px !important;
+      grid-row-gap: 8px !important;
 
       .div1 {
         grid-area: 3 / 2 / 5 / 3;
@@ -1006,6 +1025,7 @@
       padding: 16px;
       gap: 10px;
       margin-top: -20px;
+
       .tittle {
         gap: 5px;
 
@@ -1022,8 +1042,8 @@
         gap: 8px;
 
         .image {
-          padding: 0!important;
-          width: 100%!important;
+          padding: 0 !important;
+          width: 100% !important;
 
           img {
             width: 100%;
@@ -1070,10 +1090,12 @@
               .position {
                 font-size: 14px;
               }
-            ;
+
+              ;
             }
-            .social{
-              svg:nth-child(n+5){
+
+            .social {
+              svg:nth-child(n+5) {
                 display: none;
               }
             }
@@ -1088,30 +1110,36 @@
         }
       }
     }
-    .contact-form{
+
+    .contact-form {
       padding: 16px;
       width: 100%;
       margin-bottom: -24px;
 
-      .image{
+      .image {
         display: none;
       }
-      .contact-form-form{
+
+      .contact-form-form {
         gap: 15px;
-        flex-direction: column!important;
-        .tittle{
+        flex-direction: column !important;
+
+        .tittle {
           gap: 10px;
-          div:first-child{
+
+          div:first-child {
             font-size: 18px;
           }
         }
-        .form{
-          .form-input{
-            input{
+
+        .form {
+          .form-input {
+            input {
               background: none;
             }
           }
         }
+
         width: 100%;
         padding: 0;
       }
@@ -1120,30 +1148,36 @@
 }
 
 @media (max-width: 1300px) {
-  .home-page{
-    .home-banner{
+  .home-page {
+    .home-banner {
       height: auto;
-      .content{
+
+      .content {
         height: unset;
-        .tittle{
-          div:first-child{
+
+        .tittle {
+          div:first-child {
             font-size: 40px;
           }
-          div:last-child{
+
+          div:last-child {
             font-size: 16px;
             padding: 0;
           }
         }
-        .advantages{
-          .advantages-wrapper{
+
+        .advantages {
+          .advantages-wrapper {
             max-width: 90%;
-            .advantage{
+
+            .advantage {
               padding: 10px;
               font-size: 14px;
-              font-family: Helvetica,sans-serif;
+              font-family: Helvetica, sans-serif;
             }
-            a{
-              .learn-more{
+
+            a {
+              .learn-more {
                 font-size: 14px;
                 padding: 10px;
               }
@@ -1152,138 +1186,174 @@
           }
         }
       }
-      .image{
+
+      .image {
         width: unset;
         height: unset;
       }
     }
-    .collections{
+
+    .collections {
       gap: 30px;
-      .tittle{
-        div:first-child{
+
+      .tittle {
+        div:first-child {
           font-size: 36px;
         }
-        div:last-child{
+
+        div:last-child {
           font-size: 18px;
         }
       }
-      .content{
+
+      .content {
         gap: 30px;
-        .collection{
+
+        .collection {
           height: 470px;
 
-          .content{
+          .content {
             gap: 10px;
-            .collection-info{
+
+            .collection-info {
               flex-direction: column;
-              gap: 10px!important;
-              .tittle{
+              gap: 10px !important;
+
+              .tittle {
                 width: 100%;
-                font-size: 24px!important;
+                font-size: 24px !important;
                 line-height: unset;
-                &:nth-child(3){
+
+                &:nth-child(3) {
                   font-size: 18px;
                 }
               }
-              div:last-child{
-                .properties{
+
+              div:last-child {
+                .properties {
                   gap: 5px;
                 }
-                gap: 5px!important;
+
+                gap: 5px !important;
               }
             }
           }
         }
       }
     }
-    .why-dubai{
-      height: max-content!important;
-      .dark{
+
+    .why-dubai {
+      height: max-content !important;
+
+      .dark {
         font-size: 36px;
       }
-      .light,.orange{
-        .tittle,.description{
+
+      .light,
+      .orange {
+
+        .tittle,
+        .description {
           font-size: 18px;
         }
       }
     }
-    .kind-of-projects{
+
+    .kind-of-projects {
       padding: 20px 64px;
-      .image{
-        img{
+
+      .image {
+        img {
           object-fit: cover;
         }
       }
-      .content{
-        .tittle{
+
+      .content {
+        .tittle {
           font-size: 36px;
         }
-        .types{
-          .type{
-            .visible-element{
-              .tittle{
+
+        .types {
+          .type {
+            .visible-element {
+              .tittle {
                 font-size: 18px;
               }
             }
-            .hiden-text{
+
+            .hiden-text {
               font-size: 16px;
             }
           }
         }
       }
     }
-    .consulting{
+
+    .consulting {
       padding: 20px 64px;
-      .tittle{
-        div:first-child{
+
+      .tittle {
+        div:first-child {
           font-size: 36px;
         }
-        div:last-child{
+
+        div:last-child {
           font-size: 18px;
         }
       }
-      .content{
+
+      .content {
         gap: 20px;
-        .image{
+
+        .image {
           width: 50%;
           display: flex;
           background: unset;
           justify-content: flex-start;
           align-items: flex-start;
-          img{
+
+          img {
             object-fit: contain;
             object-position: top;
           }
+
           padding: 5px;
         }
-        .consulting-content{
-          .consult{
+
+        .consulting-content {
+          .consult {
             font-size: 16px;
           }
         }
       }
     }
-    .our-team{
+
+    .our-team {
       padding: 20px 64px;
-      .team{
-        .member{
-          .member{
-            .image{
+
+      .team {
+        .member {
+          .member {
+            .image {
               height: 250px;
             }
-            .information{
+
+            .information {
               padding: 15px;
               gap: 18px;
-              .social{
-                svg:nth-child(n+5){
+
+              .social {
+                svg:nth-child(n+5) {
                   display: none;
                 }
               }
-              .general-info{
-                .name{
+
+              .general-info {
+                .name {
                   font-size: 18px;
                 }
-                .position{
+
+                .position {
 
                   text-overflow: ellipsis;
                 }
@@ -1293,50 +1363,62 @@
         }
       }
     }
-    .contact-form{
+
+    .contact-form {
 
       gap: 65px;
-      .contact-form-form{
+
+      .contact-form-form {
         padding: 10px;
-        .tittle{
+
+        .tittle {
           gap: 5px;
-          div:first-child{
+
+          div:first-child {
             font-size: 18px;
           }
-          div:last-child{
+
+          div:last-child {
             font-size: 16px;
           }
         }
       }
     }
-    .partners{
+
+    .partners {
       padding: 10px 64px;
     }
   }
 }
+
 @media (max-width: 650px) {
-  .home-page{
-    .our-team{
+  .home-page {
+    .our-team {
       padding: 20px 64px;
-      .team{
-        .member{
-          .member{
-            .image{
+
+      .team {
+        .member {
+          .member {
+            .image {
               height: 250px;
             }
-            .information{
+
+            .information {
               padding: 15px;
               gap: 18px;
-              .social{
-                svg:nth-child(n+4){
+
+              .social {
+                svg:nth-child(n+4) {
                   display: none;
                 }
               }
-              .general-info{
-                .name{
+
+              .general-info {
+                .name {
                   font-size: 18px;
                 }
-                .position{
+
+                .position {
 
                   text-overflow: ellipsis;
                 }
@@ -1348,20 +1430,25 @@
     }
   }
 }
+
 @media (max-width: 870px) {
-  .home-page{
-    .partners{
+  .home-page {
+    .partners {
       display: none;
     }
-    .home-banner{
-      .content{
+
+    .home-banner {
+      .content {
         padding-left: 16px;
-        .advantages{
+
+        .advantages {
           width: 100%;
-          .advantages-wrapper{
-            .advantage{
+
+          .advantages-wrapper {
+            .advantage {
               padding: 8px 12px 8px 8px;
-              gap: 8px;font-size: 14px;
+              gap: 8px;
+              font-size: 14px;
 
             }
           }
@@ -1369,61 +1456,75 @@
         }
       }
     }
-    .collections{
+
+    .collections {
       padding: 30px 16px;
-      .image{
+
+      .image {
         max-width: 50vw;
       }
-      .content{
+
+      .content {
         flex-direction: column;
-        .collection{
+
+        .collection {
           flex-direction: row;
           width: 100%;
           height: 100%;
           align-items: flex-end;
-          .content{
+
+          .content {
             height: 100%;
             justify-content: flex-end;
           }
         }
       }
     }
-    .why-dubai{
+
+    .why-dubai {
       height: 40vh;
       padding: 30px 16px;
       grid-template-columns: repeat(4, 25%);
       grid-template-rows: repeat(2, auto);
     }
-    .kind-of-projects{
+
+    .kind-of-projects {
       padding: 30px 16px;
 
     }
-    .consulting{
+
+    .consulting {
       padding: 30px 16px;
 
     }
-    .our-team{
+
+    .our-team {
       padding: 30px 16px;
 
-      .team{
+      .team {
         gap: 5px;
       }
     }
-    .contact-form{
+
+    .contact-form {
       padding: 30px 16px;
 
-      .image{
+      .image {
         display: none;
       }
-      .contact-form-form{
+
+      .contact-form-form {
         width: 100%;
-        .tittle{
+
+        .tittle {
           gap: 15px;
         }
+
         display: flex;
         flex-direction: row;
-        .form{
-          .form-text{
+
+        .form {
+          .form-text {
             display: none;
           }
         }

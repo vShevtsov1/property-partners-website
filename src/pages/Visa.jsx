@@ -28,6 +28,7 @@ import allaGerassimova from "../assets/teams/qr/alla-gerassimova.png";
 import dmitriyKoltsovName from "../assets/teams/dmitriy-koltsov-min.jpg";
 import dmitriyKoltsov from "../assets/teams/qr/dmitriy-koltsov.png";
 import RequestModal from "../components/RequestModal.jsx";
+import ConsulatingBaner from "../components/ConsulatingBaner"
 
 function Visa() {
     const { t } = useTranslation();
@@ -111,26 +112,13 @@ function Visa() {
             <Header></Header>
             <div className="visa-container">
                 <div className="visa-baner-guide">
-                    <div className="visa-baner">
-                        <div className="content">
-                            <div className="title">
-                                <div>UAE resident visa issuance</div>
-                                <div></div>
-                            </div>
-                            <div className="image">
-                                <img src={accountaingBaner} alt="" />
-                            </div>
-                            <div className="leave-a-request" onClick={setShowModal}>
-                                Consultation
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M16.172 10.9997L10.808 5.63568L12.222 4.22168L20 11.9997L12.222 19.7777L10.808 18.3637L16.172 12.9997H4V10.9997H16.172Z" fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="image">
-                            <img src={accountaingBaner} alt="" />
-                        </div>
-                    </div>
+                    <ConsulatingBaner
+                        img={accountaingBaner}
+                        title="UAE resident visa issuance"
+                        description={['We open a company remotely and prepare for the launch of operational activities']}
+                        scroll={"detail"}
+                        setShowModal="showModal"
+                    />
                     <div className="guide-blocks">
                         <div className="guide-block">
                             <div>01</div>
@@ -154,7 +142,7 @@ function Visa() {
                         </div>
                     </div>
                 </div>
-                <div className="detail">
+                <div id="detail" className="detail">
                     <div>We'll detail each option and assist in choosing the most suitable one. The residence permit process will be made as comfortable as possible for you. </div>
                     <div>There are more than 10 residence permit programs in the UAE</div>
                 </div>
@@ -422,7 +410,7 @@ function Visa() {
                     </div>
                 </div>
 
-                <div className="how-long">
+                <div id="areas-title" className="how-long">
                     <div className="content">
                         <div className="title">
                             <div>How long are visas issued for</div>

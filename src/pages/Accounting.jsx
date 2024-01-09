@@ -25,7 +25,7 @@ import Header from "../components/Header"
 import Footer from "../components/Footer"
 import { useTranslation } from "react-i18next";
 import React, { useState } from "react";
-
+import ConsulatingBaner from "../components/ConsulatingBaner"
 
 
 const Accounting = () => {
@@ -108,26 +108,11 @@ const Accounting = () => {
         <Header />
         <div className="accounting-container">
             <div className="accounting-guide">
-                <div className="accounting-baner">
-                    <div className="content">
-                        <div className="title">
-                            <div>{t("j_tile")}</div>
-                            <div>{t("j_text")}</div>
-                        </div>
-                        <div className="image">
-                            <img src={accountaingBaner} alt="" />
-                        </div>
-                        <div className="leave-a-request" onClick={setShowModal}>
-                            {t("j_but")}
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M16.172 10.9997L10.808 5.63568L12.222 4.22168L20 11.9997L12.222 19.7777L10.808 18.3637L16.172 12.9997H4V10.9997H16.172Z" fill="white" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div className="image">
-                        <img src={accountaingBaner} alt="" />
-                    </div>
-                </div>
+                <ConsulatingBaner
+                    img={accountaingBaner}
+                    title="Employment of employees in the UAE and obtaining a residence permit"
+                    description={['Registration of employees in a company registered in the Mainland or Free Zone']}
+                />
                 <div className="guide-blocks">
                     <div className="guide-block">
                         <div>{t("j_text1")}</div>

@@ -11,6 +11,7 @@ import egypt from "../assets/minLand/egypt.svg";
 import turkey from "../assets/minLand/turkey.svg";
 import usa from "../assets/minLand/usa.svg";
 import GetConsult from "../components/GetConsult"
+import ConsulatingBaner from "../components/ConsulatingBaner"
 
 import alexLogachevName from "../assets/teams/alex-logachev-min.jpg";
 import qrAlex from "../assets/teams/qr/qr-alex.svg";
@@ -108,26 +109,13 @@ function MinLand() {
             <Header></Header>
             <div className="minland-container">
                 <div className="minland-baner-guide">
-                    <div className="minland-baner">
-                        <div className="content">
-                            <div className="title">
-                                <div >Set up of A LOCAL COMPANY IN THE UAE</div>
-                                <div>We open a company remotely and prepare for the launch of operational activities</div>
-                            </div>
-                            <div className="image">
-                                <img src={accountaingBaner} alt="" />
-                            </div>
-                            <div className="leave-a-request" onClick={setShowModal}>
-                                Consultation
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M16.172 10.9997L10.808 5.63568L12.222 4.22168L20 11.9997L12.222 19.7777L10.808 18.3637L16.172 12.9997H4V10.9997H16.172Z" fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="image">
-                            <img src={accountaingBaner} alt="" />
-                        </div>
-                    </div>
+                    <ConsulatingBaner
+                        img={accountaingBaner}
+                        title="Set up of a local company in the UAE"
+                        description={['We open a company remotely and prepare for the launch of operational activities']}
+                        scroll="process-of-setuping"
+                        setShowModal="showModal"
+                    />
                     <div className="guide-blocks">
                         <div className="guide-block">
                             <div>01</div>
@@ -147,7 +135,7 @@ function MinLand() {
                         </div>
                     </div>
                 </div>
-                <div className="process-of-setuping">
+                <div id="process-of-setuping" className="process-of-setuping">
                     <div className="page-title">The process of setuping and administering a business in the Mainland is different from the Free zone </div>
                     <div>In the case of Free Zone, the registrar and the supervisory authority are loyal private companies that manage free zones. In the case of Mainland, the registering and controlling body is a state structure – the economic department of the relevant emirate. In this regard, doing business on the Mainland is subject to much more control and regulation.</div>
                 </div>
@@ -691,29 +679,9 @@ function MinLand() {
                     </div>
                 </div>
 
-                <div className="main-services">
-                    <div className="sercives-title">
-                        The main services of the company
-                    </div>
-                    <div className="cards-container">
-                        <div className="card">
-                            Business setup and structuring in the UAE
-                        </div>
-                        <div className="card">
-                            Support of commercial and operational activities in the UAE
-                        </div>
-                        <div className="card">
-                            Tax planning and optimization
-                        </div>
-                        <div className="card">
-                            Services for business owners
-                        </div>
-                    </div>
-                </div>
-
                 <div className="numbers">
                     <div className="clients">
-                        <div>200+</div>
+                        <div>40+</div>
                         <div>Clients</div>
                     </div>
                     <div className="employees-companies">
@@ -728,38 +696,6 @@ function MinLand() {
                         </div>
                     </div>
                 </div >
-
-                <div className="offices">
-                    <div className="offices-page-title">
-                        Offices in three countries
-                    </div>
-
-                    <div className="countries">
-                        <div className="country-block">
-                            <img src={egypt} alt="" />
-                            <div className="text">
-                                <div>UAE,
-                                    Dubai</div>
-                                <div>IFZA Business Center, Building A, office 301</div>
-                            </div>
-                        </div>
-                        <div className="country-block">
-                            <img src={turkey} alt="" />
-                            <div className="text">
-                                <div>Turkey, Istanbul</div>
-                                <div>Sinpaş Queen Bomonti Rezidans, 37nd floor</div>
-                            </div>
-                        </div>
-                        <div className="country-block">
-                            <img src={usa} alt="" />
-                            <div className="text">
-                                <div>UAE,
-                                    Dubai</div>
-                                <div>Opening soon</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
             </div>
             <RequestModal showModal={showModal} closeModal={closeModal} modalText={{ tittleText: t("modalHeader"), buttonText: t("modalButton") }} image={team[randomNumber].image} />
             <Footer></Footer>

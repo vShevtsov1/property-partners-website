@@ -1,4 +1,4 @@
-.card {
+.area-card {
     background-color: #fff;
     width: calc(50% - 16px);
 
@@ -47,7 +47,7 @@
 }
 
 @media (max-width: 1300px) {
-    .card {
+    .area-card {
         background-color: #fff;
         width: calc(50% - 8px);
 
@@ -89,7 +89,7 @@
 }
 
 @media (max-width: 768px) {
-    .card {
+    .area-card {
         background-color: #fff;
         width: 100%;
 

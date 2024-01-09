@@ -17,19 +17,8 @@ import Visa from "./pages/Visa.jsx"
 import Auditing from "./pages/Auditing.jsx"
 import TradeMark from "./pages/TradeMark.jsx"
 import Areas from "./pages/Areas.jsx";
-import BusinessPage from "./pages/Areas/BusinessBay.jsx";
-import Palm from "./pages/Areas/Palm.jsx";
-import MBR from "./pages/Areas/MBR.jsx";
-import Creek from "./pages/Areas/Creek.jsx";
-import Marina from "./pages/Areas/Marina.jsx";
-import Lagoons from "./pages/Areas/Lagoons.jsx";
-import JLT from "./pages/Areas/JLT.jsx";
-import MJL from "./pages/Areas/MJL.jsx";
-import Mudon from "./pages/Areas/Mudon.jsx";
-import Bluewaters from "./pages/Areas/Bluewaters.jsx";
-import CentalPark from "./pages/Areas/CentalPark.jsx";
-import DamacHills from "./pages/Areas/DamacHills.jsx";
-import DubaiHills from "./pages/Areas/DubaiHills.jsx";
+import AreaPage from "./pages/AreaPage.jsx";
+import AboutUs from "./pages/AboutUs.jsx";
 
 
 function App() {
@@ -48,7 +37,7 @@ function App() {
       <ScrollToTop />
       <ContactUsModal />
       <PDFmodal closeModal={closePDFModal} showModal={isPDFModalOpen} />
-      <Routes>
+      <Routes >
         <Route path="/" element={<Home openModal={openPDFModal} />} />
         <Route path="/real-estate" element={<RealEstate />} />
         <Route path="/concierge" element={<Concierge />} />
@@ -57,28 +46,15 @@ function App() {
         <Route path="/accounting" element={<Accounting />} />
         <Route path="/consiergefreezone" element={<ConsiergeFreezone />} />
         <Route path="/bank-account" element={<BankAccount />} />
-        <Route path="/power-of-attorney" element={<PowerOfAttorney />} />
+        <Route path="/attorney" element={<PowerOfAttorney />} />
         <Route path="/main-land" element={<MinLand />} />
         <Route path="/visa" element={<Visa />} />
         <Route path="/auditing" element={<Auditing />} />
-        <Route path="/trademark" element={<TradeMark />} />
+        <Route path="/trademark-registration" element={<TradeMark />} />
         <Route path="/areas" element={<Areas />} />
 
-        <Route path="/business-bay" element={<BusinessPage />} />
-        <Route path="/palm-jumeirah" element={<Palm />} />
-        <Route path="/mbr-city" element={<MBR />} />
-        <Route path="/creek-harbour" element={<Creek />} />
-
-        <Route path="/dubai-marina" element={<Marina />} />
-        <Route path="/damac-lagoons" element={<Lagoons />} />
-        <Route path="/jlt" element={<JLT />} />
-        <Route path="/mjl" element={<MJL />} />
-        <Route path="/mudon" element={<Mudon />} />
-
-        <Route path="/bluewaters" element={<Bluewaters />} />
-        <Route path="/cental-park" element={<CentalPark />} />
-        <Route path="/damac-hills" element={<DamacHills />} />
-        <Route path="/dubai-hills" element={<DubaiHills />} />
+        <Route path="/area-page/:id" element={<AreaPage />} />
+        <Route path="/about-us" element={<AboutUs />} />
 
       </Routes>
 

@@ -1,4 +1,4 @@
-import "../styles/header.css"
+import "../styles/header.scss"
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
@@ -7,11 +7,11 @@ import i18next from "i18next";
 import * as i18n from "i18next";
 const Header = () => {
     const [phoneMenuVisible, setPhoneMenuVisible] = useState(false);
-    const [consultingTabletVisible,setConsultingTabletVisible] = useState(false);
+    const [consultingTabletVisible, setConsultingTabletVisible] = useState(false);
     const [TabletMenuVisible, setTabletMenuVisible] = useState(false);
     const { t } = useTranslation();
     const [activeLanguage, setActiveLanguage] = useState(i18next.language)
-    const [consultingVisible,setConsultingVisible] = useState(false)
+    const [consultingVisible, setConsultingVisible] = useState(false)
 
     return (<header>
         <Link to={"/"}> <div className="logo-container">
@@ -50,9 +50,12 @@ const Header = () => {
         <div className="menu">
             <Link to={"/"}><div className="menu-option">{t('header_option0')}</div></Link>
             <Link to={"/real-estate"}><div className="menu-option">{t('header_option1')}</div></Link>
-            <div className="menu-option">Areas</div>
-            <div className="menu-option" onClick={()=>setConsultingVisible(!consultingVisible)}>{t('header_option2')}</div>
+            <Link to={"/areas"}>
+                <div className="menu-option">Areas</div>
+            </Link>
+            <div className="menu-option" onClick={() => setConsultingVisible(!consultingVisible)}>{t('header_option2')}</div>
             <Link to={"/concierge"}> <div className="menu-option">{t('header_option3')}</div></Link>
+            <Link to={"/about-us"}> <div className="menu-option">About us</div></Link>
         </div>
         <div className="phone-view">
             <div className="visible-items">
@@ -110,7 +113,7 @@ const Header = () => {
                         </svg>
                     </div>
 
-                    {!consultingTabletVisible&&<div className="menu-options">
+                    {!consultingTabletVisible && <div className="menu-options">
                         <Link to={"/"}> <div className="menu-option">
                             {t('header_option0')}
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
@@ -123,13 +126,13 @@ const Header = () => {
                                 <path d="M0.933333 15.8002L0 14.8669L6.86667 8.0002L0 1.13353L0.933333 0.200195L8.73333 8.0002L0.933333 15.8002Z" fill="#191C38" />
                             </svg>
                         </div></Link>
-                       <div className="menu-option">
+                        <Link to={"/areas"}> <div className="menu-option">
                             Areas
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
                                 <path d="M0.933333 15.8002L0 14.8669L6.86667 8.0002L0 1.13353L0.933333 0.200195L8.73333 8.0002L0.933333 15.8002Z" fill="#191C38" />
                             </svg>
-                        </div>
-                        <div onClick={()=>setConsultingTabletVisible(true)} className="menu-option">
+                        </div></Link>
+                        <div onClick={() => setConsultingTabletVisible(true)} className="menu-option">
                             {t('header_option2')}
                             <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
                                 <path d="M0.933333 15.8002L0 14.8669L6.86667 8.0002L0 1.13353L0.933333 0.200195L8.73333 8.0002L0.933333 15.8002Z" fill="#191C38" />
@@ -143,34 +146,60 @@ const Header = () => {
                                 </svg>
                             </div>
                         </Link>
+                        <Link to={"/about-us"}>
+                            <div className="menu-option">
+                                About us
+                                <svg xmlns="http://www.w3.org/2000/svg" width="9" height="16" viewBox="0 0 9 16" fill="none">
+                                    <path d="M0.933333 15.8002L0 14.8669L6.86667 8.0002L0 1.13353L0.933333 0.200195L8.73333 8.0002L0.933333 15.8002Z" fill="#191C38" />
+                                </svg>
+                            </div>
+                        </Link>
                     </div>}
-                    {consultingTabletVisible&& <div className="consulting-options">
-                        <div className="option">
-                            Visa
-                        </div>
-                        <div className="option">
-                            Mainland
-                        </div>
-                        <div className="option">
-                            Bank account
-                        </div>
-                        <div className="option">
-                            Company registration
-                        </div>
-                        <div className="option">
-                            Accounting
-                        </div>
-                        <div className="option">
-                            Employment
-                        </div>
-                        <div className="option">
-                            Attorney
-                        </div>
-                        <div className="option">
-                            Trademark registration
-                        </div>
+                    {consultingTabletVisible && <div className="consulting-options">
+                        <Link to={"/visa"}>
+                            <div className="option">
+                                Visa
+                            </div>
+                        </Link>
+                        <Link to={"/main-land"}>
+                            <div className="option">
+                                Mainland
+                            </div>
+                        </Link>
+                        <Link to={"/bank-account"}>
+                            <div className="option">
+                                Bank account
+                            </div>
+                        </Link>
+                        <Link to={"/trademark-registration"}>
+                            <div className="option">
+                                Company registration
+                            </div>
+                        </Link>
+                        <Link to={"/accounting"}>
+                            <div className="option">
+                                Accounting
+                            </div>
+                        </Link>
+                        <Link to={"/visa"}>
+                            <div className="option">
+                                Employment
+                            </div>
+                        </Link>
+
+                        <Link to={"/auditing"}>
+                            <div className="option">
+                                Attorney
+                            </div>
+                        </Link>
+
+                        <Link to={"/trademark-registration"}>
+                            <div className="option">
+                                Trademark registration
+                            </div>
+                        </Link>
                     </div>}
-                    {consultingTabletVisible&&<div onClick={()=>setConsultingTabletVisible(false)} className="back-button">
+                    {consultingTabletVisible && <div onClick={() => setConsultingTabletVisible(false)} className="back-button">
                         Back
                     </div>}
 
@@ -196,20 +225,21 @@ const Header = () => {
             </div>}
         </div>
         <div className="tablet-view">
-            <svg onClick={()=>setTabletMenuVisible(!TabletMenuVisible)} xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
-                <path d="M8.33301 20H29.9997" stroke="white" stroke-width="5" stroke-linecap="round"/>
-                <path d="M8.33301 28.333H18.333" stroke="white" stroke-width="5" stroke-linecap="round"/>
-                <path d="M8.33301 11.667H24.9997" stroke="white" stroke-width="5" stroke-linecap="round"/>
+            <svg onClick={() => setTabletMenuVisible(!TabletMenuVisible)} xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40" fill="none">
+                <path d="M8.33301 20H29.9997" stroke="white" stroke-width="5" stroke-linecap="round" />
+                <path d="M8.33301 28.333H18.333" stroke="white" stroke-width="5" stroke-linecap="round" />
+                <path d="M8.33301 11.667H24.9997" stroke="white" stroke-width="5" stroke-linecap="round" />
             </svg>
-            {TabletMenuVisible&&<div className="tablet-menu">
-                {!consultingTabletVisible&&<div className="tablet-menu-menu">
+            {TabletMenuVisible && <div className="tablet-menu">
+                {!consultingTabletVisible && <div className="tablet-menu-menu">
                     <div className="option">{t('header_option0')}</div>
                     <div className="option">{t('header_option1')}</div>
                     <div className="option">Areas</div>
-                    <div onClick={()=>setConsultingTabletVisible(true)} className="option">{t('header_option2')}</div>
+                    <div onClick={() => setConsultingTabletVisible(true)} className="option">{t('header_option2')}</div>
                     <div className="option">{t('header_option3')}</div>
+                    <Link to={"/about-us"}> <div className="option">About us</div></Link>
                 </div>}
-                {!consultingTabletVisible&&<div className="language">
+                {!consultingTabletVisible && <div className="language">
                     <div onClick={() => {
                         i18n.changeLanguage("en")
                         localStorage.setItem("lang", "en")
@@ -226,66 +256,102 @@ const Header = () => {
                         setActiveLanguage("ru")
                     }} className={`lang ${activeLanguage === 'ru' ? 'active' : ''}`}>RU</div>
                 </div>}
-                {consultingTabletVisible&& <div className="consulting-options">
+                {consultingTabletVisible && <div className="consulting-options">
                     <div className="options">
-                        <div className="option">
-                            Visa
-                        </div>
-                        <div className="option">
-                            Mainland
-                        </div>
-                        <div className="option">
-                            Bank account
-                        </div>
-                        <div className="option">
-                            Company registration
-                        </div>
-                        <div className="option">
-                            Accounting
-                        </div>
-                        <div className="option">
-                            Employment
-                        </div>
-                        <div className="option">
-                            Attorney
-                        </div>
-                        <div className="option">
-                            Trademark registration
-                        </div>
+                        <Link to={"/visa"}>
+                            <div className="option">
+                                Visa
+                            </div>
+                        </Link>
+                        <Link to={"/main-land"}>
+                            <div className="option">
+                                Mainland
+                            </div>
+                        </Link>
+                        <Link to={"/bank-account"}>
+                            <div className="option">
+                                Bank account
+                            </div>
+                        </Link>
+                        <Link to={"/registration"}>
+                            <div className="option">
+                                Company registration
+                            </div>
+                        </Link>
+                        <Link to={"/accounting"}>
+                            <div className="option">
+                                Accounting
+                            </div>
+                        </Link>
+                        <Link to={"/visa"}>
+                            <div className="option">
+                                Employment
+                            </div>
+                        </Link>
+
+                        <Link to={"/auditing"}>
+                            <div className="option">
+                                Attorney
+                            </div>
+                        </Link>
+
+                        <Link to={"/trademark-registration"}>
+                            <div className="option">
+                                Trademark registration
+                            </div>
+                        </Link>
                     </div>
 
-                    <div onClick={()=>setConsultingTabletVisible(false)} className="back-button">
+                    <div onClick={() => setConsultingTabletVisible(false)} className="back-button">
                         Back
                     </div>
 
                 </div>}
             </div>}
         </div>
-        {consultingVisible&&<div className="consulting-dropdown">
-            <div className="option">
-                Company registration
-            </div>
-            <div className="option">
-                Bank account
-            </div>
-            <div className="option">
-                Mainland
-            </div>
-            <div className="option">
-                Attorney power
-            </div>
-            <div className="option">
-                Resident Visa
-            </div>
-            <div className="option">
-                UAE employment
-            </div>
-            <div className="option">
-                Accounting
-            </div>
-            <div className="option">
-                Trademark registration
-            </div>
+        {consultingVisible && <div className="consulting-dropdown">
+            <Link to={"/visa"}>
+                <div className="option">
+                    Visa
+                </div>
+            </Link>
+            <Link to={"/main-land"}>
+                <div className="option">
+                    Mainland
+                </div>
+            </Link>
+            <Link to={"/bank-account"}>
+                <div className="option">
+                    Bank account
+                </div>
+            </Link>
+            <Link to={"/registration"}>
+                <div className="option">
+                    Company registration
+                </div>
+            </Link>
+            <Link to={"/accounting"}>
+                <div className="option">
+                    Accounting
+                </div>
+            </Link>
+            <Link to={"/auditing"}>
+                <div className="option">
+                    Employment
+                </div>
+            </Link>
+
+            <Link to={"/attorney"}>
+                <div className="option">
+                    Attorney
+                </div>
+            </Link>
+
+            <Link to={"/trademark-registration"}>
+                <div className="option">
+                    Trademark registration
+                </div>
+            </Link>
 
         </div>}
     </header>)

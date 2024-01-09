@@ -118,7 +118,8 @@ header {
       font-style: normal;
       font-weight: 700;
       line-height: normal;
-      white-space: nowrap; /* Prevent text wrapping */
+      white-space: nowrap;
+      /* Prevent text wrapping */
     }
   }
 }
@@ -129,9 +130,11 @@ header {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    .tablet-view{
-      display: none!important;
+
+    .tablet-view {
+      display: none !important;
     }
+
     .logo-container {
       display: none;
     }
@@ -161,8 +164,7 @@ header {
         }
       }
 
-      .top-menu {
-      }
+      .top-menu {}
 
       .phone-menu {
         position: fixed;
@@ -220,11 +222,13 @@ header {
             line-height: normal;
           }
         }
-        .consulting-options{
+
+        .consulting-options {
           display: flex;
           flex-wrap: wrap;
           gap: 8px;
-          .option{
+
+          .option {
             flex: 1;
             display: flex;
             padding: 18px 30px;
@@ -245,7 +249,8 @@ header {
             white-space: nowrap;
           }
         }
-        .back-button{
+
+        .back-button {
           display: flex;
           padding: 18px 30px;
           justify-content: center;
@@ -263,6 +268,7 @@ header {
           font-weight: 700;
           line-height: normal;
         }
+
         .language {
           display: flex;
           gap: 40px;
@@ -314,9 +320,11 @@ header {
     .additional {
       display: none;
     }
-    .tablet-view{
+
+    .tablet-view {
       display: unset;
-      .tablet-menu{
+
+      .tablet-menu {
         position: absolute;
         left: 0;
         background: #FFF;
@@ -327,11 +335,13 @@ header {
         flex-direction: column;
         align-items: center;
         gap: 30px;
-        .tablet-menu-menu{
+
+        .tablet-menu-menu {
 
           display: flex;
-         gap: 60px;
-          .option{
+          gap: 50px;
+
+          .option {
             color: #191C38;
             leading-trim: both;
             text-edge: cap;
@@ -340,8 +350,10 @@ header {
             font-style: normal;
             font-weight: 400;
             line-height: normal;
+            white-space: nowrap;
           }
         }
+
         .language {
           display: flex;
           gap: 40px;
@@ -381,17 +393,20 @@ header {
           }
         }
       }
-      .consulting-options{
+
+      .consulting-options {
         padding: 20px 41px;
         display: flex;
         flex-direction: column;
 
         gap: 8px;
-        .options{
+
+        .options {
           display: flex;
           gap: 8px;
           flex-wrap: wrap;
-          .option{
+
+          .option {
             flex: 1;
             display: flex;
             padding: 18px 30px;
@@ -411,7 +426,7 @@ header {
           }
         }
 
-        .back-button{
+        .back-button {
           cursor: pointer;
           align-self: flex-end;
           width: max-content;
@@ -429,6 +444,25 @@ header {
           font-style: normal;
           font-weight: 700;
           line-height: normal;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 700px) {
+
+  header {
+    .tablet-view {
+
+      .tablet-menu {
+
+
+        .tablet-menu-menu {
+
+          gap: 30px;
+
+          .option {}
         }
       }
     }

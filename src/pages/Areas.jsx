@@ -24,6 +24,7 @@ import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import GetConsult from "../components/GetConsult"
 import AreasCard from "../components/AreasCard";
+import { Link as ScrollLink } from 'react-scroll';
 
 function Areas() {
     const { t } = useTranslation();
@@ -42,32 +43,41 @@ function Areas() {
                             <div className="image">
                                 <img src={areasMain} alt="" />
                             </div>
-                            <Link to="/areas">
-                                <div className="leave-a-request">
-                                    Go to areas
-                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                        <path d="M16.172 10.9997L10.808 5.63568L12.222 4.22168L20 11.9997L12.222 19.7777L10.808 18.3637L16.172 12.9997H4V10.9997H16.172Z" fill="white" />
-                                    </svg>
-                                </div>
-                            </Link>
+
+                            <ScrollLink
+                                to="areas-title"
+                                spy={true}
+                                smooth={true}
+                                offset={-40}
+                                duration={1000}
+                            >
+                                <Link to="/areas">
+                                    <div className="leave-a-request">
+                                        Go to areas
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                                            <path d="M16.172 10.9997L10.808 5.63568L12.222 4.22168L20 11.9997L12.222 19.7777L10.808 18.3637L16.172 12.9997H4V10.9997H16.172Z" fill="white" />
+                                        </svg>
+                                    </div>
+                                </Link>
+                            </ScrollLink>
                         </div>
                         <div className="image">
                             <img src={areasMain} alt="" />
                         </div>
                     </div>
                 </div>
-                <div className="areas-title">
-                    <div>Learn about areas in Dubai for the best investment</div>
+                <div id="areas-title" className="areas-title">
+                    <div >Learn about areas in Dubai for the best investment</div>
                     <div className="description">
                         <div className="text">We prepared detailed description about different areas of Dubai. Each area of Dubai offers its unique blend of cultural richness, modern amenities, and distinctive lifestyle, catering to a diverse array of preferences and experiences.</div>
                     </div>
                 </div>
 
                 <div className="card-container">
-                    <AreasCard img={apart1} name={"Business Bay"} />
-                    <AreasCard img={palm} name={"Palm Jumeirah"} />
-                    <AreasCard img={mbr} name={"MBR City"} />
-                    <AreasCard img={creek} name={"Creek Harbour"} />
+                    <AreasCard img={apart1} name={"Business Bay"} page={"business"} />
+                    <AreasCard img={palm} name={"Palm Jumeirah"} page={"palm"} />
+                    <AreasCard img={mbr} name={"MBR City"} page={"mbr"} />
+                    <AreasCard img={creek} name={"Creek Harbour"} page={"creek"} />
                 </div>
 
                 <div className="get-consult-box">
@@ -75,12 +85,12 @@ function Areas() {
                 </div>
 
                 <div className="card-container">
-                    <AreasCard img={marina} name={"Dubai Marina"} />
-                    <AreasCard img={lagoons} name={"Damac Lagoons"} />
-                    <AreasCard img={jlt} name={"JLT"} />
-                    <AreasCard img={mjl} name={"MJL"} />
-                    <AreasCard img={mudon} name={"Mudon"} />
-                    <AreasCard img={jvc} name={"JVC"} />
+                    <AreasCard img={marina} name={"Dubai Marina"} page={"marina"} />
+                    <AreasCard img={lagoons} name={"Damac Lagoons"} page={"lagoons"} />
+                    <AreasCard img={jlt} name={"JLT"} page={"jlt"} />
+                    <AreasCard img={mjl} name={"MJL"} page={"mjl"} />
+                    <AreasCard img={mudon} name={"Mudon"} page={"mudon"} />
+                    <AreasCard img={jvc} name={"JVC"} page={"jvc"} />
                 </div>
 
                 <div className="contact-us">
@@ -135,10 +145,10 @@ function Areas() {
                 </div>
 
                 <div className="card-container">
-                    <AreasCard img={bluewaters} name={"Bluewaters"} />
-                    <AreasCard img={centralPark} name={"Cental Park"} />
-                    <AreasCard img={domacHills} name={"Damac Hills"} />
-                    <AreasCard img={dubaiHills} name={"Dubai Hills"} />
+                    <AreasCard img={bluewaters} name={"Bluewaters"} page={"bluewaters"} />
+                    <AreasCard img={centralPark} name={"Cental Park"} page={"central-park"} />
+                    <AreasCard img={domacHills} name={"Damac Hills"} page={"damac-hills"} />
+                    <AreasCard img={dubaiHills} name={"Dubai Hills"} page={"dubai-hills"} />
                 </div>
             </div>
             <Footer></Footer>

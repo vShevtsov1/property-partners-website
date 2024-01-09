@@ -13,6 +13,7 @@
                 justify-content: space-between;
                 height: 80vh;
                 gap: 40px;
+                padding: 64px 64px 0px 0px;
 
                 .content {
                     display: flex;
@@ -137,7 +138,7 @@
             flex-direction: column;
             gap: 12px;
 
-            padding: 128px 64px 24px 64px;
+            padding: 64px 64px 24px 64px;
 
             div:first-child {
                 color: #191C38;
@@ -268,7 +269,7 @@
         .what-table {
             display: flex;
             flex-direction: column;
-            gap: 48px;
+            gap: 32px;
             padding: 128px 64px 64px 64px;
 
             .title {
@@ -423,8 +424,8 @@
         .emirates-id {
             display: flex;
             flex-direction: column;
-            gap: 47px;
-            padding: 64px 64px;
+            gap: 32px;
+            padding: 32px 64px;
 
             .title {
                 display: flex;
@@ -721,7 +722,7 @@
         .deadline-grounds {
             display: flex;
             gap: 12px;
-            padding: 64px;
+            padding: 16px 64px;
 
             .block {
                 height: 208px;
@@ -791,6 +792,7 @@
                     display: flex;
                     padding: 24px;
                     background-color: #fff;
+                    width: 100%;
 
                     .left-content {
                         width: 50%;
@@ -1257,7 +1259,7 @@
             .visa-baner-guide {
                 .visa-baner {
                     height: 70vh;
-                    gap: 40px;
+                    gap: 20px;
 
                     .content {
                         width: 49%;
@@ -1311,7 +1313,7 @@
             }
 
             .detail {
-                padding: 16px 16px;
+                padding: 48px 16px 16px 16px;
 
                 div:first-child {
                     font-size: 20px;
@@ -1742,10 +1744,11 @@
     .visa-wrapper {
         .visa-container {
             .visa-baner-guide {
-                gap: 40px;
+                gap: 0px;
 
                 .visa-baner {
                     height: auto;
+                    padding: 0px 0px 16px 0px;
 
                     .content {
                         width: 100%;
@@ -1791,7 +1794,7 @@
                 }
 
                 .guide-blocks {
-                    padding: 96px 16px 96px 16px;
+                    padding: 24px 16px 24px 16px;
                     display: flex;
                     flex-wrap: wrap;
                     gap: 7px;
