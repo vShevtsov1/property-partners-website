@@ -273,17 +273,17 @@ const Header = () => {
                                 Bank account
                             </div>
                         </Link>
-                        <Link to={"/registration"}>
+                        <Link to={"/registrationgeregistrationzone"}>
                             <div className="option">
                                 Company registration
                             </div>
                         </Link>
-                        <Link to={"/accounting"}>
+                        <Link to={"/visa"}>
                             <div className="option">
                                 Accounting
                             </div>
                         </Link>
-                        <Link to={"/visa"}>
+                        <Link to={"/accounting"}>
                             <div className="option">
                                 Employment
                             </div>

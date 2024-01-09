@@ -82,6 +82,7 @@ header {
       font-weight: 400;
       line-height: normal;
       text-transform: capitalize;
+      white-space: nowrap;
     }
   }
 
@@ -484,6 +485,17 @@ header {
 
     .additional {
       order: 3;
+    }
+  }
+}
+
+@media (max-width: 1350px) {
+  header {
+    .menu {
+
+      gap: 44px;
+
+      .menu-option {}
     }
   }
 }

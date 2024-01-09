@@ -112,7 +112,7 @@ function TradeMark() {
                         img={accountaingBaner}
                         title="Trademark registration"
                         description={['Assistance in opening a turnkey business in the UAE and its further support. Company registration and obtaining a residence permit, obtaining all permits and certificates, administrative and accounting support.',
-                            'If you want to protect your intellectual property and establish the rights to your trademark in the UAE, then you are in the right place.']
+                            '']
                         }
                         setShowModal="showModal"
                     />

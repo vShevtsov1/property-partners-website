@@ -44,7 +44,7 @@ function App() {
         <Route path="/project/:id" element={<ProjectCard />} />
         <Route path="/agent" element={<Agent />} />
         <Route path="/accounting" element={<Accounting />} />
-        <Route path="/consiergefreezone" element={<ConsiergeFreezone />} />
+        <Route path="/registration" element={<ConsiergeFreezone />} />
         <Route path="/bank-account" element={<BankAccount />} />
         <Route path="/attorney" element={<PowerOfAttorney />} />
         <Route path="/main-land" element={<MinLand />} />

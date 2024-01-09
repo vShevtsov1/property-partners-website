@@ -11,14 +11,69 @@ import annaHorshunova from "../assets/teams/qr/anna-horshunova.png";
 import RequestModal from "../components/RequestModal.jsx";
 
 import apart1 from "../assets/Areas/apart-pages/apart1.png";
+import apart2 from "../assets/Areas/apart-pages/apart2.png";
+import apart3 from "../assets/Areas/apart-pages/apart3.png";
+
+import palm1 from "../assets/Areas/apart-pages/palm1.png";
+import palm2 from "../assets/Areas/apart-pages/palm2.png";
+import palm3 from "../assets/Areas/apart-pages/palm3.png";
+
+import mbr from "../assets/Areas/apart-pages/mbr1.png";
+import mbr1 from "../assets/Areas/apart-pages/mbr2.png";
+import mbr2 from "../assets/Areas/apart-pages/mbr3.png";
+
+import creek1 from "../assets/Areas/apart-pages/creek1.png";
+import creek2 from "../assets/Areas/apart-pages/creek2.png";
+import creek3 from "../assets/Areas/apart-pages/creek3.png";
+
+import marina1 from "../assets/Areas/apart-pages/marina1.png";
+import marina2 from "../assets/Areas/apart-pages/marina2.png";
+import marina3 from "../assets/Areas/apart-pages/marina3.png";
+
+import lagoon1 from "../assets/Areas/lagoons1.png";
+import lagoon2 from "../assets/Areas/lagoons2.png";
+import lagoon3 from "../assets/Areas/lagoons3.png";
+
+import jlt from "../assets/Areas/jlt.png";
+import jlt1 from "../assets/Areas/jlt1.png";
+import jlt2 from "../assets/Areas/jlt2.png";
+
+import mjl from "../assets/Areas/apart-pages/mjl.png";
+import mjl1 from "../assets/Areas/apart-pages/mjl1.png";
+import mjl2 from "../assets/Areas/apart-pages/mjl2.png";
+
+import mudon from "../assets/Areas/apart-pages/mudon.png";
+import mudon1 from "../assets/Areas/apart-pages/mudon1.png";
+import mudon2 from "../assets/Areas/apart-pages/mudon2.png";
+
+import jvc from "../assets/Areas/apart-pages/jvc.png";
+import jvc1 from "../assets/Areas/apart-pages/jvc1.png";
+import jvc2 from "../assets/Areas/apart-pages/jvc2.png";
+
+import bluewaters from "../assets/Areas/apart-pages/bluewaters.png";
+import bluewaters1 from "../assets/Areas/apart-pages/bluewaters1.png";
+import bluewaters2 from "../assets/Areas/apart-pages/bluewaters2.png";
+
+import centralPark from "../assets/Areas/apart-pages/bluewaters.png";
+import centralPark1 from "../assets/Areas/apart-pages/bluewaters1.png";
+import centralPark2 from "../assets/Areas/apart-pages/bluewaters2.png";
+
+import damacHills from "../assets/Areas/apart-pages/damac-hills.png";
+import damacHills1 from "../assets/Areas/apart-pages/damac-hills1.png";
+import damacHills2 from "../assets/Areas/apart-pages/damac-hills2.png";
+
+import dubaiHills from "../assets/Areas/apart-pages/damac-hills.png";
+import dubaiHills1 from "../assets/Areas/apart-pages/damac-hills1.png";
+import dubaiHills2 from "../assets/Areas/apart-pages/damac-hills2.png";
 
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 
+
 function AreaPage() {
+    console.log(apart1);
     const { id } = useParams();
     console.log(id);
-
     const [showModal, setShowModal] = useState(false);
     const pageTexy = {
         "business": {
@@ -32,9 +87,9 @@ function AreaPage() {
                 "According to the plans of the general developer Dubai Properties, a unique Marasi Business Bay project will be built in the area, which will become one of the main attractions. This project is a huge complex with a yacht club, places for recreation and entertainment, and a water station. At the moment, some of the facilities have already been built, and the remaining part is in the final stage of construction.",
                 "Despite the business atmosphere that prevails in the area, Business Bay is suitable for everyone. There are many social infrastructure facilities within walking distance and in the area: kindergartens and schools, universities, medical clinics."],
             "images": [
-                "/src/assets/Areas/apart-pages/apart1.png",
-                "/src/assets/Areas/apart-pages/apart2.png",
-                "/src/assets/Areas/apart-pages/apart3.png",
+                apart1,
+                apart2,
+                apart3,
             ],
             "blocks": [
                 {
@@ -72,9 +127,9 @@ function AreaPage() {
                 "The Palm Jumeirah offers a wide range of amenities for residents, including supermarkets, restaurants, cafes, and retail outlets. ",
                 "The Palm Jumeirah Boardwalk, which is a popular destination for residents and visitors, is lined with a variety of restaurants and cafes."],
             "images": [
-                "/src/assets/Areas/apart-pages/palm1.png",
-                "/src/assets/Areas/apart-pages/palm2.png",
-                "/src/assets/Areas/apart-pages/palm3.png",
+                palm1,
+                palm2,
+                palm3,
             ],
             "blocks": [
                 {
@@ -109,9 +164,9 @@ function AreaPage() {
                 "MBR City is located near the coast, and residents have easy access to some of Dubai’s most beautiful beaches. The nearest beach is Jumeirah Beach, which is just a short drive away. This popular beach is known for its crystal-clear water, white sand, and stunning views of the Burj Al Arab.",
                 "Another popular beach nearby is Kite Beach, which is known for its ideal conditions for kite surfing and other water sports. The beach also features several food trucks, a running track, and a playground, making it a popular spot for families and fitness enthusiasts."],
             "images": [
-                "/src/assets/Areas/apart-pages/mbr1.png",
-                "/src/assets/Areas/apart-pages/mbr2.png",
-                "/src/assets/Areas/apart-pages/mbr3.png",
+                mbr,
+                mbr1,
+                mbr2,
             ],
             "blocks": [
                 {
@@ -147,9 +202,9 @@ function AreaPage() {
                 "Dubai Creek Harbour is well-connected to the rest of Dubai through a variety of transportation options. The area is easily accessible by car, with Sheikh Zayed Road and Al Khail Road both nearby.",
                 "Dubai Creek Harbour is also served by Dubai Metro’s Green Line, with the Dubai Creek Harbour Metro Station providing convenient access to the area. In addition, the area is home to the Dubai Creek Harbour Ferry Station, which offers ferry services to various destinations including Dubai Marina, Al Fahidi, and Al Ghubaiba."],
             "images": [
-                "/src/assets/Areas/apart-pages/creek1.png",
-                "/src/assets/Areas/apart-pages/creek2.png",
-                "/src/assets/Areas/apart-pages/creek3.png",
+                creek1,
+                creek2,
+                creek3,
             ],
             "blocks": [
                 {
@@ -185,9 +240,9 @@ function AreaPage() {
                 "Dubai Marina is also known for its vibrant nightlife scene, with several bars, lounges, and nightclubs located in the area. Some of the most popular nightlife spots in Dubai Marina include Zero Gravity, Pier 7, and Lock, Stock & Barrel.",
                 "Dubai Marina offers a range of fitness centers and gyms, including Fitness First, Gold’s Gym, and Fitness Factory."],
             "images": [
-                "/src/assets/Areas/apart-pages/marina1.png",
-                "/src/assets/Areas/apart-pages/marina2.png",
-                "/src/assets/Areas/apart-pages/marina3.png",
+                marina1,
+                marina2,
+                marina3,
             ],
             "blocks": [
                 {
@@ -224,9 +279,9 @@ function AreaPage() {
                 "The healthcare needs of residents in Damac Lagoons are catered to by several hospitals and clinics in the surrounding areas, including the Mediclinic Parkview Hospital and Aster Clinic in Arabian Ranches.",
                 "Damac Lagoons is located in close proximity to some of the most stunning beaches in Dubai. The community is situated a few minutes’ drive away from the beaches of Jumeirah and Dubai Marina. These beaches are known for their pristine waters and beautiful scenery."],
             "images": [
-                "/src/assets/Areas/apart-pages/../lagoons1.png",
-                "/src/assets/Areas/apart-pages/../lagoons2.png",
-                "/src/assets/Areas/apart-pages/../lagoons3.png",
+                lagoon1,
+                lagoon2,
+                lagoon3,
             ],
             "blocks": [
                 {
@@ -247,7 +302,6 @@ function AreaPage() {
                 }
             ]
         },
-
         "jlt": {
             "title": "JLT",
             "titleText": [
@@ -269,9 +323,9 @@ function AreaPage() {
                 "Public transportation is easily accessible, with two metro stations and bus services connecting JLT to the rest of Dubai."
             ],
             "images": [
-                "/src/assets/Areas/jlt.png",
-                "/src/assets/Areas/jlt1.png",
-                "/src/assets/Areas/jlt2.png"
+                jlt,
+                jlt1,
+                jlt2
             ],
             "blocks": [
                 {
@@ -298,7 +352,6 @@ function AreaPage() {
                 }
             ]
         },
-
         "mjl": {
             "title": "MJL",
             "titleText": [
@@ -321,9 +374,9 @@ function AreaPage() {
                 "Madinat Jumeirah Living offers a range of beauty and wellness services, including salons, spas, and fitness centers. Residents can enjoy a variety of outdoor activities, such as jogging and cycling."
             ],
             "images": [
-                "/src/assets/Areas/apart-pages/mjl.png",
-                "/src/assets/Areas/apart-pages/mjl1.png",
-                "/src/assets/Areas/apart-pages/mjl2.png"
+                mjl,
+                mjl1,
+                mjl2
             ],
             "blocks": [
                 {
@@ -349,7 +402,6 @@ function AreaPage() {
                 }
             ]
         },
-
         "mudon": {
             "title": "Mudon",
             "titleText": [
@@ -370,9 +422,9 @@ function AreaPage() {
                 "Mudon district is popular among families with children, due to its proximity to educational institutions. Schools with an international curriculum and kindergartens are located near the community. Clinics and hospitals are located a few minutes from Mudon."
             ],
             "images": [
-                "/src/assets/Areas/apart-pages/mudon.png",
-                "/src/assets/Areas/apart-pages/mudon1.png",
-                "/src/assets/Areas/apart-pages/mudon2.png"
+                mudon,
+                mudon1,
+                mudon2,
             ],
             "blocks": [
                 {
@@ -424,9 +476,9 @@ function AreaPage() {
                 "Other major landmarks and attractions such as Burj Khalifa, Dubai Mall, and Dubai International Airport can be reached within a 25-30 minute drive."
             ],
             "images": [
-                "/src/assets/Areas/apart-pages/jvc.png",
-                "/src/assets/Areas/apart-pages/jvc1.png",
-                "/src/assets/Areas/apart-pages/jvc2.png"
+                jvc,
+                jvc1,
+                jvc2
             ],
             "blocks": [
                 {
@@ -476,9 +528,9 @@ function AreaPage() {
                 "There are no preschools and school facilities on Bluewaters Island, but the road to the nearest schools and kindergartens will take no more than 7-10 minutes."
             ],
             "images": [
-                "/src/assets/Areas/apart-pages/bluewaters.png",
-                "/src/assets/Areas/apart-pages/bluewaters1.png",
-                "/src/assets/Areas/apart-pages/bluewaters2.png",
+                bluewaters,
+                bluewaters1,
+                bluewaters2,
             ],
             "blocks": [
                 {
@@ -529,9 +581,9 @@ function AreaPage() {
                 "Within a 10-minute drive, there are international schools, shopping malls, kindergartens, hospitals, medical centers and polyclinics."
             ],
             "images": [
-                "/src/assets/Areas/apart-pages/central-park.png",
-                "/src/assets/Areas/apart-pages/central-park1.png",
-                "/src/assets/Areas/apart-pages/central-park2.png"
+                centralPark,
+                centralPark1,
+                centralPark2,
             ],
             "blocks": [
                 {
@@ -576,9 +628,9 @@ function AreaPage() {
                 "Polyclinics, medical centers, hospitals are within walking distance from the northern and southern parts of Dubai Hills. The developer paid special attention to the arrangement of sports grounds: on the territory of the district there are open and closed gyms, fitness centers, tennis courts and football fields."
             ],
             "images": [
-                "/src/assets/Areas/apart-pages/damac-hills.png",
-                "/src/assets/Areas/apart-pages/damac-hills1.png",
-                "/src/assets/Areas/apart-pages/damac-hills2.png"
+                damacHills,
+                damacHills1,
+                damacHills2,
             ],
             "blocks": [
                 {
@@ -625,9 +677,9 @@ function AreaPage() {
                 "Polyclinics, medical centers, hospitals are within walking distance from the northern and southern parts of Dubai Hills. The developer paid special attention to the arrangement of sports grounds: on the territory of the district there are open and closed gyms, fitness centers, tennis courts and football fields."
             ],
             "images": [
-                "/src/assets/Areas/apart-pages/dubai-hills.png",
-                "/src/assets/Areas/apart-pages/dubai-hills1.png",
-                "/src/assets/Areas/apart-pages/dubai-hills2.png"
+                dubaiHills,
+                dubaiHills1,
+                dubaiHills2,
             ],
             "blocks": [
                 {

@@ -3,7 +3,8 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://vShevtsov1.github.io/property-partners-website",
+  "main": "index.js",
+  "homepage": "./",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

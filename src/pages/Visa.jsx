@@ -104,6 +104,12 @@ function Visa() {
         buttonText: "Get a free consultation"
     });
 
+    const TypeButton = ({ text }) => {
+        return (
+            <div className="button">{text}</div>
+        );
+    }
+
     const closeModal = () => {
         setShowModal(false);
     };
@@ -114,78 +120,78 @@ function Visa() {
                 <div className="visa-baner-guide">
                     <ConsulatingBaner
                         img={accountaingBaner}
-                        title="UAE resident visa issuance"
-                        description={['We open a company remotely and prepare for the launch of operational activities']}
+                        title={t("name293")}
+                        description={[t("name294")]}
                         scroll={"detail"}
                         setShowModal="showModal"
                     />
                     <div className="guide-blocks">
                         <div className="guide-block">
                             <div>01</div>
-                            <div>Property Investor Visa</div>
+                            <div>{t("name295")}</div>
                         </div>
                         <div className="guide-block">
                             <div>02</div>
-                            <div>Talent Visa</div>
+                            <div>{t("name296")}</div>
                         </div>
                         <div className="guide-block">
                             <div>03</div>
-                            <div>Business Visa</div>
+                            <div>{t("name297")}</div>
                         </div>
                         <div className="guide-block">
                             <div>04</div>
-                            <div>Freelance Visa</div>
+                            <div>{t("name298")}</div>
                         </div>
                         <div className="guide-block tablet-none">
                             <div>05</div>
-                            <div>Employee visa</div>
+                            <div>{t("name299")}</div>
                         </div>
                     </div>
                 </div>
                 <div id="detail" className="detail">
-                    <div>We'll detail each option and assist in choosing the most suitable one. The residence permit process will be made as comfortable as possible for you. </div>
-                    <div>There are more than 10 residence permit programs in the UAE</div>
-                </div>
+                    <div>{t("name301")}</div>
+                    <div>{t("name302")}</div>
+                </div>;
+
                 <div className="residence">
                     <div className="permit">
                         <div className="title">
-                            If you get a residence permit yourself
+                            {t("name303")}
                         </div>
                         <div className="list">
                             <div className="elem">
-                                <div>2-4 months</div>
-                                <div>on average, the registration process takes</div>
+                                <div>{t("name304.1")}</div>
+                                <div>{t("name304.2")}</div>
                             </div>
                             <div className="elem">
-                                <div>60–80 hours</div>
-                                <div>It is spent on studying all programs and interacting with government agencies.</div>
+                                <div>{t("name305.1")}</div>
+                                <div>{t("name305.2")}</div>
                             </div>
                             <div className="elem">
-                                <div>100%</div>
-                                <div>you will spend effort and nerves in the registration process</div>
+                                <div>{t("name306.1")}</div>
+                                <div>{t("name306.2")}</div>
                             </div>
+
                         </div>
                     </div>
                     <div className="pro-part">
-                        <div className="title">
-                            Residence permit with ProPart Consulting
-                        </div>
+                        <div className="title">{t("name307")}</div>
                         <div className="list">
                             <div className="elem">
-                                <div>2–6 weeks</div>
-                                <div>on average, the registration process takes</div>
+                                <div>{t("name308.1")}</div>
+                                <div>{t("name308.2")}</div>
                             </div>
                             <div className="elem">
-                                <div>4 hours</div>
-                                <div>you will spend for all the time getting a residence permit. This is the time for communication with our team</div>
+                                <div>{t("name309.1")}</div>
+                                <div>{t("name309.2")}</div>
                             </div>
                             <div className="elem">
-                                <div>95%</div>
-                                <div>our team will take over the work and nerves</div>
+                                <div>{t("name310.1")}</div>
+                                <div>{t("name310.2")}</div>
                             </div>
                             <div className="elem">
-                                <div>5%</div>
-                                <div>it will take your efforts to complete the briefing and collect the minimum package of documents</div>
+                                <div>{t("name311.1")}</div>
+                                <div>{t("name311.2")}</div>
                             </div>
                         </div>
                     </div>
@@ -194,30 +200,28 @@ function Visa() {
                 <GetConsult />
 
                 <div className="what-table">
-                    <div className="title">What is a residence permit in the UAE and how does it differ from a long-term or work visa</div>
-
+                    <div className="title">{t("name313")}</div>
                     <div className="table">
                         <div className="table-row">
                             <div className="first-table-row"></div>
-                            <div className="second-table-row">Long-term visa</div>
-                            <div className="third-table-row">Residence permit in Europe</div>
-                            <div className="fourth-table-row">Residence permit in the UAE</div>
+                            <div className="second-table-row">{t("name318")}</div>
+                            <div className="third-table-row">{t("name319")}</div>
+                            <div className="fourth-table-row">{t("name320")}</div>
                         </div>
                         <div className="table-row">
-                            <div className="first-table">The possibility of crossing borders and being on the territory</div>
+                            <div className="first-table">{t("name313")}</div>
                             <div className="second-table"><img src={checkBrown} alt="" /></div>
                             <div className="third-table"><img src={checkBrown} alt="" /></div>
                             <div className="fourth-table"><img src={checkBrown} alt="" /></div>
                         </div>
-
                         <div className="table-row">
                             <div className="first-table">
                                 <div>
-                                    The opportunity to find a job or run a business
+                                    {t("name314")}
                                 </div>
                             </div>
                             <div className="second-table">
-                                Depends on the purpose of the visa
+                                {t("name321")}
                             </div>
                             <div className="third-table">
                                 <img src={checkBrown} alt="" />
@@ -226,11 +230,10 @@ function Visa() {
                                 <img src={checkBrown} alt="" />
                             </div>
                         </div>
-
                         <div className="table-row">
                             <div className="first-table">
                                 <div>
-                                    The right to stay and stay in the country regardless of the purpose of the trip
+                                    {t("name315")}
                                 </div>
                             </div>
                             <div className="second-table">
@@ -243,11 +246,10 @@ function Visa() {
                                 <img src={checkBrown} alt="" />
                             </div>
                         </div>
-
                         <div className="table-row">
                             <div className="first-table">
                                 <div>
-                                    It is a document that confirms the identity
+                                    {t("name316")}
                                 </div>
                             </div>
                             <div className="second-table">
@@ -260,11 +262,10 @@ function Visa() {
                                 <img src={checkBrown} alt="" />
                             </div>
                         </div>
-
                         <div className="table-row">
                             <div className="first-table">
                                 <div>
-                                    The ability to use it as a foreign passport
+                                    {t("name317")}
                                 </div>
                             </div>
                             <div className="second-table">
@@ -274,12 +275,12 @@ function Visa() {
                                 <img src={checkGrey} alt="" />
                             </div>
                             <div className="fourth-table">
-                                In GCC countries (Saudi Arabia, Kuwait, Bahrain, Oman, Qatar, UAE)
+                                {t("name325")}
                             </div>
                         </div>
-
                     </div>
                 </div>
+
 
                 <div className="emirates-id">
                     <div className="title">
@@ -332,9 +333,9 @@ function Visa() {
                                     Available Visa types
                                 </div>
                                 <div className="button-container">
-                                    <div className="button">Golden Visa</div>
-                                    <div className="button">Retirement Visa</div>
-                                    <div className="button">Partner/Investor Visa</div>
+                                    <TypeButton text={"Golden Visa"} />
+                                    <TypeButton text={"Retirement Visa"} />
+                                    <TypeButton text={"Partner/Investor Visa"} />
                                 </div>
                             </div>
                         </div>
@@ -355,9 +356,9 @@ function Visa() {
                                     Available Visa types
                                 </div>
                                 <div className="button-container">
-                                    <div className="button">Golden Visa</div>
-                                    <div className="button">Retirement Visa</div>
-                                    <div className="button">Partner/Investor Visa</div>
+                                    <TypeButton text={"Employee Visa"} />
+                                    <TypeButton text={"Remote Visa"} />
+                                    <TypeButton text={"Freelance Visa"} />
                                 </div>
                             </div>
                         </div>
@@ -378,9 +379,7 @@ function Visa() {
                                     Available Visa types
                                 </div>
                                 <div className="button-container">
-                                    <div className="button">Golden Visa</div>
-                                    <div className="button">Retirement Visa</div>
-                                    <div className="button">Partner/Investor Visa</div>
+                                    <TypeButton text={"Dependent Visa"} />
                                 </div>
                             </div>
                         </div>
@@ -401,9 +400,8 @@ function Visa() {
                                     Available Visa types
                                 </div>
                                 <div className="button-container">
-                                    <div className="button">Golden Visa</div>
-                                    <div className="button">Retirement Visa</div>
-                                    <div className="button">Partner/Investor Visa</div>
+                                    <TypeButton text={"Student Visa"} />
+                                    <TypeButton text={"Medical Visa"} />
                                 </div>
                             </div>
                         </div>
