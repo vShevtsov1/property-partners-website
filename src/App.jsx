@@ -30,6 +30,7 @@ import Bluewaters from "./pages/Areas/Bluewaters.jsx";
 import CentalPark from "./pages/Areas/CentalPark.jsx";
 import DamacHills from "./pages/Areas/DamacHills.jsx";
 import DubaiHills from "./pages/Areas/DubaiHills.jsx";
+import SupportChat from "./components/SupportChat.jsx";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
 
     <BrowserRouter>
       <ScrollToTop />
+      <SupportChat/>
       <ContactUsModal />
       <PDFmodal closeModal={closePDFModal} showModal={isPDFModalOpen} />
       <Routes>

@@ -86,6 +86,13 @@ const RealEstate = () => {
         setVisibleProjects(slicedVisibleProjects);
 
     };
+    // const yourElements = document.getElementsByClassName('yNHHyP-marker-view');
+    //
+    // Array.from(yourElements).forEach((element) => {
+    //     element.addEventListener('mouseenter', () => {
+    //         console.log('Mouse entered!');
+    //     });
+    // });
 
     if (projects === null) {
         return null;
@@ -118,6 +125,7 @@ const RealEstate = () => {
                             {visibleProjects.map((marker, index) => (
                                 <AdvancedMarker
                                     key={index}
+
                                     onClick={() => window.open(`/project/${marker._id}`)}
                                     className={"marker"}
                                     position={{ lat: Number(marker.lat), lng: Number(marker.lng) }}>
