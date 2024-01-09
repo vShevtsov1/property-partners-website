@@ -5,6 +5,7 @@ import accountaingBaner from "../assets/accounting-main.jpeg";
 import { useTranslation } from "react-i18next";
 import { useState } from "react";
 import Help from "../components/Help"
+import ConsulatingBaner from "../components/ConsulatingBaner"
 
 import alexLogachevName from "../assets/teams/alex-logachev-min.jpg";
 import qrAlex from "../assets/teams/qr/qr-alex.svg";
@@ -106,26 +107,12 @@ function PowerOfAttorney() {
             <Header></Header>
             <div className="attorney-container">
                 <div className="attorney-baner-guide">
-                    <div className="attorney-free-baner">
-                        <div className="content">
-                            <div className="title">
-                                <div>Power of attorney in Dubai court</div>
-                                <div>Fast and convenient. Remote issue of a notarial power of attorney</div>
-                            </div>
-                            <div className="image">
-                                <img src={accountaingBaner} alt="" />
-                            </div>
-                            <div className="leave-a-request" onClick={setShowModal}>
-                                Consultation
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M16.172 10.9997L10.808 5.63568L12.222 4.22168L20 11.9997L12.222 19.7777L10.808 18.3637L16.172 12.9997H4V10.9997H16.172Z" fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="image">
-                            <img src={accountaingBaner} alt="" />
-                        </div>
-                    </div>
+                    <ConsulatingBaner
+                        img={accountaingBaner}
+                        title="Power of attorney in Dubai court"
+                        description={['Fast and convenient. Remote issue of a notarial power of attorney']}
+                        setShowModal="showModal"
+                    />
                 </div>
 
                 <div className="registering">

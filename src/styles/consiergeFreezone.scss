@@ -1,4 +1,33 @@
 .cons-free-wrapper {
+    .baner {
+        .content {
+
+            .title {
+                gap: 16px;
+
+                div:first-child {
+                    font-size: 50px;
+                }
+
+                .description {}
+            }
+
+            .image {
+                img {}
+            }
+
+            .leave-a-request {}
+
+        }
+
+
+        .image {
+
+            img {}
+        }
+
+    }
+
     .cons-free-container {
         display: flex;
         flex-direction: column;
@@ -362,121 +391,6 @@
                     border-bottom: 2px solid #D2D2D2;
                 }
             }
-        }
-
-        .cost-service {
-            display: flex;
-            flex-direction: column;
-            gap: 48px;
-
-            padding: 128px 64px 32px 64px;
-
-            .title {
-                display: flex;
-                flex-direction: column;
-                gap: 12px;
-
-                div:first-child {
-                    color: #191C38;
-                    font-family: HelveticaBold, sans-serif;
-                    font-size: 48px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 120%;
-                }
-
-                div:last-child {
-                    color: #191C38;
-                    font-family: Helvetica;
-                    font-size: 32px;
-                    font-style: normal;
-                    font-weight: 400;
-                    line-height: 120%;
-                }
-            }
-
-            .setups-container {
-                display: flex;
-                flex-direction: column;
-                gap: 24px;
-
-                .setup {
-                    display: flex;
-
-                    .setup-name {
-                        display: flex;
-                        align-items: flex-end;
-                        padding: 24px;
-                        background: #C29773;
-                        width: 23%;
-
-                        color: #FFF;
-                        font-family: Helvetica;
-                        font-size: 32px;
-                        font-style: normal;
-                        font-weight: 400;
-                        line-height: normal;
-                    }
-
-                    .setup-content {
-                        display: flex;
-                        flex-direction: column;
-                        gap: 16px;
-                        padding: 24px;
-                        background: #FFF;
-                        flex: 1;
-
-                        .setup-list {
-                            display: flex;
-                            flex-direction: column;
-                            gap: 16px;
-
-                            .setup-list-elem {
-                                display: flex;
-                                align-items: center;
-                                gap: 12px;
-
-                                color: #000;
-                                font-family: Helvetica;
-                                font-size: 16px;
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: normal;
-                            }
-
-                        }
-
-                        .setup-price {
-                            display: flex;
-                            gap: 16px;
-                            align-items: flex-end;
-
-                            div:first-child {
-                                color: #000;
-                                font-family: HelveticaBold, sans-serif;
-                                font-size: 24px;
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: normal;
-                            }
-
-                            div:last-child {
-                                color: #000;
-                                font-family: Helvetica;
-                                font-size: 18px;
-                                font-style: normal;
-                                font-weight: 400;
-                                line-height: normal;
-                            }
-                        }
-                    }
-
-                    .blue {
-                        background: #191C38 !important;
-                    }
-                }
-            }
-
         }
 
         .support-discount {
@@ -858,6 +772,7 @@
                 .card {
                     display: flex;
                     flex-direction: column;
+                    width: 100%;
 
                     .content {
                         display: flex;
@@ -927,6 +842,7 @@
                 display: flex;
                 gap: 16px;
                 height: 210px;
+                width: 100%;
 
                 .block {
                     display: flex;
@@ -1139,7 +1055,10 @@
     .cons-free-wrapper {
         .cons-free-container {
             .cons-baner-guide {
+                gap: 20px;
+
                 .cons-free-baner {
+                    padding: 16px 16px 0px 0px;
                     height: 70vh;
                     gap: 40px;
 
@@ -1240,49 +1159,7 @@
                 padding: 32px 16px 64px 16px;
             }
 
-            .cost-service {
-                padding: 64px 16px 32px 16px;
-                gap: 24px;
 
-                .title {
-                    div:first-child {
-                        font-size: 32px;
-                    }
-
-                    div:last-child {
-                        font-size: 18px;
-                    }
-                }
-
-                .setups-container {
-                    gap: 16px;
-
-                    .setup {
-                        .setup-name {
-                            padding: 16px;
-                            font-size: 22px;
-                        }
-
-                        .setup-content {
-                            padding: 16px;
-
-                            .setup-list {
-                                .setup-list-elem {}
-                            }
-
-                            .setup-price {
-                                div:first-child {
-                                    font-size: 18px;
-                                }
-
-                                div:last-child {
-                                    font-size: 16px;
-                                }
-                            }
-                        }
-                    }
-                }
-            }
 
             .support-discount {
                 padding: 32px 16px 32px 16px;
@@ -1474,12 +1351,12 @@
             }
 
             .reliable-partner {
-                padding: 8px 16px 64px 16px;
+                padding: 48px 16px 64px 16px;
                 flex-direction: column;
                 gap: 24px;
 
                 .title {
-                    color: #000;
+                    color: #191C38;
                     font-family: HelveticaBold, sans-serif;
                     font-size: 48px;
                     font-style: normal;
@@ -1505,6 +1382,7 @@
                         .descr {
 
                             div:first-child {
+                                color: #191C38;
                                 font-size: 20px;
                             }
 
@@ -1521,6 +1399,7 @@
                 gap: 32px;
 
                 .title {
+                    color: #191C38;
                     font-size: 32px;
                 }
 
@@ -1535,7 +1414,9 @@
                         .descr {
                             gap: 8px;
 
-                            div:first-child {}
+                            div:first-child {
+                                color: #191C38;
+                            }
 
                             div:last-child {}
                         }
@@ -1606,7 +1487,7 @@
 
                     .content {
                         width: 100%;
-                        padding: 0px 16px 0px 16px;
+                        padding: 0px 0px 0px 16px;
                         gap: 24px;
 
                         .title {
@@ -1670,6 +1551,7 @@
             }
 
             .registring {
+                padding-top: 0px;
 
                 .title {
                     div:first-child {}
@@ -1698,7 +1580,7 @@
 
 
             .table {
-
+                padding-bottom: 32px;
 
                 .table-row {
 
@@ -1739,9 +1621,6 @@
                 }
             }
 
-            .cost-service {
-                display: none;
-            }
 
             .support-discount {
                 flex-direction: column;
@@ -1777,8 +1656,10 @@
             }
 
             .big-info-card {
+                padding-bottom: 32px;
+
                 .info-card-container {
-                    gap: 96px;
+                    gap: 32px;
 
                     .top-content {
                         padding: 16px;
@@ -1896,7 +1777,9 @@
                     flex-direction: column;
                     gap: 8px;
 
-                    .card {
+                    .card:last-child {
+                        display: none;
+
                         .content {
 
                             div:first-child {}
@@ -1914,13 +1797,14 @@
             }
 
             .access {
+                padding: 32px 16px 32px 16px;
 
                 .title {
                     font-size: 16px;
                 }
 
                 .blocks-container {
-                    padding: 0px 0px 64px 0px;
+                    padding: 0px 0px 32px 0px;
                     display: flex;
                     flex-wrap: wrap;
                     gap: 7px;
@@ -1947,7 +1831,7 @@
 
             .no-taxes {
                 padding: 16px 16px 16px 16px;
-                margin: 96px 0px 0px 0px;
+                margin: 58px 0px 0px 0px;
                 background-color: transparent;
                 gap: 0px;
 

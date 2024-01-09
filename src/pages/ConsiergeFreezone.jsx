@@ -22,7 +22,6 @@ import alexLogachevName from "../assets/teams/alex-logachev-min.jpg";
 import qrAlex from "../assets/teams/qr/qr-alex.svg";
 import RequestModal from "../components/RequestModal.jsx";
 import alarm from "../assets/alarm.png";
-import checkFill from "../assets/check-fill.png";
 import arrowRight from "../assets/arrow-right-circle-fill.svg";
 import shareBox from "../assets/share-box-fill.png";
 import infoFill from "../assets/information-fill.png";
@@ -45,6 +44,9 @@ import lineUp from "../assets/freezone/line-up.svg";
 import GetAdvice from "../components/GetAdvice"
 import GetConsult from "../components/GetConsult"
 import Help from "../components/Help"
+import ConsulatingBaner from "../components/ConsulatingBaner"
+
+import CostOfService from "../components/CostOfService";
 
 function ConsiergeFreezone() {
     const { t } = useTranslation();
@@ -120,7 +122,6 @@ function ConsiergeFreezone() {
     };
 
     const handleTypeClick = (kind) => {
-        console.log(123);
         setActiveKind((prevActiveKind) => (prevActiveKind === kind ? null : kind));
     };
 
@@ -128,49 +129,35 @@ function ConsiergeFreezone() {
         <Header />
         <div className="cons-free-container">
             <div className="cons-baner-guide">
-                <div className="cons-free-baner">
-                    <div className="content">
-                        <div className="title">
-                            <div>Company registration in the UAE, Legal and Accounting Support</div>
-                            <div>Remote business registration and launch of all operational processes</div>
-                        </div>
-                        <div className="image">
-                            <img src={accountaingBaner} alt="" />
-                        </div>
-                        <div className="leave-a-request" onClick={setShowModal}>
-                            Consultation
-                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                <path d="M16.172 10.9997L10.808 5.63568L12.222 4.22168L20 11.9997L12.222 19.7777L10.808 18.3637L16.172 12.9997H4V10.9997H16.172Z" fill="white" />
-                            </svg>
-                        </div>
-                    </div>
-                    <div className="image">
-                        <img src={accountaingBaner} alt="" />
-                    </div>
-                </div>
+                <ConsulatingBaner
+                    img={accountaingBaner}
+                    title={t("header")}
+                    description={[t("subheader")]}
+                />
                 <div className="guide-blocks">
                     <div className="guide-block">
                         <div>01</div>
-                        <div>Ready-made solutions for world  import and export trading</div>
+                        <div>{t("box_1_title")}</div>
                     </div>
                     <div className="guide-block">
                         <div>02</div>
-                        <div>Opening corporate accounts</div>
+                        <div>{t("box_2_title")}</div>
                     </div>
                     <div className="guide-block">
                         <div>03</div>
-                        <div>Tax and accounting support</div>
+                        <div>{t("box_3_title")}</div>
                     </div>
                     <div className="guide-block">
                         <div>04</div>
-                        <div>Annual support from our team</div>
+                        <div>{t("box_4_title")}</div>
                     </div>
                 </div>
+
             </div>
             <div className="registring">
                 <div className="title">
-                    <div>Registering a business in the UAE is easy</div>
-                    <div>But we clearly recognize that the ultimate goal of our clients is not the company itself, it is only a tool. To realize specific business objectives is their main vector: from global trade to registration of virtual or intellectual assets. We help solve these problems</div>
+                    <div>{t("main_title")}</div>
+                    <div>{t("main_paragraph")}</div>
                 </div>
                 <div className="resolve-container">
                     <div className="resolve-card">
@@ -178,12 +165,12 @@ function ConsiergeFreezone() {
                             <div>1</div>
                             <div>
                                 <img src={alarm} alt="" />
-                                2-4 days
+                                2-4 {t("days")}
                             </div>
                         </div>
                         <div className="resolve-description">
-                            <div>PROMPT CUSTOMER SERVICE</div>
-                            <div>Our activity is aimed at timely response to the requests of our Clients, qualitative identification of needs and timely realization of fulfillment of the set tasks.</div>
+                            <div>{t("service_1_title")}</div>
+                            <div>{t("service_1_description")}</div>
                         </div>
                     </div>
                     <div className="resolve-card">
@@ -191,12 +178,12 @@ function ConsiergeFreezone() {
                             <div>2</div>
                             <div>
                                 <img src={alarm} alt="" />
-                                7-14 days
+                                7-14 {t("days")}
                             </div>
                         </div>
                         <div className="resolve-description">
-                            <div>COST TRANSPARENCY</div>
-                            <div>We value your trust, so we provide detailed and truthful information on any service or project, in which we show the list and cost of all components, and separately the cost of our work.</div>
+                            <div>{t("service_2_title")}</div>
+                            <div>{t("service_2_description")}</div>
                         </div>
                     </div>
                     <div className="resolve-card">
@@ -204,12 +191,12 @@ function ConsiergeFreezone() {
                             <div>3</div>
                             <div>
                                 <img src={alarm} alt="" />
-                                7-14 days
+                                7-14 {t("days")}
                             </div>
                         </div>
                         <div className="resolve-description">
-                            <div>SHORT TURNAROUND TIME</div>
-                            <div>Due to our close proximity and established relationships with government regulators and financial institutions, we have the shortest timeframes for registration, visas and account opening.</div>
+                            <div>{t("service_3_title")}</div>
+                            <div>{t("service_3_description")}</div>
                         </div>
                     </div>
                     <div className="resolve-card">
@@ -217,12 +204,12 @@ function ConsiergeFreezone() {
                             <div>4</div>
                             <div>
                                 <img src={alarm} alt="" />
-                                21-28 days
+                                21-28 {t("days")}
                             </div>
                         </div>
                         <div className="resolve-description">
-                            <div>CONCIERGE SERVICE</div>
-                            <div>With our help, we fully accompany our clients at all stages of service fulfillment by</div>
+                            <div>{t("service_4_title")}</div>
+                            <div>{t("service_4_description")}</div>
                         </div>
                     </div>
                     <div className="resolve-card">
@@ -230,12 +217,12 @@ function ConsiergeFreezone() {
                             <div>5</div>
                             <div>
                                 <img src={alarm} alt="" />
-                                2-4 days
+                                2-4 {t("days")}
                             </div>
                         </div>
                         <div className="resolve-description">
-                            <div>BUSINESS NETWORKING</div>
-                            <div>Due to extensive experience in business registration and interaction with a huge number of investors, we advocate and recommend professional cooperation in a certain segment, by organizing a business community with different interests and directions.</div>
+                            <div>{t("service_5_title")}</div>
+                            <div>{t("service_5_description")}</div>
                         </div>
                     </div>
                     <div className="resolve-card">
@@ -243,104 +230,70 @@ function ConsiergeFreezone() {
                             <div>6</div>
                             <div>
                                 <img src={alarm} alt="" />
-                                7-14 days
+                                7-14 {t("days")}
                             </div>
                         </div>
                         <div className="resolve-description">
-                            <div>Construction consulting</div>
-                            <div>Supporting Developers in obtaining all building permits and opening Escrow accounts</div>
+                            <div>{t("service_6_title")}</div>
+                            <div>{t("service_6_description")}</div>
                         </div>
                     </div>
                 </div>
             </div>
+
             <div className="table">
                 <div className="table-row">
-                    <div className="first-table-row">Type</div>
-                    <div className="second-table-row">Free Zone</div>
-                    <div className="third-table-row">Mainland</div>
+                    <div className="first-table-row">{t("name1")}</div>
+                    <div className="second-table-row">{t("name2")}</div>
+                    <div className="third-table-row">{t("name4")}</div>
                 </div>
 
                 <div className="table-row">
                     <div className="first-table">
-                        <div>
-                            Ownership
-                        </div>
+                        <div>{t("name3")}</div>
                     </div>
-                    <div className="second-table">
-                        100 % ownership of foreign <br />
-                        citizens or legal <br />
-                        persons
-                    </div>
-                    <div className="third-table">
-                        M100 % ownership of foreign citizens <br />
-                        or legal entities. Maybe <br />
-                        Adding a local agent to simplify <br />
-                        proceduresainland
-                    </div>
+                    <div className="second-table">{t("name5")}</div>
+                    <div className="third-table">{t("name5")}</div>
                 </div>
 
                 <div className="table-row">
                     <div className="first-table">
-                        <div>
-                            Geography
-                            activities
-                        </div>
+                        <div>{t("name6")}</div>
                     </div>
-                    <div className="second-table">
-                        Activities outside the UAE: <br />
-                        There are no restrictions within the UAE: <br />
-                        There are restrictions
-                    </div>
-                    <div className="third-table">
-                        Activities outside the UAE: <br />
-                        There are no restrictions within the UAE: there are no restrictions
-                    </div>
+                    <div className="second-table">{t("name9")}</div>
+                    <div className="third-table">{t("name9")}</div>
                 </div>
 
                 <div className="table-row">
-                    <div className="first-table"><div>Taxes and
-                        Reporting</div></div>
-                    <div className="second-table">
-                        9 % income tax starting with <br />
-                        2023r. <br />
-                        Annual reporting
+                    <div className="first-table">
+                        <div>{t("name7")}</div>
                     </div>
-                    <div className="third-table">
-                        9 % income tax starting from 2023. 5 % VAT (VAT) <br />
-                        Annual reporting
-                    </div>
+                    <div className="second-table">{t("name11")}</div>
+                    <div className="third-table">{t("name14")}</div>
                 </div>
 
                 <div className="table-row">
-                    <div className="first-table"><div>Visas for
-                        employees</div></div>
-                    <div className="second-table">
-                        The cost of employee registration is from $ 2.600 per 2 years
+                    <div className="first-table">
+                        <div>{t("name8")}</div>
                     </div>
-                    <div className="third-table">
-                        The cost of employee registration is from $ 2.000 by 2 years
-                    </div>
+                    <div className="second-table">{t("name12")}</div>
+                    <div className="third-table">{t("name15")}</div>
                 </div>
 
                 <div className="table-row">
-                    <div className="first-table"><div>Regulator</div> </div>
-                    <div className="second-table">
-                        The regulatory body is Frizona
+                    <div className="first-table">
+                        <div>{t("name16")}</div>
                     </div>
-                    <div className="third-table">
-                        The regulatory body is the Economic Department of the Emirate in <br />
-                        which is registered
-                    </div>
+                    <div className="second-table">{t("name19")}</div>
+                    <div className="third-table">{t("name21")}</div>
                 </div>
-                <div className="table-row">
-                    <div className="first-table"><div>Extension Lycens</div></div>
-                    <div className="second-table">
-                        Anually
 
+                <div className="table-row">
+                    <div className="first-table">
+                        <div>{t("name17")}</div>
                     </div>
-                    <div className="third-table">
-                        Anually
-                    </div>
+                    <div className="second-table">{t("name20")}</div>
+                    <div className="third-table">{t("name22")}</div>
                 </div>
             </div>
 
@@ -348,145 +301,26 @@ function ConsiergeFreezone() {
                 <GetConsult />
             </div>
 
-            <div className="cost-service">
-                <div className="title">
-                    <div>Cost of services</div>
-                    <div>Company setup and its preparation for commercial and operational activities</div>
-                </div>
-                <div className="setups-container">
-                    <div className="setup">
-                        <div className="setup-name">
-                            Company setup
-                        </div>
-                        <div className="setup-content">
-                            <div className="setup-list">
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Prior authorization
-                                </div>
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Rent a virtual office
-                                </div>
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Obtaining a license
-                                </div>
-                            </div>
-                            <div className="setup-price">
-                                <div>From $6,000</div>
-                                <div>(AED 20,500)</div>
-                            </div>
-                        </div>
-                    </div>
+            <CostOfService />
 
-                    <div className="setup">
-                        <div className="setup-name">
-                            Company registration + Visa processing
-                        </div>
-                        <div className="setup-content">
-                            <div className="setup-list">
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Prior authorization
-                                </div>
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Rent a virtual office
-                                </div>
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Obtaining a license
-                                </div>
-
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Obtaining an immigration card / establishment card
-                                </div>
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Obtaining a labor card
-                                </div>
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Issuance of investor / partner visa
-                                </div>
-                            </div>
-                            <div className="setup-price">
-                                <div>From $8,800</div>
-                                <div>(AED 32,000)</div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div className="setup">
-                        <div className="setup-name blue">
-                            Company registration + Visa processing + Bank account opening
-                        </div>
-                        <div className="setup-content">
-                            <div className="setup-list">
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Prior authorization
-                                </div>
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Renting a virtual office
-                                </div>
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Obtaining a license
-                                </div>
-
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Obtaining an immigration card / establishment card
-                                </div>
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Obtaining a labor card
-                                </div>
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Investor / partner visa issuance
-                                </div>
-
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    KYC walkthrough
-                                </div>
-                                <div className="setup-list-elem">
-                                    <img src={checkFill} alt="" />
-                                    Opening an account with a UAE bank
-                                </div>
-                            </div>
-                            <div className="setup-price">
-                                <div>From $12,500</div>
-                                <div>(AED 20,500)</div>
-                            </div>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
             <div className="support-discount">
                 <div className="support">
                     <div className="support-text">
-                        Tariffs for accounting support for companies with more than 50 transactions per year or a turnover of more than $100,000 per year
+                        {t("name45")}
                     </div>
                     <div className="support-button">
                         <img src={arrowRight} alt="" />
-                        Accounting support
+                        {t("name46")}
                     </div>
                 </div>
                 <div className="discount">
                     <div className="title">
-                        <div>Discount 5%</div>
-                        <div>for all accounting services when purchasing the tariff <span>«Basic»</span></div>
+                        <div>{t("name471")}</div>
+                        <div>{t("name47")} <span>{t("name472")}</span></div>
                     </div>
                     <div className="title">
-                        <div>Discount 10%</div>
-                        <div>for all accounting services when purchasing a tariff <span>«Advanced»</span></div>
+                        <div>{t("name481")}</div>
+                        <div>{t("name48")} <span>{t("name482")}</span></div>
                     </div>
                 </div>
             </div>
@@ -499,46 +333,46 @@ function ConsiergeFreezone() {
                             <div className="title">
                                 <div className="name">
                                     <img src={shareBox} alt="" />
-                                    Silicon Oasis
+                                    {t("name49")}
                                 </div>
                                 <div className="cost">
                                     <div>
-                                        The cost of company setup: from<span> $8 000</span>
+                                        {t("name50")} <span> from $8 000</span>
                                     </div>
                                     <img src={infoFill} alt="" />
                                 </div>
                             </div>
                             <div className="top-content-descr">
-                                <div className="title-descr">Types of activities</div>
+                                <div className="title-descr">{t("name65")}</div>
                                 <div className="descr-temp-container">
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Consulting
+                                        {t("name51.1")}
                                     </div>
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Consulting
+                                        {t("name51.2")}
                                     </div>
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Consulting
+                                        {t("name51.3")}
                                     </div>
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Consulting
+                                        {t("name51.4")}
                                     </div>
                                 </div>
                             </div>
                             <div className="top-content-descr">
-                                <div className="title-descr">Opportunities</div>
+                                <div className="title-descr">{t("name51.7")}</div>
                                 <div className="descr-temp-container">
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Real and virtual offices
+                                        {t("name51.5")}
                                     </div>
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Multi-purpose warehousing and manufacturing
+                                        {t("name51.6")}
                                     </div>
                                 </div>
                             </div>
@@ -546,65 +380,64 @@ function ConsiergeFreezone() {
                         <div className="bottom-content">
                             <div className="content">
                                 <div className="paragraph">
-                                    <div>Authorized capital</div>
-                                    <div>from 10 000 AED</div>
+                                    <div>{t("name69")}</div>
+                                    <div>{t("name53.1")}</div>
                                 </div>
                                 <div className={`paragraph
                             ${activeKind === 0 ? '' : 'unactive'}`}>
-                                    <div>Relocate UAE Assessment</div>
-                                    <div>Dubai Silicon Oasis is a free zone, as well as a large business and residential complex in Dubai. This is one of the most attractive places to start a business in the UAE.
-                                        It serves as a technological center for industrial, research and development enterprises.
-                                        The price/opportunity ratio is the best in the UAE. Suitable for almost any type of business.
-                                        It is also part of the DIEZ – an association of the 3 largest free economic zones of Dubai (Silicon Oasis, Dubai Airport Free Zone, Dubai Commerce), which allows you to enjoy all the advantages of the Dubai Airport Free Zone and Dubai Commerce zones.
+                                    <div>{t("name54")}</div>
+                                    <div>{t("name55")}
                                     </div>
                                 </div>
                             </div>
-                            <div className="show-hide" onClick={() => handleTypeClick(0)}> {activeKind === 0 ? 'Hide' : 'Show All'}
+                            <div className="show-hide" onClick={() => handleTypeClick(0)}>
+                                {activeKind === 0 ? t("hideText") : t("showAllText")}
                                 <img src={showHide} className={`${activeKind === 0 ? '' : 'rotate180'}`} alt="" />
                             </div>
                         </div>
                     </div>
+
                     <div className="info-card">
                         <div className="top-content">
                             <div className="title">
                                 <div className="name">
                                     <img src={shareBox} alt="" />
-                                    Dubai International Financial Center
+                                    {t("name49")}
                                 </div>
                                 <div className="cost">
                                     <div>
-                                        The cost of company setup: <span> from $15 000</span>
+                                        {t("name50")} <span> from $10 000</span>
                                     </div>
                                     <img src={infoFill} alt="" />
                                 </div>
                             </div>
                             <div className="top-content-descr">
-                                <div className="title-descr">Types of activities</div>
+                                <div className="title-descr">{t("name65")}</div>
                                 <div className="descr-temp-container">
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Banking and brokerage services, money management
+                                        {t("name58.1")}
                                     </div>
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Capital markets
+                                        {t("name60")}
                                     </div>
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Consulting
+                                        {t("name51.1")}
                                     </div>
                                 </div>
                             </div>
                             <div className="top-content-descr">
-                                <div className="title-descr">Opportunities</div>
+                                <div className="title-descr">{t("name51.7")}</div>
                                 <div className="descr-temp-container">
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Real and virtual offices
+                                        {t("name51.5")}
                                     </div>
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Use of British judicial law
+                                        {t("name51.6")}
                                     </div>
                                 </div>
                             </div>
@@ -612,64 +445,64 @@ function ConsiergeFreezone() {
                         <div className="bottom-content">
                             <div className="content">
                                 <div className="paragraph">
-                                    <div>Authorized capital</div>
-                                    <div>from 300 000 AED</div>
+                                    <div>{t("name69")}</div>
+                                    <div>{t("name53.1")} 300 000 AED</div>
                                 </div>
-                                <div className="paragraph">
-                                    <div>Relocate UAE Assessment</div>
-                                    <div>Dubai International Financial Center (DIFC) is a leading financial center in the Middle East, South Asia, Africa and South Asia, governed by private legislation and an independent judicial system.
-                                        In this zone, the register of shareholders is open and British law is partially used (in terms of the judicial system)
-                                        Great for registering holding structures.
+                                <div className={`paragraph
+                            ${activeKind === 0 ? '' : 'unactive'}`}>
+                                    <div>{t("name54")}</div>
+                                    <div>{t("name63")}
                                     </div>
                                 </div>
                             </div>
-                            <div className="show-hide" onClick={() => handleTypeClick(1)}>
-                                {activeKind === 1 ? 'Hide' : 'Show All'}
-                                <img src={showHide} className={`${activeKind === 1 ? '' : 'rotate180'}`} alt="" />
+                            <div className="show-hide" onClick={() => handleTypeClick(0)}>
+                                {activeKind === 0 ? t("hideText") : t("showAllText")}
+                                <img src={showHide} className={`${activeKind === 0 ? '' : 'rotate180'}`} alt="" />
                             </div>
                         </div>
                     </div>
+
                     <div className="info-card">
                         <div className="top-content">
                             <div className="title">
                                 <div className="name">
                                     <img src={shareBox} alt="" />
-                                    Meydan Free Zone
+                                    {t("name56")}
                                 </div>
                                 <div className="cost">
                                     <div>
-                                        The cost of company setup: from <span> from $10 000</span>
+                                        {t("name50")} <span> from $10 000</span>
                                     </div>
                                     <img src={infoFill} alt="" />
                                 </div>
                             </div>
                             <div className="top-content-descr">
-                                <div className="title-descr">Types of activities</div>
+                                <div className="title-descr">{t("name65")}</div>
                                 <div className="descr-temp-container">
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Consulting
+                                        {t("name58.1")}
                                     </div>
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Service sector
+                                        {t("name60")}
                                     </div>
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Commerce
+                                        {t("name51.1")}
                                     </div>
                                 </div>
                             </div>
                             <div className="top-content-descr">
-                                <div className="title-descr">Opportunities</div>
+                                <div className="title-descr">{t("name51.7")}</div>
                                 <div className="descr-temp-container">
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        Real and virtual offices
+                                        {t("name51.5")}
                                     </div>
                                     <div className="descr-temp">
                                         <img src={checkBox} alt="" />
-                                        There is an residential complex on the territory of the zone
+                                        {t("name68")}
                                     </div>
                                 </div>
                             </div>
@@ -677,19 +510,19 @@ function ConsiergeFreezone() {
                         <div className="bottom-content">
                             <div className="content">
                                 <div className="paragraph">
-                                    <div>Authorized capital</div>
-                                    <div>from 100 000 AED</div>
+                                    <div>{t("name69")}</div>
+                                    <div>{t("name53.1")} 300 000 AED</div>
                                 </div>
-                                <div className="paragraph">
-                                    <div>Relocate UAE Assessment</div>
-                                    <div>A modern economic free zone in the heart of Dubai, Meydan is located near the most important sights of the emirate, which gives investors a number of strategic advantages.
-                                        It offers open office space and fully serviced offices accommodating all types of businesses, including commercial, consulting, investment and administrative companies, as well as a selection of elite residences. The free zone also has a 5-star
+                                <div className={`paragraph
+                            ${activeKind === 0 ? '' : 'unactive'}`}>
+                                    <div>{t("name54")}</div>
+                                    <div>{t("name63")}
                                     </div>
                                 </div>
                             </div>
-                            <div className="show-hide" onClick={() => handleTypeClick(1)}>
-                                {activeKind === 1 ? 'Hide' : 'Show All'}
-                                <img src={showHide} className={`${activeKind === 1 ? '' : 'rotate180'}`} alt="" />
+                            <div className="show-hide" onClick={() => handleTypeClick(0)}>
+                                {activeKind === 0 ? t("hideText") : t("showAllText")}
+                                <img src={showHide} className={`${activeKind === 0 ? '' : 'rotate180'}`} alt="" />
                             </div>
                         </div>
                     </div>
@@ -704,12 +537,11 @@ function ConsiergeFreezone() {
             <div className="transparent">
                 <div className="content">
                     <div className="title">
-                        <div>Transparent
-                            pricing</div>
-                        <div>25%</div>
+                        <div>{t("transparentTitle")}</div>
+                        <div>{t("transparentDiscount")}</div>
                     </div>
                     <div className="descr">
-                        is in touch and accompanies during the whole process and advises on emerging issues
+                        {t("transparentDescription")}
                     </div>
                 </div>
                 <div className="image">
@@ -718,20 +550,21 @@ function ConsiergeFreezone() {
                 </div>
                 <div className="content">
                     <div className="title title-tg">
-                        <div>Community of entrepreneurs</div>
+                        <div>{t("communityTitle")}</div>
                         <div><img src={telegramIcon} alt="" /></div>
                     </div>
                     <div className="descr">
-                        All our clients get access to a <span> closed Telegram group </span> to exchange experience, useful information and help in doing business in the UAE
+                        {t("communityDescription")}
                     </div>
                 </div>
                 <div className="image mob-tg">
                 </div>
             </div>
 
+
             <div className="our-services">
                 <div className="title">
-                    <div>Our services</div>
+                    <div>{t("name72")}</div>
                     <div className="buttons-container">
                         <div className="button">
                             <img src={arrowButton} alt="" />
@@ -744,136 +577,138 @@ function ConsiergeFreezone() {
                 <div className="card-container">
                     <div className="card">
                         <div className="content">
-                            <div>Business structuring in new realities</div>
-                            <div>Selection of the optimal zone in the UAE for company setup Development of an optimal corporate structure with a simultaneous presence in the UAE and Russia</div>
+                            <div>{t("name73")}</div>
+                            <div>{t("name74")}</div>
                         </div>
                         <div className="button">
-                            Read more
+                            {t("readMore")}
                         </div>
                     </div>
 
                     <div className="card">
                         <div className="content">
-                            <div>Commercial and operational</div>
-                            <div>Development of a commercialization model and cash flow structure Assessment of the need to obtain licenses, permits, membership in SROs for certain types of activities</div>
+                            <div>{t("name75")}</div>
+                            <div>{t("name76")}</div>
                         </div>
                         <div className="button">
-                            Read more
+                            {t("readMore")}
                         </div>
                     </div>
                 </div>
             </div>
             <div className="reliable-partner">
-                <div className="title">Reliable partner</div>
+                <div className="title">{t("name77")}</div>
                 <div className="blocks-container">
                     <div className="block">
                         <img src={companies} alt="" />
                         <div className="descr">
-                            <div>20 companies</div>
-                            <div>Open monthly</div>
+                            <div>{t("name78")}</div>
+                            <div>{t("name79")}</div>
                         </div>
                     </div>
                     <div className="block">
                         <img src={over} alt="" />
                         <div className="descr">
-                            <div>Over 90%</div>
-                            <div>of the largest Free Zones have accredited us as a partner</div>
+                            <div>{t("name80.1")}</div>
+                            <div>{t("name80.2")}</div>
                         </div>
                     </div>
                     <div className="block">
                         <img src={headset} alt="" />
                         <div className="descr">
-                            <div>Company support</div>
-                            <div>More than 100 clients trust us with business accounting in the UAE</div>
+                            <div>{t("name81")}</div>
+                            <div>{t("name82")}</div>
                         </div>
                     </div>
                 </div>
             </div>
             <div className="access">
-                <div className="title">We provide access to a database of reliable counterparties in the UAE that will help you solve your problems in the following areas</div>
+                <div className="title">{t("name83")}</div>
                 <div className="blocks-container">
                     <div className="block">
                         <img src={box} alt="" />
                         <div className="descr">
-                            <div>Logistics</div>
-                            <div>Streamlined Supply Chain Solutions</div>
+                            <div>{t("name84")}</div>
+                            <div>{t("name85")}</div>
                         </div>
                     </div>
                     <div className="block">
                         <img src={world} alt="" />
                         <div className="descr">
-                            <div>Customs</div>
-                            <div>Hassle-Free Customs Clearance</div>
+                            <div>{t("name86")}</div>
+                            <div>{t("name87")}</div>
                         </div>
                     </div>
                     <div className="block">
                         <img src={document} alt="" />
                         <div className="descr">
-                            <div>Licensing</div>
-                            <div>Expertise in Licensing Procedures</div>
+                            <div>{t("name88")}</div>
+                            <div>{t("name89")}</div>
                         </div>
                     </div>
                     <div className="block">
                         <img src={legal} alt="" />
                         <div className="descr">
-                            <div>Legal</div>
-                            <div>Knowledgeable Legal Support</div>
+                            <div>{t("name90")}</div>
+                            <div>{t("name91")}</div>
                         </div>
                     </div>
                 </div>
             </div>
+
 
             <GetAdvice />
 
             <div className="no-taxes">
                 <div className="content">
                     <div className="title">
-                        <div>There are no taxes on income, personal income and dividends in the UAE.</div>
-                        <div>The UAE has an excellent geographical location, developed infrastructure and the national currency, which is pegged to the dollar and has not changed for 20 years</div>
+                        <div>{t("name92")}</div>
+                        <div>{t("name93")}</div>
                     </div>
                     <div className="list">
                         <div className="list-elem">
                             <img src={lock} alt="" />
-                            <div>Does not provide tax information to other countries</div>
+                            <div>{t("name97.2")}</div>
                         </div>
                         <div className="list-elem">
                             <img src={heart} alt="" />
-                            <div>There are no international treaties on legal assistance in civil arbitration cases</div>
+                            <div>{t("name98.1")}</div>
                         </div>
                         <div className="list-elem">
                             <img src={lineUp} alt="" />
-                            <div>To support innovation, growth and business, Dubai continues to invest in smart strategies such as Dubai Data Strategy, Dubai 10X, Smart Dubai 2021, Dubai Blockchain Strategy and Dubai Pulse Platform</div>
+                            <div>{t("name99")}</div>
                         </div>
                     </div>
                 </div>
                 <div className="procent">
                     <div className="procent-elem">
-                        <div className="number">0%</div>
+                        <div className="number">{t("name94.1")}</div>
                         <div className="line"></div>
-                        <div className="descr">Income tax up to 375,000 AED (~100,000$)</div>
+                        <div className="descr">{t("name94.2")}</div>
                     </div>
                     <div className="procent-elem">
-                        <div className="number">9%</div>
+                        <div className="number">{t("name95.1")}</div>
                         <div className="line"></div>
-                        <div className="descr">Income tax over 375,000 AED</div>
+                        <div className="descr">{t("name95.2")}</div>
                     </div>
                     <div className="procent-elem">
-                        <div className="number">0%</div>
+                        <div className="number">{t("name96.1")}</div>
                         <div className="line"></div>
-                        <div className="descr">Payroll tax</div>
+                        <div className="descr">{t("name96.2")}</div>
                     </div>
                     <div className="procent-elem">
-                        <div className="number">0%</div>
+                        <div className="number">{t("name100.1")}</div>
                         <div className="line"></div>
-                        <div className="descr">Tax on dividends</div>
+                        <div className="descr">{t("name100.2")}</div>
                     </div>
                     <div className="procent-elem">
-                        <div className="number">0%</div>
+                        <div className="number">{t("name101.1")}</div>
                         <div className="line"></div>
-                        <div className="descr">Capital gains tax</div>
+                        <div className="descr">{t("name101.2")}</div>
                     </div>
                 </div>
             </div>
+
         </div>
         <Footer />
         <RequestModal showModal={showModal} closeModal={closeModal} modalText={{ tittleText: t("modalHeader"), buttonText: t("modalButton") }} image={team[randomNumber].image} />

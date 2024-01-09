@@ -6,20 +6,21 @@
         .bank-baner-guide {
             display: flex;
             flex-direction: column;
-            gap: 60px;
+            gap: 101px;
 
             .bank-free-baner {
                 display: flex;
                 justify-content: space-between;
                 height: 80vh;
                 gap: 40px;
+                padding: 64px 64px 0px 0px;
 
                 .content {
                     display: flex;
                     flex-direction: column;
                     justify-content: space-between;
                     width: 49%;
-                    padding-left: 64px;
+                    padding: 0px 0px 0px 64px;
 
 
                     .title {
@@ -128,7 +129,7 @@
         }
 
         .banc-learn-more {
-            padding: 128px 64px 12px 64px;
+            padding: 101px 64px 12px 64px;
 
             .card-container {
                 display: flex;
@@ -322,7 +323,7 @@
             gap: 48px;
 
             .title {
-                color: #000;
+                color: #191C38;
                 font-family: HelveticaBold, sans-serif;
                 font-size: 48px;
                 font-style: normal;
@@ -355,7 +356,7 @@
                         gap: 16px;
 
                         div:first-child {
-                            color: #000;
+                            color: #191C38;
                             font-family: HelveticaBold, sans-serif;
                             font-size: 22px;
                             font-style: normal;
@@ -478,7 +479,7 @@
         .no-taxes {
             display: flex;
             padding: 24px 64px 24px 64px;
-            margin: 64px 0px 64px 0px;
+            margin: 128px 0px 64px 0px;
             gap: 48px;
             background-color: #fff;
 
@@ -581,9 +582,9 @@
         .interesting-facts {
             display: flex;
             flex-direction: 48px;
-            padding: 64px;
+            padding: 64px 64px 64px 64px;
             flex-direction: column;
-            gap: 24px;
+            gap: 38px;
 
             .title {
                 color: #191C38;
@@ -641,7 +642,7 @@
         .fortune {
             display: flex;
             flex-direction: column;
-            gap: 48px;
+            gap: 38px;
             padding: 64px 64px 128px 64px;
 
             .title {
@@ -792,8 +793,11 @@
 @media (max-width: 1300px) {
     .bank-acc-wrapper {
         .bank-acc-container {
-            .bank-acc-baner-guide {
-                .bank-acc-baner {
+            .bank-baner-guide {
+                gap: 20px;
+
+                .bank-free-baner {
+                    padding: 16px 16px 0px 0px;
                     height: 70vh;
                     gap: 40px;
 
@@ -803,7 +807,7 @@
 
                         .title {
                             div:first-child {
-                                font-size: 72px;
+                                font-size: 32px;
                             }
 
                             div:last-child {
@@ -849,7 +853,7 @@
             }
 
             .banc-learn-more {
-                padding: 64px 16px 32px 16px;
+                padding: 32px 16px 32px 16px;
 
                 .card-container {
                     display: flex;
@@ -918,7 +922,7 @@
             }
 
             .percent-hours {
-                padding: 32px 16px;
+                padding: 32px 16px 72px 16px;
                 gap: 8px;
 
                 .time-perc {
@@ -1018,7 +1022,7 @@
                 gap: 24px;
 
                 .title {
-                    color: #000;
+                    color: #191C38;
                     font-family: HelveticaBold, sans-serif;
                     font-size: 48px;
                     font-style: normal;
@@ -1044,6 +1048,7 @@
                         .descr {
 
                             div:first-child {
+                                color: #191C38;
                                 font-size: 20px;
                             }
 
@@ -1175,7 +1180,7 @@
 
             .no-taxes {
                 padding: 32px 16px 32px 16px;
-                margin: 32px 0px 64px 0px;
+                margin: 64px 0px 32px 0px;
                 gap: 48px;
                 flex-direction: column;
 
@@ -1233,7 +1238,7 @@
             .interesting-facts {
                 display: flex;
                 flex-direction: 48px;
-                padding: 32px 16px;
+                padding: 16px 16px 32px 16px;
                 flex-direction: column;
                 gap: 24px;
 
@@ -1292,7 +1297,7 @@
 
             .fortune {
                 gap: 24px;
-                padding: 32px 16px 64px 16px;
+                padding: 16px 16px 64px 16px;
 
                 .title {
                     font-size: 32px;
@@ -1386,7 +1391,7 @@
 
                     .content {
                         width: 100%;
-                        padding: 0px 16px 0px 16px;
+                        padding: 0px 0px 0px 16px;
                         gap: 24px;
 
                         .title {
@@ -1429,7 +1434,7 @@
                 }
 
                 .guide-blocks {
-                    padding: 96px 16px 96px 16px;
+                    padding: 32px 16px 32px 16px;
                     display: flex;
                     flex-wrap: wrap;
                     gap: 7px;
@@ -1452,7 +1457,7 @@
 
             .banc-learn-more {
                 display: flex;
-                padding: 96px 16px 48px 16px;
+                padding: 16px 16px 16px 16px;
 
                 .card-container {
                     flex-direction: column;
@@ -1462,7 +1467,6 @@
                         width: 100%;
 
                         .content {
-
 
                             div:first-child {
                                 font-size: 20px;
@@ -1481,6 +1485,10 @@
                             font-size: 16px;
                             padding: 16px;
                         }
+                    }
+
+                    .card:last-child {
+                        display: none;
                     }
                 }
             }
@@ -1513,7 +1521,7 @@
             }
 
             .percent-hours {
-                padding: 48px 16px 96px 16px;
+                padding: 48px 16px 32px 16px;
                 gap: 8px;
                 flex-direction: column;
 
@@ -1596,11 +1604,12 @@
             }
 
             .reliable-partner {
-                padding: 96px 16px 48px 16px;
+                padding: 16px 16px 16px 16px;
                 flex-direction: column;
                 gap: 24px;
 
                 .title {
+                    white-space: nowrap;
                     font-size: 32px;
                 }
 
@@ -1615,7 +1624,6 @@
                         padding: 16px;
                         flex: 1;
                         gap: 36px;
-
 
                         .descr {
                             gap: 8px;
@@ -1721,8 +1729,8 @@
             }
 
             .no-taxes {
-                padding: 48px 16px 48px 16px;
-                margin: 32px 0px 64px 0px;
+                padding: 16px 16px 16px 16px;
+                margin: 32px 0px 0px 0px;
                 gap: 0px;
                 flex-direction: column;
                 background-color: transparent;
@@ -1849,7 +1857,7 @@
             .blog {
                 display: flex;
                 flex-direction: column;
-                padding: 96px 16px;
+                padding: 64px 16px;
                 gap: 24px;
 
                 .title {

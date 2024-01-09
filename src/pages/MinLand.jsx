@@ -11,6 +11,7 @@ import egypt from "../assets/minLand/egypt.svg";
 import turkey from "../assets/minLand/turkey.svg";
 import usa from "../assets/minLand/usa.svg";
 import GetConsult from "../components/GetConsult"
+import ConsulatingBaner from "../components/ConsulatingBaner"
 
 import alexLogachevName from "../assets/teams/alex-logachev-min.jpg";
 import qrAlex from "../assets/teams/qr/qr-alex.svg";
@@ -29,6 +30,9 @@ import allaGerassimova from "../assets/teams/qr/alla-gerassimova.png";
 import dmitriyKoltsovName from "../assets/teams/dmitriy-koltsov-min.jpg";
 import dmitriyKoltsov from "../assets/teams/qr/dmitriy-koltsov.png";
 import RequestModal from "../components/RequestModal.jsx";
+
+import CostOfService from "../components/CostOfService";
+
 
 function MinLand() {
     const { t } = useTranslation();
@@ -108,249 +112,137 @@ function MinLand() {
             <Header></Header>
             <div className="minland-container">
                 <div className="minland-baner-guide">
-                    <div className="minland-baner">
-                        <div className="content">
-                            <div className="title">
-                                <div >Set up of A LOCAL COMPANY IN THE UAE</div>
-                                <div>We open a company remotely and prepare for the launch of operational activities</div>
-                            </div>
-                            <div className="image">
-                                <img src={accountaingBaner} alt="" />
-                            </div>
-                            <div className="leave-a-request" onClick={setShowModal}>
-                                Consultation
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M16.172 10.9997L10.808 5.63568L12.222 4.22168L20 11.9997L12.222 19.7777L10.808 18.3637L16.172 12.9997H4V10.9997H16.172Z" fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="image">
-                            <img src={accountaingBaner} alt="" />
-                        </div>
-                    </div>
+                    <ConsulatingBaner
+                        img={accountaingBaner}
+                        title={t("name159.1")}
+                        description={[t("name159.1")]}
+                        scroll="process-of-setuping"
+                        setShowModal="showModal"
+                    />
                     <div className="guide-blocks">
                         <div className="guide-block">
                             <div>01</div>
-                            <div>Initial approval & Trade name reservation</div>
+                            <div>{t("name160")}</div>
                         </div>
                         <div className="guide-block">
                             <div>02</div>
-                            <div>Memorandum Of Assosiation registration</div>
+                            <div>{t("name161")}</div>
                         </div>
                         <div className="guide-block">
                             <div>03</div>
-                            <div>License</div>
+                            <div>{t("name162")}</div>
                         </div>
                         <div className="guide-block">
                             <div>04</div>
-                            <div>Annual support</div>
+                            <div>{t("name164")}</div>
                         </div>
                     </div>
                 </div>
-                <div className="process-of-setuping">
-                    <div className="page-title">The process of setuping and administering a business in the Mainland is different from the Free zone </div>
-                    <div>In the case of Free Zone, the registrar and the supervisory authority are loyal private companies that manage free zones. In the case of Mainland, the registering and controlling body is a state structure – the economic department of the relevant emirate. In this regard, doing business on the Mainland is subject to much more control and regulation.</div>
+
+                <div id="process-of-setuping" className="process-of-setuping">
+                    <div className="page-title">{t("name165.1")} </div>
+                    <div>{t("name165.2")}</div>
                 </div>
+
                 <div className="table">
                     <div className="table-row">
-                        <div className="first-table-row">Type</div>
-                        <div className="second-table-row">Free Zone</div>
-                        <div className="third-table-row">Mainland</div>
+                        <div className="first-table-row">{t("name1")}</div>
+                        <div className="second-table-row">{t("name2")}</div>
+                        <div className="third-table-row">{t("name4")}</div>
                     </div>
 
                     <div className="table-row">
                         <div className="first-table">
-                            <div>
-                                Ownership
-                            </div>
+                            <div>{t("name3")}</div>
                         </div>
-                        <div className="second-table">
-                            100 % ownership of foreign <br />
-                            citizens or legal <br />
-                            persons
-                        </div>
-                        <div className="third-table">
-                            M100 % ownership of foreign citizens <br />
-                            or legal entities. Maybe <br />
-                            Adding a local agent to simplify <br />
-                            proceduresainland
-                        </div>
+                        <div className="second-table">{t("name5")}</div>
+                        <div className="third-table">{t("name5")}</div>
                     </div>
 
                     <div className="table-row">
                         <div className="first-table">
-                            <div>
-                                Geography
-                                activities
-                            </div>
+                            <div>{t("name6")}</div>
                         </div>
-                        <div className="second-table">
-                            Activities outside the UAE: <br />
-                            There are no restrictions within the UAE: <br />
-                            There are restrictions
-                        </div>
-                        <div className="third-table">
-                            Activities outside the UAE: <br />
-                            There are no restrictions within the UAE: there are no restrictions
-                        </div>
+                        <div className="second-table">{t("name9")}</div>
+                        <div className="third-table">{t("name9")}</div>
                     </div>
 
                     <div className="table-row">
-                        <div className="first-table"><div>Taxes and
-                            Reporting</div></div>
-                        <div className="second-table">
-                            9 % income tax starting with <br />
-                            2023r. <br />
-                            Annual reporting
+                        <div className="first-table">
+                            <div>{t("name7")}</div>
                         </div>
-                        <div className="third-table">
-                            9 % income tax starting from 2023. 5 % VAT (VAT) <br />
-                            Annual reporting
-                        </div>
+                        <div className="second-table">{t("name11")}</div>
+                        <div className="third-table">{t("name14")}</div>
                     </div>
 
                     <div className="table-row">
-                        <div className="first-table"><div>Visas for
-                            employees</div></div>
-                        <div className="second-table">
-                            The cost of employee registration is from $ 2.600 per 2 years
+                        <div className="first-table">
+                            <div>{t("name8")}</div>
                         </div>
-                        <div className="third-table">
-                            The cost of employee registration is from $ 2.000 by 2 years
-                        </div>
+                        <div className="second-table">{t("name12")}</div>
+                        <div className="third-table">{t("name15")}</div>
                     </div>
 
                     <div className="table-row">
-                        <div className="first-table"><div>Regulator</div> </div>
-                        <div className="second-table">
-                            The regulatory body is Frizona
+                        <div className="first-table">
+                            <div>{t("name16")}</div>
                         </div>
-                        <div className="third-table">
-                            The regulatory body is the Economic Department of the Emirate in <br />
-                            which is registered
-                        </div>
+                        <div className="second-table">{t("name19")}</div>
+                        <div className="third-table">{t("name21")}</div>
                     </div>
-                    <div className="table-row">
-                        <div className="first-table"><div>Extension Lycens</div></div>
-                        <div className="second-table">
-                            Anually
 
+                    <div className="table-row">
+                        <div className="first-table">
+                            <div>{t("name17")}</div>
                         </div>
-                        <div className="third-table">
-                            Anually
-                        </div>
+                        <div className="second-table">{t("name20")}</div>
+                        <div className="third-table">{t("name22")}</div>
                     </div>
                 </div>
 
                 <div className="accompany">
-                    <div className="page-title">We accompany you at every stage, starting with the company setup, ending with obtaining all permits and starting your business</div>
-
+                    <div className="page-title">{t("name190")}</div>
                     <div className="accompany-blocks-container">
                         <div className="accompany-block">
                             <div className="left-content">
                                 <div className="stage-title">
-                                    <div>Stage 1</div>
-                                    <div>Getting initial approval</div>
+                                    <div>{t("name191")}</div>
+                                    <div>{t("name192")}</div>
                                 </div>
                                 <div className="accompany-paragraph">
-                                    <div>Description</div>
-                                    <div>Obtaining primary approval for doing business. Includes selection and coordination of activities, reservation of the company's trade name and receipt of the Initial approval package from the Dubai Economic Department required for office rental and subsequent registration of a legal entity</div>
+                                    <div>{t("name193")}</div>
+                                    <div>{t("name194")}</div>
                                 </div>
                             </div>
                             <div className="right-content">
                                 <div className="list-container">
-                                    <div className="list-title">What you need from the client</div>
+                                    <div className="list-title">{t("name195")}</div>
                                     <div className="list-upper">
                                         <div className="list-elem">
                                             <img src={checkBrown} alt="" />
-                                            Initial Approval Certificate
+                                            {t("name196")}
                                         </div>
                                         <div className="list-elem">
                                             <img src={checkBrown} alt="" />
-                                            30 minutes to fill out our brief
+                                            {t("name197")}
                                         </div>
                                         <div className="list-elem">
                                             <img src={checkBrown} alt="" />
-                                            If the client has never visited the UAE before, then a physical presence will be required
+                                            {t("name198")}
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="list-container">
-                                    <div className="list-title">Cost and terms</div>
+                                    <div className="list-title">{t("name199")}</div>
                                     <div className="list-lower">
                                         <div className="list-elem">
                                             <img src={checkBrown} alt="" />
-                                            Initial Approval Certificate
+                                            {t("name200")}
                                         </div>
                                         <div className="list-elem">
                                             <img src={checkBrown} alt="" />
-                                            30 minutes to fill out our brief
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="accompany-block">
-
-                            <div className="left-content">
-                                <div className="stage-title">
-                                    <div>Stage 2</div>
-                                    <div>Help with Ejari for office or showroom</div>
-                                </div>
-                                <div className="list-container">
-                                    <div className="list-title">Description</div>
-                                    <div className="list-upper">
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Selection of an object for request
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Legal audit of the lease agreement
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Full transaction support
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Assistance in making payments/issuing checks to the owner
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Registration of a lease agreement in Ejari
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="right-content">
-                                <div className="list-container">
-                                    <div className="list-title">What you need from the client</div>
-                                    <div className="list-upper">
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Initial Approval Certificate
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Memorandum of assosiation
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="list-container">
-                                    <div className="list-title">Cost and terms</div>
-                                    <div className="list-lower">
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            1-20 bussines days depends on property
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            from 7000 aed per year
+                                            {t("name201")}
                                         </div>
                                     </div>
                                 </div>
@@ -360,16 +252,78 @@ function MinLand() {
                         <div className="accompany-block">
                             <div className="left-content">
                                 <div className="stage-title">
-                                    <div>Stage 3</div>
-                                    <div>Company setup</div>
+                                    <div>{t("name202")}</div>
+                                    <div>{t("name203")}</div>
+                                </div>
+                                <div className="list-container">
+                                    <div className="list-title">{t("name204")}</div>
+                                    <div className="list-upper">
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name205")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name206")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name207")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name208")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name209")}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="right-content">
+                                <div className="list-container">
+                                    <div className="list-title">{t("name210")}</div>
+                                    <div className="list-upper">
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name211")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name212")}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="list-container">
+                                    <div className="list-title">{t("name213")}</div>
+                                    <div className="list-lower">
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name214")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name215")}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="accompany-block">
+                            <div className="left-content">
+                                <div className="stage-title">
+                                    <div>{t("name216")}</div>
+                                    <div>{t("name217")}</div>
                                 </div>
                                 <div className="accompany-paragraph">
-                                    <div>Description</div>
+                                    <div>{t("name218")}</div>
                                     <div>
-                                        <span className="big-description">Preparation of all documents by the Dubai Economic Department,
-                                            obtaining a Trade license and a certificate for a trade name.
-                                            Company setup in the Ministry of Human Resources and issue of <span className="underline">electronic
-                                                signature</span> and <span className="underline" >labor card</span>
+                                        <span className="big-description">
+                                            {t("name219")}
                                         </span>
                                     </div>
                                 </div>
@@ -377,146 +331,25 @@ function MinLand() {
 
                             <div className="right-content">
                                 <div className="list-container">
-                                    <div className="list-title">What you need from the client</div>
+                                    <div className="list-title">{t("name220")}</div>
                                     <div className="list-upper">
                                         <div className="list-elem">
                                             <img src={checkBrown} alt="" />
-                                            One visit to the TasHeel Center to obtain an e-Signature and launch the process of obtaining an Emirates ID for the founders
+                                            {t("name221")}
                                         </div>
                                     </div>
                                 </div>
 
                                 <div className="list-container">
-                                    <div className="list-title">WCost and terms</div>
+                                    <div className="list-title">{t("name222")}</div>
                                     <div className="list-upper">
                                         <div className="list-elem">
                                             <img src={checkBrown} alt="" />
-                                            2-3 days after receiving Ejari
+                                            {t("name223")}
                                         </div>
                                         <div className="list-elem">
                                             <img src={checkBrown} alt="" />
-                                            The licence cost depend from ejari type and rent cost. Starts from 15,000 aed
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="accompany-block">
-
-                            <div className="left-content">
-                                <div className="stage-title">
-                                    <div>Stage 4.1</div>
-                                    <div>Visa registration process</div>
-                                </div>
-                                <div className="list-container">
-                                    <div className="list-title">Description</div>
-                                    <div className="list-upper">
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Issue of a labor card and registration of an employment contract in WPS
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Getting a Visa Permit
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Record for a medical test and biometrics
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Annual insurance (VMI)
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Emirates ID Issue
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="right-content">
-                                <div className="list-container">
-                                    <div className="list-title">What you need from the client</div>
-                                    <div className="list-upper">
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Passport data
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Contract details for employee
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            E-signature
-                                        </div>
-                                    </div>
-                                </div>
-
-                                <div className="list-container">
-                                    <div className="list-title">Cost and terms</div>
-                                    <div className="list-upper">
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            4-7 working days depends on immigration
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            from 5000 aed for Investor
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            from 7,000 aed for employee
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </div>
-
-                        <div className="accompany-block">
-                            <div className="left-content">
-                                <div className="stage-title">
-                                    <div>Stage 4.2</div>
-                                    <div>Obtaining permits from regulatory authorities</div>
-                                </div>
-                                <div className="list-container">
-                                    <div className="list-title">We get permissions from</div>
-                                    <div className="list-upper">
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Food Safety Department
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Dubai Municipality
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Dubai Land Department
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Roads and Transport Authority
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div className="right-content">
-                                <div className="list-container">
-                                    <div className="list-title">What you need from the client</div>
-                                    <div className="list-upper">
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            14-28 days
-                                        </div>
-                                        <div className="list-elem">
-                                            <img src={checkBrown} alt="" />
-                                            Depending on the type of business from 5 000 to 25 000 AED
+                                            {t("name224")}
                                         </div>
                                     </div>
                                 </div>
@@ -526,15 +359,31 @@ function MinLand() {
                         <div className="accompany-block">
                             <div className="left-content">
                                 <div className="stage-title">
-                                    <div>Stage 5</div>
-                                    <div>Opening a bank account, enabling acquiring</div>
+                                    <div>{t("name225")}</div>
+                                    <div>{t("name226")}</div>
                                 </div>
                                 <div className="list-container">
-                                    <div className="list-title">Description</div>
+                                    <div className="list-title">{t("name227")}</div>
                                     <div className="list-upper">
                                         <div className="list-elem">
                                             <img src={checkBrown} alt="" />
-                                            Preparation of all documents and passing the AML/KYC procedure
+                                            {t("name228")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name229")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name230")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name231")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name232")}
                                         </div>
                                     </div>
                                 </div>
@@ -542,11 +391,113 @@ function MinLand() {
 
                             <div className="right-content">
                                 <div className="list-container">
-                                    <div className="list-title">Deadlines</div>
+                                    <div className="list-title">{t("name233")}</div>
                                     <div className="list-upper">
                                         <div className="list-elem">
                                             <img src={checkBrown} alt="" />
-                                            3-6 weeks
+                                            {t("name234")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name235")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name236")}
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div className="list-container">
+                                    <div className="list-title">{t("name237")}</div>
+                                    <div className="list-upper">
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name238")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name239")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name240")}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="accompany-block">
+                            <div className="left-content">
+                                <div className="stage-title">
+                                    <div>{t("name241")}</div>
+                                    <div>{t("name242")}</div>
+                                </div>
+                                <div className="list-container">
+                                    <div className="list-title">{t("name243")}</div>
+                                    <div className="list-upper">
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name244")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name245")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name246")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name247")}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="right-content">
+                                <div className="list-container">
+                                    <div className="list-title">{t("name248")}</div>
+                                    <div className="list-upper">
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name249")}
+                                        </div>
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name250")}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="accompany-block">
+                            <div className="left-content">
+                                <div className="stage-title">
+                                    <div>{t("name251")}</div>
+                                    <div>{t("name252")}</div>
+                                </div>
+                                <div className="list-container">
+                                    <div className="list-title">{t("name253")}</div>
+                                    <div className="list-upper">
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name254")}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div className="right-content">
+                                <div className="list-container">
+                                    <div className="list-title">{t("name255")}</div>
+                                    <div className="list-upper">
+                                        <div className="list-elem">
+                                            <img src={checkBrown} alt="" />
+                                            {t("name256")}
                                         </div>
                                     </div>
                                 </div>
@@ -560,127 +511,7 @@ function MinLand() {
                 </div>
 
 
-                <div className="cost-service">
-                    <div className="title">
-                        <div className="page-title">Cost of services</div>
-                        <div>Company setup and its preparation for commercial and operational activities</div>
-                    </div>
-                    <div className="setups-container">
-                        <div className="setup">
-                            <div className="setup-name">
-                                Company setup
-                            </div>
-                            <div className="setup-content">
-                                <div className="setup-list">
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Prior authorization
-                                    </div>
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Rent a virtual office
-                                    </div>
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Obtaining a license
-                                    </div>
-                                </div>
-                                <div className="setup-price">
-                                    <div>From $6,000</div>
-                                    <div>(AED 20,500)</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="setup">
-                            <div className="setup-name">
-                                Company registration + Visa processing
-                            </div>
-                            <div className="setup-content">
-                                <div className="setup-list">
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Prior authorization
-                                    </div>
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Rent a virtual office
-                                    </div>
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Obtaining a license
-                                    </div>
-
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Obtaining an immigration card / establishment card
-                                    </div>
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Obtaining a labor card
-                                    </div>
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Issuance of investor / partner visa
-                                    </div>
-                                </div>
-                                <div className="setup-price">
-                                    <div>From $8,800</div>
-                                    <div>((AED 32,000))</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div className="setup">
-                            <div className="setup-name blue">
-                                Company registration + Visa processing + Bank account opening
-                            </div>
-                            <div className="setup-content">
-                                <div className="setup-list">
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Prior authorization
-                                    </div>
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Renting a virtual office
-                                    </div>
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Obtaining a license
-                                    </div>
-
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Obtaining an immigration card / establishment card
-                                    </div>
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Obtaining a labor card
-                                    </div>
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Investor / partner visa issuance
-                                    </div>
-
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        KYC walkthrough
-                                    </div>
-                                    <div className="setup-list-elem">
-                                        <img src={checkFill} alt="" />
-                                        Opening an account with a UAE bank
-                                    </div>
-                                </div>
-                                <div className="setup-price">
-                                    <div>From $12,500</div>
-                                    <div>(AED 20,500)</div>
-                                </div>
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
+                <CostOfService />
 
                 <div className="pro-part">
                     <div className="content">
@@ -691,72 +522,19 @@ function MinLand() {
                     </div>
                 </div>
 
-                <div className="main-services">
-                    <div className="sercives-title">
-                        The main services of the company
-                    </div>
-                    <div className="cards-container">
-                        <div className="card">
-                            Business setup and structuring in the UAE
-                        </div>
-                        <div className="card">
-                            Support of commercial and operational activities in the UAE
-                        </div>
-                        <div className="card">
-                            Tax planning and optimization
-                        </div>
-                        <div className="card">
-                            Services for business owners
-                        </div>
-                    </div>
-                </div>
-
                 <div className="numbers">
                     <div className="clients">
-                        <div>200+</div>
-                        <div>Clients</div>
+                        <div>{t("name283")}</div>
+                        <div>{t("name284")}</div>
                     </div>
                     <div className="employees-companies">
                         <div className="block">
-                            <div>22</div>
-                            <div>Employees</div>
+                            <div>{t("name289")}</div>
+                            <div>{t("name290")}</div>
                         </div>
-
                         <div className="block">
-                            <div>30+</div>
-                            <div>Companies services for business owners</div>
-                        </div>
-                    </div>
-                </div >
-
-                <div className="offices">
-                    <div className="offices-page-title">
-                        Offices in three countries
-                    </div>
-
-                    <div className="countries">
-                        <div className="country-block">
-                            <img src={egypt} alt="" />
-                            <div className="text">
-                                <div>UAE,
-                                    Dubai</div>
-                                <div>IFZA Business Center, Building A, office 301</div>
-                            </div>
-                        </div>
-                        <div className="country-block">
-                            <img src={turkey} alt="" />
-                            <div className="text">
-                                <div>Turkey, Istanbul</div>
-                                <div>Sinpaş Queen Bomonti Rezidans, 37nd floor</div>
-                            </div>
-                        </div>
-                        <div className="country-block">
-                            <img src={usa} alt="" />
-                            <div className="text">
-                                <div>UAE,
-                                    Dubai</div>
-                                <div>Opening soon</div>
-                            </div>
+                            <div>{t("name291")}</div>
+                            <div>{t("name292")}</div>
                         </div>
                     </div>
                 </div>

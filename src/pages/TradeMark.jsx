@@ -25,6 +25,7 @@ import allaGerassimova from "../assets/teams/qr/alla-gerassimova.png";
 import dmitriyKoltsovName from "../assets/teams/dmitriy-koltsov-min.jpg";
 import dmitriyKoltsov from "../assets/teams/qr/dmitriy-koltsov.png";
 import RequestModal from "../components/RequestModal.jsx";
+import ConsulatingBaner from "../components/ConsulatingBaner"
 
 function TradeMark() {
     const { t } = useTranslation();
@@ -107,27 +108,14 @@ function TradeMark() {
             <Header></Header>
             <div className="trademark-container">
                 <div className="trademark-baner-guide">
-                    <div className="trademark-baner">
-                        <div className="content">
-                            <div className="title">
-                                <div>Complex business support and Trademark registration</div>
-                                <div className="text">Assistance in opening a turnkey business in the UAE and its further support. Company registration and obtaining a residence permit, obtaining all permits and certificates, administrative and accounting support.</div>
-                                <div className="text">If you want to protect your intellectual property and establish the rights to your trademark in the UAE, then you are in the right place.</div>
-                            </div>
-                            <div className="image">
-                                <img src={accountaingBaner} alt="" />
-                            </div>
-                            <div className="leave-a-request" onClick={setShowModal}>
-                                Consultation
-                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
-                                    <path d="M16.172 10.9997L10.808 5.63568L12.222 4.22168L20 11.9997L12.222 19.7777L10.808 18.3637L16.172 12.9997H4V10.9997H16.172Z" fill="white" />
-                                </svg>
-                            </div>
-                        </div>
-                        <div className="image">
-                            <img src={accountaingBaner} alt="" />
-                        </div>
-                    </div>
+                    <ConsulatingBaner
+                        img={accountaingBaner}
+                        title="Trademark registration"
+                        description={['Assistance in opening a turnkey business in the UAE and its further support. Company registration and obtaining a residence permit, obtaining all permits and certificates, administrative and accounting support.',
+                            '']
+                        }
+                        setShowModal="showModal"
+                    />
                 </div>
                 <div className="registering-trademark">
                     <div className="page-title">Registering a trademark is an important step for business in the UAE </div>
