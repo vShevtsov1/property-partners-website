@@ -1,0 +1,132 @@
+.cost-service {
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  padding: 128px 64px 32px 64px;
+}
+.cost-service .title {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.cost-service .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.cost-service .title div:last-child {
+  color: #191C38;
+  font-family: Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+}
+.cost-service .setups-container {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+.cost-service .setups-container .setup {
+  display: flex;
+}
+.cost-service .setups-container .setup .setup-name {
+  display: flex;
+  align-items: flex-end;
+  padding: 24px;
+  background: #C29773;
+  width: 23%;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cost-service .setups-container .setup .setup-content {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 24px;
+  background: #FFF;
+  flex: 1;
+}
+.cost-service .setups-container .setup .setup-content .setup-list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.cost-service .setups-container .setup .setup-content .setup-list .setup-list-elem {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: #000;
+  font-family: Helvetica;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cost-service .setups-container .setup .setup-content .setup-price {
+  display: flex;
+  gap: 16px;
+  align-items: flex-end;
+}
+.cost-service .setups-container .setup .setup-content .setup-price div:first-child {
+  color: #000;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cost-service .setups-container .setup .setup-content .setup-price div:last-child {
+  color: #000;
+  font-family: Helvetica;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.cost-service .setups-container .setup .blue {
+  background: #191C38 !important;
+}
+
+@media (max-width: 1300px) {
+  .cost-service {
+    padding: 64px 16px 32px 16px;
+    gap: 24px;
+  }
+  .cost-service .title div:first-child {
+    font-size: 32px;
+  }
+  .cost-service .title div:last-child {
+    font-size: 18px;
+  }
+  .cost-service .setups-container {
+    gap: 16px;
+  }
+  .cost-service .setups-container .setup .setup-name {
+    padding: 16px;
+    font-size: 22px;
+  }
+  .cost-service .setups-container .setup .setup-content {
+    padding: 16px;
+  }
+  .cost-service .setups-container .setup .setup-content .setup-price div:first-child {
+    font-size: 18px;
+  }
+  .cost-service .setups-container .setup .setup-content .setup-price div:last-child {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .cost-service {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=cost-service.css.map */

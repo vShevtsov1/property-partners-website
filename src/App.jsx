@@ -19,6 +19,7 @@ import TradeMark from "./pages/TradeMark.jsx"
 import Areas from "./pages/Areas.jsx";
 import AreaPage from "./pages/AreaPage.jsx";
 import AboutUs from "./pages/AboutUs.jsx";
+import SupportChat from "./components/SupportChat.jsx";
 
 
 function App() {
@@ -36,6 +37,7 @@ function App() {
     <BrowserRouter>
       <ScrollToTop />
       <ContactUsModal />
+      <SupportChat/>
       <PDFmodal closeModal={closePDFModal} showModal={isPDFModalOpen} />
       <Routes >
         <Route path="/" element={<Home openModal={openPDFModal} />} />

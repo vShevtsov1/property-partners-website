@@ -4,6 +4,9 @@
   gap: 40px;
   margin-bottom: 64px;
 }
+.accounting-wrapper .accounting-container .baner .content .title div:first-child {
+  font-size: 54px;
+}
 .accounting-wrapper .accounting-container .accounting-guide {
   display: flex;
   flex-direction: column;

@@ -1,0 +1,124 @@
+.baner {
+  display: flex;
+  justify-content: space-between;
+  height: 80vh;
+  gap: 40px;
+  padding: 64px 64px 0px 0px;
+}
+.baner .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 49%;
+  padding-left: 64px;
+}
+.baner .content .title {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.baner .content .title div:first-child {
+  color: #191C38;
+  font-family: HelveticaBold, sans-serif;
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 90%;
+  /* 57.6px */
+  margin-top: 64px;
+}
+.baner .content .title .description {
+  color: #616161;
+  font-family: Helvetica, sans-serif;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 120%;
+  width: 68%;
+}
+.baner .content .image img {
+  display: none;
+}
+.baner .content .leave-a-request {
+  cursor: pointer;
+  display: flex;
+  padding: 24px;
+  justify-content: space-between;
+  align-items: center;
+  width: 73%;
+  flex-shrink: 0;
+  background: #191C38;
+  color: #FFF;
+  font-family: Helvetica;
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+.baner .image {
+  flex: 1;
+}
+.baner .image img {
+  object-fit: cover;
+  height: 100%;
+  width: 100%;
+}
+
+@media (max-width: 1300px) {
+  .baner {
+    padding: 16px 16px 0px 0px;
+    height: 70vh;
+    gap: 40px;
+  }
+  .baner .content {
+    width: 49%;
+    padding: 0px 0px 0px 16px;
+  }
+  .baner .content .title div:first-child {
+    font-size: 32px;
+  }
+  .baner .content .title div:last-child {
+    font-size: 18px;
+  }
+  .baner .content .leave-a-request {
+    width: 100%;
+    font-size: 14px;
+  }
+}
+@media (max-width: 876px) {
+  .baner {
+    height: auto;
+  }
+  .baner .content {
+    width: 100%;
+    padding: 0px 0px 0px 16px;
+    gap: 24px;
+  }
+  .baner .content .title div:first-child {
+    width: 100%;
+    font-size: 24px;
+    margin-top: 24px;
+  }
+  .baner .content .title div:last-child {
+    width: 100%;
+  }
+  .baner .content .image {
+    display: block;
+  }
+  .baner .content .image img {
+    display: block;
+  }
+  .baner .content .leave-a-request {
+    padding: 16px;
+    font-style: 14px;
+  }
+  .baner .content .leave-a-request svg {
+    transform: rotate(90deg);
+  }
+  .baner .image {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=consulatingBaner.css.map */

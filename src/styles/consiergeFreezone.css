@@ -1,3 +1,9 @@
+.cons-free-wrapper .baner .content .title {
+  gap: 16px;
+}
+.cons-free-wrapper .baner .content .title div:first-child {
+  font-size: 50px;
+}
 .cons-free-wrapper .cons-free-container {
   display: flex;
   flex-direction: column;
@@ -303,102 +309,6 @@
 }
 .cons-free-wrapper .cons-free-container .table .table-row:last-child .first-table {
   border-bottom: 2px solid #D2D2D2;
-}
-.cons-free-wrapper .cons-free-container .cost-service {
-  display: flex;
-  flex-direction: column;
-  gap: 48px;
-  padding: 128px 64px 32px 64px;
-}
-.cons-free-wrapper .cons-free-container .cost-service .title {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-.cons-free-wrapper .cons-free-container .cost-service .title div:first-child {
-  color: #191C38;
-  font-family: HelveticaBold, sans-serif;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-}
-.cons-free-wrapper .cons-free-container .cost-service .title div:last-child {
-  color: #191C38;
-  font-family: Helvetica;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-}
-.cons-free-wrapper .cons-free-container .cost-service .setups-container {
-  display: flex;
-  flex-direction: column;
-  gap: 24px;
-}
-.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup {
-  display: flex;
-}
-.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-name {
-  display: flex;
-  align-items: flex-end;
-  padding: 24px;
-  background: #C29773;
-  width: 23%;
-  color: #FFF;
-  font-family: Helvetica;
-  font-size: 32px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-  padding: 24px;
-  background: #FFF;
-  flex: 1;
-}
-.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-list {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-list .setup-list-elem {
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  color: #000;
-  font-family: Helvetica;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-price {
-  display: flex;
-  gap: 16px;
-  align-items: flex-end;
-}
-.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-price div:first-child {
-  color: #000;
-  font-family: HelveticaBold, sans-serif;
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-price div:last-child {
-  color: #000;
-  font-family: Helvetica;
-  font-size: 18px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .blue {
-  background: #191C38 !important;
 }
 .cons-free-wrapper .cons-free-container .support-discount {
   display: flex;
@@ -716,6 +626,7 @@
 .cons-free-wrapper .cons-free-container .our-services .card-container .card {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 .cons-free-wrapper .cons-free-container .our-services .card-container .card .content {
   display: flex;
@@ -776,6 +687,7 @@
   display: flex;
   gap: 16px;
   height: 210px;
+  width: 100%;
 }
 .cons-free-wrapper .cons-free-container .reliable-partner .blocks-container .block {
   display: flex;
@@ -954,7 +866,11 @@
 }
 
 @media (max-width: 1300px) {
+  .cons-free-wrapper .cons-free-container .cons-baner-guide {
+    gap: 20px;
+  }
   .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner {
+    padding: 16px 16px 0px 0px;
     height: 70vh;
     gap: 40px;
   }
@@ -1015,32 +931,6 @@
   }
   .cons-free-wrapper .cons-free-container .table {
     padding: 32px 16px 64px 16px;
-  }
-  .cons-free-wrapper .cons-free-container .cost-service {
-    padding: 64px 16px 32px 16px;
-    gap: 24px;
-  }
-  .cons-free-wrapper .cons-free-container .cost-service .title div:first-child {
-    font-size: 32px;
-  }
-  .cons-free-wrapper .cons-free-container .cost-service .title div:last-child {
-    font-size: 18px;
-  }
-  .cons-free-wrapper .cons-free-container .cost-service .setups-container {
-    gap: 16px;
-  }
-  .cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-name {
-    padding: 16px;
-    font-size: 22px;
-  }
-  .cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content {
-    padding: 16px;
-  }
-  .cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-price div:first-child {
-    font-size: 18px;
-  }
-  .cons-free-wrapper .cons-free-container .cost-service .setups-container .setup .setup-content .setup-price div:last-child {
-    font-size: 16px;
   }
   .cons-free-wrapper .cons-free-container .support-discount {
     padding: 32px 16px 32px 16px;
@@ -1149,12 +1039,12 @@
     font-size: 16px;
   }
   .cons-free-wrapper .cons-free-container .reliable-partner {
-    padding: 8px 16px 64px 16px;
+    padding: 48px 16px 64px 16px;
     flex-direction: column;
     gap: 24px;
   }
   .cons-free-wrapper .cons-free-container .reliable-partner .title {
-    color: #000;
+    color: #191C38;
     font-family: HelveticaBold, sans-serif;
     font-size: 48px;
     font-style: normal;
@@ -1175,6 +1065,7 @@
     gap: 24px;
   }
   .cons-free-wrapper .cons-free-container .reliable-partner .blocks-container .block .descr div:first-child {
+    color: #191C38;
     font-size: 20px;
   }
   .cons-free-wrapper .cons-free-container .reliable-partner .blocks-container .block .descr div:last-child {
@@ -1185,6 +1076,7 @@
     gap: 32px;
   }
   .cons-free-wrapper .cons-free-container .access .title {
+    color: #191C38;
     font-size: 32px;
   }
   .cons-free-wrapper .cons-free-container .access .blocks-container {
@@ -1197,6 +1089,9 @@
   }
   .cons-free-wrapper .cons-free-container .access .blocks-container .block .descr {
     gap: 8px;
+  }
+  .cons-free-wrapper .cons-free-container .access .blocks-container .block .descr div:first-child {
+    color: #191C38;
   }
   .cons-free-wrapper .cons-free-container .no-taxes {
     padding: 16px 16px 64px 16px;
@@ -1237,7 +1132,7 @@
   }
   .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content {
     width: 100%;
-    padding: 0px 16px 0px 16px;
+    padding: 0px 0px 0px 16px;
     gap: 24px;
   }
   .cons-free-wrapper .cons-free-container .cons-baner-guide .cons-free-baner .content .title div:first-child {
@@ -1281,8 +1176,14 @@
   .cons-free-wrapper .cons-free-container .cons-baner-guide .guide-blocks .guide-block div:last-child {
     font-size: 18px;
   }
+  .cons-free-wrapper .cons-free-container .registring {
+    padding-top: 0px;
+  }
   .cons-free-wrapper .cons-free-container .registring .resolve-container {
     grid-template-columns: repeat(auto-fill, minmax(50%, 1fr));
+  }
+  .cons-free-wrapper .cons-free-container .table {
+    padding-bottom: 32px;
   }
   .cons-free-wrapper .cons-free-container .table .table-row .first-table-row {
     font-size: 12px;
@@ -1308,9 +1209,6 @@
     font-size: 12px;
     height: 126px;
   }
-  .cons-free-wrapper .cons-free-container .cost-service {
-    display: none;
-  }
   .cons-free-wrapper .cons-free-container .support-discount {
     flex-direction: column;
     gap: 10px;
@@ -1327,8 +1225,11 @@
   .cons-free-wrapper .cons-free-container .support-discount .discount .title div:last-child {
     font-size: 16px;
   }
+  .cons-free-wrapper .cons-free-container .big-info-card {
+    padding-bottom: 32px;
+  }
   .cons-free-wrapper .cons-free-container .big-info-card .info-card-container {
-    gap: 96px;
+    gap: 32px;
   }
   .cons-free-wrapper .cons-free-container .big-info-card .info-card-container .top-content {
     padding: 16px;
@@ -1369,14 +1270,20 @@
     flex-direction: column;
     gap: 8px;
   }
+  .cons-free-wrapper .cons-free-container .our-services .card-container .card:last-child {
+    display: none;
+  }
   .cons-free-wrapper .cons-free-container .reliable-partner {
     display: none;
+  }
+  .cons-free-wrapper .cons-free-container .access {
+    padding: 32px 16px 32px 16px;
   }
   .cons-free-wrapper .cons-free-container .access .title {
     font-size: 16px;
   }
   .cons-free-wrapper .cons-free-container .access .blocks-container {
-    padding: 0px 0px 64px 0px;
+    padding: 0px 0px 32px 0px;
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
@@ -1394,7 +1301,7 @@
   }
   .cons-free-wrapper .cons-free-container .no-taxes {
     padding: 16px 16px 16px 16px;
-    margin: 96px 0px 0px 0px;
+    margin: 58px 0px 0px 0px;
     background-color: transparent;
     gap: 0px;
   }

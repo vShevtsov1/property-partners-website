@@ -5,20 +5,21 @@
 .bank-acc-wrapper .bank-acc-container .bank-baner-guide {
   display: flex;
   flex-direction: column;
-  gap: 60px;
+  gap: 101px;
 }
 .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner {
   display: flex;
   justify-content: space-between;
   height: 80vh;
   gap: 40px;
+  padding: 64px 64px 0px 0px;
 }
 .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   width: 49%;
-  padding-left: 64px;
+  padding: 0px 0px 0px 64px;
 }
 .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .title {
   display: flex;
@@ -105,7 +106,7 @@
   line-height: normal;
 }
 .bank-acc-wrapper .bank-acc-container .banc-learn-more {
-  padding: 128px 64px 12px 64px;
+  padding: 101px 64px 12px 64px;
 }
 .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container {
   display: flex;
@@ -273,7 +274,7 @@
   gap: 48px;
 }
 .bank-acc-wrapper .bank-acc-container .access .title {
-  color: #000;
+  color: #191C38;
   font-family: HelveticaBold, sans-serif;
   font-size: 48px;
   font-style: normal;
@@ -304,7 +305,7 @@
   gap: 16px;
 }
 .bank-acc-wrapper .bank-acc-container .access .blocks-container .block .descr div:first-child {
-  color: #000;
+  color: #191C38;
   font-family: HelveticaBold, sans-serif;
   font-size: 22px;
   font-style: normal;
@@ -405,7 +406,7 @@
 .bank-acc-wrapper .bank-acc-container .no-taxes {
   display: flex;
   padding: 24px 64px 24px 64px;
-  margin: 64px 0px 64px 0px;
+  margin: 128px 0px 64px 0px;
   gap: 48px;
   background-color: #fff;
 }
@@ -492,9 +493,9 @@
 .bank-acc-wrapper .bank-acc-container .interesting-facts {
   display: flex;
   flex-direction: 48px;
-  padding: 64px;
+  padding: 64px 64px 64px 64px;
   flex-direction: column;
-  gap: 24px;
+  gap: 38px;
 }
 .bank-acc-wrapper .bank-acc-container .interesting-facts .title {
   color: #191C38;
@@ -543,7 +544,7 @@
 .bank-acc-wrapper .bank-acc-container .fortune {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 38px;
   padding: 64px 64px 128px 64px;
 }
 .bank-acc-wrapper .bank-acc-container .fortune .title {
@@ -669,41 +670,45 @@
 }
 
 @media (max-width: 1300px) {
-  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .bank-acc-baner {
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide {
+    gap: 20px;
+  }
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner {
+    padding: 16px 16px 0px 0px;
     height: 70vh;
     gap: 40px;
   }
-  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .bank-acc-baner .content {
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content {
     width: 49%;
     padding: 0px 0px 0px 16px;
   }
-  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .bank-acc-baner .content .title div:first-child {
-    font-size: 72px;
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .title div:first-child {
+    font-size: 32px;
   }
-  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .bank-acc-baner .content .title div:last-child {
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .title div:last-child {
     font-size: 18px;
   }
-  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .bank-acc-baner .content .leave-a-request {
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .leave-a-request {
     width: 100%;
     font-size: 14px;
   }
-  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .guide-blocks {
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .guide-blocks {
     padding: 32px 16px;
     gap: 8px;
   }
-  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .guide-blocks .guide-block {
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .guide-blocks .guide-block {
     font-size: 18px;
     padding: 16px;
     line-height: 30px;
   }
-  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .guide-blocks .guide-block div:first-child {
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .guide-blocks .guide-block div:first-child {
     font-size: 22px;
   }
-  .bank-acc-wrapper .bank-acc-container .bank-acc-baner-guide .guide-blocks .guide-block div:last-child {
+  .bank-acc-wrapper .bank-acc-container .bank-baner-guide .guide-blocks .guide-block div:last-child {
     font-size: 18px;
   }
   .bank-acc-wrapper .bank-acc-container .banc-learn-more {
-    padding: 64px 16px 32px 16px;
+    padding: 32px 16px 32px 16px;
   }
   .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container {
     display: flex;
@@ -752,7 +757,7 @@
     font-size: 18px;
   }
   .bank-acc-wrapper .bank-acc-container .percent-hours {
-    padding: 32px 16px;
+    padding: 32px 16px 72px 16px;
     gap: 8px;
   }
   .bank-acc-wrapper .bank-acc-container .percent-hours .time-perc {
@@ -831,7 +836,7 @@
     gap: 24px;
   }
   .bank-acc-wrapper .bank-acc-container .reliable-partner .title {
-    color: #000;
+    color: #191C38;
     font-family: HelveticaBold, sans-serif;
     font-size: 48px;
     font-style: normal;
@@ -852,6 +857,7 @@
     gap: 24px;
   }
   .bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block .descr div:first-child {
+    color: #191C38;
     font-size: 20px;
   }
   .bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container .block .descr div:last-child {
@@ -952,7 +958,7 @@
   }
   .bank-acc-wrapper .bank-acc-container .no-taxes {
     padding: 32px 16px 32px 16px;
-    margin: 32px 0px 64px 0px;
+    margin: 64px 0px 32px 0px;
     gap: 48px;
     flex-direction: column;
   }
@@ -993,7 +999,7 @@
   .bank-acc-wrapper .bank-acc-container .interesting-facts {
     display: flex;
     flex-direction: 48px;
-    padding: 32px 16px;
+    padding: 16px 16px 32px 16px;
     flex-direction: column;
     gap: 24px;
   }
@@ -1043,7 +1049,7 @@
   }
   .bank-acc-wrapper .bank-acc-container .fortune {
     gap: 24px;
-    padding: 32px 16px 64px 16px;
+    padding: 16px 16px 64px 16px;
   }
   .bank-acc-wrapper .bank-acc-container .fortune .title {
     font-size: 32px;
@@ -1109,7 +1115,7 @@
   }
   .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content {
     width: 100%;
-    padding: 0px 16px 0px 16px;
+    padding: 0px 0px 0px 16px;
     gap: 24px;
   }
   .bank-acc-wrapper .bank-acc-container .bank-baner-guide .bank-free-baner .content .title div:first-child {
@@ -1138,7 +1144,7 @@
     display: none;
   }
   .bank-acc-wrapper .bank-acc-container .bank-baner-guide .guide-blocks {
-    padding: 96px 16px 96px 16px;
+    padding: 32px 16px 32px 16px;
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
@@ -1156,7 +1162,7 @@
   }
   .bank-acc-wrapper .bank-acc-container .banc-learn-more {
     display: flex;
-    padding: 96px 16px 48px 16px;
+    padding: 16px 16px 16px 16px;
   }
   .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container {
     flex-direction: column;
@@ -1177,6 +1183,9 @@
   .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card .button {
     font-size: 16px;
     padding: 16px;
+  }
+  .bank-acc-wrapper .bank-acc-container .banc-learn-more .card-container .card:last-child {
+    display: none;
   }
   .bank-acc-wrapper .bank-acc-container .our-goal {
     padding: 48px 16px;
@@ -1199,7 +1208,7 @@
     font-size: 18px;
   }
   .bank-acc-wrapper .bank-acc-container .percent-hours {
-    padding: 48px 16px 96px 16px;
+    padding: 48px 16px 32px 16px;
     gap: 8px;
     flex-direction: column;
   }
@@ -1266,11 +1275,12 @@
     height: 40px;
   }
   .bank-acc-wrapper .bank-acc-container .reliable-partner {
-    padding: 96px 16px 48px 16px;
+    padding: 16px 16px 16px 16px;
     flex-direction: column;
     gap: 24px;
   }
   .bank-acc-wrapper .bank-acc-container .reliable-partner .title {
+    white-space: nowrap;
     font-size: 32px;
   }
   .bank-acc-wrapper .bank-acc-container .reliable-partner .blocks-container {
@@ -1357,8 +1367,8 @@
     background: #191C38;
   }
   .bank-acc-wrapper .bank-acc-container .no-taxes {
-    padding: 48px 16px 48px 16px;
-    margin: 32px 0px 64px 0px;
+    padding: 16px 16px 16px 16px;
+    margin: 32px 0px 0px 0px;
     gap: 0px;
     flex-direction: column;
     background-color: transparent;
@@ -1429,7 +1439,7 @@
   .bank-acc-wrapper .bank-acc-container .blog {
     display: flex;
     flex-direction: column;
-    padding: 96px 16px;
+    padding: 64px 16px;
     gap: 24px;
   }
   .bank-acc-wrapper .bank-acc-container .blog .title {

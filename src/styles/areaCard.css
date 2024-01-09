@@ -1,18 +1,18 @@
-.card {
+.area-card {
   background-color: #fff;
   width: calc(50% - 16px);
 }
-.card img {
+.area-card img {
   height: 250px;
   width: 50px;
 }
-.card .description {
+.area-card .description {
   display: flex;
   padding: 12px 11px;
   justify-content: space-between;
   background-color: white;
 }
-.card .description .name {
+.area-card .description .name {
   color: #191C38;
   font-family: HelveticaBold, sans-serif;
   font-size: 32px;
@@ -20,7 +20,7 @@
   font-weight: 700;
   line-height: 57.6px;
 }
-.card .description .button {
+.area-card .description .button {
   display: flex;
   align-items: center;
   gap: 44px;
@@ -35,22 +35,22 @@
   height: fit-content;
   cursor: pointer;
 }
-.card .description .button img {
+.area-card .description .button img {
   margin-top: 3px;
   height: 24px;
   width: 24px;
 }
 
 @media (max-width: 1300px) {
-  .card {
+  .area-card {
     background-color: #fff;
     width: calc(50% - 8px);
   }
-  .card img {
+  .area-card img {
     height: 250px;
     width: 50px;
   }
-  .card .description {
+  .area-card .description {
     display: flex;
     padding: 12px 11px;
     justify-content: space-between;
@@ -58,34 +58,34 @@
     gap: 24px;
     background-color: white;
   }
-  .card .description .name {
+  .area-card .description .name {
     color: #191C38;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 57.6px;
   }
-  .card .description .button {
+  .area-card .description .button {
     justify-content: space-between;
     gap: 0px;
     font-size: 18px;
   }
-  .card .description .button img {
+  .area-card .description .button img {
     margin-top: 3px;
     height: 24px;
     width: 24px;
   }
 }
 @media (max-width: 768px) {
-  .card {
+  .area-card {
     background-color: #fff;
     width: 100%;
   }
-  .card img {
+  .area-card img {
     height: 250px;
     width: 50px;
   }
-  .card .description {
+  .area-card .description {
     display: flex;
     padding: 5px 11px 12px 11px;
     justify-content: space-between;
@@ -93,19 +93,19 @@
     gap: 8px;
     background-color: white;
   }
-  .card .description .name {
+  .area-card .description .name {
     color: #191C38;
     font-size: 32px;
     font-style: normal;
     font-weight: 700;
     line-height: 57.6px;
   }
-  .card .description .button {
+  .area-card .description .button {
     justify-content: space-between;
     gap: 0px;
     font-size: 18px;
   }
-  .card .description .button img {
+  .area-card .description .button img {
     margin-top: 3px;
     height: 24px;
     width: 24px;

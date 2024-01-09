@@ -15,74 +15,6 @@
   flex-direction: column;
   gap: 60px;
 }
-.minland-wrapper .minland-container .minland-baner-guide .minland-baner {
-  display: flex;
-  justify-content: space-between;
-  height: 80vh;
-  gap: 40px;
-}
-.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 49%;
-  padding-left: 64px;
-}
-.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title {
-  display: flex;
-  flex-direction: column;
-  gap: 16px;
-}
-.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title div:first-child {
-  color: #191C38;
-  font-family: HelveticaBold, sans-serif;
-  font-size: 64px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-  width: 90%;
-  /* 57.6px */
-  margin-top: 64px;
-}
-.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title div:last-child {
-  color: #616161;
-  font-family: Helvetica, sans-serif;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 120%;
-  width: 68%;
-}
-.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .image img {
-  display: none;
-}
-.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .leave-a-request {
-  cursor: pointer;
-  display: flex;
-  padding: 24px;
-  justify-content: space-between;
-  align-items: center;
-  width: 73%;
-  flex-shrink: 0;
-  background: #191C38;
-  color: #FFF;
-  font-family: Helvetica;
-  font-size: 25px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: normal;
-}
-.minland-wrapper .minland-container .minland-baner-guide .minland-baner .content svg {
-  transform: rotate(90deg);
-}
-.minland-wrapper .minland-container .minland-baner-guide .minland-baner .image {
-  flex: 1;
-}
-.minland-wrapper .minland-container .minland-baner-guide .minland-baner .image img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
 .minland-wrapper .minland-container .minland-baner-guide .guide-blocks {
   display: grid;
   gap: 16px;
@@ -119,7 +51,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 128px 64px 24px 64px;
+  padding: 64px 64px 24px 64px;
 }
 .minland-wrapper .minland-container .process-of-setuping div:last-child {
   color: #717171;
@@ -141,6 +73,7 @@
 .minland-wrapper .minland-container .table .table-row .first-table-row {
   width: 25%;
   padding: 16px;
+  background-color: #fff;
   color: #000000;
   text-align: center;
   font-family: HelveticaBold, sans-serif;
@@ -158,7 +91,7 @@
   background: #C29773;
   color: #FFF;
   text-align: center;
-  font-family: Helvetica;
+  font-family: HelveticaBold, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -173,7 +106,7 @@
   background-color: #fff;
   color: #000;
   text-align: center;
-  font-family: Helvetica;
+  font-family: HelveticaBold, sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -238,7 +171,7 @@
   display: flex;
   flex-direction: column;
   gap: 48px;
-  padding: 64px 64px 128px 64px;
+  padding: 44px 64px 128px 64px;
 }
 .minland-wrapper .minland-container .accompany .title {
   color: #191C38;
@@ -470,7 +403,7 @@
 .minland-wrapper .minland-container .pro-part {
   display: flex;
   gap: 16px;
-  padding: 64px 64px 64px 64px;
+  padding: 32px 64px;
 }
 .minland-wrapper .minland-container .pro-part .content {
   display: flex;
@@ -557,7 +490,7 @@
   justify-content: space-between;
 }
 .minland-wrapper .minland-container .numbers .clients div:first-child {
-  color: #000;
+  color: #191C38;
   font-family: HelveticaBold, sans-serif;
   font-size: 148px;
   font-style: normal;
@@ -566,7 +499,7 @@
   letter-spacing: -2.96px;
 }
 .minland-wrapper .minland-container .numbers .clients div:last-child {
-  color: #4B4B4B;
+  color: #191C38;
   font-family: HelveticaRegular, sans-serif;
   font-size: 20px;
   font-style: normal;
@@ -674,26 +607,8 @@
 }
 
 @media (max-width: 1300px) {
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner {
-    height: 70vh;
-    gap: 40px;
-  }
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content {
-    width: 49%;
-    padding: 0px 0px 0px 16px;
-  }
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title div:first-child {
-    font-size: 72px;
-  }
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title div:last-child {
-    font-size: 18px;
-  }
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .leave-a-request {
-    width: 100%;
-    font-size: 14px;
-  }
   .minland-wrapper .minland-container .minland-baner-guide .guide-blocks {
-    padding: 32px 16px;
+    padding: 0px 16px;
     gap: 8px;
   }
   .minland-wrapper .minland-container .minland-baner-guide .guide-blocks .guide-block {
@@ -849,40 +764,8 @@
   .minland-wrapper .minland-container .minland-baner-guide {
     gap: 40px;
   }
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner {
-    height: auto;
-  }
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content {
-    width: 100%;
-    padding: 0px 16px 0px 16px;
-    gap: 24px;
-  }
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title div:first-child {
-    width: 100%;
-    font-size: 24px;
-    margin-top: 24px;
-  }
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .title div:last-child {
-    width: 100%;
-  }
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .image {
-    display: block;
-  }
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .image img {
-    display: block;
-  }
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .leave-a-request {
-    padding: 16px;
-    font-style: 14px;
-  }
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .content .leave-a-request svg {
-    transform: rotate(90deg);
-  }
-  .minland-wrapper .minland-container .minland-baner-guide .minland-baner .image {
-    display: none;
-  }
   .minland-wrapper .minland-container .minland-baner-guide .guide-blocks {
-    padding: 96px 16px 96px 16px;
+    padding: 16px 16px 16px 16px;
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
@@ -899,7 +782,7 @@
     font-size: 18px;
   }
   .minland-wrapper .minland-container .table {
-    padding: 48px 16px;
+    padding: 0px 16px;
   }
   .minland-wrapper .minland-container .table .table-row .first-table-row {
     font-size: 12px;
@@ -1020,7 +903,7 @@
     background: #191C38 !important;
   }
   .minland-wrapper .minland-container .pro-part {
-    padding: 48px 16px;
+    padding: 0px 16px;
     flex-direction: column;
   }
   .minland-wrapper .minland-container .pro-part .content {
@@ -1036,6 +919,7 @@
     line-height: normal;
   }
   .minland-wrapper .minland-container .pro-part .image {
+    display: none;
     width: 100%;
   }
   .minland-wrapper .minland-container .main-services {

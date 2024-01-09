@@ -75,6 +75,7 @@ header .menu .menu-option {
   font-weight: 400;
   line-height: normal;
   text-transform: capitalize;
+  white-space: nowrap;
 }
 header .tablet-view {
   display: none;
@@ -108,7 +109,8 @@ header .consulting-dropdown .option {
   font-style: normal;
   font-weight: 700;
   line-height: normal;
-  white-space: nowrap; /* Prevent text wrapping */
+  white-space: nowrap;
+  /* Prevent text wrapping */
 }
 
 @media (max-width: 600px) {
@@ -296,7 +298,7 @@ header .consulting-dropdown .option {
   }
   header .tablet-view .tablet-menu .tablet-menu-menu {
     display: flex;
-    gap: 60px;
+    gap: 50px;
   }
   header .tablet-view .tablet-menu .tablet-menu-menu .option {
     color: #191C38;
@@ -307,6 +309,7 @@ header .consulting-dropdown .option {
     font-style: normal;
     font-weight: 400;
     line-height: normal;
+    white-space: nowrap;
   }
   header .tablet-view .tablet-menu .language {
     display: flex;
@@ -393,6 +396,11 @@ header .consulting-dropdown .option {
     line-height: normal;
   }
 }
+@media (max-width: 700px) {
+  header .tablet-view .tablet-menu .tablet-menu-menu {
+    gap: 30px;
+  }
+}
 @media (max-width: 820px) {
   header .menu {
     position: unset;
@@ -404,6 +412,11 @@ header .consulting-dropdown .option {
   }
   header .additional {
     order: 3;
+  }
+}
+@media (max-width: 1350px) {
+  header .menu {
+    gap: 44px;
   }
 }
 

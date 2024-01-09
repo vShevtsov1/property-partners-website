@@ -15,7 +15,8 @@
   text-align: center;
   font-size: 12px;
   font-weight: 500;
-  line-height: 19px; /* 105.556% */
+  line-height: 19px;
+  /* 105.556% */
 }
 .marker div .price {
   letter-spacing: 1px;

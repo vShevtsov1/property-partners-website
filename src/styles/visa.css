@@ -12,6 +12,7 @@
   justify-content: space-between;
   height: 80vh;
   gap: 40px;
+  padding: 64px 64px 0px 0px;
 }
 .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content {
   display: flex;
@@ -111,7 +112,7 @@
   display: flex;
   flex-direction: column;
   gap: 12px;
-  padding: 128px 64px 24px 64px;
+  padding: 64px 64px 24px 64px;
 }
 .visa-wrapper .visa-container .detail div:first-child {
   color: #191C38;
@@ -224,7 +225,7 @@
 .visa-wrapper .visa-container .what-table {
   display: flex;
   flex-direction: column;
-  gap: 48px;
+  gap: 32px;
   padding: 128px 64px 64px 64px;
 }
 .visa-wrapper .visa-container .what-table .title {
@@ -349,8 +350,8 @@
 .visa-wrapper .visa-container .emirates-id {
   display: flex;
   flex-direction: column;
-  gap: 47px;
-  padding: 64px 64px;
+  gap: 32px;
+  padding: 32px 64px;
 }
 .visa-wrapper .visa-container .emirates-id .title {
   display: flex;
@@ -602,7 +603,7 @@
 .visa-wrapper .visa-container .deadline-grounds {
   display: flex;
   gap: 12px;
-  padding: 64px;
+  padding: 16px 64px;
 }
 .visa-wrapper .visa-container .deadline-grounds .block {
   height: 208px;
@@ -665,6 +666,7 @@
   display: flex;
   padding: 24px;
   background-color: #fff;
+  width: 100%;
 }
 .visa-wrapper .visa-container .types-visas .card-container .card .left-content {
   width: 50%;
@@ -1064,7 +1066,7 @@
 @media (max-width: 1300px) {
   .visa-wrapper .visa-container .visa-baner-guide .visa-baner {
     height: 70vh;
-    gap: 40px;
+    gap: 20px;
   }
   .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content {
     width: 49%;
@@ -1096,7 +1098,7 @@
     font-size: 18px;
   }
   .visa-wrapper .visa-container .detail {
-    padding: 16px 16px;
+    padding: 48px 16px 16px 16px;
   }
   .visa-wrapper .visa-container .detail div:first-child {
     font-size: 20px;
@@ -1320,10 +1322,11 @@
 }
 @media (max-width: 876px) {
   .visa-wrapper .visa-container .visa-baner-guide {
-    gap: 40px;
+    gap: 0px;
   }
   .visa-wrapper .visa-container .visa-baner-guide .visa-baner {
     height: auto;
+    padding: 0px 0px 16px 0px;
   }
   .visa-wrapper .visa-container .visa-baner-guide .visa-baner .content {
     width: 100%;
@@ -1355,7 +1358,7 @@
     display: none;
   }
   .visa-wrapper .visa-container .visa-baner-guide .guide-blocks {
-    padding: 96px 16px 96px 16px;
+    padding: 24px 16px 24px 16px;
     display: flex;
     flex-wrap: wrap;
     gap: 7px;
